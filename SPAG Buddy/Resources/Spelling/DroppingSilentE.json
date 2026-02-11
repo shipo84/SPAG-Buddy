@@ -1,0 +1,65 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding -ing to 'make'.",
+    "Options": ["making", "makeing", "makking", "maeking"],
+    "Answer": "making",
+    "Explanation": "Drop the silent e before adding a vowel suffix like -ing."
+  },
+  {
+    "QuestionType": "FillInTheBlank",
+    "Question": "They are ____ a new house. (move + ing)",
+    "Answer": "moving",
+    "Explanation": "Move + ing = moving (drop the silent e)."
+  },
+  {
+    "QuestionType": "TrueFalse",
+    "Question": "When adding -ful to 'hope', it becomes 'hopful'.",
+    "Answer": "False",
+    "Explanation": "It becomes 'hopeful' - keep the e before consonant suffixes."
+  },
+  {
+    "QuestionType": "SpellTheWord",
+    "Question": "Spell the word: care + ing",
+    "Answer": "caring",
+    "Explanation": "Drop the silent e before adding -ing: caring."
+  },
+  {
+    "QuestionType": "FindTheMisspelling",
+    "Question": "Which word is spelled incorrectly?",
+    "Options": ["having", "lovely", "argueing", "careful"],
+    "Answer": "argueing",
+    "Explanation": "The correct spelling is 'arguing' - drop the e from 'argue'."
+  },
+  {
+    "QuestionType": "CompleteTheSentence",
+    "Question": "She showed great ____ (brave + ry) during the storm.",
+    "Answer": "bravery",
+    "Explanation": "Brave + ry = bravery (drop the silent e before vowel suffix)."
+  },
+  {
+    "QuestionType": "WordBuilding",
+    "Question": "What happens when you add -able to 'love'?",
+    "Answer": "lovable",
+    "Explanation": "Love + able = lovable (drop the silent e, though 'loveable' is also accepted)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which word keeps the silent e?",
+    "Options": ["write → writing", "use → useful", "dance → dancing", "serve → serving"],
+    "Answer": "use → useful",
+    "Explanation": "Keep the e before consonant suffixes like -ful, -ness, -ment."
+  },
+  {
+    "QuestionType": "CorrectTheError",
+    "Question": "Correct this sentence: He was hopeing to recieve a prize.",
+    "Answer": "He was hoping to receive a prize.",
+    "Explanation": "Hope → hoping (drop e); receive keeps 'ei' spelling."
+  },
+  {
+    "QuestionType": "RuleApplication",
+    "Question": "Why do we keep the 'e' in 'noticeable' but drop it in 'noticing'?",
+    "Answer": "Keep 'e' after soft c/g sounds before -able/-ous to maintain the soft sound.",
+    "Explanation": "Notice + able = noticeable (keep e); notice + ing = noticing (drop e)."
+  }
+]

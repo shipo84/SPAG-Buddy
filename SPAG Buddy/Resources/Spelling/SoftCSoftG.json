@@ -1,0 +1,66 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which letter makes 'c' sound like /s/ in 'city'?",
+    "Options": ["i", "a", "o", "u"],
+    "Answer": "i",
+    "Explanation": "C sounds like /s/ before e, i, and y (soft c)."
+  },
+  {
+    "QuestionType": "FillInTheBlank",
+    "Question": "The prin____ spoke at assembly. (c or s?)",
+    "Answer": "principal",
+    "Explanation": "Use 'c' for the soft /s/ sound before i: principal."
+  },
+  {
+    "QuestionType": "TrueFalse",
+    "Question": "The 'g' in 'giant' makes the same sound as 'g' in 'gate'.",
+    "Answer": "False",
+    "Explanation": "Giant has a soft g (/j/ sound); gate has a hard g (/g/ sound)."
+  },
+  {
+    "QuestionType": "SpellTheWord",
+    "Question": "Spell the word for 'very big' that starts with 'g'.",
+    "Answer": "gigantic",
+    "Explanation": "Gigantic has both hard g (first g) and soft g (second g before i)."
+  },
+  {
+    "QuestionType": "FindTheSoftSound",
+    "Question": "Which word has a soft 'c'?",
+    "Options": ["cat", "coat", "cup", "dance"],
+    "Answer": "dance",
+    "Explanation": "Dance has a soft c before e (sounds like /s/)."
+  },
+  {
+    "QuestionType": "CompleteTheSentence",
+    "Question": "Be ____ with the baby! (spell: sounds like 'jen-tul')",
+    "Answer": "gentle",
+    "Explanation": "Gentle has a soft g before e (sounds like /j/)."
+  },
+  {
+    "QuestionType": "RuleApplication",
+    "Question": "Why does 'circus' have two different 'c' sounds?",
+    "Answer": "First 'c' is soft before 'i'; second 'c' is hard before 'u'.",
+    "Explanation": "C before i = soft /s/; C before u = hard /k/."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which word follows the soft g rule?",
+    "Options": ["game", "gym", "goat", "guard"],
+    "Answer": "gym",
+    "Explanation": "G sounds like /j/ before y in gym (soft g)."
+  },
+  {
+    "QuestionType": "CorrectTheError",
+    "Question": "Fix the spelling: The majic sircle was ensient.",
+    "Answer": "The magic circle was ancient.",
+    "Explanation": "Magic (soft g before i); circle (soft c before i); ancient (soft c before i)."
+  },
+  {
+    "QuestionType": "SortTheWords",
+    "Question": "Which group contains only soft c words?",
+    "Options": ["cent, city, cycle", "car, corn, cut", "cell, call, cool", "cinema, class, club"],
+    "Answer": "cent, city, cycle",
+    "Explanation": "All have c before e, i, or y = soft c sound /s/."
+  }
+]

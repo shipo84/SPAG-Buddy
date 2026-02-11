@@ -1,0 +1,78 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses a colon correctly? (1 mark)",
+        "options": ["I need: eggs, milk and bread.", "I need the following items: eggs, milk and bread.", "I need the following items; eggs, milk and bread.", "I need the following items, eggs, milk and bread."],
+        "answer": "I need the following items: eggs, milk and bread.",
+        "explanation": "A colon is used after a complete sentence to introduce a list. 'I need:' is not a complete sentence on its own."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses a semicolon correctly? (1 mark)",
+        "options": ["The sun was shining; and the birds were singing.", "The sun was shining; the birds were singing.", "The sun was shining, the birds were singing.", "The sun was shining: the birds were singing."],
+        "answer": "The sun was shining; the birds were singing.",
+        "explanation": "A semicolon joins two closely related independent clauses without a conjunction. No 'and' is needed after a semicolon."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence using a colon: There are three primary colours and they are red, blue and yellow. (1 mark)",
+        "answer": "There are three primary colours: red, blue and yellow.",
+        "explanation": "The colon replaces 'and they are' and introduces the list of colours."
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add a semicolon in the correct place: Sophie loves reading her brother prefers football. (1 mark)",
+        "answer": "Sophie loves reading; her brother prefers football.",
+        "explanation": "The semicolon separates two related but independent clauses that could each stand as their own sentence."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the main purpose of a semicolon? (1 mark)",
+        "options": ["To introduce a list", "To join two closely related sentences", "To show someone is speaking", "To end a question"],
+        "answer": "To join two closely related sentences",
+        "explanation": "A semicolon links two independent clauses that are closely connected in meaning."
+    },
+    {
+        "type": "true_false",
+        "question": "A colon can be used to introduce an explanation. (1 mark)",
+        "answer": "True",
+        "explanation": "A colon can introduce a list, an explanation, or an example. For instance: 'He was late for one reason: the bus broke down.'"
+    },
+    {
+        "type": "identify_errors",
+        "question": "Identify the punctuation error: The recipe needs; flour, sugar, eggs and butter. (1 mark)",
+        "answer": "The semicolon should be a colon. Correct: The recipe needs: flour, sugar, eggs and butter.",
+        "explanation": "A colon (not a semicolon) is used to introduce a list."
+    },
+    {
+        "type": "rewrite",
+        "question": "Join these two sentences using a semicolon: The cat sat on the mat. The dog lay by the fire. (1 mark)",
+        "answer": "The cat sat on the mat; the dog lay by the fire.",
+        "explanation": "Both sentences are closely related (about pets resting) and can be joined with a semicolon."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses a colon correctly to introduce an explanation? (1 mark)",
+        "options": ["She couldn't go outside: it was raining heavily.", "She couldn't go outside; it was raining heavily.", "She couldn't go outside, it was raining heavily.", "She couldn't: go outside it was raining heavily."],
+        "answer": "She couldn't go outside: it was raining heavily.",
+        "explanation": "The colon introduces an explanation of why she couldn't go outside. A semicolon would also be acceptable here, but the colon specifically signals that an explanation follows."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Complete this sentence by adding a list after the colon: For the trip, you will need to pack the following: (1 mark)",
+        "answer": "Example: For the trip, you will need to pack the following: a waterproof coat, walking boots, a packed lunch and a water bottle.",
+        "explanation": "The colon introduces the list of items. Accept any sensible list of items."
+    },
+    {
+        "type": "explain",
+        "question": "Explain the difference between how a colon and a semicolon are used. Give an example of each. (2 marks)",
+        "answer": "A colon is used to introduce a list, explanation, or example (e.g. 'She bought three fruits: apples, bananas and oranges.'). A semicolon joins two closely related independent clauses (e.g. 'It was cold outside; she wore her warmest coat.').",
+        "explanation": "Award 1 mark for correct explanation of each punctuation mark, including an appropriate example."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add the missing colons and semicolons to this passage: The school has three houses Red, Blue and Green. Red House won the trophy last year Blue House came second. This year the competition is fierce everyone wants to win. (3 marks)",
+        "answer": "The school has three houses: Red, Blue and Green. Red House won the trophy last year; Blue House came second. This year the competition is fierce; everyone wants to win.",
+        "explanation": "Colon after 'houses' introduces the list. Semicolons join the related independent clauses."
+    }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Circle the correct spelling to complete the sentence. (1 mark)\n_____ going to the cinema tonight.",
+    "Options": ["Their", "There", "They're", "Thier"],
+    "Answer": "They're",
+    "Explanation": "They're = they are. 'They're going' means 'they are going'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Circle the correct spelling to complete the sentence. (1 mark)\nThe children put on _____ coats before going outside.",
+    "Options": ["their", "there", "they're", "thier"],
+    "Answer": "their",
+    "Explanation": "Their = belonging to them. The coats belong to the children."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Tick the sentence that uses the correct homophone. (1 mark)",
+    "Options": ["I could of gone to the party.", "The whether was very cold.", "We walked passed the shop.", "She threw the ball over the fence."],
+    "Answer": "She threw the ball over the fence.",
+    "Explanation": "Threw (past tense of throw) is correct. The others should be: could have, weather, past."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct word to complete the sentence. (1 mark)\nThe school _____ said we must wear uniform.",
+    "Options": ["principal", "principle", "princapal", "principel"],
+    "Answer": "principal",
+    "Explanation": "Principal = head teacher (a person). Principle = a rule or belief."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Circle the correct spelling. (1 mark)\nPlease may I have a _____ of cake?",
+    "Options": ["piece", "peace", "peice", "peece"],
+    "Answer": "piece",
+    "Explanation": "Piece = a portion or part. Peace = calm/no conflict. Remember: a piece of pie."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct word. (1 mark)\nThe _____ of the experiment was surprising.",
+    "Options": ["effect", "affect", "efect", "afect"],
+    "Answer": "effect",
+    "Explanation": "Effect (noun) = result or outcome. Affect (verb) = to influence."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Tick the correct sentence. (1 mark)",
+    "Options": ["Your not aloud to talk in the library.", "You're not allowed to talk in the library.", "Your not allowed to talk in the library.", "You're not aloud to talk in the library."],
+    "Answer": "You're not allowed to talk in the library.",
+    "Explanation": "You're = you are; allowed = permitted. Aloud = out loud; your = belonging to you."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct homophone. (1 mark)\nThe car remained _____ at the traffic lights.",
+    "Options": ["stationary", "stationery", "stationarey", "stationerry"],
+    "Answer": "stationary",
+    "Explanation": "Stationary = not moving. Stationery = writing materials (pens, paper). Remember: stationAry = stAnding still."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Circle the correct word. (1 mark)\nShe likes every subject _____ maths.",
+    "Options": ["except", "accept", "exept", "axcept"],
+    "Answer": "except",
+    "Explanation": "Except = excluding, apart from. Accept = to receive or agree to."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling. (1 mark)\nWe need to buy some _____ for the cake.",
+    "Options": ["flour", "flower", "flore", "flouer"],
+    "Answer": "flour",
+    "Explanation": "Flour = powder for baking. Flower = a plant bloom."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Tick the sentence with the correct homophone. (1 mark)",
+    "Options": ["He through the ball to his friend.", "I can here the music from next door.", "The knight rode his horse into battle.", "She red the book in one sitting."],
+    "Answer": "The knight rode his horse into battle.",
+    "Explanation": "Knight (warrior) and rode (past tense of ride) are both correct. Others should be: threw, hear, read."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct pair of homophones to complete the sentence. (1 mark)\nI _____ that the _____ forecast said rain.",
+    "Options": ["knew / weather", "new / weather", "knew / whether", "new / whether"],
+    "Answer": "knew / weather",
+    "Explanation": "Knew = past tense of know; weather = climate conditions. New = not old; whether = if."
+  }
+]

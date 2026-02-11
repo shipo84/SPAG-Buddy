@@ -1,0 +1,105 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ed' to 'carry'.",
+    "Prompt": "She _____ the heavy box upstairs.",
+    "Options": ["carried", "carryed", "carryied", "carrid"],
+    "Answer": "carried",
+    "Explanation": "Change 'y' to 'i' before adding '-ed' when the word ends in consonant + y: carry → carried."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-es' to 'try'.",
+    "Prompt": "He always _____ his best.",
+    "Options": ["tries", "trys", "tryes", "triees"],
+    "Answer": "tries",
+    "Explanation": "Change 'y' to 'i' and add '-es' for third person singular: try → tries."
+  },
+  {
+    "QuestionType": "CompleteTheTable",
+    "Question": "Complete the table by adding '-ed' and '-ing' to each word:\n\nBase word | + ed    | + ing\ntry      | _____  | _____\ncopy     | _____  | _____",
+    "Answer": "tried, trying, copied, copying",
+    "Explanation": "Change y to i before -ed (tried, copied), but keep y before -ing (trying, copying) because we never have 'ii' in English."
+  },
+  {
+    "QuestionType": "RuleIdentification",
+    "Question": "Which words follow the 'change y to i' rule?\nplay / baby / toy / family / monkey",
+    "Options": ["baby and family only", "play, toy and monkey only", "all of them", "baby, family and monkey"],
+    "Answer": "baby and family only",
+    "Explanation": "Only words ending in consonant + y change y to i. Play (vowel + y), toy (vowel + y), and monkey (vowel + y) keep the y."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ful' to 'plenty'.",
+    "Prompt": "We had a _____ supply of food.",
+    "Options": ["plentiful", "plentyful", "plentyfull", "plentifull"],
+    "Answer": "plentiful",
+    "Explanation": "Change 'y' to 'i' before adding '-ful': plenty → plentiful."
+  },
+  {
+    "QuestionType": "FillInTheBlank",
+    "Question": "The two _____ played together. (baby, plural)",
+    "Answer": "babies",
+    "Explanation": "Change 'y' to 'i' and add '-es' for plurals of words ending in consonant + y: baby → babies."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Why does 'play' become 'played' and NOT 'plaied'?",
+    "Options": ["Because play ends in vowel + y", "Because play is a short word", "Because play has one syllable", "Because play starts with 'pl'"],
+    "Answer": "Because play ends in vowel + y",
+    "Explanation": "Words ending in vowel + y (play, stay, enjoy) keep the 'y' when adding suffixes."
+  },
+  {
+    "QuestionType": "FindTheMisspelling",
+    "Question": "Which word is spelled incorrectly?",
+    "Options": ["happily", "loneliness", "beautyful", "busiest"],
+    "Answer": "beautyful",
+    "Explanation": "The correct spelling is 'beautiful' - change 'y' to 'i' before '-ful': beauty → beautiful."
+  },
+  {
+    "QuestionType": "CompleteTheTable",
+    "Question": "Complete the table:\n\nBase word | + ly     | + ness\nhappy    | _____   | _____\nlazy     | _____   | _____\nbusy     | _____   | _____",
+    "Answer": "happily, happiness, lazily, laziness, busily, business",
+    "Explanation": "Change 'y' to 'i' before '-ly' and '-ness' when the word ends in consonant + y."
+  },
+  {
+    "QuestionType": "TrueFalse",
+    "Question": "When adding '-ing' to 'carry', you change the 'y' to 'i': 'carriing'.",
+    "Answer": "False",
+    "Explanation": "Keep the 'y' before '-ing' to avoid having 'ii': carry → carrying, NOT carriing."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct plural of 'monkey'.",
+    "Options": ["monkeys", "monkies", "monkeyes", "monkeis"],
+    "Answer": "monkeys",
+    "Explanation": "Monkey ends in vowel + y (e + y), so just add 's': monkeys."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-er' to 'early'.",
+    "Prompt": "She arrived _____ than expected.",
+    "Options": ["earlier", "earlyer", "earlyier", "earlier"],
+    "Answer": "earlier",
+    "Explanation": "Change 'y' to 'i' before adding '-er': early → earlier."
+  },
+  {
+    "QuestionType": "SortTheWords",
+    "Question": "Sort these words into two groups: words that change y to i, and words that keep y.\nstory / key / reply / journey / hurry / delay",
+    "Answer": "Change y to i: story, reply, hurry (consonant + y)\nKeep y: key, journey, delay (vowel + y)",
+    "Explanation": "The rule depends on whether the letter before 'y' is a consonant or a vowel."
+  },
+  {
+    "QuestionType": "CorrectTheError",
+    "Question": "Correct the errors: The babys cryed loudly and the ladys hurried over.",
+    "Answer": "The babies cried loudly and the ladies hurried over.",
+    "Explanation": "Baby → babies (y to i + es); cry → cried (y to i + ed); lady → ladies (y to i + es); hurry → hurried (y to i + ed)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which set of words ALL correctly apply the y to i rule?",
+    "Options": ["carried, happily, families", "carryed, happyly, familyes", "carried, happiley, families", "carrieed, happily, familyes"],
+    "Answer": "carried, happily, families",
+    "Explanation": "Carry → carried, happy → happily, family → families all correctly change y to i before adding the suffix."
+  }
+]

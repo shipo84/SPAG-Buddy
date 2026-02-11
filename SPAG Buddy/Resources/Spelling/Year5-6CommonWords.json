@@ -1,0 +1,122 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "The _____ of the new planet was exciting.",
+    "Options": ["discovery", "discovary", "discorvery", "discovory"],
+    "Answer": "discovery",
+    "Explanation": "Discovery: dis-cov-ery. The root word is 'discover' + y."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "It is _____ to drink water every day.",
+    "Options": ["necessary", "neccessary", "neccesary", "necesary"],
+    "Answer": "necessary",
+    "Explanation": "Necessary: ne-ces-sa-ry. One 'c' and double 's'. Remember: one collar, two socks."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "She was _____ grateful for the help.",
+    "Options": ["extremely", "extremly", "extreemly", "exstremely"],
+    "Answer": "extremely",
+    "Explanation": "Extremely: extreme + ly. Keep the 'e' at the end of 'extreme' before '-ly'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "We must protect the _____.",
+    "Options": ["environment", "enviroment", "environmant", "enviromnent"],
+    "Answer": "environment",
+    "Explanation": "Environment: en-vi-ron-ment. The word 'iron' is hidden inside."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "The _____ made an important decision.",
+    "Options": ["committee", "commitee", "comittee", "committy"],
+    "Answer": "committee",
+    "Explanation": "Committee: com-mit-tee. Double 'm', double 't', double 'e'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "There was a _____ improvement in her work.",
+    "Options": ["definite", "definate", "definit", "deffinite"],
+    "Answer": "definite",
+    "Explanation": "Definite: de-fi-nite. Think of 'finite' (having an end) to help remember."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "She showed great _____ to succeed.",
+    "Options": ["determination", "detirmination", "determinasion", "determenation"],
+    "Answer": "determination",
+    "Explanation": "Determination: de-ter-mi-na-tion. Based on the root word 'determine'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "Please _____ the egg whites from the yolks.",
+    "Options": ["separate", "seperate", "separete", "seprate"],
+    "Answer": "separate",
+    "Explanation": "Separate: se-pa-rate. Remember: there's 'a rat' in separate."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "We visited the natural history _____.",
+    "Options": ["museum", "musaum", "muesum", "musiem"],
+    "Answer": "museum",
+    "Explanation": "Museum: mu-se-um. The ending '-eum' is common in building names."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "The hotel can _____ 200 guests.",
+    "Options": ["accommodate", "accomodate", "acommodate", "acomodate"],
+    "Answer": "accommodate",
+    "Explanation": "Accommodate: ac-com-mo-date. Double 'c' and double 'm'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "There was _____ evidence to prove the theory.",
+    "Options": ["sufficient", "sufficiant", "suficient", "sufficent"],
+    "Answer": "sufficient",
+    "Explanation": "Sufficient: suf-fi-cient. Double 'f' and '-cient' ending."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "Don't _____ yourself in front of your friends.",
+    "Options": ["embarrass", "embarass", "embarras", "embaress"],
+    "Answer": "embarrass",
+    "Explanation": "Embarrass: em-bar-rass. Double 'r' and double 's'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "The _____ designed a beautiful building.",
+    "Options": ["architect", "arcitect", "architecht", "arkitect"],
+    "Answer": "architect",
+    "Explanation": "Architect: arch-i-tect. The 'ch' makes a /k/ sound (Greek origin)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "The drummer kept a steady _____.",
+    "Options": ["rhythm", "rythm", "rhythem", "rythym"],
+    "Answer": "rhythm",
+    "Explanation": "Rhythm: rhy-thm. No vowels in the traditional sense - 'y' acts as the vowel."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling.",
+    "Prompt": "The _____ Egyptians built pyramids.",
+    "Options": ["ancient", "anceint", "anchient", "anciant"],
+    "Answer": "ancient",
+    "Explanation": "Ancient: an-cient. The 'ci' makes the /sh/ sound before '-ent'."
+  }
+]

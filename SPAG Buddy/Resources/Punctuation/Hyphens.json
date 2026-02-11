@@ -1,0 +1,124 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses a hyphen correctly? (1 mark)",
+        "options": ["She is a well known author.", "She is a well-known author.", "She is a well known-author.", "She-is a well known author."],
+        "answer": "She is a well-known author.",
+        "explanation": "'Well-known' is a compound adjective that comes before the noun, so it needs a hyphen."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these words is correctly hyphenated? (1 mark)",
+        "options": ["re-enter", "ree-nter", "re-ent-er", "reenter"],
+        "answer": "re-enter",
+        "explanation": "A hyphen is used after the prefix 're-' when the root word begins with 'e', to avoid confusion (re-enter, not reenter)."
+    },
+    {
+        "type": "true_false",
+        "question": "A hyphen and a dash are the same length and have the same purpose. (1 mark)",
+        "answer": "False",
+        "explanation": "A hyphen (-) is short and joins words or parts of words together. A dash (--) is longer and separates parts of a sentence."
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add hyphens where needed in this sentence: My eight year old brother has a part time job delivering the well read local newspaper. (2 marks)",
+        "answer": "My eight-year-old brother has a part-time job delivering the well-read local newspaper.",
+        "explanation": "'Eight-year-old' (compound adjective before noun), 'part-time' (compound adjective), and 'well-read' (compound adjective before noun) all need hyphens."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "When do compound adjectives need a hyphen? (1 mark)",
+        "options": ["Always", "When they come before the noun they describe", "When they come after the noun they describe", "Never"],
+        "answer": "When they come before the noun they describe",
+        "explanation": "Compound adjectives are hyphenated before the noun (a well-known author) but usually not after it (the author is well known)."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence adding the correct hyphens: She made a last minute decision to join the long distance race. (1 mark)",
+        "answer": "She made a last-minute decision to join the long-distance race.",
+        "explanation": "'Last-minute' and 'long-distance' are compound adjectives before nouns, so they need hyphens."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which number is written correctly with hyphens? (1 mark)",
+        "options": ["Twenty one", "Twenty-one", "Twent-y one", "Twen-ty-one"],
+        "answer": "Twenty-one",
+        "explanation": "Compound numbers from twenty-one to ninety-nine are hyphenated when written as words."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Which word in this sentence should have a hyphen? The team scored a hat trick in the second half. (1 mark)",
+        "answer": "'hat trick' should be 'hat-trick'.",
+        "explanation": "'Hat-trick' is a compound noun that is conventionally hyphenated."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Why is a hyphen needed in 're-cover'? (1 mark)",
+        "options": ["It always needs a hyphen", "To show it means 'to cover again' not 'to recover'", "Because it has a prefix", "To make it easier to read"],
+        "answer": "To show it means 'to cover again' not 'to recover'",
+        "explanation": "The hyphen distinguishes 're-cover' (cover again) from 'recover' (get better), preventing ambiguity."
+    },
+    {
+        "type": "true_false",
+        "question": "The prefix 'co-' always needs a hyphen (e.g. co-operate). (1 mark)",
+        "answer": "False",
+        "explanation": "Many words with 'co-' can be written with or without a hyphen (cooperate/co-operate). Usage varies, though hyphens are common when the root begins with 'o'."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a sentence that includes a compound adjective with a hyphen. (1 mark)",
+        "answer": "Example: We watched a breath-taking sunset over the sea.",
+        "explanation": "Accept any sentence with a correctly hyphenated compound adjective before a noun."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses hyphens correctly? (1 mark)",
+        "options": ["My sister-in-law is a full time teacher.", "My sister in law is a full-time teacher.", "My sister-in-law is a full-time teacher.", "My sister-in-law is a full-time-teacher."],
+        "answer": "My sister-in-law is a full-time teacher.",
+        "explanation": "'Sister-in-law' is a hyphenated compound noun. 'Full-time' is a compound adjective before the noun 'teacher'."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence with correct hyphens: There are thirty three well behaved children in the year six class. (1 mark)",
+        "answer": "There are thirty-three well-behaved children in the year six class.",
+        "explanation": "'Thirty-three' (compound number) and 'well-behaved' (compound adjective before noun) need hyphens."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which fraction is correctly hyphenated? (1 mark)",
+        "options": ["Two thirds", "Two-thirds", "Twothirds", "Two-third-s"],
+        "answer": "Two-thirds",
+        "explanation": "Fractions written as words are hyphenated (one-half, two-thirds, three-quarters)."
+    },
+    {
+        "type": "explain",
+        "question": "Explain how a hyphen changes the meaning of these two phrases: 'a man eating chicken' and 'a man-eating chicken'. (2 marks)",
+        "answer": "'A man eating chicken' means a man who is eating some chicken. 'A man-eating chicken' means a chicken that eats men! The hyphen joins 'man' and 'eating' into a compound adjective describing the chicken.",
+        "explanation": "Award 1 mark for explaining each phrase correctly, showing how the hyphen changes the meaning."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Find and correct the hyphen errors in this sentence: My ten year old cousin built a brightly-coloured, state of the art model aeroplane. (2 marks)",
+        "answer": "My ten-year-old cousin built a brightly coloured, state-of-the-art model aeroplane.",
+        "explanation": "'Ten-year-old' needs hyphens (compound adjective). 'Brightly coloured' does not need a hyphen (adverb ending in -ly). 'State-of-the-art' needs hyphens (compound adjective before noun)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which prefix usually requires a hyphen when added to a proper noun? (1 mark)",
+        "options": ["un-", "dis-", "anti-", "All of these when before a proper noun"],
+        "answer": "All of these when before a proper noun",
+        "explanation": "A hyphen is used when a prefix is added to a proper noun (e.g. anti-European, pro-British, un-American)."
+    },
+    {
+        "type": "true_false",
+        "question": "Adverbs ending in '-ly' do not need a hyphen when forming a compound modifier (e.g. 'a quickly moving train' not 'a quickly-moving train'). (1 mark)",
+        "answer": "True",
+        "explanation": "When the first word is an adverb ending in '-ly', no hyphen is needed because the '-ly' already signals that the word modifies the adjective."
+    },
+    {
+        "type": "sort_words",
+        "question": "Sort these into two groups - needs a hyphen and does not need a hyphen: twenty five, ice cream, self control, badly made, high quality fabric, deeply felt (2 marks)",
+        "answer": "Needs a hyphen: twenty-five, self-control, high-quality fabric. Does not need a hyphen: ice cream, badly made, deeply felt.",
+        "explanation": "Compound numbers, 'self-' compounds, and compound adjectives before nouns need hyphens. '-ly' adverb modifiers and established open compounds do not."
+    }
+]

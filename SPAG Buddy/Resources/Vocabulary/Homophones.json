@@ -1,0 +1,82 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What is a homophone? (1 mark)",
+        "options": ["A word that looks the same as another word", "A word that sounds the same as another word but has a different meaning and spelling", "A word that means the same as another word", "A word that means the opposite of another word"],
+        "answer": "A word that sounds the same as another word but has a different meaning and spelling",
+        "explanation": "Homophones sound the same but have different meanings and usually different spellings, e.g., there/their/they're, to/too/two."
+    },
+    {
+        "type": "choose_correct",
+        "question": "Choose the correct homophone for each sentence: (5 marks)\na) (There/Their/They're) going to the park.\nb) The dog wagged (its/it's) tail.\nc) I can (hear/here) the music.\nd) She (threw/through) the ball.\ne) (Your/You're) very kind.",
+        "answer": "a) They're  b) its  c) hear  d) threw  e) You're",
+        "explanation": "a) They're = they are. b) Its = belonging to it (no apostrophe). c) Hear = to listen. d) Threw = past tense of throw. e) You're = you are."
+    },
+    {
+        "type": "match_homophones",
+        "question": "Match each word to its homophone partner: (5 marks)\na) flour\nb) knight\nc) pair\nd) stare\ne) brake",
+        "options": ["night", "flower", "pear", "stair", "break"],
+        "answer": "a) flower  b) night  c) pear  d) stair  e) break",
+        "explanation": "Each pair sounds the same but has completely different meanings and spellings."
+    },
+    {
+        "type": "fill_in_blank",
+        "question": "Complete each sentence with the correct homophone: (4 marks)\na) The _______ blew strongly across the field. (wind/whined)\nb) We need to _______ the parcel carefully. (wrap/rap)\nc) She could see the _______ from the ship. (shore/sure)\nd) The king sat on his _______. (throne/thrown)",
+        "answer": "a) wind  b) wrap  c) shore  d) throne",
+        "explanation": "a) Wind = moving air. b) Wrap = to cover. c) Shore = edge of the sea. d) Throne = a royal seat."
+    },
+    {
+        "type": "homograph_awareness",
+        "question": "These words are homographs (spelt the same, different meanings). Write two meanings for each: (3 marks)\na) bat\nb) bank\nc) ring",
+        "answer": "a) bat = a flying animal / a cricket or baseball bat  b) bank = a place for money / the side of a river  c) ring = jewellery for a finger / the sound a bell makes",
+        "explanation": "Homographs are spelt the same but have different meanings. Some are also pronounced differently (e.g., lead/lead, wind/wind)."
+    },
+    {
+        "type": "common_mistakes",
+        "question": "Correct the homophone errors in these sentences: (4 marks)\na) Their going too the shops.\nb) I can here the whether forecast.\nc) Its to hot too where a coat.\nd) The bear climbed up the stares.",
+        "answer": "a) They're going to the shops.  b) I can hear the weather forecast.  c) It's too hot to wear a coat.  d) The bear climbed up the stairs.",
+        "explanation": "Homophone errors are among the most common spelling mistakes. Learning the differences helps avoid them."
+    },
+    {
+        "type": "three_way_homophones",
+        "question": "Complete each sentence using to, too, or two: (3 marks)\na) She went _______ the cinema.\nb) There were _______ cats on the wall.\nc) The soup was _______ hot to eat.",
+        "answer": "a) to  b) two  c) too",
+        "explanation": "to = direction/part of a verb, two = the number 2, too = also or excessively."
+    },
+    {
+        "type": "write_sentences",
+        "question": "Write a sentence for each word to show you understand the difference: (4 marks)\na) peace / piece\nb) aloud / allowed",
+        "answer": "Example: a) Peace: There was peace and quiet in the library. Piece: She ate a piece of cake.  b) Aloud: He read the poem aloud. Allowed: Dogs are not allowed in the shop.",
+        "explanation": "peace = calm/no war, piece = a part of something. aloud = out loud, allowed = permitted."
+    },
+    {
+        "type": "pronunciation_guide",
+        "question": "These word pairs are often confused but are NOT homophones because they are pronounced differently. Explain the difference: (3 marks)\na) accept / except\nb) affect / effect\nc) quiet / quite",
+        "answer": "a) accept (ak-SEPT, to receive) / except (ek-SEPT, apart from)  b) affect (verb, to influence) / effect (noun, a result)  c) quiet (KWY-et, not loud) / quite (KWYT, fairly/very)",
+        "explanation": "These pairs are often confused but have different pronunciations and meanings. They are not true homophones."
+    },
+    {
+        "type": "true_false",
+        "question": "The words 'there', 'their', and 'they're' are all homophones of each other. (1 mark)",
+        "answer": "True",
+        "explanation": "All three words sound the same (/ðɛər/) but have different meanings: there (place), their (belonging to them), they're (they are)."
+    },
+    {
+        "type": "homophone_families",
+        "question": "Some homophones come in groups of three or more. Complete these groups: (3 marks)\na) to, too, _______\nb) there, their, _______\nc) by, buy, _______",
+        "answer": "a) two  b) they're  c) bye",
+        "explanation": "Some homophones come in groups of three: to/too/two, there/their/they're, by/buy/bye."
+    },
+    {
+        "type": "apostrophe_homophones",
+        "question": "Explain the difference between these homophone pairs that involve apostrophes: (3 marks)\na) its / it's\nb) your / you're\nc) whose / who's",
+        "answer": "a) its = belonging to it, it's = it is or it has  b) your = belonging to you, you're = you are  c) whose = belonging to whom, who's = who is or who has",
+        "explanation": "The apostrophe versions are always contractions (shortened forms of two words). The non-apostrophe versions show possession."
+    },
+    {
+        "type": "challenge",
+        "question": "Write a short paragraph (3-4 sentences) about a trip to the beach that correctly uses at least six homophones. Underline them. (4 marks)",
+        "answer": "Example: 'We went to the beach to see the sea. Their sandcastle was the best there. Two children threw a ball through the air. I could hear the waves from here.'",
+        "explanation": "Homophones used: to/two, see/sea, their/there, threw/through, hear/here. Using homophones correctly shows strong spelling skills."
+    }
+]

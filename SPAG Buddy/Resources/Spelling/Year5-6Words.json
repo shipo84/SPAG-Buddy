@@ -1,0 +1,143 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "Hard work helps you _____ your goals.",
+    "Options": ["achieve", "acheive", "acheve", "acheeve"],
+    "Answer": "achieve",
+    "Explanation": "'I before e except after c' - achieve follows this rule: ach-i-e-ve."
+  },
+  {
+    "QuestionType": "FindTheMisspelling",
+    "Question": "Which of these Year 5/6 words is spelled incorrectly?\ngovernment  committee  recomend  approach  environmental",
+    "Options": ["government", "committee", "recomend", "approach"],
+    "Answer": "recomend",
+    "Explanation": "The correct spelling is 'recommend' with double 'm'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "The school has excellent _____.",
+    "Options": ["equipment", "equiptment", "equipmant", "equippment"],
+    "Answer": "equipment",
+    "Explanation": "Equipment: equip + ment. The root word 'equip' does not double the 'p' before '-ment'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "We need to protect the _____.",
+    "Options": ["environment", "enviroment", "enviromnent", "environmant"],
+    "Answer": "environment",
+    "Explanation": "Environment has the word 'iron' in the middle: en-viron-ment."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "The magician performed an _____ trick.",
+    "Options": ["excellent", "excelent", "excellant", "exellent"],
+    "Answer": "excellent",
+    "Explanation": "Excellent has double 'l': ex-cel-lent."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "She showed great _____ in solving the problem.",
+    "Options": ["determination", "detirmination", "determinasion", "determenation"],
+    "Answer": "determination",
+    "Explanation": "Determination: determine + ation. Note the 'a' before '-tion'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "The teacher asked for _____.",
+    "Options": ["silence", "silance", "silense", "scilence"],
+    "Answer": "silence",
+    "Explanation": "Silence: si-lence. The 'c' makes a soft /s/ sound before 'e'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "It is _____ to eat a balanced diet.",
+    "Options": ["necessary", "neccessary", "neccesary", "necesary"],
+    "Answer": "necessary",
+    "Explanation": "Necessary: one 'c' and double 's' - ne-ces-sa-ry. Remember: one collar, two socks."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "The _____ voted on the new law.",
+    "Options": ["parliament", "parliment", "parlement", "parlimant"],
+    "Answer": "parliament",
+    "Explanation": "Parliament contains 'ia' in the middle: par-lia-ment."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "She felt _____ about the mistake.",
+    "Options": ["conscious", "concious", "consious", "conshious"],
+    "Answer": "conscious",
+    "Explanation": "Conscious: con-sci-ous. The 'sc' makes the /sh/ sound."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "There was enough food for _____.",
+    "Options": ["everyone", "eveyone", "every one", "evreyone"],
+    "Answer": "everyone",
+    "Explanation": "Everyone (meaning 'every person') is written as one word."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "The children enjoyed the school _____.",
+    "Options": ["programme", "programm", "program", "programe"],
+    "Answer": "programme",
+    "Explanation": "In British English, 'programme' is the standard spelling for events and plans."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "We _____ apologise for the delay.",
+    "Options": ["sincerely", "sincerly", "sinserely", "sincerley"],
+    "Answer": "sincerely",
+    "Explanation": "Sincerely: sincere + ly. Keep the final 'e' before '-ly'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "Please put the words in _____ order.",
+    "Options": ["alphabetical", "alphabeticle", "alphabetecal", "alphebetical"],
+    "Answer": "alphabetical",
+    "Explanation": "Alphabetical: alphabet + ical. The suffix '-ical' is common in adjectives."
+  },
+  {
+    "QuestionType": "FindTheMisspelling",
+    "Question": "Which word in this list is spelled incorrectly?\nfrequently  independant  opportunity  variety",
+    "Options": ["frequently", "independant", "opportunity", "variety"],
+    "Answer": "independant",
+    "Explanation": "The correct spelling is 'independent' with '-ent' not '-ant'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "She made a _____ effort to improve.",
+    "Options": ["definite", "definate", "definit", "deffinite"],
+    "Answer": "definite",
+    "Explanation": "Definite: de-fi-nite. Think of 'finite' (having limits) to remember the spelling."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correctly spelled word.",
+    "Prompt": "The _____ was held in the school hall.",
+    "Options": ["ceremony", "ceramony", "cerimony", "cerremony"],
+    "Answer": "ceremony",
+    "Explanation": "Ceremony: ce-re-mo-ny. Note the 'e' after 'c' for the soft /s/ sound."
+  },
+  {
+    "QuestionType": "FindTheMisspelling",
+    "Question": "Which word in this list is spelled incorrectly?\nconscience  mischievous  immediatly  guarantee",
+    "Options": ["conscience", "mischievous", "immediatly", "guarantee"],
+    "Answer": "immediatly",
+    "Explanation": "The correct spelling is 'immediately' - immediate + ly, keeping the 'e' before '-ly'."
+  }
+]

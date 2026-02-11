@@ -1,0 +1,107 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses inverted commas (speech marks) correctly? (1 mark)",
+        "options": ["\"I love playing football, said Tom.\"", "\"I love playing football,\" said Tom.", "I love playing football, \"said Tom.\"", "I \"love playing football,\" said Tom."],
+        "answer": "\"I love playing football,\" said Tom.",
+        "explanation": "Inverted commas go around the words that are actually spoken. The comma comes before the closing inverted commas, and the reporting clause ('said Tom') follows outside the speech marks."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence shows the correct punctuation for direct speech? (1 mark)",
+        "options": ["The teacher asked \"where is your homework?\"", "The teacher asked, \"Where is your homework?\"", "The teacher asked \"Where is your homework\"?", "\"The teacher asked, where is your homework?\""],
+        "answer": "The teacher asked, \"Where is your homework?\"",
+        "explanation": "A comma is placed after the reporting clause ('The teacher asked') before the speech begins. The speech starts with a capital letter, and the question mark goes inside the closing inverted commas."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which option correctly punctuates the direct speech?\n_____ shouted the coach. (1 mark)",
+        "options": ["\"Run faster!\"", "\"Run faster\",!", "\"Run faster,\"!", "Run faster!\"\""],
+        "answer": "\"Run faster!\"",
+        "explanation": "When speech ends with an exclamation mark or question mark, that punctuation goes inside the closing inverted commas. No additional comma is needed because the exclamation mark replaces it."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is an example of reported speech (indirect speech)? (1 mark)",
+        "options": ["\"I am going to the park,\" said Amira.", "Amira said that she was going to the park.", "\"Are you going to the park?\" asked Mum.", "\"Let's go to the park!\" shouted Amira."],
+        "answer": "Amira said that she was going to the park.",
+        "explanation": "Reported (indirect) speech tells us what someone said without using their exact words. It does not use inverted commas. The other three options are all direct speech, using the speaker's exact words inside inverted commas."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read the passage below. Which version correctly starts a new line for each new speaker?\nJack said hello. Priya replied that she was fine. (1 mark)",
+        "options": ["\"Hello!\" said Jack. \"I'm fine, thanks,\" replied Priya. (all on one line)", "\"Hello!\" said Jack.\n\"I'm fine, thanks,\" replied Priya. (Priya's speech on a new line)", "\"Hello!\" said Jack. I'm fine, thanks, replied Priya.", "Hello! said Jack.\nI'm fine, thanks, replied Priya."],
+        "answer": "\"Hello!\" said Jack.\n\"I'm fine, thanks,\" replied Priya. (Priya's speech on a new line)",
+        "explanation": "When a new person speaks, their words should begin on a new line. This helps the reader follow the conversation and know who is speaking."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Where should the comma go in this sentence?\n\"I think we should go home\" whispered Lily. (1 mark)",
+        "options": ["Before the word 'I'.", "After the word 'home' but before the closing inverted commas.", "After the closing inverted commas.", "After the word 'whispered'."],
+        "answer": "After the word 'home' but before the closing inverted commas.",
+        "explanation": "When the reporting clause comes after the speech, a comma is placed at the end of the spoken words, before the closing inverted commas: \"I think we should go home,\" whispered Lily."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses punctuation within speech correctly? (1 mark)",
+        "options": ["\"Can I borrow your pencil\"? asked Ethan.", "\"Can I borrow your pencil?\" asked Ethan.", "\"Can I borrow your pencil?\", asked Ethan.", "\"Can I borrow your pencil,\" asked Ethan?"],
+        "answer": "\"Can I borrow your pencil?\" asked Ethan.",
+        "explanation": "The question mark goes inside the closing inverted commas because the speech itself is a question. No comma is needed after the question mark. The full stop comes at the very end of the whole sentence."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Rewrite this reported speech as direct speech. Which option is correct?\nMrs Green told the class to open their books to page twelve. (1 mark)",
+        "options": ["Mrs Green told the class, open your books to page twelve.", "Mrs Green told the class \"open your books to page twelve.\"", "\"Open your books to page twelve,\" said Mrs Green.", "\"Open your books to page twelve\" said Mrs Green."],
+        "answer": "\"Open your books to page twelve,\" said Mrs Green.",
+        "explanation": "Direct speech uses the speaker's exact words inside inverted commas. A comma is placed before the closing inverted commas when the reporting clause follows. The sentence begins with the opening inverted commas and a capital letter."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence shows interrupted speech punctuated correctly? (1 mark)",
+        "options": ["\"I was going to\" said Ali \"but then it started raining.\"", "\"I was going to,\" said Ali, \"but then it started raining.\"", "\"I was going to\", said Ali, \"but then it started raining.\"", "\"I was going to,\" said Ali \"but then it started raining.\""],
+        "answer": "\"I was going to,\" said Ali, \"but then it started raining.\"",
+        "explanation": "When speech is split by a reporting clause, the first part ends with a comma before the closing inverted commas. The reporting clause is followed by a comma, and the speech continues inside a new set of inverted commas with a lower-case letter (since it is the same sentence)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is wrong with this sentence?\n\"We won the match!\" Shouted the captain. (1 mark)",
+        "options": ["The exclamation mark should be outside the speech marks.", "There should be a comma instead of an exclamation mark.", "'Shouted' should not have a capital letter.", "The speech marks are in the wrong place."],
+        "answer": "'Shouted' should not have a capital letter.",
+        "explanation": "The reporting clause ('shouted the captain') is part of the same sentence as the speech. Even though there is an exclamation mark inside the speech marks, the reporting verb ('shouted') should begin with a lower-case letter: \"We won the match!\" shouted the captain."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly changes direct speech into reported speech?\n\"I have finished my painting,\" said Zara. (1 mark)",
+        "options": ["Zara said, \"I have finished my painting.\"", "Zara said that she had finished her painting.", "Zara said that \"she had finished her painting.\"", "Zara said I have finished my painting."],
+        "answer": "Zara said that she had finished her painting.",
+        "explanation": "Reported speech does not use inverted commas. The pronoun changes from 'I' to 'she' and 'my' to 'her'. The tense usually shifts back: 'have finished' becomes 'had finished'. The word 'that' is often used to introduce reported speech."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these sentences is punctuated correctly? (1 mark)",
+        "options": ["\"Let's go to the library after school,\" suggested Mia.", "\"Let's go to the library after school\" suggested Mia.", "\"Let's go to the library after school\", suggested Mia.", "\"Let's go to the library after school.\" suggested Mia."],
+        "answer": "\"Let's go to the library after school,\" suggested Mia.",
+        "explanation": "When the reporting clause ('suggested Mia') comes after the speech, a comma is placed at the end of the spoken words, inside the closing inverted commas. A full stop is not used inside the speech marks when a reporting clause follows."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence shows the correct way to punctuate speech when the reporting clause comes first? (1 mark)",
+        "options": ["Grandad whispered \"don't wake the baby.\"", "Grandad whispered, \"Don't wake the baby.\"", "Grandad whispered \"Don't wake the baby\".", "Grandad whispered, \"don't wake the baby.\""],
+        "answer": "Grandad whispered, \"Don't wake the baby.\"",
+        "explanation": "When the reporting clause comes first, it is followed by a comma. The speech then begins with a capital letter inside the opening inverted commas. The full stop goes inside the closing inverted commas."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read the passage below. How many sets of inverted commas are needed?\nCome and look at this said Ben. What is it asked Sophie. It is a tiny frog replied Ben. (1 mark)",
+        "options": ["Two sets", "Three sets", "Four sets", "Six sets"],
+        "answer": "Three sets",
+        "explanation": "There are three pieces of direct speech, each needing its own set of inverted commas: \"Come and look at this,\" said Ben. \"What is it?\" asked Sophie. \"It is a tiny frog,\" replied Ben. Each spoken sentence needs an opening and closing inverted comma (one set per speaker)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses inverted commas correctly around a title? (1 mark)",
+        "options": ["We are reading \"Charlotte's Web\" in class this term.", "We are reading Charlotte's \"Web\" in class this term.", "We are reading Charlotte's Web\" in class this term.\"", "\"We are reading Charlotte's Web in class this term.\""],
+        "answer": "We are reading \"Charlotte's Web\" in class this term.",
+        "explanation": "Inverted commas can be used around the titles of books, films, songs and other works. The inverted commas go around the full title only, not the entire sentence."
+    }
+]

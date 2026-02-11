@@ -1,0 +1,142 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is written in the simple past tense?",
+        "options": ["The cat is sleeping on the mat.", "The cat slept on the mat.", "The cat has slept on the mat.", "The cat will sleep on the mat."],
+        "answer": "The cat slept on the mat.",
+        "explanation": "The simple past tense describes an action that has already happened and is complete. 'Slept' is the simple past tense of 'sleep'. The other options use present progressive, present perfect and future tense."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses the past progressive tense correctly?",
+        "options": ["She walked to school yesterday.", "She was walking to school when it started to rain.", "She has walked to school every day.", "She walks to school each morning."],
+        "answer": "She was walking to school when it started to rain.",
+        "explanation": "The past progressive tense uses 'was' or 'were' followed by a verb ending in '-ing'. It describes an action that was ongoing in the past, often when another action interrupted it."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is written in the present perfect tense?",
+        "options": ["I ate my lunch.", "I eat my lunch at noon.", "I have eaten my lunch already.", "I was eating my lunch."],
+        "answer": "I have eaten my lunch already.",
+        "explanation": "The present perfect tense uses 'have' or 'has' followed by the past participle of the verb. It describes an action that started in the past and is connected to the present."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Select the sentence that uses the simple present tense.",
+        "options": ["The birds were singing in the trees.", "The birds sang in the trees.", "The birds sing in the trees every morning.", "The birds have sung in the trees."],
+        "answer": "The birds sing in the trees every morning.",
+        "explanation": "The simple present tense describes actions that happen regularly or are generally true. 'Sing' is the simple present form, and the phrase 'every morning' shows it is a regular action."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses the present progressive tense?",
+        "options": ["The children played football at break time.", "The children play football at break time.", "The children are playing football at break time.", "The children had played football at break time."],
+        "answer": "The children are playing football at break time.",
+        "explanation": "The present progressive tense uses 'am', 'is' or 'are' followed by a verb ending in '-ing'. It describes an action that is happening right now."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is written in the future tense?",
+        "options": ["We visited the museum last week.", "We are visiting the museum.", "We visit the museum every year.", "We will visit the museum next Thursday."],
+        "answer": "We will visit the museum next Thursday.",
+        "explanation": "The future tense uses 'will' or 'shall' before the main verb to describe something that has not happened yet but is expected to happen."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which modal verb best completes this sentence? 'You ______ bring your PE kit tomorrow or you will not be able to take part.'",
+        "options": ["might", "could", "must", "may"],
+        "answer": "must",
+        "explanation": "'Must' expresses a strong obligation or necessity. The second part of the sentence ('or you will not be able to take part') shows that bringing the PE kit is essential, so 'must' is the correct choice."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses the modal verb 'might' correctly to show possibility?",
+        "options": ["We might go to the park if it stops raining.", "We might to go to the park.", "We might going to the park.", "We are might go to the park."],
+        "answer": "We might go to the park if it stops raining.",
+        "explanation": "Modal verbs like 'might' are followed by the base form of the verb (without 'to'). 'Might' shows that something is possible but not certain."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What does the modal verb 'should' express in this sentence? 'You should always check your work before handing it in.'",
+        "options": ["Permission", "Ability", "Advice or recommendation", "Certainty"],
+        "answer": "Advice or recommendation",
+        "explanation": "'Should' is a modal verb that is used to give advice or make a recommendation. It suggests what is the right or sensible thing to do."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses the subjunctive mood correctly?",
+        "options": ["If I was a bird, I would fly south.", "If I were a bird, I would fly south.", "If I am a bird, I would fly south.", "If I be a bird, I would fly south."],
+        "answer": "If I were a bird, I would fly south.",
+        "explanation": "The subjunctive mood uses 'were' instead of 'was' when talking about imaginary or unlikely situations. 'If I were a bird' is correct because it describes something that is not real."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly uses the past perfect tense?",
+        "options": ["The train left before we arrived.", "The train has left before we arrived.", "The train had left before we arrived.", "The train was leaving before we arrived."],
+        "answer": "The train had left before we arrived.",
+        "explanation": "The past perfect tense uses 'had' followed by the past participle. It describes an action that was completed before another action in the past. The train leaving happened before the arriving."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which modal verb completes this sentence to show ability? 'By the end of Year 6, most pupils ______ swim twenty-five metres.'",
+        "options": ["should", "can", "may", "shall"],
+        "answer": "can",
+        "explanation": "'Can' is the modal verb used to express ability — what someone is able to do. 'Should' gives advice, 'may' shows permission or possibility, and 'shall' expresses future intention."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Identify the correct tense used in this sentence: 'By Friday, I shall have finished my project.'",
+        "options": ["Simple future", "Future perfect", "Present perfect", "Past perfect"],
+        "answer": "Future perfect",
+        "explanation": "The future perfect tense uses 'will have' or 'shall have' followed by the past participle. It describes an action that will be completed before a specific time in the future."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses 'may' to express permission?",
+        "options": ["It may rain later today.", "May I borrow your ruler, please?", "You may find the answer on page twelve.", "The school may close early."],
+        "answer": "May I borrow your ruler, please?",
+        "explanation": "'May' can express either permission or possibility. When used in a question like 'May I...?', it is asking for permission. The other sentences use 'may' to express possibility."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these sentences uses the subjunctive mood?",
+        "options": ["The teacher asked that everyone is quiet.", "The teacher asked that everyone be quiet.", "The teacher asked that everyone was quiet.", "The teacher asked that everyone being quiet."],
+        "answer": "The teacher asked that everyone be quiet.",
+        "explanation": "The subjunctive mood uses the base form of the verb (be) after expressions like 'asked that', 'demanded that' or 'suggested that'. It is used for wishes, demands and suggestions."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What tense is used in this sentence? 'The fox was creeping through the garden when the dog spotted it.'",
+        "options": ["Simple past", "Past progressive", "Present progressive", "Past perfect"],
+        "answer": "Past progressive",
+        "explanation": "The past progressive tense ('was creeping') describes an action that was ongoing in the past. Here it was interrupted by another past action ('the dog spotted it')."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly changes 'I play tennis' into the present perfect tense?",
+        "options": ["I played tennis.", "I am playing tennis.", "I have played tennis.", "I will play tennis."],
+        "answer": "I have played tennis.",
+        "explanation": "The present perfect tense is formed with 'have' or 'has' plus the past participle. 'I have played tennis' shows that the action has been completed at some point up to now."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which modal verb completes this sentence to express a conditional? 'If you practised every day, you ______ become a better swimmer.'",
+        "options": ["will", "would", "can", "shall"],
+        "answer": "would",
+        "explanation": "'Would' is the correct modal verb for conditional sentences that describe imaginary or unlikely situations. 'If you practised... you would become...' follows the standard conditional pattern."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence shows the correct use of 'could' to talk about past ability?",
+        "options": ["I could ride a bicycle when I was five.", "I could ride a bicycle tomorrow.", "I could to ride a bicycle.", "I could riding a bicycle."],
+        "answer": "I could ride a bicycle when I was five.",
+        "explanation": "'Could' is the past tense of 'can' and is used to describe an ability someone had in the past. It is followed by the base form of the verb (ride), not 'to ride' or 'riding'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read this passage: 'The Romans invaded Britain in AD 43. They built roads and towns. Many people had lived in small settlements before the Romans arrived.' Which tense is 'had lived' written in?",
+        "options": ["Simple past", "Present perfect", "Past progressive", "Past perfect"],
+        "answer": "Past perfect",
+        "explanation": "'Had lived' is the past perfect tense. It uses 'had' plus the past participle 'lived' to show that the living in small settlements happened before the Romans arrived — an earlier action in the past."
+    }
+]

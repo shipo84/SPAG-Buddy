@@ -1,0 +1,107 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly uses brackets for parenthesis? (1 mark)",
+        "options": ["The tallest mountain (in the world is) Mount Everest.", "The tallest mountain in the world (Mount Everest) is in Asia.", "The tallest (mountain in the world Mount Everest) is in Asia.", "(The tallest mountain) in the world Mount Everest is in Asia."],
+        "answer": "The tallest mountain in the world (Mount Everest) is in Asia.",
+        "explanation": "Brackets are used to add extra information (parenthesis) that could be removed without changing the meaning of the sentence. 'Mount Everest' is additional information. Without it, the sentence still makes sense: 'The tallest mountain in the world is in Asia.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly uses dashes for parenthesis? (1 mark)",
+        "options": ["The school hall \u2013 which was built last year \u2013 can hold three hundred people.", "The school hall which was \u2013 built last year \u2013 can hold three hundred people.", "The school \u2013 hall which was built last year can \u2013 hold three hundred people.", "The school hall which was built \u2013 last year can hold \u2013 three hundred people."],
+        "answer": "The school hall \u2013 which was built last year \u2013 can hold three hundred people.",
+        "explanation": "A pair of dashes is used to separate the extra information 'which was built last year' from the rest of the sentence. The sentence still makes sense without it: 'The school hall can hold three hundred people.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly uses commas for parenthesis? (1 mark)",
+        "options": ["My sister, who is eight years old, goes to the school down the road.", "My sister who is, eight years old, goes to the school down the road.", "My, sister who is eight years old, goes to the school down the road.", "My sister who is eight years old, goes to the school, down the road."],
+        "answer": "My sister, who is eight years old, goes to the school down the road.",
+        "explanation": "'Who is eight years old' is extra information about 'my sister'. A pair of commas is used to separate this parenthetical information. The sentence still makes sense without it: 'My sister goes to the school down the road.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the parenthetical information in this sentence?\nThe blue whale, the largest animal on Earth, can weigh up to 150 tonnes. (1 mark)",
+        "options": ["The blue whale", "the largest animal on Earth", "can weigh up to 150 tonnes", "The blue whale can weigh"],
+        "answer": "the largest animal on Earth",
+        "explanation": "'The largest animal on Earth' is the parenthetical information. It is separated by commas and provides extra detail about the blue whale. If you remove it, the sentence still makes complete sense: 'The blue whale can weigh up to 150 tonnes.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which punctuation marks can all be used to show parenthesis? (1 mark)",
+        "options": ["Full stops, commas and exclamation marks.", "Brackets, dashes and commas.", "Speech marks, brackets and dashes.", "Colons, semicolons and commas."],
+        "answer": "Brackets, dashes and commas.",
+        "explanation": "Parenthesis (extra information that could be removed) can be shown using three types of punctuation: brackets ( ), dashes \u2013 \u2013, or commas , ,. Each uses a pair of marks around the extra information."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read the sentence below.\nThe goalkeeper (who had only joined the team last week) made a brilliant save.\nWhich words are the parenthesis? (1 mark)",
+        "options": ["The goalkeeper", "made a brilliant save", "who had only joined the team last week", "a brilliant save"],
+        "answer": "who had only joined the team last week",
+        "explanation": "The words inside the brackets are the parenthesis. They give extra information about the goalkeeper. The main sentence is: 'The goalkeeper made a brilliant save.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses dashes correctly to add extra information? (1 mark)",
+        "options": ["Our class pet \u2013 a hamster called Biscuit \u2013 escaped from its cage.", "Our class \u2013 pet a hamster called \u2013 Biscuit escaped from its cage.", "Our class pet a hamster \u2013 called Biscuit escaped \u2013 from its cage.", "Our \u2013 class pet a hamster called Biscuit \u2013 escaped from its cage."],
+        "answer": "Our class pet \u2013 a hamster called Biscuit \u2013 escaped from its cage.",
+        "explanation": "'A hamster called Biscuit' is extra information about the class pet, enclosed between two dashes. The main sentence without this information is: 'Our class pet escaped from its cage.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Rewrite the sentence using brackets instead of commas for the parenthesis.\nThe school trip, which takes place on Friday, will visit the science museum.\nWhich option is correct? (1 mark)",
+        "options": ["The school trip (which takes place on Friday) will visit the science museum.", "The school trip which takes place (on Friday) will visit the science museum.", "(The school trip) which takes place on Friday will visit the science museum.", "The school trip which takes place on Friday (will visit the science museum)."],
+        "answer": "The school trip (which takes place on Friday) will visit the science museum.",
+        "explanation": "The parenthetical information 'which takes place on Friday' was previously enclosed by commas. To use brackets instead, simply replace the commas with brackets around the same words. The meaning stays the same."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence does NOT contain parenthesis? (1 mark)",
+        "options": ["My best friend, Olivia, lives next door to me.", "The park \u2013 near the river \u2013 has a new playground.", "The children played happily in the garden.", "The Romans (who invaded in AD 43) built many roads."],
+        "answer": "The children played happily in the garden.",
+        "explanation": "This sentence contains no extra information set apart by commas, dashes or brackets. The other three sentences all contain parenthetical information: 'Olivia', 'near the river', and 'who invaded in AD 43'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Where should the brackets go in this sentence to show parenthesis?\nMy dog a golden retriever loves swimming in the lake. (1 mark)",
+        "options": ["(My dog) a golden retriever loves swimming in the lake.", "My dog (a golden retriever) loves swimming in the lake.", "My dog a golden retriever (loves swimming) in the lake.", "My dog a golden retriever loves (swimming in the lake)."],
+        "answer": "My dog (a golden retriever) loves swimming in the lake.",
+        "explanation": "'A golden retriever' is extra information telling us what type of dog it is. Brackets go around this parenthetical information. The main sentence is: 'My dog loves swimming in the lake.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "If you remove the parenthesis from the sentence below, what remains?\nThe art teacher, Mrs Patel, has organised an exhibition.\n(1 mark)",
+        "options": ["The art teacher has organised.", "Mrs Patel has organised an exhibition.", "The art teacher has organised an exhibition.", "The art teacher Mrs Patel."],
+        "answer": "The art teacher has organised an exhibition.",
+        "explanation": "'Mrs Patel' is the parenthetical information (separated by commas). When you remove it, the remaining sentence must still make complete grammatical sense: 'The art teacher has organised an exhibition.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses commas for parenthesis correctly? (1 mark)",
+        "options": ["The match, despite the terrible weather was very exciting.", "The match despite the terrible weather, was very exciting.", "The match, despite the terrible weather, was very exciting.", "The, match despite the terrible weather, was very exciting."],
+        "answer": "The match, despite the terrible weather, was very exciting.",
+        "explanation": "'Despite the terrible weather' is extra information that interrupts the main sentence. It needs a comma on each side to show it is parenthetical. The main sentence is: 'The match was very exciting.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which pair of punctuation marks would be most suitable for the parenthesis in a formal report?\nThe experiment results (see table 3) show a clear pattern. (1 mark)",
+        "options": ["Commas, because they are always the best choice.", "Dashes, because formal writing needs dashes.", "Brackets, because they are best for short, factual asides in formal writing.", "Speech marks, because the information is being quoted."],
+        "answer": "Brackets, because they are best for short, factual asides in formal writing.",
+        "explanation": "Brackets are often the best choice for short, factual extra information \u2013 particularly in formal or technical writing such as reports. 'See table 3' is a brief aside directing the reader, making brackets the most suitable choice."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How many of the sentences below contain parenthesis?\nA) The train \u2013 which was delayed by thirty minutes \u2013 finally arrived.\nB) We went to the shops and bought some bread.\nC) My cousin (who lives in Scotland) came to visit.\nD) The children, tired after the long walk, sat down to rest.\n(1 mark)",
+        "options": ["One", "Two", "Three", "Four"],
+        "answer": "Three",
+        "explanation": "Sentences A, C and D all contain parenthesis. Sentence A uses dashes ('which was delayed by thirty minutes'), sentence C uses brackets ('who lives in Scotland'), and sentence D uses commas ('tired after the long walk'). Sentence B does not contain any parenthetical information."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly uses dashes for parenthesis instead of the commas?\nThe library, open every day except Sunday, has over ten thousand books. (1 mark)",
+        "options": ["The library \u2013 open every day except Sunday \u2013 has over ten thousand books.", "The library open \u2013 every day except Sunday has \u2013 over ten thousand books.", "The library open every day \u2013 except Sunday \u2013 has over ten thousand books.", "\u2013 The library open every day except Sunday \u2013 has over ten thousand books."],
+        "answer": "The library \u2013 open every day except Sunday \u2013 has over ten thousand books.",
+        "explanation": "The parenthetical information is 'open every day except Sunday'. To replace the commas with dashes, place the dashes in exactly the same positions \u2013 before and after the extra information. The meaning does not change."
+    }
+]

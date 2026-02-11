@@ -1,0 +1,67 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which vowel team makes the long 'e' sound in 'team'?",
+    "Options": ["ea", "ee", "ie", "ei"],
+    "Answer": "ea",
+    "Explanation": "The digraph 'ea' can make the long 'e' sound as in team, read, and sea."
+  },
+  {
+    "QuestionType": "FillInTheBlank",
+    "Question": "The b__t sailed across the lake. (long 'o' sound)",
+    "Answer": "boat",
+    "Explanation": "The digraph 'oa' makes the long 'o' sound in boat, coat, and road."
+  },
+  {
+    "QuestionType": "TrueFalse",
+    "Question": "The 'igh' in 'night' is a digraph.",
+    "Answer": "False",
+    "Explanation": "'igh' is a trigraph (three letters making one sound - long 'i')."
+  },
+  {
+    "QuestionType": "SpellTheWord",
+    "Question": "Spell the word that means 'not heavy' using the 'igh' pattern.",
+    "Answer": "light",
+    "Explanation": "Light uses the trigraph 'igh' for the long 'i' sound."
+  },
+  {
+    "QuestionType": "IdentifyTheSound",
+    "Question": "What sound does 'ow' make in 'snow'?",
+    "Options": ["long o", "ow as in cow", "short o", "oo"],
+    "Answer": "long o",
+    "Explanation": "'ow' can make two sounds: long 'o' (snow, grow) or 'ow' (cow, now)."
+  },
+  {
+    "QuestionType": "CompleteTheSentence",
+    "Question": "I ate a piece of br__d. (vowel digraph)",
+    "Answer": "bread",
+    "Explanation": "'ea' in bread makes the short 'e' sound (exception to the usual long sound)."
+  },
+  {
+    "QuestionType": "PatternRecognition",
+    "Question": "Which word doesn't follow the pattern?",
+    "Options": ["rain", "train", "chain", "said"],
+    "Answer": "said",
+    "Explanation": "In 'said', 'ai' makes a short 'e' sound, not the usual long 'a'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which trigraph makes the 'air' sound?",
+    "Options": ["are", "ear", "air", "All of the above"],
+    "Answer": "All of the above",
+    "Explanation": "Care, bear, and hair all have different spellings for the 'air' sound."
+  },
+  {
+    "QuestionType": "SortBySound",
+    "Question": "Which group has the same vowel sound?",
+    "Options": ["moon, book, foot", "blue, true, flew", "head, bead, lead", "out, soup, touch"],
+    "Answer": "blue, true, flew",
+    "Explanation": "Blue (ue), true (ue), and flew (ew) all have the long 'oo' sound."
+  },
+  {
+    "QuestionType": "CreateWords",
+    "Question": "List three different ways to spell the long 'a' sound.",
+    "Answer": "ai (rain), ay (play), a-e (make)",
+    "Explanation": "Long 'a' can be spelled with digraphs (ai, ay) or split digraph (a-e)."
+  }
+]

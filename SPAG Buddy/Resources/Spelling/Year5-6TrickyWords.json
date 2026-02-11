@@ -1,0 +1,142 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'inner sense of right and wrong'.",
+    "Options": ["conscience", "concience", "consience", "conshience"],
+    "Answer": "conscience",
+    "Explanation": "Conscience: con-science. It contains the word 'science' within it."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'badly behaved or playful'.",
+    "Options": ["mischievous", "mischevious", "mischevous", "mischievious"],
+    "Answer": "mischievous",
+    "Explanation": "Mischievous: mis-chie-vous. Note: there is NO 'i' after the 'v'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'at once, without delay'.",
+    "Options": ["immediately", "immediatly", "imediately", "immedietely"],
+    "Answer": "immediately",
+    "Explanation": "Immediately: im-me-di-ate-ly. Remember the word 'immediate' + ly."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'to show the way'.",
+    "Options": ["guide", "gide", "guied", "guyde"],
+    "Answer": "guide",
+    "Explanation": "Guide: g-u-i-d-e. The 'u' after 'g' keeps the hard /g/ sound before 'i'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'to overstate or make larger than reality'.",
+    "Options": ["exaggerate", "exagerate", "exaggeratte", "exadgerate"],
+    "Answer": "exaggerate",
+    "Explanation": "Exaggerate: ex-ag-ger-ate. Double 'g' in the middle."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'to identify or acknowledge'.",
+    "Options": ["recognise", "reconise", "recoginse", "recongnise"],
+    "Answer": "recognise",
+    "Explanation": "Recognise: re-cog-nise. The 'g' is silent but must be included."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'a special right or advantage'.",
+    "Options": ["privilege", "priviledge", "privelege", "privlege"],
+    "Answer": "privilege",
+    "Explanation": "Privilege: priv-i-lege. Note: no 'd' and the ending is '-lege' not '-ledge'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'to ease pain or worry'.",
+    "Options": ["relieve", "releive", "releve", "releave"],
+    "Answer": "relieve",
+    "Explanation": "Relieve: re-lieve. 'I before e' rule applies here (not after c)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'a promise or assurance'.",
+    "Options": ["guarantee", "guarentee", "garantee", "gaurantee"],
+    "Answer": "guarantee",
+    "Explanation": "Guarantee: gua-ran-tee. The 'u' after 'g' keeps the hard /g/ sound."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'a medieval warrior'.",
+    "Options": ["knight", "knite", "nnight", "knight"],
+    "Answer": "knight",
+    "Explanation": "Knight: k-n-i-g-h-t. The 'k' is silent. Don't confuse with 'night'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'happened or took place'.",
+    "Options": ["occurred", "occured", "ocurred", "ocured"],
+    "Answer": "occurred",
+    "Explanation": "Occurred: oc-curred. Double 'c' and double 'r'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'owned or controlled by'.",
+    "Options": ["possessed", "posessed", "possesed", "posesed"],
+    "Answer": "possessed",
+    "Explanation": "Possessed: pos-sessed. Double 's' appears twice: pos-sess-ed."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'degree of heat or cold'.",
+    "Options": ["temperature", "temprature", "temperture", "temperachure"],
+    "Answer": "temperature",
+    "Explanation": "Temperature: tem-per-a-ture. Remember: temper + a + ture."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'a non-commissioned military rank'.",
+    "Options": ["sergeant", "sargeant", "seargent", "sergant"],
+    "Answer": "sergeant",
+    "Explanation": "Sergeant: ser-geant. The unusual 'ea' in the second syllable makes this tricky."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'a space with no air'.",
+    "Options": ["vacuum", "vaccum", "vacuem", "vaccuum"],
+    "Answer": "vacuum",
+    "Explanation": "Vacuum: vac-u-um. One 'c' and double 'u'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the musical instrument played with a bow.",
+    "Options": ["cello", "chello", "ciello", "celo"],
+    "Answer": "cello",
+    "Explanation": "Cello: cel-lo. The 'c' before 'e' makes a /ch/ sound (Italian origin)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'strange or uncanny'.",
+    "Options": ["weird", "wierd", "werid", "weerd"],
+    "Answer": "weird",
+    "Explanation": "Weird: w-e-i-r-d. An exception to the 'i before e' rule."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'deliberately cruel'.",
+    "Options": ["vicious", "viscious", "visious", "vishous"],
+    "Answer": "vicious",
+    "Explanation": "Vicious: vi-cious. The '-cious' ending makes the /shus/ sound."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the cutting tool.",
+    "Options": ["scissors", "sissors", "scisors", "scissers"],
+    "Answer": "scissors",
+    "Explanation": "Scissors: scis-sors. The 'sc' at the start and double 's' in the middle."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word meaning 'a feeling of sadness when hopes are not met'.",
+    "Options": ["disappointment", "disapointment", "dissapointment", "disappointmant"],
+    "Answer": "disappointment",
+    "Explanation": "Disappointment: dis-ap-point-ment. One 's', two 'p's, and '-ment' ending."
+  }
+]

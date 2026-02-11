@@ -1,0 +1,78 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses commas in a list correctly? (1 mark)",
+        "options": ["I bought apples oranges bananas and grapes.", "I bought apples, oranges, bananas, and grapes.", "I bought apples, oranges, bananas and grapes.", "I bought, apples, oranges, bananas and grapes."],
+        "answer": "I bought apples, oranges, bananas and grapes.",
+        "explanation": "In British English, commas separate items in a list but a comma before 'and' (the Oxford comma) is generally not used."
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add the missing commas to this sentence: The old dark dusty attic was full of boxes bags and broken furniture. (2 marks)",
+        "answer": "The old, dark, dusty attic was full of boxes, bags and broken furniture.",
+        "explanation": "Commas separate the adjectives (old, dark, dusty) and the items in the list (boxes, bags and broken furniture)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How many commas are needed in this sentence? She packed her toothbrush pyjamas a book her teddy bear and a torch. (1 mark)",
+        "options": ["Two", "Three", "Four", "Five"],
+        "answer": "Four",
+        "explanation": "She packed her toothbrush, pyjamas, a book, her teddy bear and a torch. Four commas separate five items."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence with the correct commas: The flag was red white and blue. (1 mark)",
+        "answer": "The flag was red, white and blue.",
+        "explanation": "Commas separate the colours in the list, with no comma needed before 'and' in standard British English."
+    },
+    {
+        "type": "true_false",
+        "question": "You always need a comma before 'and' in a list. (1 mark)",
+        "answer": "False",
+        "explanation": "In British English, the comma before 'and' (called the Oxford comma) is not normally required, though it may be used for clarity."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Identify the comma error in this sentence: My favourite subjects are maths, science art, and English. (1 mark)",
+        "answer": "There is a missing comma after 'science' and an unnecessary comma after 'art'. Correct: My favourite subjects are maths, science, art and English.",
+        "explanation": "Each item in the list needs to be separated by a comma consistently."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a sentence that contains a list of four things you might see at the seaside, using commas correctly. (1 mark)",
+        "answer": "Example: At the seaside, I saw seagulls, sandcastles, rock pools and ice cream vans.",
+        "explanation": "Accept any grammatically correct sentence with four items separated by commas."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses commas correctly to list adjectives? (1 mark)",
+        "options": ["She wore a long, red, velvet, dress.", "She wore a long, red, velvet dress.", "She wore a long red, velvet dress.", "She wore a, long, red, velvet dress."],
+        "answer": "She wore a long, red, velvet dress.",
+        "explanation": "Commas separate the adjectives but there is no comma between the last adjective and the noun."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add the missing commas to this passage: For the school play we need costumes props scenery music and lighting. The costumes include hats cloaks masks and wigs. (3 marks)",
+        "answer": "For the school play we need costumes, props, scenery, music and lighting. The costumes include hats, cloaks, masks and wigs.",
+        "explanation": "Commas separate each item in the two lists."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In which sentence are commas used to separate items in a list? (1 mark)",
+        "options": ["However, the bus was late.", "My brother, who is ten, likes football.", "We need glue, scissors, paper and card.", "After the show, we went home."],
+        "answer": "We need glue, scissors, paper and card.",
+        "explanation": "This is the only sentence where commas are separating items in a list. The other sentences use commas for different purposes."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence so the list is punctuated correctly: In my pencil case I have a rubber and a ruler and a pen and a pencil and a sharpener. (1 mark)",
+        "answer": "In my pencil case I have a rubber, a ruler, a pen, a pencil and a sharpener.",
+        "explanation": "Use commas to separate items in a list instead of repeating 'and'. Keep 'and' before the final item."
+    },
+    {
+        "type": "explain",
+        "question": "Explain why commas are important when writing a list in a sentence. (2 marks)",
+        "answer": "Commas are important in lists because they separate each item clearly, making the sentence easier to read and understand. Without commas, the reader might not know where one item ends and the next begins.",
+        "explanation": "Award 1 mark for mentioning clarity/readability, 1 mark for explaining that commas show where items are separated."
+    }
+]

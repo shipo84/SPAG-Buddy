@@ -1,0 +1,117 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence should end with an exclamation mark? (1 mark)",
+        "options": ["What time is it", "I went to the shop", "What a beautiful sunset", "The cat sat on the mat"],
+        "answer": "What a beautiful sunset",
+        "explanation": "'What a beautiful sunset!' is an exclamation that expresses strong emotion or surprise."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is a command that could end with an exclamation mark? (1 mark)",
+        "options": ["Please pass the salt.", "Stop right there!", "I like cheese.", "Where are you going?"],
+        "answer": "Stop right there!",
+        "explanation": "Commands that are urgent or forceful can end with an exclamation mark to show emphasis."
+    },
+    {
+        "type": "true_false",
+        "question": "You should use lots of exclamation marks in formal writing. (1 mark)",
+        "answer": "False",
+        "explanation": "Exclamation marks should be used sparingly, especially in formal writing. Overuse weakens their impact."
+    },
+    {
+        "type": "identify_errors",
+        "question": "What is wrong with the punctuation in this sentence? I went to the shops! and bought some milk! (1 mark)",
+        "answer": "Neither sentence expresses strong emotion or is a command, so full stops should be used instead of exclamation marks. Correct: I went to the shops and bought some milk.",
+        "explanation": "Exclamation marks are only for sentences that express strong emotion, surprise, or forceful commands."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "An exclamation sentence must begin with which words? (1 mark)",
+        "options": ["Who or where", "What or how", "When or why", "If or because"],
+        "answer": "What or how",
+        "explanation": "Exclamation sentences begin with 'What' or 'How' and contain a verb (e.g. 'What a mess you have made!' or 'How clever she is!')."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this statement as an exclamation: The weather is terrible today. (1 mark)",
+        "answer": "What terrible weather it is today!",
+        "explanation": "An exclamation sentence begins with 'What' or 'How' and ends with an exclamation mark."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is a correctly punctuated exclamation sentence? (1 mark)",
+        "options": ["What a lovely day it is!", "What a lovely day it is.", "What a lovely day it is?", "Lovely day!"],
+        "answer": "What a lovely day it is!",
+        "explanation": "An exclamation sentence starts with 'What' or 'How', contains a subject and a verb, and ends with an exclamation mark."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write an exclamation sentence that begins with 'How'. (1 mark)",
+        "answer": "Example: How wonderful the fireworks were!",
+        "explanation": "The sentence must start with 'How', contain a subject and verb, and end with an exclamation mark."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses an exclamation mark correctly? (1 mark)",
+        "options": ["I like pizza!", "Help! The building is on fire!", "She has brown hair!", "The bus comes at three!"],
+        "answer": "Help! The building is on fire!",
+        "explanation": "This shows genuine urgency and strong emotion. The other sentences are simple statements that should end with full stops."
+    },
+    {
+        "type": "sort_words",
+        "question": "Sort these sentences into two groups - needs an exclamation mark and needs a full stop: 'What a disaster that was', 'I had toast for breakfast', 'Watch out for that car', 'She walked to school', 'How amazing this is', 'The book was interesting' (2 marks)",
+        "answer": "Needs an exclamation mark: 'What a disaster that was!', 'Watch out for that car!', 'How amazing this is!' Needs a full stop: 'I had toast for breakfast.', 'She walked to school.', 'The book was interesting.'",
+        "explanation": "Exclamations (What/How sentences) and urgent commands need exclamation marks. Ordinary statements need full stops."
+    },
+    {
+        "type": "explain",
+        "question": "Explain the difference between these two sentences: 'Run.' and 'Run!' (1 mark)",
+        "answer": "'Run.' is a calm instruction or gentle command. 'Run!' is an urgent, forceful command suggesting danger or excitement.",
+        "explanation": "The exclamation mark adds urgency, force, or strong emotion to the command."
+    },
+    {
+        "type": "true_false",
+        "question": "'Wow' is an interjection that should be followed by an exclamation mark. (1 mark)",
+        "answer": "True",
+        "explanation": "Interjections like 'Wow!', 'Ouch!', 'Hooray!' express sudden emotion and are followed by exclamation marks."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How many exclamation marks should you use at the end of a sentence in formal writing? (1 mark)",
+        "options": ["As many as you like", "At most one", "At least two", "Three"],
+        "answer": "At most one",
+        "explanation": "Only one exclamation mark should be used. Using multiple (e.g. '!!!') is not appropriate in formal writing."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence as an exclamation beginning with 'What': She has such big eyes. (1 mark)",
+        "answer": "What big eyes she has!",
+        "explanation": "The exclamation sentence starts with 'What', includes the subject and verb, and ends with an exclamation mark."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Circle the sentence that incorrectly uses an exclamation mark: A) Ouch! That hurt! B) How tall you have grown! C) I went to school today! D) Stop that immediately! (1 mark)",
+        "answer": "C) I went to school today!",
+        "explanation": "'I went to school today' is a simple statement with no strong emotion, so it should end with a full stop."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add the correct end punctuation (full stops, exclamation marks, or question marks) to this passage: What a terrible storm it was_ The wind howled all night_ Did you hear it_ Luckily, nobody was hurt_ How relieved we all were_ (3 marks)",
+        "answer": "What a terrible storm it was! The wind howled all night. Did you hear it? Luckily, nobody was hurt. How relieved we all were!",
+        "explanation": "Exclamation marks for exclamation sentences (What.../How...), a question mark for the question, and full stops for statements."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which pair of sentences both need exclamation marks? (1 mark)",
+        "options": ["'Hello.' and 'Goodbye.'", "'What a goal!' and 'How exciting!'", "'I like cats.' and 'Dogs are nice.'", "'Where is it?' and 'When is lunch?'"],
+        "answer": "'What a goal!' and 'How exciting!'",
+        "explanation": "Both are exclamation sentences (starting with 'What' and 'How') expressing strong feeling."
+    },
+    {
+        "type": "explain",
+        "question": "Why is it important not to overuse exclamation marks in your writing? (2 marks)",
+        "answer": "Overusing exclamation marks makes writing seem informal or exaggerated. It also reduces the impact of genuine exclamations - if everything has an exclamation mark, nothing feels special or urgent.",
+        "explanation": "Award 1 mark for mentioning informality/exaggeration, 1 mark for explaining that overuse reduces impact."
+    }
+]

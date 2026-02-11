@@ -1,0 +1,191 @@
+[
+    {
+        "type": "identify_adverbs",
+        "question": "Circle all the adverbs in this sentence: 'The cat quickly and silently crept towards the mouse.' (2 marks)",
+        "answer": "quickly, silently",
+        "explanation": "Adverbs modify verbs, adjectives, or other adverbs. 'Quickly' and 'silently' both describe how the cat crept."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What does an adverb do? (1 mark)",
+        "options": ["Describes a noun", "Replaces a noun", "Modifies a verb, adjective, or another adverb", "Joins two sentences together"],
+        "answer": "Modifies a verb, adjective, or another adverb",
+        "explanation": "Adverbs tell us how, when, where, or how often something happens. They modify verbs, adjectives, or other adverbs."
+    },
+    {
+        "type": "identify_adverb_type",
+        "question": "Identify whether each adverb is one of manner, time, place, or frequency: (4 marks)\na) yesterday\nb) carefully\nc) everywhere\nd) often",
+        "answer": "a) time  b) manner  c) place  d) frequency",
+        "explanation": "Manner = how, time = when, place = where, frequency = how often."
+    },
+    {
+        "type": "form_adverbs",
+        "question": "Form adverbs from these adjectives: (4 marks)\na) gentle\nb) happy\nc) careful\nd) easy",
+        "answer": "a) gently  b) happily  c) carefully  d) easily",
+        "explanation": "Most adverbs are formed by adding '-ly' to adjectives. If the adjective ends in 'y', change it to 'i' before adding '-ly'. If it ends in 'le', change to '-ly'."
+    },
+    {
+        "type": "fill_in_blank",
+        "question": "Complete each sentence with a suitable adverb: (3 marks)\na) The tortoise moved _______ across the road.\nb) She will arrive _______.\nc) The children played _______.",
+        "answer": "a) slowly  b) soon/tomorrow/later  c) happily/outside/together",
+        "explanation": "Choose adverbs that make sense in context: manner for how, time for when, place for where."
+    },
+    {
+        "type": "adjective_or_adverb",
+        "question": "Choose the correct word for each sentence: (3 marks)\na) She sings (beautiful/beautifully).\nb) The soup tastes (delicious/deliciously).\nc) He ran (quick/quickly) to the shop.",
+        "answer": "a) beautifully (adverb - describes how she sings)  b) delicious (adjective - after a linking verb)  c) quickly (adverb - describes how he ran)",
+        "explanation": "Use adverbs to describe actions (verbs) and adjectives after linking verbs (is, seems, tastes, looks)."
+    },
+    {
+        "type": "identify_adverbs",
+        "question": "Underline the adverbs in this passage: 'Tom eagerly opened the door. Outside, it was snowing heavily. He immediately grabbed his coat and ran excitedly into the garden.' (4 marks)",
+        "answer": "eagerly, outside, heavily, immediately, excitedly",
+        "explanation": "Eagerly (manner), outside (place), heavily (manner), immediately (time), excitedly (manner)."
+    },
+    {
+        "type": "adverb_position",
+        "question": "Where should the adverb go in this sentence? Rewrite correctly: (1 mark)\n'She has been to France.' (never)",
+        "answer": "She has never been to France.",
+        "explanation": "Frequency adverbs like 'never' usually go before the main verb but after auxiliary verbs like 'has'."
+    },
+    {
+        "type": "true_false",
+        "question": "All adverbs end in '-ly'. (1 mark)",
+        "answer": "False",
+        "explanation": "Many common adverbs do not end in '-ly': fast, well, very, always, never, here, there, soon, often, quite."
+    },
+    {
+        "type": "replace_with_adverb",
+        "question": "Replace the underlined phrase with a single adverb: (3 marks)\na) She spoke in a quiet voice.\nb) He comes to school at all times.\nc) They finished the work in a quick manner.",
+        "answer": "a) quietly  b) always  c) quickly",
+        "explanation": "Adverbs can replace longer phrases to make writing more concise."
+    },
+    {
+        "type": "comparative_adverbs",
+        "question": "Complete these comparative and superlative adverb forms: (3 marks)\na) fast → _______ → fastest\nb) carefully → more carefully → _______\nc) well → _______ → best",
+        "answer": "a) faster  b) most carefully  c) better",
+        "explanation": "Short adverbs add -er/-est. Longer adverbs use more/most. Some are irregular (well → better → best)."
+    },
+    {
+        "type": "adverbial_phrases",
+        "question": "Identify the adverbial phrase in each sentence: (3 marks)\na) The fox crept through the hedge with great caution.\nb) After the storm, the sun came out.\nc) She practised the piano every single day.",
+        "answer": "a) with great caution  b) After the storm  c) every single day",
+        "explanation": "Adverbial phrases are groups of words that do the job of an adverb, telling us how, when, or where."
+    },
+    {
+        "type": "sentence_improvement",
+        "question": "Improve these sentences by adding suitable adverbs: (3 marks)\na) The baby cried.\nb) The train arrived.\nc) She completed the test.",
+        "answer": "Example: a) The baby cried loudly.  b) The train arrived late.  c) She completed the test quickly.",
+        "explanation": "Adverbs add detail and interest to writing by telling the reader more about how, when, or where something happened."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In the sentence 'She is extremely talented', what does the adverb 'extremely' modify? (1 mark)",
+        "options": ["The verb 'is'", "The noun 'She'", "The adjective 'talented'", "The whole sentence"],
+        "answer": "The adjective 'talented'",
+        "explanation": "Adverbs can modify adjectives too. 'Extremely' tells us how talented she is."
+    },
+    {
+        "type": "fronted_adverbials",
+        "question": "Add a fronted adverbial to each sentence and punctuate correctly: (3 marks)\na) _______ the children ran inside.\nb) _______ she finished her homework.\nc) _______ the dog began to bark.",
+        "answer": "Example: a) Suddenly, the children ran inside.  b) After dinner, she finished her homework.  c) Without warning, the dog began to bark.",
+        "explanation": "Fronted adverbials come at the start of a sentence and are followed by a comma."
+    },
+    {
+        "type": "error_correction",
+        "question": "Find and correct the adverb errors: (3 marks)\na) She sang real good at the concert.\nb) He don't never listen to me.\nc) The car drove slow down the road.",
+        "answer": "a) She sang really well at the concert.  b) He doesn't ever listen to me. (or He never listens to me.)  c) The car drove slowly down the road.",
+        "explanation": "a) 'Real' should be 'really' (adverb) and 'good' should be 'well'. b) Avoid double negatives. c) 'Slow' should be 'slowly' (adverb form)."
+    },
+    {
+        "type": "sort_adverbs",
+        "question": "Sort these adverbs into the correct categories: (4 marks)\nAdverbs: tomorrow, gently, upstairs, sometimes, yesterday, neatly, outside, rarely\nCategories: Manner, Time, Place, Frequency",
+        "answer": "Manner: gently, neatly | Time: tomorrow, yesterday | Place: upstairs, outside | Frequency: sometimes, rarely",
+        "explanation": "Manner = how something is done, Time = when, Place = where, Frequency = how often."
+    },
+    {
+        "type": "relative_adverbs",
+        "question": "Choose the correct relative adverb (where, when, why) to complete each sentence: (3 marks)\na) This is the park _______ we play football.\nb) I remember the day _______ we first met.\nc) Do you know the reason _______ she left early?",
+        "answer": "a) where  b) when  c) why",
+        "explanation": "Relative adverbs introduce relative clauses: 'where' for places, 'when' for times, 'why' for reasons."
+    },
+    {
+        "type": "identify_function",
+        "question": "What question does each underlined adverb answer? (how, when, where, how often) (4 marks)\na) She visits her grandmother weekly.\nb) The bird flew away.\nc) He carefully opened the box.\nd) The letter arrived yesterday.",
+        "answer": "a) how often  b) where  c) how  d) when",
+        "explanation": "Adverbs answer the questions: how? (manner), when? (time), where? (place), how often? (frequency)."
+    },
+    {
+        "type": "adverb_or_adjective",
+        "question": "Is the underlined word an adjective or an adverb? (4 marks)\na) She gave a friendly wave.\nb) The car moved fast.\nc) He is a fast runner.\nd) She works hard every day.",
+        "answer": "a) adjective (describes 'wave')  b) adverb (describes how the car moved)  c) adjective (describes 'runner')  d) adverb (describes how she works)",
+        "explanation": "Some words like 'fast' and 'hard' can be both adjectives and adverbs depending on their role in the sentence."
+    },
+    {
+        "type": "degree_adverbs",
+        "question": "Choose the correct degree adverb to complete each sentence: (3 marks)\nOptions: very, quite, almost, too, enough, rather\na) The water is _______ hot to drink.\nb) She was _______ pleased with her results.\nc) He _______ finished the race before collapsing.",
+        "answer": "a) too  b) quite/rather/very  c) almost",
+        "explanation": "Degree adverbs modify adjectives or other adverbs to show intensity or extent."
+    },
+    {
+        "type": "rewrite_with_adverbs",
+        "question": "Rewrite each sentence moving the adverb to a different position. Does the meaning change? (3 marks)\na) She only eats vegetables.\nb) Slowly, the door opened.\nc) He always arrives on time.",
+        "answer": "a) She eats only vegetables. (meaning slightly changes - emphasis shifts)  b) The door opened slowly. (same meaning, different emphasis)  c) He arrives on time always. (same meaning but sounds less natural)",
+        "explanation": "Adverb position can change emphasis or meaning. Some positions sound more natural than others."
+    },
+    {
+        "type": "irregular_adverbs",
+        "question": "Write the adverb form of these adjectives: (4 marks)\na) good\nb) fast\nc) hard\nd) late",
+        "answer": "a) well  b) fast  c) hard  d) late",
+        "explanation": "Some adverbs are irregular: good → well. Others stay the same: fast → fast, hard → hard, late → late."
+    },
+    {
+        "type": "adverb_clauses",
+        "question": "Identify the adverb clause in each sentence and say what type it is: (3 marks)\na) She left before the show ended.\nb) He studied hard so that he would pass.\nc) Although it was raining, they went outside.",
+        "answer": "a) before the show ended (time)  b) so that he would pass (reason/purpose)  c) Although it was raining (concession)",
+        "explanation": "Adverb clauses are groups of words containing a subject and verb that function as an adverb."
+    },
+    {
+        "type": "negative_adverbs",
+        "question": "Rewrite these sentences using negative adverbs (never, nowhere, hardly, barely, seldom): (3 marks)\na) She always remembers her homework. (opposite meaning)\nb) He can find his keys in every place. (opposite meaning)\nc) They often go to the cinema. (opposite meaning)",
+        "answer": "a) She never remembers her homework.  b) He can find his keys nowhere. / Nowhere can he find his keys.  c) They seldom go to the cinema.",
+        "explanation": "Negative adverbs reverse the meaning of a sentence. Be careful not to use double negatives."
+    },
+    {
+        "type": "conjunctive_adverbs",
+        "question": "Choose the correct conjunctive adverb to join these sentences: (3 marks)\nOptions: however, therefore, meanwhile, furthermore, consequently\na) It was raining. _______, we took an umbrella.\nb) She studied hard. _______, she did not pass the test.\nc) He enjoys reading. _______, he likes writing stories.",
+        "answer": "a) Therefore/Consequently  b) However  c) Furthermore",
+        "explanation": "Conjunctive adverbs connect ideas between sentences: 'however' shows contrast, 'therefore' shows result, 'furthermore' adds information."
+    },
+    {
+        "type": "spot_the_adverb",
+        "question": "Some of these sentences contain adverbs and some do not. Identify which have adverbs and name them: (4 marks)\na) The tall tree swayed.\nb) The tall tree swayed gently.\nc) She has a beautiful voice.\nd) She sings beautifully.",
+        "answer": "a) No adverb  b) gently (manner)  c) No adverb  d) beautifully (manner)",
+        "explanation": "In (a) 'tall' is an adjective describing the noun 'tree'. In (c) 'beautiful' is an adjective describing 'voice'. Only (b) and (d) contain adverbs modifying verbs."
+    },
+    {
+        "type": "adverb_intensity",
+        "question": "Arrange these adverbs of degree from weakest to strongest: (2 marks)\nslightly, extremely, fairly, very, quite",
+        "answer": "slightly, fairly, quite, very, extremely",
+        "explanation": "Adverbs of degree show different levels of intensity. Knowing the scale helps choose the right word for the meaning you want."
+    },
+    {
+        "type": "writing_task",
+        "question": "Write three sentences about a thunderstorm, each using a different type of adverb (manner, time, place): (3 marks)",
+        "answer": "Example: Manner: The rain fell heavily on the roof. Time: Suddenly, a flash of lightning lit up the sky. Place: The thunder echoed everywhere.",
+        "explanation": "Using different types of adverbs makes writing more detailed and interesting."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses an adverb correctly? (1 mark)",
+        "options": ["She did the test easy.", "She did the test easily.", "She did the test easier.", "She did the test easiest."],
+        "answer": "She did the test easily.",
+        "explanation": "'Easily' is the adverb form of 'easy' and correctly modifies the verb 'did'. 'Easy' is an adjective and cannot modify a verb."
+    },
+    {
+        "type": "challenge",
+        "question": "Explain the difference in meaning between these two sentences: (2 marks)\na) 'She only told him the secret.'\nb) 'She told only him the secret.'",
+        "answer": "a) The only thing she did was tell him - she didn't do anything else with the secret. b) She told him and nobody else - he was the only person she told.",
+        "explanation": "The position of 'only' changes the meaning. In (a) it modifies 'told', in (b) it modifies 'him'. Adverb placement matters!"
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses inverted commas (speech marks) correctly? (1 mark)",
+        "options": ["\"Hello, said Tom.\"", "\"Hello,\" said Tom.", "Hello, \"said Tom.\"", "Hello, said \"Tom.\""],
+        "answer": "\"Hello,\" said Tom.",
+        "explanation": "Inverted commas go around the spoken words only. A comma separates the speech from the reporting clause."
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add the missing inverted commas and punctuation to this sentence: Come here called Mum I have something to show you (2 marks)",
+        "answer": "\"Come here,\" called Mum. \"I have something to show you.\"",
+        "explanation": "Each piece of speech needs inverted commas. A comma goes before the reporting clause, and a full stop after it if more speech follows."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Where does the comma go when writing direct speech? (1 mark)",
+        "options": ["After the inverted commas", "Before the first inverted comma", "Inside the inverted commas, before the closing speech mark", "It doesn't matter where the comma goes"],
+        "answer": "Inside the inverted commas, before the closing speech mark",
+        "explanation": "The comma goes inside the speech marks, separating the spoken words from the reporting clause (e.g. \"Hello,\" she said)."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence with the correct speech punctuation: Can I have some cake asked Lily (1 mark)",
+        "answer": "\"Can I have some cake?\" asked Lily.",
+        "explanation": "The question mark goes inside the inverted commas because the spoken words form a question."
+    },
+    {
+        "type": "true_false",
+        "question": "A new speaker always needs a new line (new paragraph) in a story. (1 mark)",
+        "answer": "True",
+        "explanation": "Each time a different character speaks, a new paragraph should begin. This makes it clear who is talking."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Find and correct the two punctuation errors: \"I love football\" said Jake \"it's my favourite sport.\" (2 marks)",
+        "answer": "\"I love football,\" said Jake. \"It's my favourite sport.\"",
+        "explanation": "A comma is needed after 'football' inside the speech marks. A full stop is needed after 'Jake' because 'It's my favourite sport' is a new sentence of speech."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly punctuates speech that ends with an exclamation mark? (1 mark)",
+        "options": ["\"Watch out!,\" she shouted.", "\"Watch out!\" she shouted.", "\"Watch out\", she shouted!", "\"Watch out\"! she shouted."],
+        "answer": "\"Watch out!\" she shouted.",
+        "explanation": "The exclamation mark goes inside the inverted commas and replaces the comma. No comma is needed after an exclamation mark."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add the missing speech punctuation to this passage: What time does the film start asked Emma. It starts at seven replied Dad. We should leave at half past six. (3 marks)",
+        "answer": "\"What time does the film start?\" asked Emma.\n\"It starts at seven,\" replied Dad. \"We should leave at half past six.\"",
+        "explanation": "Each piece of speech needs inverted commas. Note the question mark for Emma's question and the comma before the reporting clause."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a sentence of direct speech where someone asks a question. Use correct speech punctuation. (1 mark)",
+        "answer": "Example: \"Where are my shoes?\" asked Mum.",
+        "explanation": "The sentence needs inverted commas around the spoken words, a question mark inside the speech marks, and a reporting clause."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the difference between direct and reported (indirect) speech? (1 mark)",
+        "options": ["There is no difference", "Direct speech uses the exact words spoken with inverted commas; reported speech does not", "Reported speech always uses inverted commas", "Direct speech never uses inverted commas"],
+        "answer": "Direct speech uses the exact words spoken with inverted commas; reported speech does not",
+        "explanation": "Direct speech: \"I am tired,\" said Tom. Reported speech: Tom said that he was tired. Only direct speech uses inverted commas."
+    },
+    {
+        "type": "rewrite",
+        "question": "Change this reported speech into direct speech with correct punctuation: Mum told Sam to tidy his room. (1 mark)",
+        "answer": "\"Tidy your room,\" Mum told Sam.",
+        "explanation": "Direct speech uses the exact words spoken, enclosed in inverted commas, with appropriate punctuation."
+    },
+    {
+        "type": "explain",
+        "question": "Explain the three rules you must follow when punctuating direct speech. (3 marks)",
+        "answer": "1. Put inverted commas (speech marks) around the exact words spoken. 2. Use a comma, question mark, or exclamation mark to separate the speech from the reporting clause (the comma or punctuation goes inside the speech marks). 3. Start a new paragraph each time a different person speaks.",
+        "explanation": "Award 1 mark for each correctly explained rule."
+    }
+]

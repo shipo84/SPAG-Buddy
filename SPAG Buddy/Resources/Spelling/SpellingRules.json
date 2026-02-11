@@ -1,0 +1,122 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ing' to 'hope'.",
+    "Prompt": "She was _____ for good weather.",
+    "Options": ["hoping", "hopeing", "hopping", "hopeing"],
+    "Answer": "hoping",
+    "Explanation": "Drop the silent 'e' before adding '-ing' to 'hope'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ed' to 'stop'.",
+    "Prompt": "The car _____ suddenly.",
+    "Options": ["stopped", "stoped", "stopeed", "stopd"],
+    "Answer": "stopped",
+    "Explanation": "Double the final consonant when adding '-ed' to short vowel words like 'stop'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct plural form of 'lady'.",
+    "Prompt": "The three _____ went shopping.",
+    "Options": ["ladies", "ladys", "ladyes", "ladie's"],
+    "Answer": "ladies",
+    "Explanation": "Change 'y' to 'i' and add 'es' when forming plurals of words ending in consonant + y."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ful' to 'beauty'.",
+    "Prompt": "The sunset was _____.",
+    "Options": ["beautiful", "beautyful", "beautifull", "beutiful"],
+    "Answer": "beautiful",
+    "Explanation": "Change 'y' to 'i' before adding '-ful' to 'beauty'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word with prefix 'dis-'.",
+    "Prompt": "I _____ with your opinion.",
+    "Options": ["disagree", "dissagree", "disagreee", "dis-agree"],
+    "Answer": "disagree",
+    "Explanation": "When adding prefixes, don't change the spelling of the root word."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ly' to 'happy'.",
+    "Prompt": "She smiled _____.",
+    "Options": ["happily", "happyly", "hapily", "happilly"],
+    "Answer": "happily",
+    "Explanation": "Change 'y' to 'i' before adding '-ly' to words ending in consonant + y."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling with the prefix 'un-'.",
+    "Prompt": "It was _____ to solve the puzzle.",
+    "Options": ["unnecessary", "unecessary", "un-necessary", "unnecesary"],
+    "Answer": "unnecessary",
+    "Explanation": "When adding 'un-' to 'necessary', keep all the letters including double 'n'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-er' to 'big'.",
+    "Prompt": "My dog is _____ than yours.",
+    "Options": ["bigger", "biger", "biggeer", "biggar"],
+    "Answer": "bigger",
+    "Explanation": "Double the final consonant in short vowel words before adding '-er'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the word with suffix '-tion'.",
+    "Prompt": "The _____ was very helpful.",
+    "Options": ["information", "informasion", "infomation", "informashun"],
+    "Answer": "information",
+    "Explanation": "Use '-tion' (not '-sion' or '-shun') after most consonants."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ness' to 'happy'.",
+    "Prompt": "Her _____ was contagious.",
+    "Options": ["happiness", "happyness", "happines", "hapiness"],
+    "Answer": "happiness",
+    "Explanation": "Change 'y' to 'i' before adding '-ness' to words ending in consonant + y."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of 'i before e' rule.",
+    "Prompt": "I _____ a letter from my friend.",
+    "Options": ["received", "recieved", "receved", "receeved"],
+    "Answer": "received",
+    "Explanation": "'I before e except after c' - in 'receive', 'ei' comes after 'c'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when forming the plural of 'church'.",
+    "Prompt": "There are three _____ in our town.",
+    "Options": ["churches", "churchs", "churche's", "churchies"],
+    "Answer": "churches",
+    "Explanation": "Add 'es' to words ending in 'ch', 'sh', 's', 'x', or 'z'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling with double letters.",
+    "Prompt": "The _____ of the meeting was at 3pm.",
+    "Options": ["beginning", "begining", "beggining", "beginninng"],
+    "Answer": "beginning",
+    "Explanation": "Double the 'n' in 'begin' before adding '-ing' (stressed final syllable)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling of the homophone.",
+    "Prompt": "_____ going to the park later.",
+    "Options": ["They're", "Their", "There", "Thier"],
+    "Answer": "They're",
+    "Explanation": "'They're' is a contraction of 'they are'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-able' to 'notice'.",
+    "Prompt": "The change was barely _____.",
+    "Options": ["noticeable", "noticable", "noticeabel", "noticiable"],
+    "Answer": "noticeable",
+    "Explanation": "Keep the 'e' before '-able' when the word ends in 'ce' or 'ge'."
+  }
+]

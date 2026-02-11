@@ -1,0 +1,107 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What type of sentence is this? 'Close the door quietly.'",
+        "options": ["A statement", "A question", "A command", "An exclamation"],
+        "answer": "A command",
+        "explanation": "This is a command (also called an imperative sentence). It tells someone to do something. Commands often start with a verb ('Close') and may not include the subject 'you', because it is understood."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these sentences is a statement?",
+        "options": ["What time does the lesson start?", "Sit down immediately!", "The library opens at nine o'clock.", "How wonderful the sunrise looks!"],
+        "answer": "The library opens at nine o'clock.",
+        "explanation": "A statement (also called a declarative sentence) gives information or states a fact. It ends with a full stop. 'The library opens at nine o'clock' tells us a fact about the library."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is an exclamation?",
+        "options": ["The cake is on the table.", "Is the cake on the table?", "What a delicious cake that is!", "Put the cake on the table."],
+        "answer": "What a delicious cake that is!",
+        "explanation": "An exclamation expresses strong feeling and ends with an exclamation mark. In the SATs, exclamations typically begin with 'What' or 'How' followed by a subject and verb: 'What a delicious cake that is!'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What makes this a simple sentence? 'The old grey cat sat on the warm windowsill.'",
+        "options": ["It is short.", "It contains one main clause with one verb.", "It has no adjectives.", "It ends with a full stop."],
+        "answer": "It contains one main clause with one verb.",
+        "explanation": "A simple sentence contains exactly one main clause with one subject-verb combination. Although this sentence is quite long because of the expanded noun phrases, it still has only one clause: the cat (subject) sat (verb)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is a compound sentence?",
+        "options": ["The dog barked loudly.", "The dog barked loudly and the cat ran away.", "When the dog barked, the cat ran away.", "The dog, which was very large, barked loudly."],
+        "answer": "The dog barked loudly and the cat ran away.",
+        "explanation": "A compound sentence joins two main clauses (clauses that can stand alone) with a coordinating conjunction. 'The dog barked loudly' and 'the cat ran away' are both main clauses joined by 'and'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is a complex sentence?",
+        "options": ["We played football and we had fun.", "We played football.", "Although it was raining, we played football.", "We played football, netball and rounders."],
+        "answer": "Although it was raining, we played football.",
+        "explanation": "A complex sentence contains a main clause and at least one subordinate clause. 'We played football' is the main clause, and 'Although it was raining' is the subordinate clause (it cannot stand alone)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What type of sentence is this? 'How quickly the cheetah runs!'",
+        "options": ["A question", "A command", "A statement", "An exclamation"],
+        "answer": "An exclamation",
+        "explanation": "This is an exclamation. It begins with 'How', contains a subject ('the cheetah') and a verb ('runs'), and ends with an exclamation mark. It expresses strong feeling about the speed of the cheetah."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How many clauses does this sentence contain? 'After the bell rang, the children lined up and walked to the hall.'",
+        "options": ["One", "Two", "Three", "Four"],
+        "answer": "Three",
+        "explanation": "This sentence has three clauses: 'After the bell rang' (subordinate clause), 'the children lined up' (main clause) and 'walked to the hall' (main clause joined by 'and'). This makes it a multi-clause sentence."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence type always ends with a question mark?",
+        "options": ["A statement", "A command", "An exclamation", "A question"],
+        "answer": "A question",
+        "explanation": "A question (also called an interrogative sentence) always ends with a question mark. It asks for information. Statements end with full stops, commands can end with full stops or exclamation marks, and exclamations end with exclamation marks."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is a multi-clause sentence?",
+        "options": ["The sun set behind the mountains.", "Pack your bags for the trip.", "The sun set behind the mountains while the birds flew home to roost.", "What a beautiful sunset!"],
+        "answer": "The sun set behind the mountains while the birds flew home to roost.",
+        "explanation": "A multi-clause sentence contains more than one clause. This sentence has a main clause ('The sun set behind the mountains') and a subordinate clause ('while the birds flew home to roost'), connected by the subordinating conjunction 'while'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the main clause in this complex sentence? 'Because she had studied hard, Amira achieved the highest score in the test.'",
+        "options": ["Because she had studied hard", "Because she had studied", "Amira achieved the highest score in the test", "the highest score in the test"],
+        "answer": "Amira achieved the highest score in the test",
+        "explanation": "The main clause is the part that makes sense on its own as a complete sentence: 'Amira achieved the highest score in the test.' The subordinate clause 'Because she had studied hard' gives extra information but cannot stand alone."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these commands is the most polite?",
+        "options": ["Give me that book.", "Hand over the book now!", "Could you please pass me the book?", "The book. Now."],
+        "answer": "Could you please pass me the book?",
+        "explanation": "Although 'Could you please pass me the book?' looks like a question, it functions as a polite command (a request). Commands can range from very direct ('Give me that book') to polite requests using modal verbs like 'could'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which option correctly identifies the sentence types? Sentence A: 'Tidy your desk.' Sentence B: 'The classroom is tidy.'",
+        "options": ["A is a statement; B is a command.", "A is a command; B is a statement.", "Both are statements.", "Both are commands."],
+        "answer": "A is a command; B is a statement.",
+        "explanation": "Sentence A ('Tidy your desk') is a command because it tells someone to do something — the verb 'tidy' comes first and the subject 'you' is implied. Sentence B ('The classroom is tidy') is a statement because it gives information."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Why is 'What lovely weather.' NOT a correct exclamation sentence?",
+        "options": ["It does not end with an exclamation mark.", "It does not begin with 'What' or 'How'.", "It does not contain a verb.", "It is too short to be an exclamation."],
+        "answer": "It does not contain a verb.",
+        "explanation": "A grammatically correct exclamation sentence must contain a subject and a verb. 'What lovely weather' has no verb. A correct version would be 'What lovely weather this is!' which includes the subject 'this' and the verb 'is'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is a compound sentence joined by a coordinating conjunction?",
+        "options": ["When it snowed, we built a snowman.", "We built a snowman because it had snowed.", "It snowed heavily, so we built a snowman.", "We built a snowman in the heavy snow."],
+        "answer": "It snowed heavily, so we built a snowman.",
+        "explanation": "A compound sentence joins two main clauses with a coordinating conjunction (FANBOYS). 'It snowed heavily' and 'we built a snowman' are both main clauses joined by the coordinating conjunction 'so'. The other sentences use subordinating conjunctions ('when', 'because') or have only one clause."
+    }
+]

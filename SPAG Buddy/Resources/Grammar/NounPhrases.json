@@ -1,0 +1,107 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is an expanded noun phrase?",
+        "options": ["the dog", "the small, scruffy dog with muddy paws", "ran quickly", "under the table"],
+        "answer": "the small, scruffy dog with muddy paws",
+        "explanation": "An expanded noun phrase adds detail to a noun using adjectives, modifiers and prepositional phrases. 'The small, scruffy dog with muddy paws' expands the basic noun phrase 'the dog' by adding adjectives (small, scruffy) and a prepositional phrase (with muddy paws)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the head noun in this noun phrase? 'the bright, golden leaves on the oak tree'",
+        "options": ["bright", "golden", "leaves", "tree"],
+        "answer": "leaves",
+        "explanation": "The head noun is the main noun that the rest of the phrase gives information about. All the other words describe or give more detail about the 'leaves'. 'Bright' and 'golden' are adjectives modifying 'leaves', and 'on the oak tree' tells us where the leaves are."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which expanded noun phrase best completes this sentence? 'We spotted ______ perched on the garden fence.'",
+        "options": ["a bird", "a beautiful bird", "a beautiful, red-breasted robin with a worm in its beak", "feathers"],
+        "answer": "a beautiful, red-breasted robin with a worm in its beak",
+        "explanation": "While 'a bird' and 'a beautiful bird' are correct noun phrases, 'a beautiful, red-breasted robin with a worm in its beak' is the most fully expanded noun phrase. It uses adjectives and a prepositional phrase to paint a vivid picture."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a modifier in this noun phrase? 'the extremely tall lighthouse on the cliff'",
+        "options": ["the", "lighthouse", "on", "extremely"],
+        "answer": "extremely",
+        "explanation": "A modifier adds detail to another word. 'Extremely' is an adverb that modifies the adjective 'tall', making the description more precise. Together, 'extremely tall' gives more specific information about the lighthouse."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the prepositional phrase in this expanded noun phrase? 'the cheerful children in the playground'",
+        "options": ["the cheerful", "cheerful children", "in the playground", "the cheerful children"],
+        "answer": "in the playground",
+        "explanation": "A prepositional phrase begins with a preposition (such as in, on, under, beside, with) and ends with a noun. 'In the playground' tells us where the children are and adds extra detail to the noun phrase."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How many adjectives are used to expand this noun phrase? 'a tiny, fluffy, grey kitten with bright blue eyes'",
+        "options": ["Two", "Three", "Four", "Five"],
+        "answer": "Three",
+        "explanation": "The three adjectives before the head noun 'kitten' are 'tiny', 'fluffy' and 'grey'. Although 'bright' and 'blue' also appear, they are inside the prepositional phrase 'with bright blue eyes' and modify 'eyes', not 'kitten'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which noun phrase uses a prepositional phrase to add information about place?",
+        "options": ["the old, creaky door", "the player with the red boots", "the ancient castle on the hilltop", "a large, fierce dragon"],
+        "answer": "the ancient castle on the hilltop",
+        "explanation": "'On the hilltop' is a prepositional phrase that tells us where the castle is located. 'With the red boots' is also a prepositional phrase, but it describes a feature of the player rather than a place."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the head noun in this noun phrase? 'my favourite woollen jumper with blue stripes'",
+        "options": ["favourite", "woollen", "jumper", "stripes"],
+        "answer": "jumper",
+        "explanation": "The head noun is the most important noun in the phrase — the thing being described. 'Favourite' and 'woollen' are adjectives that describe the jumper, and 'with blue stripes' is a prepositional phrase giving further detail about it."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these adds detail to the noun phrase using a prepositional phrase beginning with 'of'?",
+        "options": ["a swarm of buzzing bees", "the tall, green trees", "several happy children", "a brightly coloured parrot"],
+        "answer": "a swarm of buzzing bees",
+        "explanation": "'Of buzzing bees' is a prepositional phrase that starts with 'of' and tells us what the swarm is made up of. It adds essential detail to the head noun 'swarm'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence contains the most effective expanded noun phrase?",
+        "options": ["The nice man helped us.", "The kind, elderly gentleman in the blue coat helped us across the road.", "The man who was there helped us.", "The helpful man helped us cross."],
+        "answer": "The kind, elderly gentleman in the blue coat helped us across the road.",
+        "explanation": "This sentence uses the most effective expanded noun phrase: 'The kind, elderly gentleman in the blue coat'. It includes two adjectives (kind, elderly), a more specific noun (gentleman) and a prepositional phrase (in the blue coat) to create a clear image."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In the noun phrase 'those three enormous grey elephants at the watering hole', which word is a determiner?",
+        "options": ["three", "enormous", "grey", "those"],
+        "answer": "those",
+        "explanation": "'Those' is a determiner — it comes before the noun and its modifiers to introduce the noun phrase. 'Three' is a number, while 'enormous' and 'grey' are adjectives."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which expanded noun phrase would best replace 'the thing' in this sentence? 'The thing flew over the rooftops at dawn.'",
+        "options": ["the big thing", "a magnificent, snow-white owl with enormous amber eyes", "a bird that was white", "the flying creature"],
+        "answer": "a magnificent, snow-white owl with enormous amber eyes",
+        "explanation": "This is the most effective replacement because it uses precise adjectives (magnificent, snow-white) before a specific head noun (owl) and a prepositional phrase (with enormous amber eyes) to create vivid detail."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How does the prepositional phrase add meaning in this noun phrase? 'the letter from my grandmother'",
+        "options": ["It tells us when the letter was sent.", "It tells us who sent the letter.", "It tells us what the letter said.", "It tells us where the letter is."],
+        "answer": "It tells us who sent the letter.",
+        "explanation": "The prepositional phrase 'from my grandmother' tells us who the letter is from. Prepositional phrases can add different types of information such as place, time, possession or origin."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these noun phrases contains two prepositional phrases?",
+        "options": ["the very old, dusty book", "the large painting on the wall", "the small cottage by the river in the valley", "a bright, shimmering star"],
+        "answer": "the small cottage by the river in the valley",
+        "explanation": "This noun phrase contains two prepositional phrases: 'by the river' and 'in the valley'. Each one begins with a preposition and adds further detail about where the cottage is located."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which pair of adjectives would best expand the noun phrase 'the ______, ______ forest' to create a mysterious atmosphere?",
+        "options": ["green, large", "dark, silent", "nice, pretty", "small, leafy"],
+        "answer": "dark, silent",
+        "explanation": "'Dark' and 'silent' are the best choices to create a mysterious atmosphere. When expanding noun phrases, it is important to choose adjectives that suit the mood or tone you want to create in your writing."
+    }
+]

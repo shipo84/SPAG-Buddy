@@ -1,0 +1,83 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What is a prefix? (1 mark)",
+        "options": ["A letter added to the end of a word", "A letter or group of letters added to the beginning of a word to change its meaning", "The main part of a word", "A type of punctuation"],
+        "answer": "A letter or group of letters added to the beginning of a word to change its meaning",
+        "explanation": "A prefix is added to the start of a root word to create a new word with a different meaning, e.g., un- + happy = unhappy."
+    },
+    {
+        "type": "match_prefix_meaning",
+        "question": "Match each prefix to its meaning: (5 marks)\na) un-\nb) re-\nc) pre-\nd) mis-\ne) dis-",
+        "options": ["not/opposite", "again", "before", "wrongly", "not/opposite/apart"],
+        "answer": "a) un- = not/opposite  b) re- = again  c) pre- = before  d) mis- = wrongly  e) dis- = not/opposite/apart",
+        "explanation": "Understanding prefix meanings helps you work out the meaning of unfamiliar words."
+    },
+    {
+        "type": "add_prefix",
+        "question": "Add the correct prefix to each word to match the definition: (5 marks)\na) _____cover (to find again)\nb) _____behave (to behave badly)\nc) _____view (to see before)\nd) _____marine (under the sea)\ne) _____frost (to remove frost)",
+        "answer": "a) recover (re-)  b) misbehave (mis-)  c) preview (pre-)  d) submarine (sub-)  e) defrost (de-)",
+        "explanation": "re- = again, mis- = wrongly/badly, pre- = before, sub- = under, de- = remove/reverse."
+    },
+    {
+        "type": "word_building",
+        "question": "How many words can you make by adding prefixes to the root word 'do'? (3 marks)",
+        "answer": "undo, redo, overdo",
+        "explanation": "One root word can take different prefixes to create multiple new words, each with a different meaning."
+    },
+    {
+        "type": "explain_meaning",
+        "question": "Explain how the prefix changes the meaning of each word: (4 marks)\na) happy → unhappy\nb) appear → disappear\nc) write → rewrite\nd) judge → misjudge",
+        "answer": "a) un- makes it mean 'not happy'  b) dis- makes it mean 'to stop appearing / vanish'  c) re- makes it mean 'to write again'  d) mis- makes it mean 'to judge wrongly'",
+        "explanation": "Each prefix changes the meaning in a specific way: un-/dis- = opposite, re- = again, mis- = wrongly."
+    },
+    {
+        "type": "sort_by_prefix",
+        "question": "Sort these words by their prefix: (4 marks)\nWords: rewrite, unhappy, misspell, disorder, replay, unkind, mislead, dislike\nPrefixes: re-, un-, mis-, dis-",
+        "answer": "re-: rewrite, replay | un-: unhappy, unkind | mis-: misspell, mislead | dis-: disorder, dislike",
+        "explanation": "Recognising prefixes helps with spelling and understanding word meanings."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which prefix means 'under' or 'below'? (1 mark)",
+        "options": ["super-", "sub-", "over-", "pre-"],
+        "answer": "sub-",
+        "explanation": "Sub- means under/below: submarine (under the sea), subway (underground path), subheading (below the heading)."
+    },
+    {
+        "type": "fill_in_blank",
+        "question": "Complete each sentence with the correct prefixed word: (3 marks)\na) I need to _______ my shoelaces before taking off my shoes. (tie)\nb) The teacher asked me to _______ my messy work. (do)\nc) It is dangerous to _______ the speed limit. (exceed → go over)",
+        "answer": "a) untie  b) redo  c) exceed/overshoot",
+        "explanation": "un- + tie = untie (reverse the action), re- + do = redo (do again)."
+    },
+    {
+        "type": "prefix_families",
+        "question": "Write three words for each of these prefixes: (6 marks)\na) over- (too much)\nb) under- (too little)\nc) auto- (self)",
+        "answer": "a) overcome, overflow, overcooked  b) undercooked, underestimate, underground  c) autograph, autobiography, automatic",
+        "explanation": "over- = too much/above, under- = too little/below, auto- = self. These prefixes create large word families."
+    },
+    {
+        "type": "true_false",
+        "question": "Adding a prefix to a word always changes the spelling of the root word. (1 mark)",
+        "answer": "False",
+        "explanation": "Prefixes are simply added to the beginning of the root word without changing its spelling: un + happy = unhappy, dis + appear = disappear, mis + spell = misspell."
+    },
+    {
+        "type": "error_correction",
+        "question": "Correct the prefix errors in these words: (3 marks)\na) disresponsible (not responsible)\nb) unmature (not mature)\nc) reappear (to make disappear)",
+        "answer": "a) irresponsible  b) immature  c) disappear",
+        "explanation": "a) Use ir- before words starting with 'r'. b) Use im- before words starting with 'm'. c) dis- means to reverse or remove, not re-."
+    },
+    {
+        "type": "use_in_sentences",
+        "question": "Use each prefixed word in a sentence to show you understand its meaning: (3 marks)\na) preorder\nb) superhero\nc) international",
+        "answer": "Example: a) I decided to preorder the book before it was published.  b) The superhero saved the city from danger.  c) The international competition attracted teams from many countries.",
+        "explanation": "pre- = before, super- = above/beyond, inter- = between. Using words in context shows understanding."
+    },
+    {
+        "type": "challenge",
+        "question": "Some words have two prefixes. Break these words into their parts: (3 marks)\na) unrecoverable\nb) rediscover\nc) misunderstand",
+        "answer": "a) un- + re- + cover + -able  b) re- + dis- + cover  c) mis- + under- + stand",
+        "explanation": "Complex words can have multiple prefixes stacked together. Breaking them apart helps understand meaning."
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which prefix can be added to 'happy' to make its opposite? (1 mark)",
+        "options": ["dis-", "un-", "im-", "in-"],
+        "answer": "un-",
+        "explanation": "The prefix 'un-' is added to 'happy' to make 'unhappy', meaning not happy. 'Un-' is one of the most common prefixes for creating opposite adjectives."
+    },
+    {
+        "type": "match_prefixes",
+        "question": "Match each adjective to the correct prefix to make its opposite: (5 marks)\na) ___possible\nb) ___honest\nc) ___patient\nd) ___regular\ne) ___kind",
+        "answer": "a) impossible  b) dishonest  c) impatient  d) irregular  e) unkind",
+        "explanation": "Different adjectives take different prefixes: im- before p/b/m, dis- for some words, ir- before r, un- is most common."
+    },
+    {
+        "type": "prefix_rule",
+        "question": "What happens to the prefix 'in-' when it is placed before a word starting with 'p', 'b', or 'm'? (1 mark)",
+        "options": ["It stays as 'in-'", "It changes to 'im-'", "It changes to 'un-'", "It changes to 'ir-'"],
+        "answer": "It changes to 'im-'",
+        "explanation": "Before 'p', 'b', or 'm', the prefix 'in-' changes to 'im-' for easier pronunciation: impossible, imbalance, immature."
+    },
+    {
+        "type": "fill_in_blank",
+        "question": "Complete each sentence with the correct opposite adjective: (3 marks)\na) The magician made the coin _______. (visible → not visible)\nb) It is _______ to run in the corridor. (appropriate → not appropriate)\nc) His handwriting was _______. (legible → not legible)",
+        "answer": "a) invisible  b) inappropriate  c) illegible",
+        "explanation": "in- + visible = invisible, in- + appropriate = inappropriate, il- + legible = illegible (il- is used before words starting with 'l')."
+    },
+    {
+        "type": "sort_by_prefix",
+        "question": "Sort these opposite adjectives by their prefix: (4 marks)\nWords: unfair, impossible, dishonest, irregular, unkind, impolite, disloyal, irresponsible\nPrefixes: un-, im-, dis-, ir-",
+        "answer": "un-: unfair, unkind | im-: impossible, impolite | dis-: dishonest, disloyal | ir-: irregular, irresponsible",
+        "explanation": "Learning which prefix goes with which adjective helps with spelling and vocabulary."
+    },
+    {
+        "type": "true_false",
+        "question": "The prefix 'ir-' is only used before adjectives that begin with the letter 'r'. (1 mark)",
+        "answer": "True",
+        "explanation": "The prefix 'ir-' is specifically used before words beginning with 'r': irregular, irresponsible, irrelevant, irreplaceable."
+    },
+    {
+        "type": "error_correction",
+        "question": "Find and correct the prefix errors in these words: (3 marks)\na) unpossible\nb) inregular\nc) dispationt",
+        "answer": "a) impossible  b) irregular  c) impatient",
+        "explanation": "a) Words starting with 'p' use 'im-' not 'un-'. b) Words starting with 'r' use 'ir-' not 'in-'. c) Words starting with 'p' use 'im-' not 'dis-', and the spelling is 'patient'."
+    },
+    {
+        "type": "sentence_completion",
+        "question": "Add a prefix to the word in brackets to complete each sentence correctly: (3 marks)\na) It was (responsible) _______ to leave the gate open.\nb) The instructions were (clear) _______ and confusing.\nc) She felt (comfortable) _______ in the new school.",
+        "answer": "a) irresponsible  b) unclear  c) uncomfortable",
+        "explanation": "ir- + responsible = irresponsible, un- + clear = unclear, un- + comfortable = uncomfortable."
+    },
+    {
+        "type": "identify_root",
+        "question": "For each word, identify the prefix and the root adjective: (4 marks)\na) impolite\nb) disagree\nc) unusual\nd) illegal",
+        "answer": "a) im- + polite  b) dis- + agree  c) un- + usual  d) il- + legal",
+        "explanation": "Identifying the prefix and root helps understand how the meaning changes from positive to negative."
+    },
+    {
+        "type": "explain_meaning",
+        "question": "Explain how the prefix changes the meaning in each pair: (3 marks)\na) mature → immature\nb) appear → disappear\nc) replaceable → irreplaceable",
+        "answer": "a) mature means grown-up; immature means not grown-up or childish  b) appear means to come into sight; disappear means to go out of sight  c) replaceable means can be replaced; irreplaceable means cannot be replaced",
+        "explanation": "Prefixes like im-, dis-, and ir- all create opposite meanings, but each is used with different root words."
+    }
+]

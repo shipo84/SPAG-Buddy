@@ -1,0 +1,78 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What is the main purpose of brackets (parentheses) in a sentence? (1 mark)",
+        "options": ["To end a sentence", "To add extra information that is not essential to the main meaning", "To show someone is speaking", "To join two sentences together"],
+        "answer": "To add extra information that is not essential to the main meaning",
+        "explanation": "Brackets enclose additional information that could be removed without changing the main meaning of the sentence."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses brackets correctly? (1 mark)",
+        "options": ["The tallest mountain (in the world is Mount Everest.)", "The tallest mountain (in the world) is Mount Everest.", "The (tallest mountain) in the world is Mount Everest.", "(The tallest) mountain in the world is Mount Everest."],
+        "answer": "The tallest mountain (in the world) is Mount Everest.",
+        "explanation": "The information in brackets ('in the world') adds extra detail. The sentence still makes sense without it: 'The tallest mountain is Mount Everest.'"
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add brackets in the correct place to show extra information: The Great Fire of London 1666 destroyed much of the city. (1 mark)",
+        "answer": "The Great Fire of London (1666) destroyed much of the city.",
+        "explanation": "The date is additional information that is not essential to the main sentence."
+    },
+    {
+        "type": "true_false",
+        "question": "If you remove the words inside the brackets, the sentence should still make sense. (1 mark)",
+        "answer": "True",
+        "explanation": "Brackets contain extra, non-essential information. The main sentence must be complete and grammatically correct without the bracketed text."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence using brackets to add extra information: Mount Snowdon is the highest mountain in Wales. It is 1,085 metres tall. (1 mark)",
+        "answer": "Mount Snowdon (the highest mountain in Wales) is 1,085 metres tall.",
+        "explanation": "The extra detail about it being the highest mountain in Wales can be placed in brackets within a single sentence."
+    },
+    {
+        "type": "identify_errors",
+        "question": "What is wrong with the brackets in this sentence? My best friend (who is called Amira lives next door to me. (1 mark)",
+        "answer": "The closing bracket is missing. Correct: My best friend (who is called Amira) lives next door to me.",
+        "explanation": "Brackets always come in pairs - an opening bracket and a closing bracket."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is another way to add extra information instead of using brackets? (1 mark)",
+        "options": ["Full stops", "Question marks", "Dashes or commas", "Exclamation marks"],
+        "answer": "Dashes or commas",
+        "explanation": "Extra (parenthetical) information can be shown using brackets, dashes, or commas. For example: My dog, a spaniel, loves walks. My dog (a spaniel) loves walks. My dog - a spaniel - loves walks."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a sentence that uses brackets to add extra information about a person's age. (1 mark)",
+        "answer": "Example: My grandmother (aged 75) still plays tennis every week.",
+        "explanation": "Accept any grammatically correct sentence where the bracketed information adds a non-essential detail about someone's age."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Where does the full stop go when brackets are used at the end of a sentence? (1 mark)",
+        "options": ["Before the opening bracket", "Inside the brackets", "After the closing bracket", "It doesn't matter"],
+        "answer": "After the closing bracket",
+        "explanation": "When bracketed text is part of a sentence, the full stop goes after the closing bracket (e.g. 'He arrived late (as usual).')."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add brackets in the correct places in this passage: The River Thames 215 miles long flows through London. The Houses of Parliament built in the 19th century stand on its north bank. (2 marks)",
+        "answer": "The River Thames (215 miles long) flows through London. The Houses of Parliament (built in the 19th century) stand on its north bank.",
+        "explanation": "Both pieces of additional information are non-essential details that can be placed in brackets."
+    },
+    {
+        "type": "explain",
+        "question": "Explain the difference between using brackets, dashes, and commas to add extra information. When might you choose one over the others? (2 marks)",
+        "answer": "Brackets, dashes, and commas can all be used to add extra information to a sentence. Brackets are the most separated and are used for information that is clearly an aside. Dashes give more emphasis to the extra information. Commas are the most common and blend the information smoothly into the sentence.",
+        "explanation": "Award 1 mark for explaining that all three serve a similar purpose, 1 mark for describing a difference between them."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence using brackets instead of dashes: Queen Victoria - who reigned from 1837 to 1901 - was Britain's longest-reigning monarch at that time. (1 mark)",
+        "answer": "Queen Victoria (who reigned from 1837 to 1901) was Britain's longest-reigning monarch at that time.",
+        "explanation": "The dashes are simply replaced with brackets. The extra information remains the same."
+    }
+]

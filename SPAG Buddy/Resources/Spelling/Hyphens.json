@@ -1,0 +1,65 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which word is correctly hyphenated?",
+    "Options": ["co-operate", "cooperate", "co operate", "coop-erate"],
+    "Answer": "co-operate",
+    "Explanation": "Use a hyphen when two vowels come together to avoid confusion."
+  },
+  {
+    "QuestionType": "FillInTheBlank",
+    "Question": "She is a ____ artist. (self + taught)",
+    "Answer": "self-taught",
+    "Explanation": "Compound adjectives before a noun are hyphenated."
+  },
+  {
+    "QuestionType": "TrueFalse",
+    "Question": "The word 'twenty-one' should be written as 'twentyone'.",
+    "Answer": "False",
+    "Explanation": "Compound numbers from twenty-one to ninety-nine are hyphenated."
+  },
+  {
+    "QuestionType": "SpellTheWord",
+    "Question": "Write the compound word for 'existing before the war'.",
+    "Answer": "pre-war",
+    "Explanation": "Use hyphens with prefixes before proper nouns or to avoid confusion."
+  },
+  {
+    "QuestionType": "FindTheMisspelling",
+    "Question": "Which phrase is incorrectly hyphenated?",
+    "Options": ["a well-known author", "the author is well-known", "a full-time job", "an up-to-date report"],
+    "Answer": "the author is well-known",
+    "Explanation": "Don't hyphenate after the noun: 'the author is well known'."
+  },
+  {
+    "QuestionType": "CompleteTheSentence",
+    "Question": "My ____ (5 year old) brother started school.",
+    "Answer": "five-year-old",
+    "Explanation": "Hyphenate compound adjectives: five-year-old (adjective) vs five years old (noun)."
+  },
+  {
+    "QuestionType": "WordBuilding",
+    "Question": "Combine 'mother' + 'in' + 'law' correctly.",
+    "Answer": "mother-in-law",
+    "Explanation": "Family relationships with 'in-law' are hyphenated."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which does NOT need a hyphen?",
+    "Options": ["re-enter", "playground", "merry-go-round", "ex-president"],
+    "Answer": "playground",
+    "Explanation": "Playground is a closed compound word (no hyphen needed)."
+  },
+  {
+    "QuestionType": "CorrectTheError",
+    "Question": "Fix the hyphenation: The non violent, sugar free cake was home made.",
+    "Answer": "The non-violent, sugar-free cake was home-made.",
+    "Explanation": "Hyphenate compound adjectives before nouns."
+  },
+  {
+    "QuestionType": "RuleApplication",
+    "Question": "When do you hyphenate 'high school'?",
+    "Answer": "When used as a compound adjective: 'high-school student' but not 'goes to high school'.",
+    "Explanation": "Hyphenate compound modifiers before nouns, not when used as nouns themselves."
+  }
+]

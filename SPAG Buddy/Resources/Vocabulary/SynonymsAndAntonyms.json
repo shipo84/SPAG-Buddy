@@ -1,0 +1,89 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What is a synonym? (1 mark)",
+        "options": ["A word that means the opposite", "A word that sounds the same", "A word that means the same or similar", "A word that is spelt the same"],
+        "answer": "A word that means the same or similar",
+        "explanation": "Synonyms are words with the same or similar meanings, e.g., happy/glad, big/large, fast/quick."
+    },
+    {
+        "type": "match_synonyms",
+        "question": "Match each word to its synonym: (5 marks)\na) brave\nb) angry\nc) begin\nd) beautiful\ne) enormous",
+        "options": ["furious", "courageous", "start", "huge", "stunning"],
+        "answer": "a) courageous  b) furious  c) start  d) stunning  e) huge",
+        "explanation": "Synonyms have similar meanings but may differ in intensity or formality."
+    },
+    {
+        "type": "match_antonyms",
+        "question": "Match each word to its antonym: (5 marks)\na) generous\nb) ancient\nc) brave\nd) increase\ne) victory",
+        "options": ["modern", "selfish", "cowardly", "decrease", "defeat"],
+        "answer": "a) selfish  b) modern  c) cowardly  d) decrease  e) defeat",
+        "explanation": "Antonyms are words with opposite meanings."
+    },
+    {
+        "type": "identify_synonyms",
+        "question": "Circle the two words that are synonyms in each group: (3 marks)\na) cold, hot, chilly, warm\nb) shout, whisper, yell, talk\nc) tiny, huge, small, tall",
+        "answer": "a) cold, chilly  b) shout, yell  c) tiny, small",
+        "explanation": "Synonyms share the same or very similar meanings. The other words in each group have different meanings."
+    },
+    {
+        "type": "identify_antonyms",
+        "question": "Circle the two words that are antonyms in each group: (3 marks)\na) fast, quick, slow, speedy\nb) happy, cheerful, joyful, sad\nc) light, bright, dark, shiny",
+        "answer": "a) fast, slow  b) happy, sad  c) light, dark",
+        "explanation": "Antonyms have opposite meanings. The other words in each group are synonyms of one of the pair."
+    },
+    {
+        "type": "context_synonyms",
+        "question": "Replace the underlined word with a more interesting synonym: (4 marks)\na) The nice man helped us across the road.\nb) She said she was tired.\nc) The big castle stood on the hill.\nd) The food was good.",
+        "answer": "a) kind/generous/friendly  b) muttered/whispered/exclaimed  c) enormous/vast/towering  d) delicious/excellent/superb",
+        "explanation": "Choosing precise synonyms improves writing by making it more vivid and specific."
+    },
+    {
+        "type": "degrees_of_meaning",
+        "question": "Arrange these synonyms from weakest to strongest meaning: (3 marks)\na) furious, annoyed, angry\nb) terrified, nervous, scared\nc) boiling, warm, hot",
+        "answer": "a) annoyed, angry, furious  b) nervous, scared, terrified  c) warm, hot, boiling",
+        "explanation": "Synonyms often differ in intensity. Choosing the right one depends on how strong a meaning you want to convey."
+    },
+    {
+        "type": "word_choice",
+        "question": "Choose the best synonym to complete each sentence: (3 marks)\na) The kitten was very _______ (small/tiny/miniature).\nb) The storm was _______ (bad/terrible/unpleasant).\nc) She _______ the door shut. (closed/slammed/pushed)",
+        "answer": "a) tiny (most suitable for a kitten)  b) terrible (strongest for a storm)  c) slammed (most dramatic)",
+        "explanation": "The best synonym depends on context. Writers choose words carefully for the effect they want."
+    },
+    {
+        "type": "antonym_prefixes",
+        "question": "Create antonyms by adding a prefix (un-, dis-, im-, in-, ir-): (5 marks)\na) possible → _______\nb) agree → _______\nc) happy → _______\nd) responsible → _______\ne) visible → _______",
+        "answer": "a) impossible  b) disagree  c) unhappy  d) irresponsible  e) invisible",
+        "explanation": "Many antonyms can be formed by adding a negative prefix to the original word."
+    },
+    {
+        "type": "true_false",
+        "question": "Synonyms always mean exactly the same thing and can always replace each other in any sentence. (1 mark)",
+        "answer": "False",
+        "explanation": "Synonyms have similar but not identical meanings. 'House' and 'mansion' are synonyms but have different connotations. Context matters when choosing synonyms."
+    },
+    {
+        "type": "synonym_or_antonym",
+        "question": "Are these pairs synonyms (S) or antonyms (A)? (5 marks)\na) brave / courageous\nb) loud / quiet\nc) begin / start\nd) ancient / modern\ne) reply / answer",
+        "answer": "a) S  b) A  c) S  d) A  e) S",
+        "explanation": "Synonyms have similar meanings; antonyms have opposite meanings."
+    },
+    {
+        "type": "writing_improvement",
+        "question": "Rewrite this passage replacing the overused word 'nice' with different synonyms each time: (3 marks)\n'We had a nice day at the nice beach. The nice weather made everyone feel nice.'",
+        "answer": "Example: 'We had a wonderful day at the beautiful beach. The glorious weather made everyone feel cheerful.'",
+        "explanation": "Using varied synonyms instead of repeating the same word makes writing more interesting and precise."
+    },
+    {
+        "type": "thesaurus_skills",
+        "question": "For each word, write two synonyms and one antonym: (6 marks)\na) difficult\nb) quiet\nc) generous",
+        "answer": "a) Synonyms: hard, challenging | Antonym: easy  b) Synonyms: silent, peaceful | Antonym: loud  c) Synonyms: kind, giving | Antonym: selfish",
+        "explanation": "A thesaurus helps you find synonyms and antonyms. Building a strong vocabulary means knowing multiple ways to express the same idea."
+    },
+    {
+        "type": "challenge",
+        "question": "Explain why 'house' and 'home' are not perfect synonyms, even though they are similar: (2 marks)",
+        "answer": "A 'house' is a physical building where people live. A 'home' has an emotional meaning — it suggests warmth, comfort, and belonging. You can have a house without it feeling like a home.",
+        "explanation": "Many synonyms carry different connotations (emotional associations). Choosing the right word depends on the meaning and feeling you want to express."
+    }
+]
