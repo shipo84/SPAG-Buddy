@@ -2,28 +2,28 @@
     {
         "type": "multiple_choice",
         "question": "Which sentence uses a comma correctly after a fronted adverbial? (1 mark)",
-        "options": ["Before lunch, the children played football on the field.", "Before lunch the children, played football on the field.", "Before, lunch the children played football on the field.", "Before lunch the children played, football on the field."],
+        "options": ["Before lunch the children, played football on the field.", "Before, lunch the children played football on the field.", "Before lunch the children played, football on the field.", "Before lunch, the children played football on the field."],
         "answer": "Before lunch, the children played football on the field.",
         "explanation": "'Before lunch' is a fronted adverbial (it tells us when the action happened and appears at the front of the sentence). A comma must follow a fronted adverbial."
     },
     {
         "type": "multiple_choice",
         "question": "Which sentence uses commas in a list correctly? (1 mark)",
-        "options": ["We packed sandwiches, crisps, fruit, and a drink for our picnic.", "We packed sandwiches crisps fruit and a drink for our picnic.", "We packed, sandwiches, crisps, fruit, and a drink for our picnic.", "We packed sandwiches, crisps fruit, and a drink for our picnic."],
+        "options": ["We packed, sandwiches, crisps, fruit, and a drink for our picnic.", "We packed sandwiches, crisps fruit, and a drink for our picnic.", "We packed sandwiches, crisps, fruit, and a drink for our picnic.", "We packed sandwiches crisps fruit and a drink for our picnic."],
         "answer": "We packed sandwiches, crisps, fruit, and a drink for our picnic.",
         "explanation": "When listing three or more items, commas are used to separate each item. The comma before 'and' (the Oxford comma) is optional but acceptable."
     },
     {
         "type": "multiple_choice",
         "question": "Read the two sentences below.\nA) Let's eat Grandma!\nB) Let's eat, Grandma!\nWhich statement is correct? (1 mark)",
-        "options": ["Sentence A is correct because commas are not needed before names.", "Sentence B is correct because the comma shows we are speaking to Grandma, not eating her.", "Both sentences mean the same thing.", "Neither sentence needs a comma."],
+        "options": ["Sentence A is correct because commas are not needed before names.", "Both sentences mean the same thing.", "Sentence B is correct because the comma shows we are speaking to Grandma, not eating her.", "Neither sentence needs a comma."],
         "answer": "Sentence B is correct because the comma shows we are speaking to Grandma, not eating her.",
         "explanation": "The comma in sentence B avoids ambiguity. Without the comma, the sentence suggests we are going to eat Grandma! With the comma, it shows we are calling Grandma to come and eat."
     },
     {
         "type": "multiple_choice",
         "question": "Which sentence uses a comma correctly after a subordinate clause? (1 mark)",
-        "options": ["Although it was raining, the match went ahead.", "Although, it was raining the match went ahead.", "Although it was raining the match, went ahead.", "Although it was, raining the match went ahead."],
+        "options": ["Although, it was raining the match went ahead.", "Although it was raining, the match went ahead.", "Although it was raining the match, went ahead.", "Although it was, raining the match went ahead."],
         "answer": "Although it was raining, the match went ahead.",
         "explanation": "When a subordinate clause ('Although it was raining') comes before the main clause ('the match went ahead'), a comma is placed between them."
     },
@@ -36,15 +36,15 @@
     },
     {
         "type": "multiple_choice",
-        "question": "Which sentence uses a comma correctly after a fronted adverbial? (1 mark)",
-        "options": ["Cautiously the fox, crept through the garden.", "Cautiously, the fox crept through the garden.", "Cautiously the fox crept, through the garden.", "Cautiously the fox crept through, the garden."],
+        "question": "Tick the sentence that places the comma correctly after a fronted adverbial. (1 mark)",
+        "options": ["Cautiously the fox, crept through the garden.", "Cautiously the fox crept, through the garden.", "Cautiously, the fox crept through the garden.", "Cautiously the fox crept through, the garden."],
         "answer": "Cautiously, the fox crept through the garden.",
         "explanation": "'Cautiously' is a fronted adverbial (an adverb placed at the front of the sentence). It must be followed by a comma."
     },
     {
         "type": "multiple_choice",
         "question": "Where should the comma go in this sentence?\nAfter the storm the rainbow appeared in the sky. (1 mark)",
-        "options": ["After, the storm the rainbow appeared in the sky.", "After the storm, the rainbow appeared in the sky.", "After the storm the rainbow, appeared in the sky.", "After the storm the rainbow appeared, in the sky."],
+        "options": ["After, the storm the rainbow appeared in the sky.", "After the storm the rainbow, appeared in the sky.", "After the storm the rainbow appeared, in the sky.", "After the storm, the rainbow appeared in the sky."],
         "answer": "After the storm, the rainbow appeared in the sky.",
         "explanation": "'After the storm' is a fronted adverbial telling us when the rainbow appeared. A comma is needed after the fronted adverbial, before the main clause begins."
     },
@@ -58,70 +58,70 @@
     {
         "type": "multiple_choice",
         "question": "Which sentence uses a comma to avoid ambiguity? (1 mark)",
-        "options": ["Most of the time, travellers enjoy flying.", "Most of the time travellers, enjoy flying.", "Most of the, time travellers enjoy flying.", "Most, of the time travellers enjoy flying."],
+        "options": ["Most, of the time travellers enjoy flying.", "Most of the time travellers, enjoy flying.", "Most of the time, travellers enjoy flying.", "Most of the, time travellers enjoy flying."],
         "answer": "Most of the time, travellers enjoy flying.",
         "explanation": "Without the comma, the sentence could be read as being about 'time travellers'. The comma after 'time' makes it clear that the sentence means 'for most of the time, travellers enjoy flying'."
     },
     {
         "type": "multiple_choice",
-        "question": "Which sentence correctly uses a comma after a subordinate clause? (1 mark)",
-        "options": ["Because she had practised every day she won the spelling competition.", "Because she had practised every day, she won the spelling competition.", "Because, she had practised every day she won the spelling competition.", "Because she had practised, every day she won the spelling competition."],
+        "question": "Which option places the comma correctly between the subordinate and main clause? (1 mark)",
+        "options": ["Because she had practised every day she won the spelling competition.", "Because, she had practised every day she won the spelling competition.", "Because she had practised every day, she won the spelling competition.", "Because she had practised, every day she won the spelling competition."],
         "answer": "Because she had practised every day, she won the spelling competition.",
         "explanation": "The subordinate clause 'Because she had practised every day' comes before the main clause. A comma is needed to separate them."
     },
     {
         "type": "multiple_choice",
         "question": "Which sentence uses commas correctly for parenthesis? (1 mark)",
-        "options": ["The River Thames which flows through London, is very long.", "The River Thames, which flows through London is very long.", "The River Thames, which flows through London, is very long.", "The River, Thames which flows through London, is very long."],
+        "options": ["The River Thames which flows through London, is very long.", "The River, Thames which flows through London, is very long.", "The River Thames, which flows through London, is very long.", "The River Thames, which flows through London is very long."],
         "answer": "The River Thames, which flows through London, is very long.",
         "explanation": "'Which flows through London' is a relative clause adding extra information (parenthesis). It needs a comma before and after it because the sentence still makes sense without it: 'The River Thames is very long.'"
     },
     {
         "type": "multiple_choice",
         "question": "Where should the comma be placed in this sentence?\nWithout warning the dog jumped into the pond. (1 mark)",
-        "options": ["Without, warning the dog jumped into the pond.", "Without warning, the dog jumped into the pond.", "Without warning the dog, jumped into the pond.", "Without warning the dog jumped, into the pond."],
+        "options": ["Without warning, the dog jumped into the pond.", "Without, warning the dog jumped into the pond.", "Without warning the dog, jumped into the pond.", "Without warning the dog jumped, into the pond."],
         "answer": "Without warning, the dog jumped into the pond.",
         "explanation": "'Without warning' is a fronted adverbial that tells us how the action happened. It should be followed by a comma. Without the comma, it could also be misread as 'without warning the dog', which changes the meaning."
     },
     {
         "type": "multiple_choice",
-        "question": "Which sentence uses commas in a list correctly? (1 mark)",
-        "options": ["In PE we played, rounders, dodgeball, and tennis.", "In PE we played rounders dodgeball and tennis.", "In PE, we played rounders, dodgeball and tennis.", "In PE we played rounders, dodgeball, and, tennis."],
+        "question": "Which sentence correctly uses commas both after a fronted adverbial and in a list? (1 mark)",
+        "options": ["In PE we played, rounders, dodgeball, and tennis.", "In PE we played rounders dodgeball and tennis.", "In PE we played rounders, dodgeball, and, tennis.", "In PE, we played rounders, dodgeball and tennis."],
         "answer": "In PE, we played rounders, dodgeball and tennis.",
         "explanation": "'In PE' is a fronted adverbial (needing a comma after it), and 'rounders, dodgeball and tennis' is a list. Items in a list are separated by commas, with 'and' before the final item."
     },
     {
         "type": "multiple_choice",
-        "question": "Which sentence correctly uses a comma after a subordinate clause? (1 mark)",
-        "options": ["When the bell rings, the children line up quietly.", "When the bell rings the children, line up quietly.", "When, the bell rings the children line up quietly.", "When the bell, rings the children line up quietly."],
+        "question": "Tick the sentence that correctly places a comma between the subordinate clause and main clause. (1 mark)",
+        "options": ["When, the bell rings the children line up quietly.", "When the bell, rings the children line up quietly.", "When the bell rings the children, line up quietly.", "When the bell rings, the children line up quietly."],
         "answer": "When the bell rings, the children line up quietly.",
         "explanation": "'When the bell rings' is a subordinate clause that cannot stand alone as a sentence. When it comes before the main clause, a comma is needed to separate them."
     },
     {
         "type": "multiple_choice",
         "question": "Read the sentence below.\nThe old man, who had lived in the village for fifty years, knew everybody.\nWhat is the purpose of the commas in this sentence? (1 mark)",
-        "options": ["To separate items in a list.", "To show parenthesis (extra information).", "To come after a fronted adverbial.", "To separate a subordinate clause at the start."],
+        "options": ["To separate items in a list.", "To come after a fronted adverbial.", "To separate a subordinate clause at the start.", "To show parenthesis (extra information)."],
         "answer": "To show parenthesis (extra information).",
         "explanation": "The commas separate the extra information 'who had lived in the village for fifty years' from the main sentence. If you remove this information, the sentence still makes sense: 'The old man knew everybody.'"
     },
     {
         "type": "multiple_choice",
         "question": "Which sentence needs a comma to avoid ambiguity? (1 mark)",
-        "options": ["I like cooking my family and my pets.", "The children played happily in the park.", "She wore a bright red coat to school.", "The football match was very exciting."],
+        "options": ["The children played happily in the park.", "I like cooking my family and my pets.", "She wore a bright red coat to school.", "The football match was very exciting."],
         "answer": "I like cooking my family and my pets.",
         "explanation": "Without a comma, this sentence sounds like you enjoy cooking your family and pets! It should read: 'I like cooking, my family and my pets.' The comma makes it clear that cooking, family and pets are three separate things you like."
     },
     {
         "type": "multiple_choice",
         "question": "Which sentence uses commas correctly? (1 mark)",
-        "options": ["During the assembly, the choir sang three songs.", "During, the assembly the choir sang three songs.", "During the assembly the choir, sang three songs.", "During the assembly the choir sang, three songs."],
+        "options": ["During, the assembly the choir sang three songs.", "During the assembly the choir, sang three songs.", "During the assembly, the choir sang three songs.", "During the assembly the choir sang, three songs."],
         "answer": "During the assembly, the choir sang three songs.",
         "explanation": "'During the assembly' is a fronted adverbial telling us when the choir sang. A comma must be placed after a fronted adverbial."
     },
     {
         "type": "multiple_choice",
-        "question": "Which sentence correctly uses commas for parenthesis? (1 mark)",
-        "options": ["My brother who is ten, plays for the school team.", "My brother, who is ten plays for the school team.", "My brother, who is ten, plays for the school team.", "My, brother who is ten, plays for the school team."],
+        "question": "Which sentence correctly uses commas around parenthetical information? (1 mark)",
+        "options": ["My brother, who is ten plays for the school team.", "My, brother who is ten, plays for the school team.", "My brother who is ten, plays for the school team.", "My brother, who is ten, plays for the school team."],
         "answer": "My brother, who is ten, plays for the school team.",
         "explanation": "'Who is ten' is additional information about 'my brother'. Parenthetical information must have a comma before and after it. The sentence still makes sense without it: 'My brother plays for the school team.'"
     },
@@ -135,7 +135,7 @@
     {
         "type": "multiple_choice",
         "question": "If the subordinate clause comes after the main clause, is a comma usually needed?\nThe children went inside because it started to rain. (1 mark)",
-        "options": ["Yes, a comma is always needed before 'because'.", "No, a comma is usually not needed when the subordinate clause comes after the main clause.", "Yes, a comma is needed after 'inside'.", "No commas are ever needed with subordinate clauses."],
+        "options": ["Yes, a comma is always needed before 'because'.", "Yes, a comma is needed after 'inside'.", "No commas are ever needed with subordinate clauses.", "No, a comma is usually not needed when the subordinate clause comes after the main clause."],
         "answer": "No, a comma is usually not needed when the subordinate clause comes after the main clause.",
         "explanation": "When the subordinate clause comes after the main clause, a comma is usually not required. However, when the subordinate clause comes first (e.g., 'Because it started to rain, the children went inside'), a comma is needed."
     }

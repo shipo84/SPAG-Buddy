@@ -23,7 +23,7 @@
     {
         "type": "multiple_choice",
         "question": "What is the parenthetical information in this sentence?\nThe blue whale, the largest animal on Earth, can weigh up to 150 tonnes. (1 mark)",
-        "options": ["The blue whale", "the largest animal on Earth", "can weigh up to 150 tonnes", "The blue whale can weigh"],
+        "options": ["The blue whale", "can weigh up to 150 tonnes", "The blue whale can weigh", "the largest animal on Earth"],
         "answer": "the largest animal on Earth",
         "explanation": "'The largest animal on Earth' is the parenthetical information. It is separated by commas and provides extra detail about the blue whale. If you remove it, the sentence still makes complete sense: 'The blue whale can weigh up to 150 tonnes.'"
     },
@@ -58,7 +58,7 @@
     {
         "type": "multiple_choice",
         "question": "Which sentence does NOT contain parenthesis? (1 mark)",
-        "options": ["My best friend, Olivia, lives next door to me.", "The park \u2013 near the river \u2013 has a new playground.", "The children played happily in the garden.", "The Romans (who invaded in AD 43) built many roads."],
+        "options": ["My best friend, Olivia, lives next door to me.", "The park \u2013 near the river \u2013 has a new playground.", "The Romans (who invaded in AD 43) built many roads.", "The children played happily in the garden."],
         "answer": "The children played happily in the garden.",
         "explanation": "This sentence contains no extra information set apart by commas, dashes or brackets. The other three sentences all contain parenthetical information: 'Olivia', 'near the river', and 'who invaded in AD 43'."
     },
@@ -72,7 +72,7 @@
     {
         "type": "multiple_choice",
         "question": "If you remove the parenthesis from the sentence below, what remains?\nThe art teacher, Mrs Patel, has organised an exhibition.\n(1 mark)",
-        "options": ["The art teacher has organised.", "Mrs Patel has organised an exhibition.", "The art teacher has organised an exhibition.", "The art teacher Mrs Patel."],
+        "options": ["The art teacher has organised.", "Mrs Patel has organised an exhibition.", "The art teacher Mrs Patel.", "The art teacher has organised an exhibition."],
         "answer": "The art teacher has organised an exhibition.",
         "explanation": "'Mrs Patel' is the parenthetical information (separated by commas). When you remove it, the remaining sentence must still make complete grammatical sense: 'The art teacher has organised an exhibition.'"
     },

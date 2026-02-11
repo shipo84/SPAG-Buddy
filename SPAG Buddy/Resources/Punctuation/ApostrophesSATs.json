@@ -44,7 +44,7 @@
     {
         "type": "multiple_choice",
         "question": "Which sentence uses 'they're', 'their' and 'there' correctly? (1 mark)",
-        "options": ["Their going to put they're bags over there.", "They're going to put their bags over there.", "There going to put their bags over they're.", "They're going to put there bags over their."],
+        "options": ["They're going to put their bags over there.", "Their going to put they're bags over there.", "There going to put their bags over they're.", "They're going to put there bags over their."],
         "answer": "They're going to put their bags over there.",
         "explanation": "'They're' = they are (contraction). 'Their' = belonging to them (possessive). 'There' = a place. Each word is used correctly in this sentence."
     },
@@ -65,16 +65,16 @@
     {
         "type": "multiple_choice",
         "question": "Which contraction is formed from 'will not'? (1 mark)",
-        "options": ["willn't", "won't", "will'nt", "wi'not"],
+        "options": ["willn't", "will'nt", "wi'not", "won't"],
         "answer": "won't",
         "explanation": "'Won't' is an irregular contraction of 'will not'. Unlike most contractions, the spelling changes as well as letters being removed."
     },
     {
         "type": "multiple_choice",
         "question": "Which sentence uses the possessive apostrophe correctly? (1 mark)",
-        "options": ["The ladies' changing room was upstairs.", "The ladys' changing room was upstairs.", "The lady's changing room was upstairs.", "Both A and C could be correct depending on meaning."],
-        "answer": "Both A and C could be correct depending on meaning.",
-        "explanation": "'Lady's' means belonging to one lady. 'Ladies'' means belonging to more than one lady (ladies is the plural of lady). Both are correctly punctuated, but they have different meanings."
+        "options": ["The ladys' changing room was upstairs.", "The lady's changing room was upstairs.", "The ladies' changing room was upstairs.", "Both B and C could be correct depending on meaning."],
+        "answer": "Both B and C could be correct depending on meaning.",
+        "explanation": "'Lady's' (B) means belonging to one lady. 'Ladies'' (C) means belonging to more than one lady (ladies is the plural of lady). Both are correctly punctuated, but they have different meanings."
     },
     {
         "type": "multiple_choice",
@@ -86,14 +86,14 @@
     {
         "type": "multiple_choice",
         "question": "Which sentence correctly shows that the books belong to the class? (1 mark)",
-        "options": ["The class's books were brand new.", "The class' books were brand new.", "The classes books were brand new.", "Both A and B are acceptable."],
-        "answer": "Both A and B are acceptable.",
-        "explanation": "When a singular noun ends in 's', both adding apostrophe + s (class's) and just adding an apostrophe (class') are acceptable ways to show possession."
+        "options": ["The classes books were brand new.", "The class's books were brand new.", "The class' books were brand new.", "Both B and C are acceptable."],
+        "answer": "Both B and C are acceptable.",
+        "explanation": "When a singular noun ends in 's', both adding apostrophe + s (class's, option B) and just adding an apostrophe (class', option C) are acceptable ways to show possession."
     },
     {
         "type": "multiple_choice",
         "question": "Which word correctly completes the sentence?\nI _______ believe how quickly the term has gone! (1 mark)",
-        "options": ["can't", "ca'nt", "cann't", "can'not"],
+        "options": ["ca'nt", "cann't", "can'not", "can't"],
         "answer": "can't",
         "explanation": "'Can't' is the contraction of 'cannot'. The apostrophe replaces the letters 'no'."
     },
