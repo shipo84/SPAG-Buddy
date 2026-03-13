@@ -5,6 +5,7 @@
 //  Quiz data tracking and analytics
 //
 
+import Combine
 import Foundation
 
 // MARK: - Quiz Attempt Record

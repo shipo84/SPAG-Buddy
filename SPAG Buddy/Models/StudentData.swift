@@ -5,22 +5,23 @@
 //  Student profile and performance tracking
 //
 
+import Combine
 import Foundation
 
 // MARK: - Student Profile
-struct StudentProfile {
+struct StudentProfile: Codable {
     var level: Int = 1
     var experiencePoints: Int = 0
 }
 
 // MARK: - Topic Performance
-struct TopicPerformance {
+struct TopicPerformance: Codable {
     var averageScore: Double
     var attempts: [QuizAttempt]
 }
 
 // MARK: - Quiz Attempt
-struct QuizAttempt {
+struct QuizAttempt: Codable {
     let score: Int
     let total: Int
     let date: Date
@@ -30,6 +31,9 @@ struct QuizAttempt {
 class StudentData: ObservableObject {
     @Published var studentProfile = StudentProfile()
     @Published var performanceHistory: [String: TopicPerformance] = [:]
+
+    private static let profileKey = "studentProfile"
+    private static let historyKey = "performanceHistory"
 
     init() {
         loadData()
@@ -62,10 +66,28 @@ class StudentData: ObservableObject {
     }
 
     private func loadData() {
-        // TODO: Load from UserDefaults/persistent storage
+        let decoder = JSONDecoder()
+
+        if let profileData = UserDefaults.standard.data(forKey: Self.profileKey),
+           let profile = try? decoder.decode(StudentProfile.self, from: profileData) {
+            studentProfile = profile
+        }
+
+        if let historyData = UserDefaults.standard.data(forKey: Self.historyKey),
+           let history = try? decoder.decode([String: TopicPerformance].self, from: historyData) {
+            performanceHistory = history
+        }
     }
 
     private func saveData() {
-        // TODO: Save to UserDefaults/persistent storage
+        let encoder = JSONEncoder()
+
+        if let profileData = try? encoder.encode(studentProfile) {
+            UserDefaults.standard.set(profileData, forKey: Self.profileKey)
+        }
+
+        if let historyData = try? encoder.encode(performanceHistory) {
+            UserDefaults.standard.set(historyData, forKey: Self.historyKey)
+        }
     }
 }

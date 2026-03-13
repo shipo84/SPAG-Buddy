@@ -163,14 +163,14 @@ enum SPAGCategory: String, CaseIterable, Identifiable {
             return [
                 SPAGTopic(name: "Homophones", filename: "Homophones_Enhanced", questionCount: 30),
                 SPAGTopic(name: "Silent Letters", filename: "SilentLetters", questionCount: 20),
-                SPAGTopic(name: "Prefixes", filename: "SpellingRules", questionCount: 25),
-                SPAGTopic(name: "Suffixes", filename: "SpellingRules", questionCount: 25),
+                SPAGTopic(name: "Prefixes", filename: "PrefixesSATs", questionCount: 25),
+                SPAGTopic(name: "Suffixes", filename: "SuffixesSATs", questionCount: 25),
                 SPAGTopic(name: "Dropping Silent E", filename: "DroppingSilentE", questionCount: 15),
                 SPAGTopic(name: "Soft C and Soft G", filename: "SoftCSoftG", questionCount: 15),
                 SPAGTopic(name: "Vowel Digraphs", filename: "VowelDigraphsTrigraphs", questionCount: 20),
                 SPAGTopic(name: "Consonant Doubling", filename: "ConsonantDoublingRules", questionCount: 15),
                 SPAGTopic(name: "Changing Y to I", filename: "ChangingYtoI", questionCount: 15),
-                SPAGTopic(name: "Hyphens in Spelling", filename: "Hyphens", questionCount: 15)
+                SPAGTopic(name: "Hyphens in Spelling", filename: "SpellingHyphens", questionCount: 15)
             ]
         case .punctuation:
             return [
@@ -191,12 +191,11 @@ enum SPAGCategory: String, CaseIterable, Identifiable {
                 SPAGTopic(name: "Adjective Prefixes", filename: "AdjectivePrefixes", questionCount: 15),
                 SPAGTopic(name: "Adverbs & Adverbials", filename: "Adverbs", questionCount: 20),
                 SPAGTopic(name: "Clauses", filename: "Clauses", questionCount: 20),
-                SPAGTopic(name: "Nouns & Noun Phrases", filename: "Adjectives", questionCount: 20),
-                SPAGTopic(name: "Verbs & Tenses", filename: "Adverbs", questionCount: 20),
-                SPAGTopic(name: "Conjunctions", filename: "Clauses", questionCount: 15),
-                SPAGTopic(name: "Prepositions", filename: "Adverbs", questionCount: 15),
-                SPAGTopic(name: "Active & Passive Voice", filename: "Clauses", questionCount: 15),
-                SPAGTopic(name: "Sentence Types", filename: "Adjectives", questionCount: 15)
+                SPAGTopic(name: "Nouns & Noun Phrases", filename: "NounPhrases", questionCount: 20),
+                SPAGTopic(name: "Verbs & Tenses", filename: "VerbTenses", questionCount: 20),
+                SPAGTopic(name: "Conjunctions", filename: "Conjunctions", questionCount: 15),
+                SPAGTopic(name: "Active & Passive Voice", filename: "ActivePassiveVoice", questionCount: 15),
+                SPAGTopic(name: "Sentence Types", filename: "SentenceTypes", questionCount: 15)
             ]
         case .vocabulary:
             return [
@@ -205,8 +204,8 @@ enum SPAGCategory: String, CaseIterable, Identifiable {
                 SPAGTopic(name: "Prefixes", filename: "Prefixes", questionCount: 20),
                 SPAGTopic(name: "Suffixes", filename: "Suffixes", questionCount: 20),
                 SPAGTopic(name: "Homophones", filename: "Homophones", questionCount: 20),
-                SPAGTopic(name: "Word Families", filename: "RootWordsAndWordFamilies", questionCount: 15),
-                SPAGTopic(name: "Formal & Informal", filename: "SynonymsAndAntonyms", questionCount: 15),
+                SPAGTopic(name: "Word Classes", filename: "WordClassesSATs", questionCount: 20),
+                SPAGTopic(name: "Formal & Informal", filename: "FormalInformal", questionCount: 15),
                 SPAGTopic(name: "Word Origins", filename: "RootWordsAndWordFamilies", questionCount: 15)
             ]
         }

@@ -12,7 +12,6 @@ struct ContentView: View {
     @StateObject private var studentData = StudentData()
     @StateObject private var achievementManager = AchievementManager()
     @StateObject private var challengeManager = DailyChallengeManager()
-    @StateObject private var quizData = QuizData()
     @State private var showingDailyChallenge = false
     @State private var selectedCategory: SPAGCategory?
 
@@ -62,7 +61,7 @@ struct ContentView: View {
             }
 
             // MARK: - Progress Tab
-            StudentProgressView()
+            StudentProgressView(studentData: studentData, achievementManager: achievementManager)
                 .tabItem {
                     Label("Progress", systemImage: "chart.bar.fill")
                 }
@@ -317,6 +316,38 @@ struct ContentView: View {
     }
 
     // MARK: - Word of the Day Card
+
+    /// Pool of vocabulary words to rotate through each day.
+    private static let vocabularyPool: [(word: String, definition: String, example: String)] = [
+        ("benevolent", "Well-meaning and kindly", "The benevolent teacher helped every student."),
+        ("consequence", "A result or effect of an action", "As a consequence, the match was cancelled."),
+        ("sufficient", "Enough; adequate", "We had sufficient time to finish the test."),
+        ("ambitious", "Having a strong desire to succeed", "She was ambitious enough to aim for the top."),
+        ("reluctant", "Unwilling and hesitant", "He was reluctant to speak in front of the class."),
+        ("abundant", "Existing in large quantities; plentiful", "There was an abundant supply of fruit."),
+        ("determined", "Having made a firm decision", "The determined athlete trained every day."),
+        ("courageous", "Not deterred by danger; brave", "The courageous firefighter entered the building."),
+        ("essential", "Absolutely necessary; extremely important", "Water is essential for life."),
+        ("genuine", "Truly what something is said to be; authentic", "She gave a genuine smile."),
+        ("hesitant", "Unsure or slow in acting or speaking", "He was hesitant about joining the team."),
+        ("magnificent", "Extremely beautiful, elaborate, or impressive", "The view from the top was magnificent."),
+        ("persistent", "Continuing firmly despite difficulty", "Her persistent efforts finally paid off."),
+        ("significant", "Sufficiently great or important", "There was a significant improvement in his work."),
+        ("accompany", "Go somewhere with someone as a companion", "She asked her friend to accompany her."),
+    ]
+
+    /// Returns three vocabulary words for today, changing each day.
+    private var todaysVocabulary: [(word: String, definition: String, example: String)] {
+        let daysSinceEpoch = Calendar.current.ordinality(of: .day, in: .era, for: Date()) ?? 0
+        let startIndex = (daysSinceEpoch * 3) % Self.vocabularyPool.count
+        var result: [(word: String, definition: String, example: String)] = []
+        for offset in 0..<3 {
+            let index = (startIndex + offset) % Self.vocabularyPool.count
+            result.append(Self.vocabularyPool[index])
+        }
+        return result
+    }
+
     private var wordOfTheDayCard: some View {
         VStack(alignment: .leading, spacing: AppTheme.Dimensions.itemSpacing) {
             HStack {
@@ -337,9 +368,9 @@ struct ContentView: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
-                    VocabularyWordCard(word: "benevolent", definition: "Well-meaning and kindly", example: "The benevolent teacher helped every student.")
-                    VocabularyWordCard(word: "consequence", definition: "A result or effect of an action", example: "As a consequence, the match was cancelled.")
-                    VocabularyWordCard(word: "sufficient", definition: "Enough; adequate", example: "We had sufficient time to finish the test.")
+                    ForEach(todaysVocabulary, id: \.word) { item in
+                        VocabularyWordCard(word: item.word, definition: item.definition, example: item.example)
+                    }
                 }
             }
         }
@@ -411,7 +442,10 @@ struct ContentView: View {
     }
 
     private func getCategoryProgress(_ category: SPAGCategory) -> Double {
-        let categoryTopics = studentData.performanceHistory.filter { $0.key.contains(category.rawValue) }
+        let topicNames = category.topics.map { $0.name }
+        let categoryTopics = studentData.performanceHistory.filter { key, _ in
+            topicNames.contains(key)
+        }
         guard !categoryTopics.isEmpty else { return 0 }
         let totalScore = categoryTopics.values.reduce(0.0) { $0 + $1.averageScore }
         return totalScore / Double(categoryTopics.count)

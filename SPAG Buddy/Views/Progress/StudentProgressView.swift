@@ -9,8 +9,8 @@ import SwiftUI
 import Charts
 
 struct StudentProgressView: View {
-    @StateObject private var studentData = StudentData()
-    @StateObject private var achievementManager = AchievementManager()
+    @ObservedObject var studentData: StudentData
+    @ObservedObject var achievementManager: AchievementManager
     @State private var selectedTimeRange = TimeRange.week
     @State private var showingAchievementDetail = false
     @State private var selectedAchievement: Achievement?
@@ -515,5 +515,5 @@ struct AchievementListRow: View {
 }
 
 #Preview {
-    StudentProgressView()
+    StudentProgressView(studentData: StudentData(), achievementManager: AchievementManager())
 }

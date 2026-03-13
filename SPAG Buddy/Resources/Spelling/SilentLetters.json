@@ -47,7 +47,7 @@
     "QuestionType": "SortWords",
     "Question": "Sort these words by their silent letter pattern: (3 marks)\nknock, hour, whistle, knife, honest, fasten\n\nSilent k: _____\nSilent h: _____\nSilent t: _____",
     "Answer": "Silent k: knock, knife\nSilent h: hour, honest\nSilent t: whistle, fasten",
-    "Explanation": "Recognizing patterns helps with spelling similar words."
+    "Explanation": "Recognising patterns helps with spelling similar words."
   },
   {
     "QuestionType": "ExplainRule",

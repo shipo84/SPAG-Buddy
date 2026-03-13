@@ -323,7 +323,9 @@ struct QuizView: View {
 
             achievementManager.checkAndUnlockAchievements(
                 studentData: studentData,
-                currentStreak: 0
+                currentStreak: 0,
+                latestScore: score,
+                latestTotal: questions.count
             )
 
             withAnimation {

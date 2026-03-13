@@ -34,7 +34,7 @@
         "type": "complete_table",
         "question": "Complete this table of adjective forms: (3 marks)\n\nPositive | Comparative | Superlative\ngood | _____ | _____\n_____ | worse | _____\nbad | _____ | worst",
         "answer": "good/better/best, bad/worse/worst",
-        "explanation": "Some adjectives have irregular comparative and superlative forms that must be memorized."
+        "explanation": "Some adjectives have irregular comparative and superlative forms that must be memorised."
     },
     {
         "type": "identify_adjective_type",

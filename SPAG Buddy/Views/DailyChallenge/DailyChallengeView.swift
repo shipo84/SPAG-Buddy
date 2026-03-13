@@ -260,7 +260,9 @@ struct DailyChallengeView: View {
 
             achievementManager.checkAndUnlockAchievements(
                 studentData: studentData,
-                currentStreak: challengeManager.dailyChallengeStreak
+                currentStreak: challengeManager.dailyChallengeStreak,
+                latestScore: score,
+                latestTotal: challengeManager.todaysChallenge?.questions.count ?? 0
             )
         }
     }
