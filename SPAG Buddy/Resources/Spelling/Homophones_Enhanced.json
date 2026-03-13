@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "topic": "Homophones and Near-Homophones",
+    "yearGroups": [5, 6],
+    "lastUpdated": "2024-01-15",
+    "totalQuestions": 20,
+    "difficultyDistribution": {
+      "1": 4,
+      "2": 6,
+      "3": 5,
+      "4": 3,
+      "5": 2
+    }
+  },
+  "questions": [
+    {
+      "id": "homo_basic_001",
+      "question": "Choose the correct spelling: I can ___ the birds singing.",
+      "questionType": "multiple_choice",
+      "options": ["here", "hear"],
+      "correctAnswers": ["hear"],
+      "explanation": "Hear = to listen with your ears. Here = in this place.",
+      "difficulty": 1,
+      "spellingPattern": "homophones",
+      "yearGroup": [5, 6],
+      "commonMistakes": ["here"],
+      "hints": ["Think about what you do with your ears", "The word has 'ear' in it"],
+      "contextSentence": "The classroom was so quiet you could ___ a pin drop.",
+      "relatedWords": ["hearing", "heard", "ear"]
+    },
+    {
+      "id": "homo_basic_002",
+      "question": "Select the correct word: The ___ is shining brightly today.",
+      "questionType": "multiple_choice",
+      "options": ["son", "sun"],
+      "correctAnswers": ["sun"],
+      "explanation": "Sun = the star in our solar system. Son = a male child.",
+      "difficulty": 1,
+      "spellingPattern": "homophones",
+      "yearGroup": [5, 6],
+      "commonMistakes": ["son"],
+      "hints": ["Think about what shines in the sky", "This word is related to sunny weather"],
+      "relatedWords": ["sunny", "sunshine", "sunlight"]
+    },
+    {
+      "id": "homo_basic_003",
+      "question": "Circle the correct spelling to complete this sentence: ____ books are on the table over ____.",
+      "questionType": "multiple_choice",
+      "options": ["Their / there", "There / their", "They're / there", "Their / they're"],
+      "correctAnswers": ["Their / there"],
+      "explanation": "Their = belonging to them; there = in that place.",
+      "difficulty": 2,
+      "spellingPattern": "homophones",
+      "yearGroup": [5, 6],
+      "commonMistakes": ["There / their", "They're / there"],
+      "hints": ["First blank needs a possessive word", "Second blank indicates a location"]
+    },
+    {
+      "id": "homo_basic_004",
+      "question": "Which sentence uses homophones correctly? Tick one.",
+      "questionType": "multiple_choice",
+      "options": ["The knew principal started last weak.", "I need to bye some flower for the cake.", "Please wait here while I check over there.", "Wood you like to no the answer?"],
+      "correctAnswers": ["Please wait here while I check over there."],
+      "explanation": "All other sentences contain homophone errors: knew→new, weak→week, bye→buy, flower→flour, wood→would, no→know.",
+      "difficulty": 3,
+      "spellingPattern": "homophones",
+      "yearGroup": [5, 6],
+      "hints": ["Read each sentence carefully", "Look for words that sound right but might be spelled wrong"]
+    },
+    {
+      "id": "homo_intermediate_001",
+      "question": "Complete this passage using the correct homophones from the brackets:\nThe school ____ (fete/fate) was a huge success. We ____ (raised/razed) lots of money ____ (four/for) charity.",
+      "questionType": "complete_passage",
+      "options": ["fete", "raised", "for"],
+      "correctAnswers": ["fete", "raised", "for"],
+      "explanation": "fete = fair/festival; raised = collected money; for = purpose.",
+      "difficulty": 3,
+      "spellingPattern": "homophones",
+      "yearGroup": [5, 6],
+      "hints": ["A school event is called a...", "When you collect money, you have...", "The preposition before 'charity' is..."]
+    },
+    {
+      "id": "homo_advanced_001",
+      "question": "Identify and correct all homophone errors in this passage: 'I went too the shop to by some meet for dinner. The whether was terrible.'",
+      "questionType": "find_errors",
+      "options": [],
+      "correctAnswers": ["too→to", "by→buy", "meet→meat", "whether→weather"],
+      "explanation": "Too = also/excessive; to = direction. By = near; buy = purchase. Meet = encounter; meat = food. Whether = if; weather = climate.",
+      "difficulty": 4,
+      "spellingPattern": "homophones",
+      "yearGroup": [6],
+      "hints": ["There are 4 errors to find", "Check every word that has a homophone"]
+    },
+    {
+      "id": "homo_advanced_002",
+      "question": "Choose the correct homophones to complete this sentence: The ____ said we're not ____ to talk ____ during the test.",
+      "questionType": "complex_choice",
+      "options": ["principal, allowed, aloud", "principle, aloud, allowed", "principal, aloud, allowed", "principle, allowed, aloud"],
+      "correctAnswers": ["principal, allowed, aloud"],
+      "explanation": "Principal = head teacher; allowed = permitted; aloud = out loud.",
+      "difficulty": 5,
+      "spellingPattern": "homophones",
+      "yearGroup": [6],
+      "hints": ["The person in charge of a school is the...", "When you have permission, you are...", "Speaking out loud means speaking..."]
+    },
+    {
+      "id": "near_homo_001",
+      "question": "Choose the correct word: I will ____ your advice.",
+      "questionType": "multiple_choice",
+      "options": ["accept", "except"],
+      "correctAnswers": ["accept"],
+      "explanation": "Accept = to receive or agree to. Except = excluding/but.",
+      "difficulty": 2,
+      "spellingPattern": "near-homophones",
+      "yearGroup": [5, 6],
+      "commonMistakes": ["except"],
+      "hints": ["This word means to receive or take", "It starts with 'ac-'"]
+    },
+    {
+      "id": "near_homo_002",
+      "question": "Select the correct word: The medicine will ____ your recovery.",
+      "questionType": "multiple_choice",
+      "options": ["affect", "effect"],
+      "correctAnswers": ["affect"],
+      "explanation": "Affect = verb meaning to influence. Effect = noun meaning result.",
+      "difficulty": 3,
+      "spellingPattern": "near-homophones",
+      "yearGroup": [6],
+      "hints": ["You need a verb here", "Affect is the Action (both start with A)"]
+    },
+    {
+      "id": "context_001",
+      "question": "Write two sentences: one using 'stationary' and one using 'stationery'.",
+      "questionType": "write_sentences",
+      "options": [],
+      "correctAnswers": ["Example: The car remained stationary at the traffic light. / I need to buy some stationery for school."],
+      "explanation": "Stationary = not moving/still. Stationery = writing materials like paper and pens.",
+      "difficulty": 4,
+      "spellingPattern": "homophones",
+      "yearGroup": [6],
+      "hints": ["One word means 'not moving'", "The other refers to paper and pens"]
+    }
+  ]
+}

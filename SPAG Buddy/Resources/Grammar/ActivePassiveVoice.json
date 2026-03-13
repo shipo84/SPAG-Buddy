@@ -1,0 +1,107 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is written in the active voice?",
+        "options": ["The ball was kicked by the striker.", "The cake was eaten by the children.", "The teacher read the story aloud.", "The window was broken by the football."],
+        "answer": "The teacher read the story aloud.",
+        "explanation": "In the active voice, the subject performs the action. 'The teacher' (subject) 'read' (verb) 'the story' (object). In the other sentences, the subject receives the action (the ball was kicked, the cake was eaten, the window was broken)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is written in the passive voice?",
+        "options": ["The dog chased the cat across the garden.", "A magnificent castle was built by the Normans.", "The children ate their packed lunches quickly.", "A robin sang beautifully in the old oak tree."],
+        "answer": "A magnificent castle was built by the Normans.",
+        "explanation": "In the passive voice, the subject has the action done to it. 'A magnificent castle' (subject) 'was built' (verb) 'by the Normans' (agent). The castle did not build anything — it was built."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the correct passive form of this active sentence? 'The goalkeeper saved the penalty.'",
+        "options": ["The penalty saved the goalkeeper.", "The penalty was saved by the goalkeeper.", "The goalkeeper was saved by the penalty.", "The penalty has saved by the goalkeeper."],
+        "answer": "The penalty was saved by the goalkeeper.",
+        "explanation": "To change from active to passive: the object ('the penalty') becomes the new subject, the verb becomes 'was saved' (past tense of 'to be' + past participle), and the original subject becomes 'by the goalkeeper'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the correct active form of this passive sentence? 'The homework was marked by Mrs Chen.'",
+        "options": ["Mrs Chen marked the homework.", "The homework marked Mrs Chen.", "Mrs Chen was marked by the homework.", "The homework has marked by Mrs Chen."],
+        "answer": "Mrs Chen marked the homework.",
+        "explanation": "To change from passive to active: the agent ('Mrs Chen') becomes the subject, the verb changes to a simple active form ('marked'), and the original subject ('the homework') becomes the object."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Why might a writer choose to use the passive voice in this sentence? 'The ancient ruins were discovered in 1850.'",
+        "options": ["To make the sentence longer.", "Because it sounds more modern.", "Because who made the discovery is unknown or unimportant.", "Because the active voice is always incorrect."],
+        "answer": "Because who made the discovery is unknown or unimportant.",
+        "explanation": "The passive voice is useful when the doer of the action is unknown, unimportant, or obvious. Here, the focus is on the ruins being discovered, not on who found them. This is common in historical and scientific writing."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these passive sentences does NOT include the agent (the person or thing doing the action)?",
+        "options": ["The letter was posted by Gran.", "The trees were planted by the volunteers.", "The school was closed due to heavy snow.", "The song was performed by the choir."],
+        "answer": "The school was closed due to heavy snow.",
+        "explanation": "In 'The school was closed due to heavy snow', there is no 'by...' phrase telling us who closed the school. The agent is missing. The other sentences all include the agent: 'by Gran', 'by the volunteers', 'by the choir'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which verb form is used to create the passive voice?",
+        "options": ["The present tense of the main verb", "A form of 'to be' plus the past participle", "A form of 'to have' plus the present tense", "The base form of the verb on its own"],
+        "answer": "A form of 'to be' plus the past participle",
+        "explanation": "The passive voice is formed using a form of 'to be' (is, are, was, were, has been, will be) followed by the past participle of the main verb. For example: 'was eaten', 'is written', 'were caught'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Identify the active sentence among these options.",
+        "options": ["The flowers were watered by the gardener.", "The exam results were published online.", "Hundreds of trees were blown down in the storm.", "The veterinarian carefully examined the injured hedgehog."],
+        "answer": "The veterinarian carefully examined the injured hedgehog.",
+        "explanation": "In this sentence, 'the veterinarian' (subject) performs the action of examining. The hedgehog is the object that receives the action. All other sentences use the passive voice where the subject receives the action."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which passive sentence is written in the present tense?",
+        "options": ["The letters were delivered by the postman.", "The letters are delivered by the postman every morning.", "The letters had been delivered before noon.", "The letters will be delivered tomorrow."],
+        "answer": "The letters are delivered by the postman every morning.",
+        "explanation": "'Are delivered' uses the present tense form of 'to be' ('are') plus the past participle ('delivered'). 'Were delivered' is past tense, 'had been delivered' is past perfect, and 'will be delivered' is future tense."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the correct passive form of this sentence? 'Thousands of people will watch the football final.'",
+        "options": ["The football final will be watched by thousands of people.", "The football final will watched by thousands of people.", "The football final is watched by thousands of people.", "Thousands of people will be watched by the football final."],
+        "answer": "The football final will be watched by thousands of people.",
+        "explanation": "To form the future passive, use 'will be' plus the past participle: 'will be watched'. The object ('the football final') becomes the new subject, and the original subject ('thousands of people') follows 'by'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read this newspaper headline: 'School fundraiser raises over two thousand pounds.' How would this be rewritten in the passive voice?",
+        "options": ["Over two thousand pounds was raised by the school fundraiser.", "Over two thousand pounds raised the school fundraiser.", "The school fundraiser was raised over two thousand pounds.", "Two thousand pounds was the school fundraiser."],
+        "answer": "Over two thousand pounds was raised by the school fundraiser.",
+        "explanation": "In the passive version, 'over two thousand pounds' (the object) becomes the subject, 'was raised' is the passive verb, and 'by the school fundraiser' identifies the agent. This shifts the focus from the fundraiser to the amount of money."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In which type of writing is the passive voice most commonly used?",
+        "options": ["A diary entry about your day", "A scientific report about an experiment", "A story about a pirate adventure", "A letter to a friend"],
+        "answer": "A scientific report about an experiment",
+        "explanation": "The passive voice is commonly used in scientific and formal writing because it focuses on the action or result rather than who did it. For example: 'The liquid was heated to 100 degrees' focuses on what happened to the liquid."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly changes 'The Romans built Hadrian's Wall' into the passive voice?",
+        "options": ["Hadrian's Wall built the Romans.", "Hadrian's Wall was built by the Romans.", "The Romans were built by Hadrian's Wall.", "Hadrian's Wall has built by the Romans."],
+        "answer": "Hadrian's Wall was built by the Romans.",
+        "explanation": "'Hadrian's Wall' (object) becomes the subject, the verb becomes 'was built' (past tense of 'to be' + past participle), and the original subject becomes 'by the Romans'. The meaning stays the same but the focus shifts to the wall."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is wrong with this passive sentence? 'The painting was paint by a famous artist.'",
+        "options": ["'Was' should be 'were'.", "'Paint' should be the past participle 'painted'.", "'By' should be 'from'.", "There is nothing wrong with the sentence."],
+        "answer": "'Paint' should be the past participle 'painted'.",
+        "explanation": "The passive voice requires a form of 'to be' plus the past participle. The past participle of 'paint' is 'painted', not 'paint'. The correct sentence is: 'The painting was painted by a famous artist.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which pair shows the same event described first in active voice and then in passive voice?",
+        "options": ["The dog bit the postman. / The postman bit the dog.", "The storm damaged the roof. / The roof was damaged by the storm.", "The children sang a song. / A song sang the children.", "The gardener planted roses. / The gardener was planted by roses."],
+        "answer": "The storm damaged the roof. / The roof was damaged by the storm.",
+        "explanation": "Both sentences describe the same event: the storm causing damage to the roof. In the active version, 'the storm' is the subject doing the action. In the passive version, 'the roof' is the subject receiving the action. The meaning is the same; only the focus changes."
+    }
+]

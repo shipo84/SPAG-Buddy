@@ -1,0 +1,76 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Circle the word with a silent letter. (1 mark)",
+    "Options": ["garden", "castle", "pencil", "rabbit"],
+    "Answer": "castle",
+    "Explanation": "Castle has a silent 't' - pronounced 'cassel'."
+  },
+  {
+    "QuestionType": "IdentifySilentLetters",
+    "Question": "Underline the silent letter in each word: (4 marks)\na) knife\nb) Wednesday\nc) autumn\nd) receipt",
+    "Answer": "a) k  b) d (first d)  c) n  d) p",
+    "Explanation": "1 mark for each correctly identified silent letter."
+  },
+  {
+    "QuestionType": "CompleteSpelling",
+    "Question": "Complete these words by adding the missing silent letter: (3 marks)\na) __nee (joint in your leg)\nb) de__t (money owed)\nc) __rong (incorrect)",
+    "Answer": "a) knee  b) debt  c) wrong",
+    "Explanation": "Silent k before n; silent b after vowel before t; silent w before r."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which sentence contains TWO words with silent letters? (1 mark)",
+    "Options": ["I will write a letter to my friend.", "The knight knew the answer.", "She can run very fast.", "We went to school yesterday."],
+    "Answer": "The knight knew the answer.",
+    "Explanation": "Knight (silent k) and knew (silent k) both have silent letters."
+  },
+  {
+    "QuestionType": "SpellFromSound",
+    "Question": "Write the correct spelling for these words: (4 marks)\na) /nife/ (cutting tool)\nb) /iland/ (surrounded by water)\nc) /reethe/ (circular decoration)\nd) /sord/ (weapon)",
+    "Answer": "a) knife  b) island  c) wreath  d) sword",
+    "Explanation": "Each word contains a silent letter that must be included in spelling."
+  },
+  {
+    "QuestionType": "FindThePattern",
+    "Question": "Look at these words: lamb, thumb, climb, comb. What spelling pattern do they share? (2 marks)",
+    "Answer": "They all end with 'mb' where the 'b' is silent.",
+    "Explanation": "Understanding spelling patterns helps remember silent letters."
+  },
+  {
+    "QuestionType": "CorrectErrors",
+    "Question": "Circle and correct the four spelling errors in this sentence: The onest boy new the anser about the iland. (2 marks)",
+    "Answer": "onest → honest, new → knew, anser → answer, iland → island",
+    "Explanation": "½ mark for each correction (silent h, k, w, s)."
+  },
+  {
+    "QuestionType": "SortWords",
+    "Question": "Sort these words by their silent letter pattern: (3 marks)\nknock, hour, whistle, knife, honest, fasten\n\nSilent k: _____\nSilent h: _____\nSilent t: _____",
+    "Answer": "Silent k: knock, knife\nSilent h: hour, honest\nSilent t: whistle, fasten",
+    "Explanation": "Recognising patterns helps with spelling similar words."
+  },
+  {
+    "QuestionType": "ExplainRule",
+    "Question": "Explain why we still write the 'k' in 'know' even though we don't pronounce it. (2 marks)",
+    "Answer": "The silent 'k' shows the word's history/origin and helps distinguish it from 'no'. It also connects to related words like 'knowledge' where the k sound appears.",
+    "Explanation": "Shows understanding of etymology and word families."
+  },
+  {
+    "QuestionType": "CompletePassage",
+    "Question": "Fill in the missing words (all contain silent letters): (4 marks)\n\nThe _____ (k sound removed) walked through the _____ (cassel) gate. He carried his _____ (sord) and wore a _____ (ree-th) on his head.",
+    "Answer": "knight, castle, sword, wreath",
+    "Explanation": "Common words with silent letters in context."
+  },
+  {
+    "QuestionType": "CreateSentence",
+    "Question": "Write a sentence using at least three words with silent letters. Underline the words with silent letters. (3 marks)",
+    "Answer": "Example: The honest knight knew the castle guard would listen.",
+    "Explanation": "1 mark per correct word with silent letter used appropriately."
+  },
+  {
+    "QuestionType": "TrueFalse",
+    "Question": "The letter 'l' is always pronounced in English words. (1 mark)",
+    "Answer": "False",
+    "Explanation": "The 'l' is silent in words like: walk, talk, chalk, half, salmon, calm."
+  }
+]

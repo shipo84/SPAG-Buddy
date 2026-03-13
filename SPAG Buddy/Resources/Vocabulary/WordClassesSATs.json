@@ -1,0 +1,142 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What word class is the underlined word in the sentence below?\n'The clever fox crept silently through the forest.'\nclever (1 mark)",
+        "options": ["noun", "verb", "adjective", "adverb"],
+        "answer": "adjective",
+        "explanation": "'Clever' is an adjective because it describes the noun 'fox'. Adjectives give more information about nouns."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What word class is the underlined word in the sentence below?\n'The dog barked loudly at the postman.'\nloudly (1 mark)",
+        "options": ["adjective", "adverb", "verb", "noun"],
+        "answer": "adverb",
+        "explanation": "'Loudly' is an adverb because it describes how the dog barked. Adverbs modify verbs, adjectives, or other adverbs."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the word class of 'under' in the sentence below?\n'The cat hid under the table.'\n(1 mark)",
+        "options": ["conjunction", "adverb", "preposition", "determiner"],
+        "answer": "preposition",
+        "explanation": "'Under' is a preposition because it shows the position of the cat in relation to the table. Prepositions often show place, time, or direction."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a conjunction in the sentence below?\n'I wanted to play outside, but it was raining heavily.'\n(1 mark)",
+        "options": ["wanted", "outside", "but", "heavily"],
+        "answer": "but",
+        "explanation": "'But' is a co-ordinating conjunction. It joins two main clauses together and shows a contrast between wanting to play and the rain."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a determiner in the sentence below?\n'Several children brought their packed lunches to the trip.'\n(1 mark)",
+        "options": ["children", "brought", "Several", "packed"],
+        "answer": "Several",
+        "explanation": "'Several' is a determiner because it comes before the noun 'children' and tells us roughly how many. Determiners include words like 'a', 'the', 'some', 'every', 'several'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What word class is the word 'light' in the sentence below?\n'Please light the candle on the birthday cake.'\n(1 mark)",
+        "options": ["noun", "verb", "adjective", "adverb"],
+        "answer": "verb",
+        "explanation": "In this sentence, 'light' is a verb meaning to set fire to something. The same word can be a noun ('the light was bright') or an adjective ('a light bag'), depending on context."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What word class is the word 'light' in the sentence below?\n'The light from the torch lit up the cave.'\n(1 mark)",
+        "options": ["noun", "verb", "adjective", "adverb"],
+        "answer": "noun",
+        "explanation": "In this sentence, 'light' is a noun because it is a thing (the brightness from the torch). Notice how the determiner 'The' comes before it, which is a clue that it is being used as a noun."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which underlined word is a relative pronoun? (1 mark)\n'The girl who won the race celebrated with her team.'",
+        "options": ["girl", "who", "race", "her"],
+        "answer": "who",
+        "explanation": "'Who' is a relative pronoun. It introduces a relative clause ('who won the race') that gives more information about the noun 'girl'. Other relative pronouns include 'which', 'that', 'whose', and 'whom'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Choose the correct relative pronoun to complete the sentence. (1 mark)\n'The book _____ I borrowed from the library was very exciting.'",
+        "options": ["who", "which", "whose", "whom"],
+        "answer": "which",
+        "explanation": "'Which' is the correct relative pronoun because it refers to a thing (the book). Use 'who' for people and 'which' or 'that' for things."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Choose the correct relative pronoun to complete the sentence. (1 mark)\n'The boy _____ football kit was lost had to borrow one.'",
+        "options": ["who", "which", "whose", "that"],
+        "answer": "whose",
+        "explanation": "'Whose' is the correct relative pronoun because it shows possession -- the football kit belongs to the boy. 'Whose' replaces 'his' or 'her' in relative clauses."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the difference between the underlined words in these two sentences?\nA: 'That is my favourite book.'\nB: 'The book that I read was brilliant.'\n(1 mark)",
+        "options": ["Both are determiners.", "In A it is a determiner; in B it is a relative pronoun.", "Both are relative pronouns.", "In A it is a relative pronoun; in B it is a determiner."],
+        "answer": "In A it is a determiner; in B it is a relative pronoun.",
+        "explanation": "In sentence A, 'That' points to a specific book (determiner). In sentence B, 'that' introduces a relative clause giving more information about the book (relative pronoun). Words can belong to different word classes depending on how they are used."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence contains a possessive pronoun? (1 mark)",
+        "options": ["She gave her coat to the teacher.", "The red bicycle is mine.", "They walked their dog in the park.", "Our class won the competition."],
+        "answer": "The red bicycle is mine.",
+        "explanation": "'Mine' is a possessive pronoun -- it stands alone to show ownership and replaces 'my bicycle'. In the other sentences, 'her', 'their', and 'our' are possessive determiners because they come before a noun."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which underlined word is a possessive determiner (not a possessive pronoun)? (1 mark)\n'His painting was the best, but hers was colourful too.'",
+        "options": ["His", "best", "hers", "colourful"],
+        "answer": "His",
+        "explanation": "'His' is a possessive determiner here because it comes before the noun 'painting'. 'Hers' is a possessive pronoun because it stands alone (replacing 'her painting'). Possessive determiners always come before a noun."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What word class is the underlined word in the sentence below?\n'The children played happily because the sun was shining.'\nbecause (1 mark)",
+        "options": ["preposition", "adverb", "conjunction", "pronoun"],
+        "answer": "conjunction",
+        "explanation": "'Because' is a subordinating conjunction. It joins the main clause ('The children played happily') with the subordinate clause ('the sun was shining') and explains the reason."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Identify the pronoun in the sentence below.\n'After the match, they celebrated with a picnic in the park.'\n(1 mark)",
+        "options": ["After", "they", "with", "park"],
+        "answer": "they",
+        "explanation": "'They' is a personal pronoun. It takes the place of a noun (the people who played in the match) to avoid repetition."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What word class is the word 'round' in the sentence below?\n'The children ran round the playground.'\n(1 mark)",
+        "options": ["adjective", "noun", "preposition", "verb"],
+        "answer": "preposition",
+        "explanation": "In this sentence, 'round' is a preposition showing movement in relation to the playground. 'Round' can also be an adjective ('a round ball'), a noun ('the next round'), or a verb ('round the corner')."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses the word 'play' as a noun? (1 mark)",
+        "options": ["We play football every Tuesday.", "The children play in the garden after school.", "The school play was about ancient Egypt.", "Can I play with my friends today?"],
+        "answer": "The school play was about ancient Egypt.",
+        "explanation": "In 'The school play', the word 'play' is a noun meaning a theatrical performance. In the other sentences, 'play' is a verb meaning to take part in a game or activity."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is an adverb in the sentence below?\n'Yesterday, we visited the natural history museum.'\n(1 mark)",
+        "options": ["Yesterday", "visited", "natural", "museum"],
+        "answer": "Yesterday",
+        "explanation": "'Yesterday' is an adverb of time. It tells us when the visit happened. Not all adverbs end in '-ly'; words like 'yesterday', 'today', 'soon', and 'often' are also adverbs."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence contains a preposition? (1 mark)",
+        "options": ["The horse galloped quickly.", "She sang beautifully at the concert.", "The tall trees swayed gently.", "However, the rain stopped eventually."],
+        "answer": "She sang beautifully at the concert.",
+        "explanation": "'At' is a preposition. It shows the relationship between 'sang' and 'the concert' (where she sang). Common prepositions include: at, in, on, under, beside, between, through, during."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read the sentence below.\n'The tiny hedgehog carefully crossed the busy road.'\nHow many adjectives are in this sentence? (1 mark)",
+        "options": ["one", "two", "three", "four"],
+        "answer": "two",
+        "explanation": "The two adjectives are 'tiny' (describing the hedgehog) and 'busy' (describing the road). 'Carefully' is an adverb (describing how the hedgehog crossed), not an adjective."
+    }
+]

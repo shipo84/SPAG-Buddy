@@ -1,0 +1,191 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What is a clause? (1 mark)",
+        "options": ["A group of words that contains a verb", "A single word that describes a noun", "A type of punctuation mark", "A word that joins two sentences"],
+        "answer": "A group of words that contains a verb",
+        "explanation": "A clause is a group of words that contains a subject and a verb. It can be a main clause (makes sense on its own) or a subordinate clause (depends on the main clause)."
+    },
+    {
+        "type": "identify_clauses",
+        "question": "Identify the main clause and subordinate clause in this sentence: 'Although it was raining, the children played outside.' (2 marks)",
+        "answer": "Main clause: the children played outside | Subordinate clause: Although it was raining",
+        "explanation": "The main clause makes sense on its own. The subordinate clause starts with 'although' and depends on the main clause for meaning."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is a subordinating conjunction? (1 mark)",
+        "options": ["and", "because", "or", "but"],
+        "answer": "because",
+        "explanation": "Subordinating conjunctions (because, although, when, if, while, until, after, before) introduce subordinate clauses. 'And', 'or', and 'but' are coordinating conjunctions."
+    },
+    {
+        "type": "identify_main_clause",
+        "question": "Underline the main clause in each sentence: (3 marks)\na) When the bell rang, the pupils lined up.\nb) She passed the test because she studied hard.\nc) Before you leave, please tidy your desk.",
+        "answer": "a) the pupils lined up  b) She passed the test  c) please tidy your desk",
+        "explanation": "The main clause can stand alone as a complete sentence. The subordinate clause adds extra information."
+    },
+    {
+        "type": "add_subordinate_clause",
+        "question": "Add a subordinate clause to each main clause: (3 marks)\na) The dog barked _______.\nb) _______, she put on her coat.\nc) The children cheered _______.",
+        "answer": "Example: a) The dog barked when the postman arrived.  b) Because it was cold, she put on her coat.  c) The children cheered after they won the match.",
+        "explanation": "Subordinate clauses add extra detail and begin with subordinating conjunctions like when, because, after, if, although."
+    },
+    {
+        "type": "relative_clauses",
+        "question": "Add a relative clause to each sentence using who, which, that, whose, or where: (3 marks)\na) The teacher _______ praised the class.\nb) The cake _______ was delicious.\nc) The park _______ has a new playground.",
+        "answer": "Example: a) The teacher, who was very kind, praised the class.  b) The cake, which was homemade, was delicious.  c) The park, where we play football, has a new playground.",
+        "explanation": "Relative clauses give extra information about a noun. They begin with relative pronouns (who, which, that, whose) or relative adverbs (where, when)."
+    },
+    {
+        "type": "true_false",
+        "question": "A subordinate clause can stand alone as a complete sentence. (1 mark)",
+        "answer": "False",
+        "explanation": "A subordinate clause cannot stand alone. 'Because it was raining' is not a complete sentence. It needs a main clause: 'We stayed inside because it was raining.'"
+    },
+    {
+        "type": "identify_relative_pronoun",
+        "question": "Choose the correct relative pronoun to complete each sentence: (3 marks)\na) The boy _______ won the race was very fast.\nb) The book _______ I borrowed was exciting.\nc) The woman _______ car broke down called for help.",
+        "answer": "a) who  b) which/that  c) whose",
+        "explanation": "'Who' refers to people, 'which' refers to things, 'whose' shows possession, 'that' can refer to people or things."
+    },
+    {
+        "type": "punctuate_clauses",
+        "question": "Add the correct punctuation to these sentences with relative clauses: (3 marks)\na) My brother who lives in London is a doctor.\nb) The Eiffel Tower which is in Paris is very tall.\nc) The girl whose bag was stolen reported it to the police.",
+        "answer": "a) My brother, who lives in London, is a doctor.  b) The Eiffel Tower, which is in Paris, is very tall.  c) The girl whose bag was stolen reported it to the police. (no commas needed)",
+        "explanation": "Non-essential (non-defining) relative clauses need commas. Essential (defining) relative clauses do not. In (c), the clause defines which girl, so no commas."
+    },
+    {
+        "type": "subordinating_conjunctions",
+        "question": "Complete each sentence with a suitable subordinating conjunction: (4 marks)\na) _______ it was dark, she turned on the light.\nb) I will wait _______ you are ready.\nc) He wore a coat _______ it was cold.\nd) _______ you finish your homework, you can play outside.",
+        "answer": "a) Because/Since/As  b) until  c) because/since/as  d) When/After/If",
+        "explanation": "Subordinating conjunctions show the relationship between clauses: cause (because), time (until, when, after), condition (if)."
+    },
+    {
+        "type": "main_or_subordinate",
+        "question": "Label each clause as main (M) or subordinate (S): (4 marks)\na) while the sun was shining\nb) the cat slept on the mat\nc) if you come to the party\nd) she opened the door",
+        "answer": "a) S  b) M  c) S  d) M",
+        "explanation": "Subordinate clauses begin with subordinating conjunctions (while, if, because, when) and cannot stand alone. Main clauses make sense on their own."
+    },
+    {
+        "type": "combine_clauses",
+        "question": "Join each pair of sentences using the subordinating conjunction given: (3 marks)\na) It started to rain. We went inside. (when)\nb) She was tired. She kept working. (although)\nc) I will help you. You ask nicely. (if)",
+        "answer": "a) When it started to rain, we went inside.  b) Although she was tired, she kept working.  c) I will help you if you ask nicely.",
+        "explanation": "Subordinating conjunctions join main and subordinate clauses. When the subordinate clause comes first, use a comma."
+    },
+    {
+        "type": "embedded_clauses",
+        "question": "Identify the embedded clause in each sentence: (3 marks)\na) The dog, which was very old, slept all day.\nb) My friend, who moved here last year, is very kind.\nc) The castle, where the king once lived, is now a museum.",
+        "answer": "a) which was very old  b) who moved here last year  c) where the king once lived",
+        "explanation": "Embedded clauses are placed in the middle of a sentence, between commas, adding extra information about a noun."
+    },
+    {
+        "type": "error_correction",
+        "question": "Find and correct the errors in these sentences: (3 marks)\na) Because it was sunny. We went to the park.\nb) The woman which lives next door is kind.\nc) Although she was tired but she kept working.",
+        "answer": "a) Because it was sunny, we went to the park.  b) The woman who lives next door is kind.  c) Although she was tired, she kept working. (remove 'but')",
+        "explanation": "a) A subordinate clause cannot be a sentence on its own. b) Use 'who' for people, not 'which'. c) Don't use both 'although' and 'but' - they both show contrast."
+    },
+    {
+        "type": "expand_sentences",
+        "question": "Expand these simple sentences by adding a subordinate clause: (3 marks)\na) The flowers bloomed.\nb) He ran home.\nc) She smiled.",
+        "answer": "Example: a) The flowers bloomed when spring arrived.  b) He ran home because it was getting dark.  c) She smiled although she was nervous.",
+        "explanation": "Adding subordinate clauses makes simple sentences more detailed and interesting."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence contains a relative clause? (1 mark)",
+        "options": ["The tall man walked slowly.", "She left because she was bored.", "The dog that barked all night kept me awake.", "If it rains, we will stay inside."],
+        "answer": "The dog that barked all night kept me awake.",
+        "explanation": "'That barked all night' is a relative clause - it gives extra information about 'the dog' and starts with the relative pronoun 'that'."
+    },
+    {
+        "type": "identify_conjunction_type",
+        "question": "Sort these conjunctions into coordinating and subordinating: (4 marks)\nConjunctions: and, because, but, when, or, although, if, so",
+        "answer": "Coordinating: and, but, or, so | Subordinating: because, when, although, if",
+        "explanation": "Coordinating conjunctions (FANBOYS: for, and, nor, but, or, yet, so) join equal clauses. Subordinating conjunctions introduce dependent clauses."
+    },
+    {
+        "type": "clause_function",
+        "question": "What is the function of the subordinate clause in each sentence? (3 marks)\na) She left early because she felt ill. (reason/time/condition)\nb) When the alarm rang, he woke up. (reason/time/condition)\nc) If you study hard, you will pass. (reason/time/condition)",
+        "answer": "a) reason  b) time  c) condition",
+        "explanation": "Subordinate clauses serve different functions: 'because' gives a reason, 'when' gives a time, 'if' gives a condition."
+    },
+    {
+        "type": "writing_task",
+        "question": "Write three sentences about going to school, each with a different subordinating conjunction: (3 marks)",
+        "answer": "Example: When the bus arrives, I grab my bag. Although it rains sometimes, I enjoy the walk. I always eat breakfast before I leave the house.",
+        "explanation": "Using different subordinating conjunctions (when, although, before, because, if, while) creates varied and interesting sentences."
+    },
+    {
+        "type": "multi_clause_sentences",
+        "question": "How many clauses are in each sentence? Identify them: (3 marks)\na) The cat sat on the mat.\nb) When I got home, I made dinner and watched TV.\nc) Although it was late, she kept reading because the book was exciting.",
+        "answer": "a) 1 clause (The cat sat on the mat)  b) 3 clauses (When I got home / I made dinner / and watched TV)  c) 3 clauses (Although it was late / she kept reading / because the book was exciting)",
+        "explanation": "Complex sentences can contain multiple clauses joined by conjunctions."
+    },
+    {
+        "type": "defining_vs_nondefining",
+        "question": "Are these relative clauses defining (essential) or non-defining (extra information)? (3 marks)\na) Students who work hard usually succeed.\nb) My sister, who is a nurse, lives in Manchester.\nc) The book that I lent you is a classic.",
+        "answer": "a) defining  b) non-defining  c) defining",
+        "explanation": "Defining clauses are essential to meaning (no commas). Non-defining clauses add extra, removable information (with commas)."
+    },
+    {
+        "type": "sentence_types",
+        "question": "Label each sentence as simple, compound, or complex: (4 marks)\na) The sun shone brightly.\nb) It rained, but we still went out.\nc) Although it was cold, we had fun.\nd) She sang and danced at the party.",
+        "answer": "a) simple  b) compound  c) complex  d) simple (compound predicate but one clause)",
+        "explanation": "Simple = one clause, compound = two main clauses joined by coordinating conjunction, complex = main + subordinate clause."
+    },
+    {
+        "type": "rewrite_with_clause",
+        "question": "Rewrite these pairs of simple sentences as one complex sentence: (3 marks)\na) The teacher was pleased. The class behaved well.\nb) I wore my warm coat. It was snowing outside.\nc) She won the prize. She had practised every day.",
+        "answer": "a) The teacher was pleased because the class behaved well.  b) I wore my warm coat because it was snowing outside.  c) She won the prize because she had practised every day.",
+        "explanation": "Combining sentences using subordinating conjunctions creates complex sentences that show the relationship between ideas."
+    },
+    {
+        "type": "identify_all_clauses",
+        "question": "Identify and label all clauses in this passage: (4 marks)\n'When the storm arrived, the villagers hurried indoors. The wind, which howled through the streets, knocked over several trees.'",
+        "answer": "Sentence 1: 'When the storm arrived' (subordinate, time) + 'the villagers hurried indoors' (main). Sentence 2: 'The wind knocked over several trees' (main) + 'which howled through the streets' (subordinate, relative).",
+        "explanation": "Breaking passages into clauses helps understand sentence structure and how ideas relate to each other."
+    },
+    {
+        "type": "fill_in_conjunction",
+        "question": "Choose the best subordinating conjunction for each gap: (3 marks)\na) _______ the film had ended, everyone left the cinema.\nb) She packed an umbrella _______ it might rain.\nc) _______ he apologised, she was still upset.",
+        "answer": "a) After/When  b) in case/because  c) Although/Even though",
+        "explanation": "Choose conjunctions that create the correct logical relationship: time (after/when), precaution (in case), contrast (although)."
+    },
+    {
+        "type": "clause_or_phrase",
+        "question": "Decide whether each group of words is a clause or a phrase: (4 marks)\na) under the old bridge\nb) while the children played\nc) the big red bus\nd) because she was late",
+        "answer": "a) phrase (no verb)  b) clause (has subject 'children' and verb 'played')  c) phrase (no verb)  d) clause (has subject 'she' and verb 'was')",
+        "explanation": "A clause must contain a subject and a verb. A phrase is a group of words without a subject-verb combination."
+    },
+    {
+        "type": "challenge",
+        "question": "Write a complex sentence that contains: a main clause, a subordinate clause, and a relative clause. (3 marks)",
+        "answer": "Example: 'When the teacher, who was always cheerful, entered the room, the children stopped talking.'",
+        "explanation": "Main: 'the children stopped talking', Subordinate: 'When the teacher entered the room', Relative: 'who was always cheerful'."
+    },
+    {
+        "type": "comma_placement",
+        "question": "Add commas in the correct places in these sentences: (3 marks)\na) Before we left we checked the windows.\nb) The painting which was very old hung in the gallery.\nc) If you need help just ask your teacher.",
+        "answer": "a) Before we left, we checked the windows.  b) The painting, which was very old, hung in the gallery.  c) If you need help, just ask your teacher.",
+        "explanation": "Use a comma after a fronted subordinate clause and around non-defining relative clauses."
+    },
+    {
+        "type": "conditional_clauses",
+        "question": "Complete these conditional sentences: (3 marks)\na) If it rains tomorrow, _______.\nb) _______ if you practise every day.\nc) If I were taller, _______.",
+        "answer": "Example: a) If it rains tomorrow, we will cancel the picnic.  b) You will improve if you practise every day.  c) If I were taller, I would play basketball.",
+        "explanation": "Conditional clauses use 'if' to describe possible situations and their results. They can come at the beginning or end of a sentence."
+    },
+    {
+        "type": "transform_sentences",
+        "question": "Change these compound sentences into complex sentences: (3 marks)\na) It was cold, so I wore a jumper.\nb) She was hungry, but she didn't eat.\nc) He ran fast, and he won the race.",
+        "answer": "a) Because it was cold, I wore a jumper.  b) Although she was hungry, she didn't eat.  c) He won the race because he ran fast.",
+        "explanation": "Replace coordinating conjunctions with subordinating ones: so → because, but → although, and → because (showing cause)."
+    },
+    {
+        "type": "SATs_style",
+        "question": "Tick one box to show where the subordinate clause is in this sentence:\n'The children, who had been waiting patiently, cheered when the gates opened.' (1 mark)\na) The children\nb) who had been waiting patiently\nc) cheered\nd) when the gates opened\ne) Both b and d",
+        "answer": "e) Both b and d",
+        "explanation": "This sentence has two subordinate clauses: 'who had been waiting patiently' (relative clause) and 'when the gates opened' (adverbial clause of time). The main clause is 'The children cheered'."
+    }
+]

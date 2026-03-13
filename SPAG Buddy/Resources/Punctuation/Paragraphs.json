@@ -1,0 +1,79 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "When should you start a new paragraph? (1 mark)",
+        "options": ["After every sentence", "When you change topic, time, place, or speaker", "Only at the start of a new page", "Whenever a sentence is long"],
+        "answer": "When you change topic, time, place, or speaker",
+        "explanation": "New paragraphs are needed for a change of topic (TiP TOp): Time, Place, Topic, or Person (speaker)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which mnemonic helps you remember when to start a new paragraph? (1 mark)",
+        "options": ["SPAG", "TiP TOp", "FANBOYS", "ISPACE"],
+        "answer": "TiP TOp",
+        "explanation": "TiP TOp stands for Time, Place, Topic, Person - the four main reasons to start a new paragraph."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Where should a paragraph break be in this passage? The match was exciting. Our team scored three goals and won the cup. After the game, we went to a restaurant to celebrate. The food was delicious and everyone was very happy. (1 mark)",
+        "answer": "There should be a paragraph break before 'After the game' because there is a change of time and place (from the match to the restaurant).",
+        "explanation": "A new paragraph is needed when the time and place shift from the football match to the restaurant celebration."
+    },
+    {
+        "type": "true_false",
+        "question": "Every paragraph must contain at least three sentences. (1 mark)",
+        "answer": "False",
+        "explanation": "A paragraph can be any length, even a single sentence, as long as it deals with one main idea or point."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is a topic sentence? (1 mark)",
+        "options": ["The last sentence of a paragraph", "A sentence about topics", "The opening sentence that introduces the main idea of a paragraph", "A sentence with a question mark"],
+        "answer": "The opening sentence that introduces the main idea of a paragraph",
+        "explanation": "A topic sentence tells the reader what the paragraph will be about. It is usually the first sentence."
+    },
+    {
+        "type": "rewrite",
+        "question": "This passage needs to be split into two paragraphs. Write it out showing where the paragraph break should go: The Romans built many roads across Britain. These roads were long and straight, connecting towns and forts. In addition to roads, the Romans also built impressive bathhouses. These were places where people could wash, relax and socialise. (1 mark)",
+        "answer": "The Romans built many roads across Britain. These roads were long and straight, connecting towns and forts.\n\nIn addition to roads, the Romans also built impressive bathhouses. These were places where people could wash, relax and socialise.",
+        "explanation": "A new paragraph starts at 'In addition to roads...' because the topic changes from roads to bathhouses."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a suitable topic sentence for a paragraph about the dangers of plastic pollution in the ocean. (1 mark)",
+        "answer": "Example: Plastic pollution is one of the biggest threats facing our oceans today.",
+        "explanation": "Accept any sentence that clearly introduces the topic of ocean plastic pollution."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In a story, why should each new speaker have a new paragraph? (1 mark)",
+        "options": ["To make the writing longer", "To use more paper", "To make it clear who is speaking", "Because it looks nicer"],
+        "answer": "To make it clear who is speaking",
+        "explanation": "Starting a new paragraph for each speaker helps the reader follow the conversation and know who is saying what."
+    },
+    {
+        "type": "explain",
+        "question": "Explain why paragraphs are important in a piece of writing. Give two reasons. (2 marks)",
+        "answer": "Paragraphs break the text into manageable sections, making it easier to read. They also help organise ideas so that each paragraph focuses on one main point, helping the reader follow the writer's argument or story.",
+        "explanation": "Award 1 mark for each valid reason (e.g. readability, organisation, clarity, grouping related ideas)."
+    },
+    {
+        "type": "identify_errors",
+        "question": "This dialogue is written incorrectly. Explain what is wrong: \"I love swimming,\" said Priya. \"Me too,\" replied Josh. \"Let's go to the pool!\" said Priya. (1 mark)",
+        "answer": "Each new speaker should start on a new line (new paragraph). Josh's speech should start a new paragraph, and Priya's second line of speech should also start a new paragraph.",
+        "explanation": "In dialogue, every time the speaker changes, a new paragraph must begin."
+    },
+    {
+        "type": "sort_words",
+        "question": "Sort these reasons for starting a new paragraph into the TiP TOp categories: 'The next morning...', 'Meanwhile, in the castle...', 'Another reason is...', '\"Hello!\" said the stranger.' (2 marks)",
+        "answer": "Time: 'The next morning...' Place: 'Meanwhile, in the castle...' Topic: 'Another reason is...' Person: '\"Hello!\" said the stranger.'",
+        "explanation": "Each example shows a different TiP TOp reason for starting a new paragraph."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How is a new paragraph shown in handwriting? (1 mark)",
+        "options": ["By writing in capital letters", "By starting on a new line with an indent", "By drawing a line across the page", "By writing in a different colour"],
+        "answer": "By starting on a new line with an indent",
+        "explanation": "In handwriting, a new paragraph starts on a new line, slightly indented from the left margin. In typed text, a blank line between paragraphs is also common."
+    }
+]

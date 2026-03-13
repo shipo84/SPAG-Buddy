@@ -1,0 +1,86 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Tick the correct prefix to complete the word. (1 mark)\nIt is _____possible to fly without wings.",
+    "Options": ["im-", "non-", "un-", "in-"],
+    "Answer": "im-",
+    "Explanation": "Use 'im-' before words starting with 'p' or 'm': impossible."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct prefix. (1 mark)\nThe magician made the rabbit _____appear.",
+    "Options": ["dis-", "un-", "mis-", "re-"],
+    "Answer": "dis-",
+    "Explanation": "Disappear = to vanish. The prefix 'dis-' means 'not' or 'the opposite of'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which word uses the prefix 'mis-' correctly? (1 mark)",
+    "Options": ["misunderstand", "misable", "mishappy", "miskind"],
+    "Answer": "misunderstand",
+    "Explanation": "Mis- means 'wrongly' or 'badly': misunderstand = understand wrongly."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Tick the correct prefix to make the opposite of 'legal'. (1 mark)",
+    "Options": ["il-", "un-", "dis-", "mis-"],
+    "Answer": "il-",
+    "Explanation": "Use 'il-' before words starting with 'l': illegal. This is a variation of 'in-'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the word where the prefix means 'again'. (1 mark)",
+    "Options": ["rebuild", "unkind", "disappear", "misspell"],
+    "Answer": "rebuild",
+    "Explanation": "Re- means 'again': rebuild = build again."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which sentence uses the prefix correctly? (1 mark)",
+    "Options": ["She was very unhappy about the result.", "He felt very dishappy about the news.", "They were mishappy with the answer.", "We were nonhappy about the delay."],
+    "Answer": "She was very unhappy about the result.",
+    "Explanation": "Un- is the correct prefix for 'happy': unhappy = not happy."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Add the correct prefix to 'regular' to mean 'not regular'. (1 mark)",
+    "Options": ["ir-", "un-", "dis-", "non-"],
+    "Answer": "ir-",
+    "Explanation": "Use 'ir-' before words starting with 'r': irregular. This is a variation of 'in-'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which word means 'to write again'? (1 mark)",
+    "Options": ["rewrite", "unwrite", "miswrite", "dewrite"],
+    "Answer": "rewrite",
+    "Explanation": "Re- means 'again': rewrite = write again."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct prefix for the word 'behave' to mean 'behave badly'. (1 mark)",
+    "Options": ["mis-", "un-", "dis-", "re-"],
+    "Answer": "mis-",
+    "Explanation": "Misbehave = behave badly or wrongly. Mis- means 'wrongly' or 'badly'."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Tick the word that uses the prefix 'anti-' correctly. (1 mark)",
+    "Options": ["anticlockwise", "antihappy", "antigood", "antinice"],
+    "Answer": "anticlockwise",
+    "Explanation": "Anti- means 'against' or 'opposite': anticlockwise = opposite direction to clockwise."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which prefix turns 'mature' into a word meaning 'not yet mature'? (1 mark)",
+    "Options": ["im-", "un-", "dis-", "non-"],
+    "Answer": "im-",
+    "Explanation": "Use 'im-' before words starting with 'm': immature = not yet mature."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which sentence contains a word with an incorrect prefix? (1 mark)",
+    "Options": ["He was irresponsible with the equipment.", "She felt uncomfortable in the chair.", "The answer was uncorrect.", "They had to redo the experiment."],
+    "Answer": "The answer was uncorrect.",
+    "Explanation": "The correct word is 'incorrect' (prefix 'in-'), not 'uncorrect'. Use 'in-' before words starting with 'c'."
+  }
+]

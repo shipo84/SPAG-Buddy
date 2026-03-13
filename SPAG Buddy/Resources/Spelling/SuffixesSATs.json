@@ -1,0 +1,142 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which suffix correctly completes the word?\nThe magician performed an amazing act of _____. (1 mark)\nillu_____",
+        "options": ["-tion", "-sion", "-ssion", "-cian"],
+        "answer": "-sion",
+        "explanation": "The word is 'illusion'. When the root word ends in 'd' or 'se', the suffix '-sion' is often used: illusion, invasion, confusion."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Choose the correct suffix to complete the word. (1 mark)\nThe doctor asked for my father's permis_____.",
+        "options": ["-tion", "-sion", "-ssion", "-cian"],
+        "answer": "-ssion",
+        "explanation": "The word is 'permission'. When the root word ends in 'mit', it changes to '-mission': permit → permission, admit → admission."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["electricion", "electrican", "electrician", "electricien"],
+        "answer": "electrician",
+        "explanation": "The suffix '-cian' is used when the root word ends in 'c' or 'cs': electric → electrician, music → musician, magic → magician."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Choose the correct suffix to complete the word. (1 mark)\nWe had a lovely celebra_____ for Grandma's birthday.",
+        "options": ["-tion", "-sion", "-ssion", "-cian"],
+        "answer": "-tion",
+        "explanation": "The word is 'celebration'. The suffix '-tion' is the most common and is used when the root word ends in 't' or 'te': celebrate → celebration."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word correctly uses the suffix '-ous'? (1 mark)",
+        "options": ["dangeros", "dangerious", "dangerous", "dangereous"],
+        "answer": "dangerous",
+        "explanation": "The suffix '-ous' is simply added to 'danger' to make 'dangerous'. No spelling changes are needed when the root word ends in a consonant."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which spelling is correct? (1 mark)\nThe rainforest is home to many different animals. It is very _____.",
+        "options": ["various", "vareous", "varieous", "varuous"],
+        "answer": "various",
+        "explanation": "The word is 'various'. When the root word ends in a vowel, the final vowel is usually dropped before adding '-ous': vary → various."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Choose the correctly spelled word. (1 mark)",
+        "options": ["gorgeious", "gorgeous", "gorgeus", "gorgeaous"],
+        "answer": "gorgeous",
+        "explanation": "The word is 'gorgeous'. The '-eous' ending is sometimes found after a soft 'g' sound. This is a tricky spelling that must be learned."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)\nThe homework was so easy it was almost _____.",
+        "options": ["laughible", "laughable", "laugheble", "laughabel"],
+        "answer": "laughable",
+        "explanation": "When a root word ends in a consonant, simply add '-able': laugh → laughable. The suffix '-able' is more common than '-ible'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Choose the correct spelling. (1 mark)\nThe old bridge was no longer safe. The sign said it was not _____.",
+        "options": ["accessable", "accesseble", "accessabel", "accessible"],
+        "answer": "accessible",
+        "explanation": "The word is 'accessible'. The suffix '-ible' is used with some root words, especially those from Latin. It must often be learned by heart."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["believeable", "believable", "beleivable", "believible"],
+        "answer": "believable",
+        "explanation": "When the root word ends in 'e', drop the 'e' before adding '-able': believe → believable. This is the standard rule for adding suffixes beginning with a vowel."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence contains a correctly spelled word? (1 mark)",
+        "options": ["She was very carefull with the glass vase.", "She was very careful with the glass vase.", "She was very carful with the glass vase.", "She was very carefull with the glass vase."],
+        "answer": "She was very careful with the glass vase.",
+        "explanation": "When adding '-ful' as a suffix, it is always spelled with one 'l': care + ful = careful, hope + ful = hopeful, beauty + ful = beautiful."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What happens to the word 'happy' when we add the suffix '-ness'? (1 mark)",
+        "options": ["happyness", "happness", "happiness", "happines"],
+        "answer": "happiness",
+        "explanation": "When a root word ends in a consonant followed by 'y', change the 'y' to 'i' before adding the suffix: happy → happiness, lonely → loneliness."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Choose the correct spelling. (1 mark)\nThe children showed great excite_____ on sports day.",
+        "options": ["-ment", "-mant", "-mint", "-meant"],
+        "answer": "-ment",
+        "explanation": "The word is 'excitement'. When adding '-ment' to a word ending in 'e', the 'e' is usually kept: excite → excitement, amuse → amusement."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["hopless", "hopeless", "hopeles", "hoepless"],
+        "answer": "hopeless",
+        "explanation": "When adding '-less' to a word ending in 'e', keep the 'e': hope → hopeless. The suffix '-less' means 'without': hopeless = without hope."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the correct spelling when adding '-ous' to 'fame'? (1 mark)",
+        "options": ["fameous", "famus", "famous", "fameious"],
+        "answer": "famous",
+        "explanation": "When adding '-ous' to a word ending in 'e', drop the 'e': fame → famous. The same rule applies to nerve → nervous."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word has the suffix added correctly? (1 mark)",
+        "options": ["envyous", "envious", "envius", "enveous"],
+        "answer": "envious",
+        "explanation": "When a root word ends in 'y', change the 'y' to 'i' before adding '-ous': envy → envious. The same rule applies to fury → furious, glory → glorious."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Choose the correct spelling. (1 mark)\nThe puppy was completely _____. It did not cause any trouble at all.",
+        "options": ["harmles", "harmfull", "harmless", "harmeful"],
+        "answer": "harmless",
+        "explanation": "The suffix '-less' means 'without': harmless = without harm. Remember, '-less' always has a double 's', while '-ful' has only one 'l'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word correctly doubles the consonant before adding the suffix? (1 mark)",
+        "options": ["begining", "beginning", "begineing", "begininng"],
+        "answer": "beginning",
+        "explanation": "When a word ends in a short vowel followed by a single consonant, double the final consonant before adding a vowel suffix: begin → beginning."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Tick the word that is spelled correctly. (1 mark)",
+        "options": ["couragous", "outragous", "courageous", "outrageious"],
+        "answer": "courageous",
+        "explanation": "When the root word ends in '-ge', keep the 'e' before adding '-ous' to preserve the soft 'g' sound: courage → courageous, outrage → outrageous."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses the correct suffix spelling? (1 mark)",
+        "options": ["The game was very enjoyible.", "Her handwriting was barely readible.", "The maths problem was solvable.", "The fog made the road invisable."],
+        "answer": "The maths problem was solvable.",
+        "explanation": "Solvable is correct: solve (drop the 'e') + able = solvable. The others should be: enjoyable (not -ible), readable (not -ible), invisible (not -able)."
+    }
+]

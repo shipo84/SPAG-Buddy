@@ -1,0 +1,63 @@
+[
+    {
+        "type": "identify_adjectives",
+        "question": "Circle all the adjectives in this sentence: 'The curious brown rabbit hopped through the tall, wet grass.' (3 marks)",
+        "answer": "curious, brown, tall, wet",
+        "explanation": "Adjectives describe or modify nouns. 'Curious' and 'brown' describe the rabbit; 'tall' and 'wet' describe the grass."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a comparative adjective? (1 mark)",
+        "options": ["beautiful", "most beautiful", "beautifully", "more beautiful"],
+        "answer": "more beautiful",
+        "explanation": "Comparative adjectives compare two things and often use 'more' or end in '-er' (e.g., taller, more interesting)."
+    },
+    {
+        "type": "fill_in_blank",
+        "question": "Complete this sentence with the correct form of the adjective 'tall': 'Of the three buildings, the skyscraper is the _______.' (1 mark)",
+        "answer": "tallest",
+        "explanation": "When comparing three or more things, use the superlative form (tallest). Superlatives often end in '-est' or use 'most'."
+    },
+    {
+        "type": "order_adjectives",
+        "question": "Put these adjectives in the correct order to describe a car: 'German / old / blue / small' (2 marks)",
+        "answer": "small old blue German",
+        "explanation": "Adjectives follow a specific order: size, age, colour, origin. So: small (size), old (age), blue (colour), German (origin)."
+    },
+    {
+        "type": "true_false",
+        "question": "Adjectives in English always appear before the nouns they describe. (1 mark)",
+        "answer": "False",
+        "explanation": "Adjectives can appear after linking verbs like 'is', 'seems', 'looks'. Example: 'The sky is blue.'"
+    },
+    {
+        "type": "complete_table",
+        "question": "Complete this table of adjective forms: (3 marks)\n\nPositive | Comparative | Superlative\ngood | _____ | _____\n_____ | worse | _____\nbad | _____ | worst",
+        "answer": "good/better/best, bad/worse/worst",
+        "explanation": "Some adjectives have irregular comparative and superlative forms that must be memorised."
+    },
+    {
+        "type": "identify_adjective_type",
+        "question": "Identify whether each adjective is descriptive, comparative, or superlative: (3 marks)\na) brightest\nb) colourful\nc) more expensive",
+        "answer": "a) superlative  b) descriptive  c) comparative",
+        "explanation": "Descriptive adjectives describe qualities, comparatives compare two things, superlatives compare three or more."
+    },
+    {
+        "type": "sentence_improvement",
+        "question": "Improve this sentence by adding at least three suitable adjectives: 'The dog ran through the park.' (2 marks)",
+        "answer": "Example: 'The energetic brown dog ran through the beautiful green park.'",
+        "explanation": "Adjectives make writing more vivid and descriptive. Choose adjectives that create a clear picture."
+    },
+    {
+        "type": "error_correction",
+        "question": "Find and correct the error in this sentence: 'She is the most cleverest student in the class.' (1 mark)",
+        "answer": "She is the cleverest student in the class. (Remove 'most')",
+        "explanation": "Don't use both 'most' and '-est' together. Use either 'most clever' or 'cleverest', not both."
+    },
+    {
+        "type": "adjective_or_adverb",
+        "question": "Choose the correct word for each sentence: (2 marks)\na) The music sounds (beautiful/beautifully).\nb) She sang (beautiful/beautifully).",
+        "answer": "a) beautiful (adjective)  b) beautifully (adverb)",
+        "explanation": "After linking verbs like 'sounds', use adjectives. To describe how an action is done, use adverbs."
+    }
+]

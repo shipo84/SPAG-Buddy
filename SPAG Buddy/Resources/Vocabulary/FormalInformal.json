@@ -1,0 +1,107 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is written in formal language? (1 mark)",
+        "options": ["I wanna go to the park after school.", "Can I have some more chips, please?", "I would like to request further information about the school trip.", "Me and my mates went to the cinema."],
+        "answer": "I would like to request further information about the school trip.",
+        "explanation": "Formal language uses complete words ('I would like' instead of 'I wanna'), avoids slang, and uses polite, precise vocabulary ('request further information')."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a formal synonym for 'kids'? (1 mark)",
+        "options": ["youngsters", "children", "little ones", "kiddies"],
+        "answer": "children",
+        "explanation": "'Children' is the formal word for 'kids'. 'Youngsters', 'little ones', and 'kiddies' are all informal alternatives."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In which situation would formal language be most appropriate? (1 mark)",
+        "options": ["Texting a friend about the weekend", "Writing a letter to the headteacher", "Chatting to your brother at home", "Passing a note to your classmate"],
+        "answer": "Writing a letter to the headteacher",
+        "explanation": "Formal language is used when writing to someone in authority, in official letters, and in professional situations. Letters to a headteacher require a respectful, formal tone."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a formal synonym for 'get'? (1 mark)",
+        "options": ["grab", "obtain", "snag", "nab"],
+        "answer": "obtain",
+        "explanation": "'Obtain' is the formal way to say 'get'. The other options ('grab', 'snag', 'nab') are all informal or slang."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses informal language? (1 mark)",
+        "options": ["The results of the investigation were inconclusive.", "We are writing to inform you of a change in policy.", "The weather was absolutely rubbish yesterday.", "Visitors are requested to report to the main reception."],
+        "answer": "The weather was absolutely rubbish yesterday.",
+        "explanation": "'Rubbish' is an informal (colloquial) word. Formal writing would use 'dreadful', 'poor', or 'unsatisfactory' instead."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which is the formal way to begin a letter to someone whose name you do not know? (1 mark)",
+        "options": ["Hi there,", "Hey,", "Dear Sir or Madam,", "To whoever it is,"],
+        "answer": "Dear Sir or Madam,",
+        "explanation": "'Dear Sir or Madam' is the standard formal greeting when you do not know the recipient's name. 'Hi' and 'Hey' are informal, and 'To whoever it is' is too casual."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Replace the informal word in the sentence with a formal alternative.\n'The teacher asked us to help out with the school fair.' (1 mark)\nWhich word best replaces 'help out'?",
+        "options": ["give a hand", "assist", "pitch in", "muck in"],
+        "answer": "assist",
+        "explanation": "'Assist' is the formal synonym for 'help out'. The other options ('give a hand', 'pitch in', 'muck in') are all informal expressions."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a formal synonym for 'ask'? (1 mark)",
+        "options": ["beg", "enquire", "nag", "pester"],
+        "answer": "enquire",
+        "explanation": "'Enquire' (or 'inquire') is the formal way to say 'ask'. 'Beg', 'nag', and 'pester' all have different, more informal connotations."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence is written in the correct formal style for a school report? (1 mark)",
+        "options": ["Jake's done loads better this term.", "Jake has made significant progress this term.", "Jake's been well good at his work lately.", "Jake's work ain't bad at all this term."],
+        "answer": "Jake has made significant progress this term.",
+        "explanation": "Formal writing in reports avoids slang ('loads', 'well good', 'ain't'), uses complete verb forms ('has made' instead of 'he's done'), and precise vocabulary ('significant progress')."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a formal synonym for 'buy'? (1 mark)",
+        "options": ["pick up", "grab", "purchase", "get hold of"],
+        "answer": "purchase",
+        "explanation": "'Purchase' is the formal synonym for 'buy'. The other options are all informal ways of saying the same thing."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read the sentence below.\n'The committee wishes to inform residents that the playground will be closed for repairs.'\nWho is most likely the audience for this sentence? (1 mark)",
+        "options": ["A group of five-year-olds", "Adults living in the local area", "A best friend in a text message", "Players on a football team"],
+        "answer": "Adults living in the local area",
+        "explanation": "The formal language ('the committee wishes to inform', 'residents') tells us this is an official notice aimed at adults in a community. Formal language suits official communications."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a formal synonym for 'tell off'? (1 mark)",
+        "options": ["have a go at", "reprimand", "shout at", "give a talking-to"],
+        "answer": "reprimand",
+        "explanation": "'Reprimand' is the formal word meaning to tell someone off or express disapproval of their behaviour. The other options are all informal."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly changes informal language into formal language? (1 mark)\nInformal: 'Can you sort out the problem with my book order?'",
+        "options": ["Can you fix my book thing?", "Would you be able to resolve the issue with my book order?", "Could you deal with my book stuff?", "Can you figure out what's wrong with my books?"],
+        "answer": "Would you be able to resolve the issue with my book order?",
+        "explanation": "'Would you be able to' is more polite and formal than 'Can you'. 'Resolve' is formal for 'sort out', and 'issue' is formal for 'problem'. Formal writing uses precise, polite language."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which pair shows an informal word and its formal equivalent? (1 mark)",
+        "options": ["happy / glad", "scared / terrified", "loads of / a large quantity of", "big / huge"],
+        "answer": "loads of / a large quantity of",
+        "explanation": "'Loads of' is informal (used in everyday speech), while 'a large quantity of' is its formal equivalent. The other pairs are simply synonyms at a similar level of formality."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read the two sentences below.\nA: 'We had a brilliant time at the seaside.'\nB: 'The excursion to the coast was a most enjoyable experience.'\nWhich statement is correct? (1 mark)",
+        "options": ["Sentence A is formal and Sentence B is informal.", "Both sentences are formal.", "Sentence A is informal and Sentence B is formal.", "Both sentences are informal."],
+        "answer": "Sentence A is informal and Sentence B is formal.",
+        "explanation": "Sentence A uses informal words ('brilliant time', 'seaside'). Sentence B uses formal vocabulary ('excursion', 'most enjoyable experience', 'the coast'). The meaning is similar, but the register is different."
+    }
+]

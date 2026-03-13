@@ -1,0 +1,79 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What is the main purpose of a heading? (1 mark)",
+        "options": ["To make the page look pretty", "To tell the reader what a section is about", "To end a paragraph", "To introduce speech"],
+        "answer": "To tell the reader what a section is about",
+        "explanation": "Headings summarise the content that follows and help the reader navigate the text."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is the best heading for a paragraph about how volcanoes erupt? (1 mark)",
+        "options": ["Volcanoes", "How Do Volcanoes Erupt?", "Things About the Earth", "Hot Stuff"],
+        "answer": "How Do Volcanoes Erupt?",
+        "explanation": "A good heading is specific and tells the reader exactly what the section will be about."
+    },
+    {
+        "type": "true_false",
+        "question": "Headings should always end with a full stop. (1 mark)",
+        "answer": "False",
+        "explanation": "Headings do not usually end with a full stop. They may end with a question mark if they are phrased as a question."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which title uses capital letters correctly? (1 mark)",
+        "options": ["the lion, the witch and the wardrobe", "The Lion, The Witch And The Wardrobe", "The Lion, the Witch and the Wardrobe", "THE LION, THE WITCH AND THE WARDROBE"],
+        "answer": "The Lion, the Witch and the Wardrobe",
+        "explanation": "In titles, main words (nouns, verbs, adjectives) are capitalised. Small words like 'the', 'and', 'of' are usually lowercase unless they are the first word."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a suitable heading for a paragraph about the different types of food that hedgehogs eat. (1 mark)",
+        "answer": "Example: What Do Hedgehogs Eat?",
+        "explanation": "Accept any clear, specific heading that relates to hedgehogs' diet."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "A subheading is used to: (1 mark)",
+        "options": ["Replace the main heading", "Break a section into smaller parts", "End a chapter", "Start a new book"],
+        "answer": "Break a section into smaller parts",
+        "explanation": "Subheadings divide a section into smaller, more manageable topics under the main heading."
+    },
+    {
+        "type": "identify_errors",
+        "question": "What is wrong with this heading? 'Some Information About Various Different Animals That Live in the Rainforest.' (1 mark)",
+        "answer": "The heading is too long and vague. It also has an unnecessary full stop. A better heading would be: 'Rainforest Animals'.",
+        "explanation": "Headings should be concise and specific. They should not end with full stops."
+    },
+    {
+        "type": "sort_words",
+        "question": "Sort these into headings and subheadings for a report about Ancient Egypt: 'Ancient Egypt', 'Egyptian Gods', 'Pharaohs and Rulers', 'Daily Life', 'The River Nile' (2 marks)",
+        "answer": "Main heading: Ancient Egypt. Subheadings: Egyptian Gods, Pharaohs and Rulers, Daily Life, The River Nile.",
+        "explanation": "'Ancient Egypt' is the broad topic (main heading). The others are specific subtopics (subheadings)."
+    },
+    {
+        "type": "rewrite",
+        "question": "Improve this heading to make it more engaging: 'Information About Space' (1 mark)",
+        "answer": "Example: 'Exploring the Wonders of Space' or 'What Lies Beyond Our Planet?'",
+        "explanation": "Good headings can use questions, strong verbs, or interesting language to engage the reader."
+    },
+    {
+        "type": "explain",
+        "question": "Explain why headings and subheadings are useful in non-fiction writing. Give two reasons. (2 marks)",
+        "answer": "Headings and subheadings help the reader find information quickly by showing what each section is about. They also organise the text into clear sections, making it easier to understand the structure of the writing.",
+        "explanation": "Award 1 mark for each valid reason (e.g. navigation, organisation, clarity, summarising content)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these text types is most likely to use headings and subheadings? (1 mark)",
+        "options": ["A poem", "A story", "A non-fiction report", "A letter to a friend"],
+        "answer": "A non-fiction report",
+        "explanation": "Non-fiction texts like reports, textbooks, and information leaflets regularly use headings and subheadings to organise information."
+    },
+    {
+        "type": "true_false",
+        "question": "A title and a heading are exactly the same thing. (1 mark)",
+        "answer": "False",
+        "explanation": "A title is the name of the whole text (e.g. a book or article title). A heading introduces a section within the text. A title appears once at the top; headings can appear throughout."
+    }
+]

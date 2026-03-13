@@ -1,0 +1,116 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses a full stop correctly? (1 mark)",
+        "options": ["The cat sat on the mat.", "The cat sat on the mat", "The cat sat. On the mat", "The cat. Sat on the mat."],
+        "answer": "The cat sat on the mat.",
+        "explanation": "A full stop comes at the end of a complete sentence (a statement)."
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add full stops in the correct places: The sun was shining It was a warm day We decided to go to the park (2 marks)",
+        "answer": "The sun was shining. It was a warm day. We decided to go to the park.",
+        "explanation": "Each complete sentence needs a full stop at the end. There are three separate statements here."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "When do we use a full stop? (1 mark)",
+        "options": ["At the end of a question", "At the end of a statement", "At the end of an exclamation", "Before starting a new sentence"],
+        "answer": "At the end of a statement",
+        "explanation": "Full stops end statements (sentences that tell you something). Questions use question marks and exclamations use exclamation marks."
+    },
+    {
+        "type": "true_false",
+        "question": "A full stop can be used after an abbreviation such as Dr. or Prof. (1 mark)",
+        "answer": "True",
+        "explanation": "Full stops can be used after abbreviations, though in modern British English many abbreviations (like Dr, Mr, Mrs) often omit the full stop."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Find the full stop error in this passage: The children played in the garden they had a wonderful time. Their mother called them in for tea. (1 mark)",
+        "answer": "There is a missing full stop between 'garden' and 'they'. Correct: The children played in the garden. They had a wonderful time.",
+        "explanation": "Two complete sentences have been run together without a full stop (a run-on sentence)."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this passage with the correct full stops and capital letters: the dog ran fast it caught the ball then it brought it back (2 marks)",
+        "answer": "The dog ran fast. It caught the ball. Then it brought it back.",
+        "explanation": "Each complete sentence needs a full stop, and the next sentence begins with a capital letter."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these abbreviations correctly uses a full stop? (1 mark)",
+        "options": ["etc.", "Mr.", "Dr.", "All of the above are acceptable"],
+        "answer": "All of the above are acceptable",
+        "explanation": "Full stops can be used with abbreviations. In British English, abbreviations where the last letter is the same as the full word (Mr, Dr) often omit the full stop, but including it is not wrong."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write two sentences about your school, each ending with a full stop. (1 mark)",
+        "answer": "Example: My school is in the centre of town. It has a large playground and a library.",
+        "explanation": "Accept any two grammatically correct statements, each ending with a full stop."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What should come immediately after a full stop? (1 mark)",
+        "options": ["A comma", "A lower-case letter", "A capital letter", "Another full stop"],
+        "answer": "A capital letter",
+        "explanation": "After a full stop, the next sentence must begin with a capital letter."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add the missing full stops to this passage: Harry looked out of the window The rain was pouring down He sighed and picked up his book It was going to be a long afternoon (3 marks)",
+        "answer": "Harry looked out of the window. The rain was pouring down. He sighed and picked up his book. It was going to be a long afternoon.",
+        "explanation": "Four sentences need to be separated by full stops."
+    },
+    {
+        "type": "true_false",
+        "question": "After a full stop inside speech marks, the next word always needs a capital letter. (1 mark)",
+        "answer": "True",
+        "explanation": "If a full stop ends the speech and there is no reporting clause, the next sentence starts with a capital letter."
+    },
+    {
+        "type": "identify_errors",
+        "question": "How many full stops are missing from this passage? My name is Sam I am ten years old I live in London I have a dog called Max (1 mark)",
+        "answer": "Three full stops are missing (after Sam, old, and London). The passage contains four sentences.",
+        "explanation": "My name is Sam. I am ten years old. I live in London. I have a dog called Max."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these does NOT end with a full stop? (1 mark)",
+        "options": ["A statement", "A command", "A question", "An abbreviation"],
+        "answer": "A question",
+        "explanation": "Questions end with question marks, not full stops. Statements and mild commands use full stops."
+    },
+    {
+        "type": "rewrite",
+        "question": "This passage has too many full stops. Rewrite it correctly: The big. Brown dog. Ran across. The muddy field. (1 mark)",
+        "answer": "The big, brown dog ran across the muddy field.",
+        "explanation": "This is one complete sentence. Full stops should only come at the end of a complete sentence, not between words within a sentence."
+    },
+    {
+        "type": "explain",
+        "question": "Explain why full stops are important in writing. (2 marks)",
+        "answer": "Full stops are important because they show where one sentence ends and the next begins, making writing clear and easy to read. Without full stops, sentences would run together and the reader would not know where to pause.",
+        "explanation": "Award 1 mark for mentioning sentence boundaries, 1 mark for mentioning readability/clarity."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "A gentle command should end with which punctuation? (1 mark)",
+        "options": ["A question mark", "An exclamation mark", "A full stop", "A comma"],
+        "answer": "A full stop",
+        "explanation": "Gentle commands (e.g. 'Please sit down.') end with a full stop. Only forceful or urgent commands use exclamation marks."
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add the correct end punctuation to each sentence: Where is my coat_ Please close the door_ What a wonderful surprise_ (2 marks)",
+        "answer": "Where is my coat? Please close the door. What a wonderful surprise!",
+        "explanation": "Question mark for the question, full stop for the gentle command, exclamation mark for the exclamation."
+    },
+    {
+        "type": "true_false",
+        "question": "A sentence fragment like 'Because it was raining.' is a correct use of a full stop. (1 mark)",
+        "answer": "False",
+        "explanation": "'Because it was raining' is not a complete sentence - it is a subordinate clause and cannot stand alone. It needs a main clause to form a complete sentence."
+    }
+]

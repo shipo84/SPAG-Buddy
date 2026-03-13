@@ -1,0 +1,87 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What is a root word? (1 mark)",
+        "options": ["A word that grows underground", "The basic word before prefixes or suffixes are added", "A word that comes from another language", "The longest word in a sentence"],
+        "answer": "The basic word before prefixes or suffixes are added",
+        "explanation": "A root word is the basic form that other words are built from (play → playing, played, player)."
+    },
+    {
+        "type": "identify_root_words",
+        "question": "Find the root word in each of these words: (4 marks)\na) unhappiness\nb) disagreeable\nc) prehistoric\nd) wonderful",
+        "answer": "a) happy  b) agree  c) history  d) wonder",
+        "explanation": "Remove prefixes and suffixes to find the basic word that carries the main meaning."
+    },
+    {
+        "type": "word_family_building",
+        "question": "Build a word family from the root word 'play'. Create at least 5 related words: (5 marks)",
+        "answer": "Example: play, playing, played, player, playful, playground, replay, playmate",
+        "explanation": "Word families share the same root but have different prefixes, suffixes, or word forms."
+    },
+    {
+        "type": "complete_families",
+        "question": "Complete these word families: (6 marks)\na) hope: hopeful, _____, hopeless\nb) care: careful, _____, _____\nc) friend: friendly, _____, _____",
+        "answer": "a) hopeful, hopeless, hopefully  b) careful, careless, carefully  c) friendly, friendship, unfriendly",
+        "explanation": "Word families show how one root word can create many related words with different meanings."
+    },
+    {
+        "type": "root_word_meanings",
+        "question": "These root words come from Latin or Greek. Match each to its meaning: (4 marks)\nRoots: port, dict, spect, tract\nMeanings: carry, say/speak, look/see, pull/drag",
+        "answer": "port = carry, dict = say/speak, spect = look/see, tract = pull/drag",
+        "explanation": "Many English words come from Latin and Greek roots. Knowing these helps with unfamiliar words."
+    },
+    {
+        "type": "apply_root_knowledge",
+        "question": "Using your knowledge of root meanings, what do these words mean? (4 marks)\na) transport (trans + port)\nb) spectator (spect + ator)\nc) dictate (dict + ate)\nd) extract (ex + tract)",
+        "answer": "a) carry across  b) one who looks/watches  c) to speak/say officially  d) pull out",
+        "explanation": "Breaking words into root + prefix/suffix helps you understand meaning."
+    },
+    {
+        "type": "sort_by_root",
+        "question": "Sort these words by their root word: (3 marks)\nWords: creation, harmful, creator, creative, harmless, recreation\nRoot words: create, harm, recreate",
+        "answer": "create: creation, creator, creative, recreation | harm: harmful, harmless",
+        "explanation": "Words in the same family share meaning connections through their root word."
+    },
+    {
+        "type": "true_false",
+        "question": "The words 'photograph', 'telegraph', and 'autograph' all contain the Greek root 'graph' meaning 'write'. (1 mark)",
+        "answer": "True",
+        "explanation": "Graph = write/draw: photograph (light-writing), telegraph (distance-writing), autograph (self-writing)."
+    },
+    {
+        "type": "create_definitions",
+        "question": "Create simple definitions for these words using their root meanings: (3 marks)\na) bicycle (bi + cycle)\nb) submarine (sub + marine)\nc) telephone (tele + phone)",
+        "answer": "a) two wheels  b) under water  c) far sound/voice",
+        "explanation": "Root knowledge: bi=two, cycle=wheel, sub=under, marine=sea, tele=far, phone=sound."
+    },
+    {
+        "type": "word_detective",
+        "question": "Be a word detective! What do you think these unfamiliar words mean? Use the root clues: (4 marks)\na) aquarium (aqua = water)\nb) carnivore (carni = meat, vore = eat)\nc) telescope (tele = far, scope = see)\nd) chronometer (chrono = time, meter = measure)",
+        "answer": "a) place for water/fish  b) meat eater  c) see far away  d) time measurer/clock",
+        "explanation": "Root knowledge helps you decode unfamiliar words without a dictionary."
+    },
+    {
+        "type": "expand_families",
+        "question": "Add more words to these word families: (6 marks)\na) think: thinking, _____, _____\nb) move: moving, _____, _____\nc) act: acting, _____, _____",
+        "answer": "a) thinking, thinker, thoughtful, unthinkable  b) moving, movement, removed, moveable  c) acting, action, actor, active, react",
+        "explanation": "Strong word families help build vocabulary and understanding of how words relate."
+    },
+    {
+        "type": "common_roots",
+        "question": "These common roots appear in many English words. Give two examples for each: (6 marks)\na) bio (life): _____, _____\nb) geo (earth): _____, _____\nc) photo (light): _____, _____",
+        "answer": "a) biology, biography  b) geography, geology  c) photograph, photosynthesis",
+        "explanation": "Greek and Latin roots appear in academic and scientific vocabulary."
+    },
+    {
+        "type": "prefix_root_suffix",
+        "question": "Break these words into their parts and explain the meaning: (6 marks)\na) uncomfortable: _____ + _____ + _____\nb) prehistoric: _____ + _____ + _____\nc) disagreement: _____ + _____ + _____",
+        "answer": "a) un- + comfort + -able = not able to be comfortable  b) pre- + history + -ic = before history  c) dis- + agree + -ment = not agreeing",
+        "explanation": "Understanding word parts (prefix + root + suffix) helps decode complex words."
+    },
+    {
+        "type": "etymology_fun",
+        "question": "Many words have interesting histories. Match these words to their origins: (4 marks)\nWords: sandwich, robot, algebra, shampoo\nOrigins: Arabic math, Czech 'work', Earl's name, Hindi 'massage'",
+        "answer": "sandwich = Earl's name, robot = Czech 'work', algebra = Arabic math, shampoo = Hindi 'massage'",
+        "explanation": "English borrows words from many languages. Etymology (word history) can be fascinating!"
+    }
+]

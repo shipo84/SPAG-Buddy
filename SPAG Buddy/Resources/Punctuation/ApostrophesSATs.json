@@ -1,0 +1,142 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses an apostrophe for contraction correctly? (1 mark)",
+        "options": ["I do'nt want to go outside today.", "I don't want to go outside today.", "I dont' want to go outside today.", "I don't want to go outside today."],
+        "answer": "I don't want to go outside today.",
+        "explanation": "Don't is a contraction of 'do not'. The apostrophe replaces the missing letter 'o' in 'not'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses 'it's' correctly? (1 mark)",
+        "options": ["The cat licked it's paws after dinner.", "It's been raining all morning.", "The tree lost it's leaves in autumn.", "The dog wagged it's tail happily."],
+        "answer": "It's been raining all morning.",
+        "explanation": "'It's' means 'it is' or 'it has'. In this sentence, 'It's' means 'It has'. The other sentences should use 'its' (no apostrophe) because they show possession (belonging to it)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence shows the apostrophe for singular possession in the correct place? (1 mark)",
+        "options": ["The girl's PE kit was left in the cloakroom.", "The girls PE kit was left in the cloakroom.", "The girl's' PE kit was left in the cloakroom.", "The girls' PE kit was left in the cloakroom."],
+        "answer": "The girl's PE kit was left in the cloakroom.",
+        "explanation": "The PE kit belongs to one girl. For singular possession, we add an apostrophe followed by 's' after the owner: girl's."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence shows that the bicycles belong to more than one boy? (1 mark)",
+        "options": ["The boy's bicycles were locked in the shed.", "The boys bicycles were locked in the shed.", "The boys' bicycles were locked in the shed.", "The boy's' bicycles were locked in the shed."],
+        "answer": "The boys' bicycles were locked in the shed.",
+        "explanation": "For plural possession where the plural already ends in 's', we add the apostrophe after the 's': boys' means belonging to more than one boy."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses 'your' and 'you're' correctly? (1 mark)",
+        "options": ["Your the best player on the team.", "You're coat is hanging on the peg.", "You're going to love your new teacher.", "Your going to love you're new teacher."],
+        "answer": "You're going to love your new teacher.",
+        "explanation": "'You're' means 'you are' (contraction). 'Your' means 'belonging to you' (possessive). 'You are going to love' and 'belonging to you new teacher' are correct."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word correctly completes the sentence?\nThe _______ homework was left on the table. (1 mark)",
+        "options": ["childrens", "children's", "childrens'", "childrens's"],
+        "answer": "children's",
+        "explanation": "'Children' is an irregular plural (it does not end in 's'). To show possession with irregular plurals, we add apostrophe + s: children's."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses 'they're', 'their' and 'there' correctly? (1 mark)",
+        "options": ["They're going to put their bags over there.", "Their going to put they're bags over there.", "There going to put their bags over they're.", "They're going to put there bags over their."],
+        "answer": "They're going to put their bags over there.",
+        "explanation": "'They're' = they are (contraction). 'Their' = belonging to them (possessive). 'There' = a place. Each word is used correctly in this sentence."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In which sentence is the apostrophe used incorrectly? (1 mark)",
+        "options": ["She can't find her reading book.", "The dog's bowl was empty.", "The apple's are on the table.", "We shouldn't run in the corridor."],
+        "answer": "The apple's are on the table.",
+        "explanation": "Apostrophes are never used to make a word plural. 'Apples' is simply the plural of 'apple' and does not need an apostrophe. This common mistake is sometimes called the 'greengrocer's apostrophe'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What does the apostrophe show in this sentence?\nThe teacher's desk was covered in books. (1 mark)",
+        "options": ["That a letter has been left out (contraction).", "That the desk belongs to the teacher (possession).", "That there is more than one teacher (plural).", "That the teacher is a desk."],
+        "answer": "That the desk belongs to the teacher (possession).",
+        "explanation": "The apostrophe in 'teacher's' shows possession. The desk belongs to the teacher. It is not a contraction because 'teacher is' would not make sense here."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which contraction is formed from 'will not'? (1 mark)",
+        "options": ["willn't", "will'nt", "wi'not", "won't"],
+        "answer": "won't",
+        "explanation": "'Won't' is an irregular contraction of 'will not'. Unlike most contractions, the spelling changes as well as letters being removed."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses the possessive apostrophe correctly? (1 mark)",
+        "options": ["The ladys' changing room was upstairs.", "The lady's changing room was upstairs.", "The ladies' changing room was upstairs.", "Both B and C could be correct depending on meaning."],
+        "answer": "Both B and C could be correct depending on meaning.",
+        "explanation": "'Lady's' (B) means belonging to one lady. 'Ladies'' (C) means belonging to more than one lady (ladies is the plural of lady). Both are correctly punctuated, but they have different meanings."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses 'its' correctly? (1 mark)",
+        "options": ["It's a lovely day for a walk.", "The hamster escaped from it's cage.", "The bird spread its wings and flew away.", "It's cage door was left open."],
+        "answer": "The bird spread its wings and flew away.",
+        "explanation": "'Its' (without an apostrophe) is the possessive form meaning 'belonging to it'. The wings belong to the bird. 'It's' (with an apostrophe) always means 'it is' or 'it has'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly shows that the books belong to the class? (1 mark)",
+        "options": ["The classes books were brand new.", "The class's books were brand new.", "The class' books were brand new.", "Both B and C are acceptable."],
+        "answer": "Both B and C are acceptable.",
+        "explanation": "When a singular noun ends in 's', both adding apostrophe + s (class's, option B) and just adding an apostrophe (class', option C) are acceptable ways to show possession."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word correctly completes the sentence?\nI _______ believe how quickly the term has gone! (1 mark)",
+        "options": ["ca'nt", "cann't", "can'not", "can't"],
+        "answer": "can't",
+        "explanation": "'Can't' is the contraction of 'cannot'. The apostrophe replaces the letters 'no'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Read the sentence below.\nThe womens toilets are at the end of the corridor.\nWhere should the apostrophe be placed? (1 mark)",
+        "options": ["After the 's' in 'womens' (womens')", "Before the 's' in 'womens' (women's)", "After the 's' in 'toilets' (toilets')", "No apostrophe is needed."],
+        "answer": "Before the 's' in 'womens' (women's)",
+        "explanation": "'Women' is an irregular plural (it does not end in 's'). To show possession, we add apostrophe + s: women's. The correct sentence is: 'The women's toilets are at the end of the corridor.'"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses an apostrophe incorrectly? (1 mark)",
+        "options": ["We haven't finished our project yet.", "The footballer's boots were muddy.", "My friend's and I went to the cinema.", "It's nearly time for break."],
+        "answer": "My friend's and I went to the cinema.",
+        "explanation": "In this sentence, 'friends' should be a simple plural (more than one friend), not a possessive. It should be: 'My friends and I went to the cinema.' No apostrophe is needed because nothing belongs to the friends here."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is the contraction of 'I would'? (1 mark)",
+        "options": ["I'would", "I'wd", "I'd", "Id'"],
+        "answer": "I'd",
+        "explanation": "'I'd' is the contraction of 'I would' (or 'I had'). The apostrophe replaces the letters 'woul'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence shows possession correctly for a name ending in 's'? (1 mark)",
+        "options": ["Charle's football boots were brand new.", "Charles football boots were brand new.", "Charles's football boots were brand new.", "Charles'es football boots were brand new."],
+        "answer": "Charles's football boots were brand new.",
+        "explanation": "When a name ends in 's', we can add apostrophe + s to show possession: Charles's. (Charles' is also acceptable, but 'Charles's' is the preferred form in modern usage.)"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How many apostrophes are needed in the sentence below?\nIts going to rain so dont forget your umbrella at your friends house. (1 mark)",
+        "options": ["One", "Two", "Three", "Four"],
+        "answer": "Three",
+        "explanation": "Three apostrophes are needed: 'It's' (it is), 'don't' (do not), and 'friend's' (belonging to your friend). The corrected sentence is: It's going to rain so don't forget your umbrella at your friend's house."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses the possessive apostrophe correctly for a plural noun? (1 mark)",
+        "options": ["The pupil's coats were hung on the pegs. (one pupil)", "The pupils' coats were hung on the pegs. (many pupils)", "The pupils's coats were hung on the pegs. (many pupils)", "The pupil's' coats were hung on the pegs. (many pupils)"],
+        "answer": "The pupils' coats were hung on the pegs. (many pupils)",
+        "explanation": "For regular plurals ending in 's', the possessive apostrophe goes after the 's': pupils'. This shows that the coats belong to many pupils."
+    }
+]

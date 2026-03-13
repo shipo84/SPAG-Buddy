@@ -1,0 +1,66 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which underlined word is an adverb in the sentence below?\n'The extremely tall giraffe ate the green leaves quietly.'\n(1 mark)",
+        "options": ["extremely", "tall", "green", "leaves"],
+        "answer": "extremely",
+        "explanation": "'Extremely' is an adverb modifying the adjective 'tall'. 'Quietly' is also an adverb but was not underlined. 'Tall' and 'green' are adjectives, and 'leaves' is a noun."
+    },
+    {
+        "type": "fill_in_blank",
+        "question": "Write a suitable adverb to complete the sentence below.\nThe children played _______ in the park all afternoon.\n(1 mark)",
+        "answer": "happily (or any suitable adverb of manner, e.g., cheerfully, excitedly, noisily)",
+        "explanation": "An adverb of manner is needed here to describe how the children played."
+    },
+    {
+        "type": "identify_adverb",
+        "question": "Circle the adverb in the sentence below.\n'Later, we are going to visit our grandparents.'\n(1 mark)",
+        "answer": "Later",
+        "explanation": "'Later' is an adverb of time telling us when the visit will happen. It is used as a fronted adverbial here."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses an adverb correctly? (1 mark)",
+        "options": ["She sang beautiful at the concert.", "She sang beautifully at the concert.", "She sang beauty at the concert.", "She sang beautious at the concert."],
+        "answer": "She sang beautifully at the concert.",
+        "explanation": "'Beautifully' is the correct adverb form to describe how she sang. 'Beautiful' is an adjective and cannot modify the verb 'sang'."
+    },
+    {
+        "type": "rewrite_sentence",
+        "question": "Rewrite the sentence below, adding an adverb of frequency.\n'Tom eats his breakfast before school.'\n(1 mark)",
+        "answer": "Tom always eats his breakfast before school. (or usually, sometimes, often, never)",
+        "explanation": "Adverbs of frequency (always, usually, often, sometimes, never) tell us how often something happens and usually go before the main verb."
+    },
+    {
+        "type": "identify_type",
+        "question": "What type of adverb is the underlined word in the sentence below?\n'She carefully placed the vase on the shelf.'\n(1 mark)",
+        "options": ["Adverb of time", "Adverb of place", "Adverb of manner", "Adverb of frequency"],
+        "answer": "Adverb of manner",
+        "explanation": "'Carefully' is an adverb of manner because it tells us how she placed the vase."
+    },
+    {
+        "type": "tick_correct",
+        "question": "Tick the sentence that contains a fronted adverbial. (1 mark)\na) The dog barked loudly at the postman.\nb) Without a moment's hesitation, she dived into the pool.\nc) He always eats his lunch at noon.\nd) The bright red bus stopped suddenly.",
+        "answer": "b) Without a moment's hesitation, she dived into the pool.",
+        "explanation": "A fronted adverbial is an adverb or adverbial phrase at the start of a sentence, followed by a comma. 'Without a moment's hesitation' is a fronted adverbial."
+    },
+    {
+        "type": "replace_word",
+        "question": "Replace the underlined words with a single adverb.\n'The old man walked in a slow way down the street.'\n(1 mark)",
+        "answer": "slowly",
+        "explanation": "'In a slow way' can be replaced by the adverb 'slowly'. This makes the sentence more concise."
+    },
+    {
+        "type": "explain_function",
+        "question": "Read the sentence below.\n'Unfortunately, the match was cancelled due to heavy rain.'\nWhat is the function of the word 'unfortunately' in this sentence? (1 mark)",
+        "answer": "It is an adverb that shows the writer's feeling/attitude about the whole sentence (a sentence adverb).",
+        "explanation": "'Unfortunately' modifies the whole sentence, showing the writer feels it is a shame that the match was cancelled. This type of adverb expresses the speaker's viewpoint."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which pair of words are both adverbs? (1 mark)",
+        "options": ["quick and quietly", "slowly and careful", "fast and well", "happy and sadly"],
+        "answer": "fast and well",
+        "explanation": "'Fast' and 'well' are both adverbs (fast is unchanged from the adjective form; well is the adverb of good). The other pairs mix adjectives and adverbs."
+    }
+]

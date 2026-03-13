@@ -1,0 +1,98 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses capital letters correctly? (1 mark)",
+        "options": ["We visited paris in june.", "We visited Paris in June.", "We Visited Paris In June.", "we visited Paris in June."],
+        "answer": "We visited Paris in June.",
+        "explanation": "Capital letters are needed for the start of the sentence, the proper noun 'Paris', and the month 'June'."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Circle the three words that should have capital letters: on saturday, tom and his dog went to hyde park in london. (3 marks)",
+        "answer": "Saturday, Tom, Hyde Park, London",
+        "explanation": "Saturday (day of the week), Tom (person's name), Hyde Park (place name), London (city name) all need capital letters."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of the following should always start with a capital letter? (1 mark)",
+        "options": ["The names of animals", "The names of colours", "The names of countries", "The names of feelings"],
+        "answer": "The names of countries",
+        "explanation": "Countries are proper nouns and always need capital letters (e.g. France, Japan, Brazil)."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence with the correct capital letters: my friend emma goes to st mary's school every monday. (2 marks)",
+        "answer": "My friend Emma goes to St Mary's School every Monday.",
+        "explanation": "My (start of sentence), Emma (name), St Mary's School (name of school), Monday (day of the week)."
+    },
+    {
+        "type": "true_false",
+        "question": "The word 'I' should always be written as a capital letter. (1 mark)",
+        "answer": "True",
+        "explanation": "The pronoun 'I' is always capitalised in English, no matter where it appears in a sentence."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses capital letters correctly for a book title? (1 mark)",
+        "options": ["I read Charlie and the chocolate factory.", "I read charlie and the chocolate factory.", "I read Charlie and the Chocolate Factory.", "I read CHARLIE AND THE CHOCOLATE FACTORY."],
+        "answer": "I read Charlie and the Chocolate Factory.",
+        "explanation": "In titles, main words are capitalised. Small words like 'and' and 'the' in the middle of a title are usually lowercase."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a sentence that includes a day of the week, a month, and a person's name, all with correct capital letters. (1 mark)",
+        "answer": "Example: Sarah is coming to visit on Tuesday in September.",
+        "explanation": "Days (Monday, Tuesday), months (January, February), and names (Sarah, Tom) are all proper nouns needing capitals."
+    },
+    {
+        "type": "identify_errors",
+        "question": "Find and correct the capital letter errors in this sentence: Last wednesday, Doctor smith visited our School in birmingham. (2 marks)",
+        "answer": "Last Wednesday, Doctor Smith visited our school in Birmingham.",
+        "explanation": "Wednesday (day) and Smith (name) and Birmingham (city) need capitals. 'School' should be lowercase as it is not part of a specific name here."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word in this sentence should NOT have a capital letter? My Teacher, Mrs Jones, teaches History. (1 mark)",
+        "options": ["My", "Teacher", "Mrs", "History"],
+        "answer": "Teacher",
+        "explanation": "'Teacher' is not a proper noun here; it is a common noun and should be lowercase: 'My teacher, Mrs Jones, teaches history.'"
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this passage with the correct capital letters: dear mr wilson, thank you for visiting our class on thursday. we enjoyed learning about ancient egypt. yours sincerely, class 6b (3 marks)",
+        "answer": "Dear Mr Wilson, Thank you for visiting our class on Thursday. We enjoyed learning about ancient Egypt. Yours sincerely, Class 6B",
+        "explanation": "Dear, Mr Wilson, Thank, Thursday, We, Egypt, Yours, Class 6B all need capitals. 'Ancient' does not as it is not part of the proper noun."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is correctly capitalised? (1 mark)",
+        "options": ["She speaks french and spanish.", "She speaks French and Spanish.", "She speaks french and Spanish.", "She speaks French and spanish."],
+        "answer": "She speaks French and Spanish.",
+        "explanation": "Languages are proper nouns and always need capital letters."
+    },
+    {
+        "type": "true_false",
+        "question": "The seasons (spring, summer, autumn, winter) need capital letters. (1 mark)",
+        "answer": "False",
+        "explanation": "Seasons are common nouns and do not need capital letters unless they appear at the start of a sentence."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly uses a capital letter after speech? (1 mark)",
+        "options": ["\"Stop!\" She shouted.", "\"Stop!\" she shouted.", "\"stop!\" she shouted.", "\"stop!\" She Shouted."],
+        "answer": "\"Stop!\" she shouted.",
+        "explanation": "After closing speech marks, if the reporting clause continues (she shouted), it does not need a capital letter."
+    },
+    {
+        "type": "explain",
+        "question": "Explain the difference between 'the church' and 'St Paul's Church' in terms of capital letters. (2 marks)",
+        "answer": "'The church' is a common noun referring to any church, so no capital is needed. 'St Paul's Church' is a proper noun (the specific name of a particular church), so each main word needs a capital letter.",
+        "explanation": "Award 1 mark for identifying common vs proper noun, 1 mark for explaining when capitals are needed."
+    },
+    {
+        "type": "sort_words",
+        "question": "Sort these words into two groups - needs a capital letter and does not need a capital letter: january, table, english, river, amazon, tuesday, happy, easter (2 marks)",
+        "answer": "Needs a capital letter: January, English, Amazon, Tuesday, Easter. Does not need a capital letter: table, river, happy.",
+        "explanation": "Proper nouns (months, languages, specific names, days, festivals) need capitals. Common nouns and adjectives do not."
+    }
+]

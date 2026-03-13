@@ -1,0 +1,142 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["accomodate", "acommodate", "accommodate", "acomodate"],
+        "answer": "accommodate",
+        "explanation": "Accommodate has two 'c's and two 'm's. A helpful way to remember: it is large enough to accommodate both double 'c' and double 'm'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["accompeny", "accompany", "acompany", "accompaney"],
+        "answer": "accompany",
+        "explanation": "Accompany is spelled with two 'c's. Remember: 'accompany' has the word 'company' inside it."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["agressive", "aggresive", "aggressive", "agresive"],
+        "answer": "aggressive",
+        "explanation": "Aggressive has two 'g's and two 's's. Think: an aggressive dog growls and snarls (double 'g' and double 's')."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["amatuer", "amature", "ammateur", "amateur"],
+        "answer": "amateur",
+        "explanation": "Amateur is a tricky word from French. Remember the ending: '-ateur'. An amateur is someone who does something for fun, not as a profession."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["ancient", "anceint", "anciant", "anicient"],
+        "answer": "ancient",
+        "explanation": "Ancient follows the 'i before e' rule after 'c' as an exception: a-n-c-i-e-n-t. Remember: ancient civilisations are interesting."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["apparant", "apparent", "aparent", "apparrent"],
+        "answer": "apparent",
+        "explanation": "Apparent has two 'p's and ends in '-ent' (not '-ant'). Think: it has a 'parent' hidden inside it."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["apreciate", "appriciate", "appreciate", "appresiate"],
+        "answer": "appreciate",
+        "explanation": "Appreciate has two 'p's and is spelled '-ciate' at the end. Remember: I appreciate people who are precise."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["attatched", "attached", "attacched", "atached"],
+        "answer": "attached",
+        "explanation": "Attached has two 't's and is spelled '-ached' at the end. Think: attached = at + tached."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["availible", "availble", "avaliable", "available"],
+        "answer": "available",
+        "explanation": "Available ends in '-able' (not '-ible'). Remember: 'avail' + 'able' = available."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["averige", "average", "avrage", "averege"],
+        "answer": "average",
+        "explanation": "Average is spelled with an 'e' in the middle: a-v-e-r-a-g-e. Think: the average age of our class."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["bargin", "bargane", "bargain", "bargan"],
+        "answer": "bargain",
+        "explanation": "Bargain ends in '-ain'. Remember: I gained a bargain (both words end in '-ain')."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["bruise", "bruse", "bruize", "broose"],
+        "answer": "bruise",
+        "explanation": "Bruise has the 'ui' vowel pattern. Remember: bruise contains the word 'ruis' which sounds like 'ooze'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["catagory", "categary", "category", "catigory"],
+        "answer": "category",
+        "explanation": "Category has an 'e' in the second syllable: cat-e-go-ry. Think: there are categories of cats in the pet show."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["cemetary", "cemetery", "cematary", "cemetry"],
+        "answer": "cemetery",
+        "explanation": "Cemetery has three 'e's and no 'a's. Remember: we go to the cemetery to remember (three 'e's in each)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["comittee", "commitee", "committee", "commitey"],
+        "answer": "committee",
+        "explanation": "Committee has double 'm', double 't', and double 'e'. Think: the committee had too many members, so everything was doubled."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["comunicate", "communicate", "comunnicate", "communacate"],
+        "answer": "communicate",
+        "explanation": "Communicate has two 'm's and is spelled '-icate' at the end. The root word is 'communic-' plus the suffix '-ate'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["comunity", "commuinty", "communnity", "community"],
+        "answer": "community",
+        "explanation": "Community has two 'm's and ends in '-ity'. Remember: community contains 'commun' (like communicate) plus '-ity'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["competision", "competition", "compettion", "compitition"],
+        "answer": "competition",
+        "explanation": "Competition has an 'e' in the second syllable and '-ition' at the end. It comes from the word 'compete' with the suffix '-ition'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["consience", "conscience", "concience", "concsience"],
+        "answer": "conscience",
+        "explanation": "Conscience has 'sc' in the middle: con-science. Remember: your conscience contains science - knowing right from wrong."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word is spelled correctly? (1 mark)",
+        "options": ["concious", "consious", "conscious", "conscous"],
+        "answer": "conscious",
+        "explanation": "Conscious has 'sc' and '-ious' at the end: con-sci-ous. It is related to 'conscience'. Both contain 'sci' in the middle."
+    }
+]

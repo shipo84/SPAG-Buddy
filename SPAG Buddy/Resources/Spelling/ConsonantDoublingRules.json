@@ -1,0 +1,106 @@
+[
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ing' to 'run'.",
+    "Prompt": "She was _____ around the park.",
+    "Options": ["running", "runing", "runeing", "runnning"],
+    "Answer": "running",
+    "Explanation": "Double the final consonant in short vowel (CVC) words before adding '-ing': run → running."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ed' to 'hop'.",
+    "Prompt": "The rabbit _____ across the garden.",
+    "Options": ["hopped", "hoped", "hoped", "hopd"],
+    "Answer": "hopped",
+    "Explanation": "Double the final consonant in CVC words before adding '-ed': hop → hopped. Compare with 'hoped' (from hope)."
+  },
+  {
+    "QuestionType": "CompleteTheTable",
+    "Question": "Complete the table by adding '-ing' to each word:\n\nBase word | + ing\nstop     | _____\nhope     | _____\nplan     | _____",
+    "Answer": "stopping, hoping, planning",
+    "Explanation": "Stop → stopping (CVC, double p); hope → hoping (silent e, drop e); plan → planning (CVC, double n)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which word follows the consonant doubling rule?",
+    "Options": ["sitting", "eating", "reading", "sleeping"],
+    "Answer": "sitting",
+    "Explanation": "Sit is a CVC word (consonant-vowel-consonant), so the 't' doubles before '-ing'."
+  },
+  {
+    "QuestionType": "IdentifyThePattern",
+    "Question": "What does CVC stand for in the consonant doubling rule?",
+    "Options": ["Consonant-Vowel-Consonant", "Consonant-Verb-Consonant", "Common-Vowel-Change", "Correct-Vowel-Combination"],
+    "Answer": "Consonant-Vowel-Consonant",
+    "Explanation": "CVC pattern means the word ends in consonant-vowel-consonant, e.g., run (r-u-n), sit (s-i-t)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Which word does NOT double the final consonant before '-ing'?",
+    "Options": ["swim", "visit", "clap", "drum"],
+    "Answer": "visit",
+    "Explanation": "Visit has the stress on the first syllable (VIS-it), so we don't double: visiting. The others are one-syllable CVC words."
+  },
+  {
+    "QuestionType": "FillInTheBlank",
+    "Question": "The dog was _____ in the mud. (dig + ing)",
+    "Answer": "digging",
+    "Explanation": "Dig is a CVC word, so double the 'g' before adding '-ing': digging."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-ed' to 'travel' (British English).",
+    "Options": ["travelled", "traveled", "travellled", "traveld"],
+    "Answer": "travelled",
+    "Explanation": "In British English, double the 'l' in 'travel' before '-ed': travelled. American English uses 'traveled'."
+  },
+  {
+    "QuestionType": "TrueFalse",
+    "Question": "When adding '-ing' to 'open', you should double the 'n': 'openning'.",
+    "Answer": "False",
+    "Explanation": "The stress in 'open' is on the first syllable (O-pen), so the consonant is NOT doubled: opening."
+  },
+  {
+    "QuestionType": "StressPattern",
+    "Question": "Which word doubles its final consonant because the stress is on the last syllable?",
+    "Options": ["begin → beginning", "open → opening", "listen → listening", "visit → visiting"],
+    "Answer": "begin → beginning",
+    "Explanation": "Begin has stress on the last syllable (be-GIN), so 'n' doubles: beginning. The others stress the first syllable."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Choose the correct spelling when adding '-er' to 'swim'.",
+    "Prompt": "She is a strong _____.",
+    "Options": ["swimmer", "swimer", "swimmeer", "swimmar"],
+    "Answer": "swimmer",
+    "Explanation": "Swim is a CVC word, so double the 'm' before adding '-er': swimmer."
+  },
+  {
+    "QuestionType": "FindTheMisspelling",
+    "Question": "Which word is spelled incorrectly?",
+    "Options": ["dropped", "clapping", "writting", "begging"],
+    "Answer": "writting",
+    "Explanation": "The correct spelling is 'writing' - write ends in silent 'e', so drop the 'e' (don't double the 't')."
+  },
+  {
+    "QuestionType": "CompleteTheTable",
+    "Question": "Complete the table by adding '-ed' to each word:\n\nBase word | + ed\nclap     | _____\nwalk     | _____\nstep     | _____",
+    "Answer": "clapped, walked, stepped",
+    "Explanation": "Clap → clapped (CVC, double p); walk → walked (not CVC, ends in two consonants); step → stepped (CVC, double p)."
+  },
+  {
+    "QuestionType": "MultipleChoice",
+    "Question": "Why don't we double the consonant in 'jumping'?",
+    "Options": ["Because 'jump' ends in two consonants", "Because 'jump' has two syllables", "Because 'jump' starts with 'j'", "Because 'jump' has a long vowel"],
+    "Answer": "Because 'jump' ends in two consonants",
+    "Explanation": "We only double when a word ends in a single consonant after a single vowel (CVC). Jump ends in 'mp' (two consonants)."
+  },
+  {
+    "QuestionType": "BritishVsAmerican",
+    "Question": "Which pair shows a British vs American spelling difference in consonant doubling?",
+    "Options": ["travelled / traveled", "running / runing", "stopped / stoped", "swimming / swiming"],
+    "Answer": "travelled / traveled",
+    "Explanation": "British English doubles the 'l' in words like travel (travelled), while American English does not (traveled). Both are correct in their respective varieties."
+  }
+]

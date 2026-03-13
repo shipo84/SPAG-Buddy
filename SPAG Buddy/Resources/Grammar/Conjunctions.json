@@ -1,0 +1,107 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which word is a coordinating conjunction in this sentence? 'I wanted to play outside, but it was raining heavily.'",
+        "options": ["wanted", "outside", "but", "heavily"],
+        "answer": "but",
+        "explanation": "'But' is a coordinating conjunction. It joins two main clauses of equal importance. The coordinating conjunctions can be remembered using the acronym FANBOYS: For, And, Nor, But, Or, Yet, So."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is a subordinating conjunction?",
+        "options": ["and", "but", "although", "or"],
+        "answer": "although",
+        "explanation": "'Although' is a subordinating conjunction. It introduces a subordinate clause, which cannot stand alone as a sentence. 'And', 'but' and 'or' are all coordinating conjunctions."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which conjunction best completes this sentence? 'We will go to the beach ______ the weather is warm enough.'",
+        "options": ["but", "or", "if", "so"],
+        "answer": "if",
+        "explanation": "'If' is the correct subordinating conjunction here because the trip to the beach depends on a condition — the weather being warm enough. 'If' introduces a condition that must be met."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What does the conjunction 'because' do in this sentence? 'The match was cancelled because the pitch was waterlogged.'",
+        "options": ["It joins two equal ideas.", "It gives a reason or cause.", "It shows a contrast.", "It offers a choice."],
+        "answer": "It gives a reason or cause.",
+        "explanation": "'Because' is a subordinating conjunction that introduces a reason. It tells us why the match was cancelled — the pitch was waterlogged."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses a coordinating conjunction correctly?",
+        "options": ["Although she was tired, she finished her homework.", "She was tired, so she went to bed early.", "Because it was late, we hurried home.", "While we waited, the bus arrived."],
+        "answer": "She was tired, so she went to bed early.",
+        "explanation": "'So' is a coordinating conjunction (one of the FANBOYS). It joins two main clauses that could each stand alone as a sentence. The other options all use subordinating conjunctions (although, because, while)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which pair of correlative conjunctions correctly completes this sentence? '______ you tidy your room ______ you will not be allowed to go out.'",
+        "options": ["Either ... or", "Neither ... nor", "Both ... and", "Not only ... but also"],
+        "answer": "Either ... or",
+        "explanation": "'Either ... or' presents two alternatives — one of which must be chosen. The sentence gives two options: tidy the room, or stay in. 'Neither ... nor' means not one and not the other, which does not fit this context."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which subordinating conjunction shows a time relationship?",
+        "options": ["because", "although", "until", "if"],
+        "answer": "until",
+        "explanation": "'Until' is a subordinating conjunction that shows time — it tells us when something happens or how long it continues. 'Because' shows reason, 'although' shows contrast, and 'if' shows condition."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence correctly uses 'neither ... nor'?",
+        "options": ["Neither the cat nor the dog wanted to go outside.", "Neither the cat or the dog wanted to go outside.", "Neither the cat and the dog wanted to go outside.", "Neither the cat but the dog wanted to go outside."],
+        "answer": "Neither the cat nor the dog wanted to go outside.",
+        "explanation": "'Neither' must always be paired with 'nor', not 'or', 'and' or 'but'. 'Neither ... nor' means not one and not the other."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which conjunction would show contrast between two ideas? 'The homework was difficult, ______ I managed to finish it.'",
+        "options": ["and", "so", "yet", "for"],
+        "answer": "yet",
+        "explanation": "'Yet' is a coordinating conjunction that shows contrast, similar to 'but'. The homework being difficult and still being finished are contrasting ideas. 'And' adds information, 'so' shows a result, and 'for' gives a reason."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Where should a comma be placed when the subordinating conjunction begins the sentence? 'While the teacher read the story the children listened carefully.'",
+        "options": ["After 'While'", "After 'story'", "After 'children'", "No comma is needed."],
+        "answer": "After 'story'",
+        "explanation": "When a subordinate clause comes at the beginning of a sentence, a comma is used to separate it from the main clause. The subordinate clause is 'While the teacher read the story', so the comma goes after 'story'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these sentences uses the subordinating conjunction 'while' to show two things happening at the same time?",
+        "options": ["I like football while my brother prefers rugby.", "While you were sleeping, a fox crossed the garden.", "We will leave while we can.", "She smiled while she was upset."],
+        "answer": "While you were sleeping, a fox crossed the garden.",
+        "explanation": "'While' can show contrast or time. In 'While you were sleeping, a fox crossed the garden', it shows two events happening at the same time — the sleeping and the fox crossing. The other uses of 'while' show contrast."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses 'not only ... but also' correctly?",
+        "options": ["She not only sings but also dances.", "She not only sings but dances also.", "Not she only sings but also dances.", "She sings not only but also dances."],
+        "answer": "She not only sings but also dances.",
+        "explanation": "'Not only ... but also' is a pair of correlative conjunctions used to add emphasis. The correct pattern places 'not only' before the first item and 'but also' before the second: 'not only sings but also dances'."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which coordinating conjunction joins these two clauses to show a result? 'The ice cream van arrived, ______ all the children ran outside.'",
+        "options": ["but", "or", "so", "nor"],
+        "answer": "so",
+        "explanation": "'So' is the coordinating conjunction that shows a result or consequence. The children running outside is the result of the ice cream van arriving."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How many conjunctions are in this sentence? 'Although it was cold and windy, we went for a walk because we needed fresh air.'",
+        "options": ["One", "Two", "Three", "Four"],
+        "answer": "Three",
+        "explanation": "There are three conjunctions: 'Although' (subordinating — introduces the first clause), 'and' (coordinating — joins 'cold' and 'windy'), and 'because' (subordinating — introduces the reason)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which subordinating conjunction best completes this sentence to show a contrast? '______ the team trained hard every week, they still lost the final.'",
+        "options": ["Because", "When", "Although", "Until"],
+        "answer": "Although",
+        "explanation": "'Although' is the subordinating conjunction that shows a contrast or something unexpected. Training hard would normally lead to winning, so losing is a surprising contrast. 'Because' shows reason, 'when' shows time, and 'until' shows duration."
+    }
+]

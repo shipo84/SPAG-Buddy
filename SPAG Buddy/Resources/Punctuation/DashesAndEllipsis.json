@@ -1,0 +1,79 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What does an ellipsis (...) show in a sentence? (1 mark)",
+        "options": ["The end of a sentence", "A question is being asked", "Something has been left out or a pause in speech", "Someone is shouting"],
+        "answer": "Something has been left out or a pause in speech",
+        "explanation": "An ellipsis shows that words have been omitted, or it creates suspense, hesitation or a trailing off in speech."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses a dash correctly? (1 mark)",
+        "options": ["The dog - was very friendly.", "The dog was very - friendly.", "The dog - a golden retriever - was very friendly.", "The - dog was very friendly."],
+        "answer": "The dog - a golden retriever - was very friendly.",
+        "explanation": "Dashes are used in pairs to add extra information (a parenthetical phrase) into a sentence."
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add an ellipsis to show suspense in this sentence: She opened the door and saw (1 mark)",
+        "answer": "She opened the door and saw...",
+        "explanation": "The ellipsis at the end creates suspense by trailing off, leaving the reader wondering what she saw."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence using dashes instead of brackets: The headteacher (Mr Thompson) gave a speech. (1 mark)",
+        "answer": "The headteacher - Mr Thompson - gave a speech.",
+        "explanation": "Dashes can be used like brackets to add extra information. They give a slightly less formal feel."
+    },
+    {
+        "type": "true_false",
+        "question": "An ellipsis is always made up of exactly three dots. (1 mark)",
+        "answer": "True",
+        "explanation": "An ellipsis consists of three dots (...). Using more or fewer dots is incorrect."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In which sentence does the ellipsis show that words have been left out from a quotation? (1 mark)",
+        "options": ["I was thinking... maybe we should go.", "The recipe said to add flour... sugar... and eggs.", "The report stated: 'The school has made... significant progress this year.'", "Wait for it..."],
+        "answer": "The report stated: 'The school has made... significant progress this year.'",
+        "explanation": "Here the ellipsis shows that some words from the original quotation have been omitted."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a sentence that uses a dash to add an afterthought. (1 mark)",
+        "answer": "Example: I finished my homework - finally!",
+        "explanation": "A single dash can introduce an afterthought or dramatic addition at the end of a sentence."
+    },
+    {
+        "type": "identify_errors",
+        "question": "What is wrong with this sentence? The old house - which was built in 1850 was falling apart. (1 mark)",
+        "answer": "There is a missing second dash. Correct: The old house - which was built in 1850 - was falling apart.",
+        "explanation": "When dashes are used to add information in the middle of a sentence, they must come in pairs."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence uses an ellipsis to show hesitation in speech? (1 mark)",
+        "options": ["I don't know... maybe... I suppose so.", "She went to the shop. She bought milk.", "I really like chocolate!", "Do you want to come?"],
+        "answer": "I don't know... maybe... I suppose so.",
+        "explanation": "The ellipses show the speaker pausing and hesitating between their words."
+    },
+    {
+        "type": "explain",
+        "question": "Explain two different ways dashes can be used in writing. Give an example of each. (2 marks)",
+        "answer": "1. A pair of dashes can add extra information in the middle of a sentence (e.g. 'My teacher - Mrs Green - is very kind.'). 2. A single dash can introduce an afterthought or summary at the end of a sentence (e.g. 'He ate the whole cake - every last crumb.').",
+        "explanation": "Award 1 mark for each correct use with a suitable example."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add the missing dashes and ellipsis to this passage: The treasure chest an ancient wooden box was buried deep underground. Inside they found gold coins, jewels and something unexpected (2 marks)",
+        "answer": "The treasure chest - an ancient wooden box - was buried deep underground. Inside they found gold coins, jewels and something unexpected...",
+        "explanation": "Dashes add the extra information about the chest. The ellipsis creates suspense about what was unexpected."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "How is a dash different from a hyphen? (1 mark)",
+        "options": ["They are the same thing", "A dash is longer and separates parts of a sentence; a hyphen joins words together", "A hyphen is longer than a dash", "A dash is only used in lists"],
+        "answer": "A dash is longer and separates parts of a sentence; a hyphen joins words together",
+        "explanation": "A hyphen (-) joins words (e.g. well-known). A dash (--) separates or adds information within a sentence."
+    }
+]

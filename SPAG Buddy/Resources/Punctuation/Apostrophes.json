@@ -1,0 +1,78 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Tick the sentence that uses an apostrophe correctly. (1 mark)",
+        "options": ["The childrens' playground was busy.", "The children's playground was busy.", "The childrens playground was busy.", "The children's' playground was busy."],
+        "answer": "The children's playground was busy.",
+        "explanation": "Children is already plural, so we add 's to show possession."
+    },
+    {
+        "type": "insert_apostrophe",
+        "question": "Insert an apostrophe in the correct place in this sentence: The boys football rolled into the neighbours garden. (2 marks)",
+        "answer": "The boy's football rolled into the neighbour's garden.",
+        "explanation": "Both 'boy' and 'neighbour' need apostrophes to show possession (one boy, one neighbour)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which word means 'it is'? (1 mark)",
+        "options": ["its", "it's", "its'", "i'ts"],
+        "answer": "it's",
+        "explanation": "It's = it is (contraction). Its = belonging to it (possessive)."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this sentence, replacing the underlined words with a contraction: They have forgotten their homework. (1 mark)",
+        "answer": "They've forgotten their homework.",
+        "explanation": "They have = They've"
+    },
+    {
+        "type": "identify_errors",
+        "question": "Circle the two words that have apostrophes in the wrong place: The dog's were barking at the cat's tail because it's owner wasn't watching. (2 marks)",
+        "answer": "dog's (should be dogs) and it's (should be its)",
+        "explanation": "Dogs = plural (no apostrophe). Its = possessive pronoun (no apostrophe)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence shows that the toys belong to more than one baby? (1 mark)",
+        "options": ["The babys' toys were scattered.", "The baby's toys were scattered.", "The babies' toys were scattered.", "The babies toys were scattered."],
+        "answer": "The babies' toys were scattered.",
+        "explanation": "Babies = plural of baby. Babies' = belonging to multiple babies."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write one sentence using the word 'couldn't' correctly. (1 mark)",
+        "answer": "Example: I couldn't find my pencil case.",
+        "explanation": "Couldn't = could not. Accept any grammatically correct sentence."
+    },
+    {
+        "type": "true_false",
+        "question": "James' book and James's book are both correct ways to show possession. (1 mark)",
+        "answer": "True",
+        "explanation": "Names ending in 's' can use either form, though 's is more common."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add the missing apostrophes to this passage (3 apostrophes needed): Last weeks match was cancelled. The teams captain said, Were disappointed but well play next Saturday. (3 marks)",
+        "answer": "Last week's match was cancelled. The team's captain said, 'We're disappointed but we'll play next Saturday.'",
+        "explanation": "week's (possession), team's (possession), We're (we are), we'll (we will)"
+    },
+    {
+        "type": "multiple_choice",
+        "question": "In which sentence is the apostrophe used incorrectly? (1 mark)",
+        "options": ["The 1960's were an exciting decade.", "She got three A's on her report.", "Don't forget your PE kit.", "My sister's friend is coming over."],
+        "answer": "The 1960's were an exciting decade.",
+        "explanation": "Decades don't need apostrophes: 1960s is correct."
+    },
+    {
+        "type": "explain",
+        "question": "Explain why we write 'the girls' bags' not 'the girl's bags' when talking about bags belonging to several girls. (2 marks)",
+        "answer": "We write 'girls' bags' because 'girls' is already plural (more than one girl). We add an apostrophe after the 's' to show possession for plural nouns ending in 's'.",
+        "explanation": "Award 1 mark for identifying plural, 1 mark for correct apostrophe placement rule."
+    },
+    {
+        "type": "sort_words",
+        "question": "Sort these words into two groups - contractions and possessive forms: won't, Sarah's, they're, children's, hasn't, James' (2 marks)",
+        "answer": "Contractions: won't, they're, hasn't. Possessive: Sarah's, children's, James'",
+        "explanation": "All correct = 2 marks, one error = 1 mark"
+    }
+]

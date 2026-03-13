@@ -1,0 +1,88 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "What is a suffix? (1 mark)",
+        "options": ["A letter added to the beginning of a word", "A letter or group of letters added to the end of a word to change its meaning or word class", "The root of a word", "A word that means the opposite"],
+        "answer": "A letter or group of letters added to the end of a word to change its meaning or word class",
+        "explanation": "A suffix is added to the end of a root word to create a new word, often changing its word class, e.g., hope + -ful = hopeful (noun → adjective)."
+    },
+    {
+        "type": "match_suffix_meaning",
+        "question": "Match each suffix to its meaning: (5 marks)\na) -ful\nb) -less\nc) -ly\nd) -tion\ne) -ment",
+        "options": ["full of", "without", "in a certain way", "the act or process of", "the result or state of"],
+        "answer": "a) -ful = full of  b) -less = without  c) -ly = in a certain way  d) -tion = the act or process of  e) -ment = the result or state of",
+        "explanation": "Understanding suffix meanings helps decode unfamiliar words and build vocabulary."
+    },
+    {
+        "type": "add_suffix",
+        "question": "Add the correct suffix to each word to match the definition: (5 marks)\na) care + _____ (full of care)\nb) hope + _____ (without hope)\nc) enjoy + _____ (the state of enjoying)\nd) quiet + _____ (in a quiet way)\ne) educate + _____ (the act of educating)",
+        "answer": "a) careful (-ful)  b) hopeless (-less)  c) enjoyment (-ment)  d) quietly (-ly)  e) education (-tion)",
+        "explanation": "-ful = full of, -less = without, -ment = state/result, -ly = in a way, -tion = act/process."
+    },
+    {
+        "type": "spelling_changes",
+        "question": "What happens to the spelling when these suffixes are added? (4 marks)\na) happy + -ness = _______\nb) hope + -ful = _______\nc) gentle + -ly = _______\nd) fame + -ous = _______",
+        "answer": "a) happiness (y changes to i)  b) hopeful (drop the e)  c) gently (drop the le, add ly)  d) famous (drop the e)",
+        "explanation": "Spelling rules: change 'y' to 'i' before suffixes, drop silent 'e' before vowel suffixes, '-le' changes to '-ly'."
+    },
+    {
+        "type": "word_class_change",
+        "question": "What word class does each word become after adding the suffix? (4 marks)\na) teach + -er = teacher\nb) dark + -ness = darkness\nc) beauty + -ful = beautiful\nd) slow + -ly = slowly",
+        "answer": "a) noun (a person)  b) noun (a state)  c) adjective  d) adverb",
+        "explanation": "-er creates nouns (people/things), -ness creates nouns (states/qualities), -ful creates adjectives, -ly creates adverbs."
+    },
+    {
+        "type": "build_words",
+        "question": "Build as many words as you can from the root word 'kind' using suffixes: (3 marks)",
+        "answer": "kindly, kindness, unkindly, unkindness, kinder, kindest",
+        "explanation": "One root word can take multiple suffixes. Some words can also have a prefix and suffix added."
+    },
+    {
+        "type": "fill_in_blank",
+        "question": "Complete each sentence with the correct suffixed form of the word in brackets: (4 marks)\na) She showed great _______ during the test. (calm)\nb) The sunset was _______. (beauty)\nc) He _______ opened the door. (slow)\nd) The _______ arrived early. (teach)",
+        "answer": "a) calmness  b) beautiful  c) slowly  d) teacher",
+        "explanation": "Choose the suffix that creates the correct word class: noun (-ness), adjective (-ful), adverb (-ly), noun for people (-er)."
+    },
+    {
+        "type": "suffix_families",
+        "question": "Write two words for each suffix: (6 marks)\na) -able (can be done)\nb) -ist (a person who)\nc) -or (a person who)\nd) -ity (the quality of)\ne) -ness (the state of)\nf) -ment (the result of)",
+        "answer": "a) washable, enjoyable  b) artist, scientist  c) actor, inventor  d) electricity, curiosity  e) happiness, darkness  f) enjoyment, excitement",
+        "explanation": "-able = can be done, -ist/-or = person who does something, -ity/-ness = quality/state, -ment = result."
+    },
+    {
+        "type": "true_false",
+        "question": "Adding a suffix never changes the spelling of the root word. (1 mark)",
+        "answer": "False",
+        "explanation": "Suffixes often change the spelling: happy → happiness (y→i), hope → hopeful (drop e), big → bigger (double consonant), gentle → gently (le→ly)."
+    },
+    {
+        "type": "error_correction",
+        "question": "Correct the spelling errors in these suffixed words: (4 marks)\na) hopful\nb) happieness\nc) beautifull\nd) gentley",
+        "answer": "a) hopeful  b) happiness  c) beautiful  d) gently",
+        "explanation": "a) Keep the 'e' in hope → hopeful. b) Change 'y' to 'i': happy → happiness. c) Only one 'l' in -ful. d) gentle drops 'le' before adding '-ly'."
+    },
+    {
+        "type": "sort_by_suffix",
+        "question": "Sort these words by their suffix: (4 marks)\nWords: teacher, wonderful, slowly, darkness, actor, hopeless, quickly, sadness\nSuffixes: -er/-or, -ful/-less, -ly, -ness",
+        "answer": "-er/-or: teacher, actor | -ful/-less: wonderful, hopeless | -ly: slowly, quickly | -ness: darkness, sadness",
+        "explanation": "Recognising suffixes helps with spelling patterns and understanding how words are built."
+    },
+    {
+        "type": "double_suffixes",
+        "question": "Some words have more than one suffix. Identify all the suffixes in these words: (3 marks)\na) hopefully\nb) thankfulness\nc) powerlessly",
+        "answer": "a) hope + -ful + -ly  b) thank + -ful + -ness  c) power + -less + -ly",
+        "explanation": "Words can have multiple suffixes added in layers, each one changing the word class or meaning."
+    },
+    {
+        "type": "choose_correct_suffix",
+        "question": "Choose the correct suffix to complete each word: (4 marks)\na) invent_____ (a person who invents): -er or -or?\nb) enjoy_____ (can be enjoyed): -ible or -able?\nc) elect_____ (the quality of being electric): -ity or -ness?\nd) music_____ (a person who plays music): -er or -ian?",
+        "answer": "a) inventor (-or)  b) enjoyable (-able)  c) electricity (-ity)  d) musician (-ian)",
+        "explanation": "Some suffixes have similar meanings but are used with different root words. Learning common patterns helps with spelling."
+    },
+    {
+        "type": "challenge",
+        "question": "Create a word chain where each word uses a different suffix. Start with the root word 'wonder': (4 marks)",
+        "answer": "wonder → wonderful (-ful) → wonderfully (-ly) → wonderfulness (-ness) → wonderment (-ment)",
+        "explanation": "Root words can be extended with multiple suffixes to create increasingly complex words, each with a different shade of meaning."
+    }
+]

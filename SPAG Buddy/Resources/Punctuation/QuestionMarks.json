@@ -1,0 +1,78 @@
+[
+    {
+        "type": "multiple_choice",
+        "question": "Which sentence should end with a question mark? (1 mark)",
+        "options": ["I wonder what time it is", "What time is it", "Tell me what time it is", "The time is three o'clock"],
+        "answer": "What time is it",
+        "explanation": "'What time is it?' is a direct question. 'I wonder what time it is' is an indirect question (a statement) and takes a full stop."
+    },
+    {
+        "type": "true_false",
+        "question": "The sentence 'She asked where he was going.' should end with a question mark. (1 mark)",
+        "answer": "False",
+        "explanation": "This is reported (indirect) speech, which is a statement about a question. It ends with a full stop, not a question mark."
+    },
+    {
+        "type": "insert_punctuation",
+        "question": "Add the correct end punctuation to each sentence: Where is the library_ I need to find a book_ Can you help me_ (2 marks)",
+        "answer": "Where is the library? I need to find a book. Can you help me?",
+        "explanation": "Sentences 1 and 3 are direct questions (question marks). Sentence 2 is a statement (full stop)."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which of these is NOT a question? (1 mark)",
+        "options": ["Where did you go?", "How old are you?", "I asked him where he went.", "What is your name?"],
+        "answer": "I asked him where he went.",
+        "explanation": "This is indirect (reported) speech. It tells us about a question but is not a direct question itself."
+    },
+    {
+        "type": "rewrite",
+        "question": "Rewrite this indirect question as a direct question: She wanted to know if the shop was open. (1 mark)",
+        "answer": "\"Is the shop open?\" she asked.",
+        "explanation": "The direct question uses the exact words and ends with a question mark inside the speech marks."
+    },
+    {
+        "type": "identify_errors",
+        "question": "What is the punctuation error in this sentence? Have you finished your homework. (1 mark)",
+        "answer": "The full stop should be a question mark. Correct: Have you finished your homework?",
+        "explanation": "This is a direct question and must end with a question mark, not a full stop."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "Which question word asks about a reason? (1 mark)",
+        "options": ["Who", "Where", "Why", "When"],
+        "answer": "Why",
+        "explanation": "Why asks about reasons (e.g. Why did you do that?). Who = person, Where = place, When = time."
+    },
+    {
+        "type": "complete_sentence",
+        "question": "Write a question that could be answered with 'At half past three.' (1 mark)",
+        "answer": "Example: What time does the lesson finish?",
+        "explanation": "Accept any grammatically correct question that could logically be answered with a time."
+    },
+    {
+        "type": "multiple_choice",
+        "question": "What is a rhetorical question? (1 mark)",
+        "options": ["A question you ask a teacher", "A question that does not expect an answer", "A question with more than five words", "A question that has no question mark"],
+        "answer": "A question that does not expect an answer",
+        "explanation": "A rhetorical question is asked for effect or to make a point, not because the speaker wants an answer (e.g. 'Who wouldn't want a day off school?')."
+    },
+    {
+        "type": "punctuate_passage",
+        "question": "Add the correct end punctuation to this passage: Who wants to come to the park_ I am going after lunch_ Would anyone like to bring a ball_ It will be fun_ (2 marks)",
+        "answer": "Who wants to come to the park? I am going after lunch. Would anyone like to bring a ball? It will be fun.",
+        "explanation": "Sentences 1 and 3 are questions (question marks). Sentences 2 and 4 are statements (full stops)."
+    },
+    {
+        "type": "explain",
+        "question": "Explain the difference between a direct question and an indirect question. Give an example of each. (2 marks)",
+        "answer": "A direct question asks something directly and ends with a question mark (e.g. 'Where is the cat?'). An indirect question reports or tells about a question and ends with a full stop (e.g. 'She asked where the cat was.').",
+        "explanation": "Award 1 mark for correct explanation of each type with an appropriate example."
+    },
+    {
+        "type": "sort_words",
+        "question": "Sort these sentences into questions and statements: 'How far is the school', 'I wonder how far the school is', 'Can you tell me the way', 'He asked for directions', 'Is this the right road', 'The road leads to town' (2 marks)",
+        "answer": "Questions: 'How far is the school?', 'Can you tell me the way?', 'Is this the right road?' Statements: 'I wonder how far the school is.', 'He asked for directions.', 'The road leads to town.'",
+        "explanation": "Direct questions need question marks. Statements (including indirect questions) need full stops."
+    }
+]
