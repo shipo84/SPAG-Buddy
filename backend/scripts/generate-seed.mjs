@@ -125,13 +125,31 @@ function main() {
       {
         contentVersion: manifest.contentVersion,
         objectives,
-        spellingLists: lists.map(({ words, ...rest }) => ({ ...rest, wordCount: words.length })),
+        spellingLists: lists.map(({ words, ...rest }) => ({ ...rest, wordCount: words.length, words: words.map((w) => w.word) })),
         avatars,
+        questions: content.questions.map((q) => ({
+          id: q.id,
+          objectiveCode: q.objectiveCode,
+          type: q.type,
+          prompt: q.prompt,
+          choices: q.choices ?? [],
+          answers: q.answers,
+          satsStyle: q.satsStyle ?? false,
+        })),
       },
       null,
       2,
     ) + "\n",
   );
+
+  // The website's demo mode uses the same mastery, analytics, code and CSV rules as the API.
+  for (const name of ["analytics", "codes", "csv"]) {
+    const source = readFileSync(join(repo, "backend", "supabase", "functions", "_shared", `${name}.ts`), "utf8");
+    writeFileSync(
+      join(repo, "web", "lib", `${name}.gen.ts`),
+      `// Copied from backend/supabase/functions/_shared/${name}.ts by backend/scripts/generate-seed.mjs. Do not edit.\n${source}`,
+    );
+  }
 
   const spellingCount = lists.reduce((n, l) => n + l.words.length, 0);
   console.log(

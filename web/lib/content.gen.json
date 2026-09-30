@@ -418,7 +418,52 @@
       "yearGroups": [
         1
       ],
-      "wordCount": 43
+      "wordCount": 43,
+      "words": [
+        "the",
+        "do",
+        "to",
+        "today",
+        "of",
+        "said",
+        "says",
+        "are",
+        "were",
+        "was",
+        "is",
+        "his",
+        "has",
+        "you",
+        "your",
+        "they",
+        "be",
+        "he",
+        "me",
+        "she",
+        "we",
+        "no",
+        "go",
+        "so",
+        "by",
+        "my",
+        "here",
+        "there",
+        "where",
+        "love",
+        "come",
+        "some",
+        "one",
+        "once",
+        "ask",
+        "friend",
+        "school",
+        "put",
+        "push",
+        "pull",
+        "full",
+        "house",
+        "our"
+      ]
     },
     {
       "id": "y2-cew",
@@ -427,7 +472,73 @@
       "yearGroups": [
         2
       ],
-      "wordCount": 64
+      "wordCount": 64,
+      "words": [
+        "door",
+        "floor",
+        "poor",
+        "because",
+        "find",
+        "kind",
+        "mind",
+        "behind",
+        "child",
+        "children",
+        "wild",
+        "climb",
+        "most",
+        "only",
+        "both",
+        "old",
+        "cold",
+        "gold",
+        "hold",
+        "told",
+        "every",
+        "everybody",
+        "even",
+        "great",
+        "break",
+        "steak",
+        "pretty",
+        "beautiful",
+        "after",
+        "fast",
+        "last",
+        "past",
+        "father",
+        "class",
+        "grass",
+        "pass",
+        "plant",
+        "path",
+        "bath",
+        "hour",
+        "move",
+        "prove",
+        "improve",
+        "sure",
+        "sugar",
+        "eye",
+        "could",
+        "should",
+        "would",
+        "who",
+        "whole",
+        "any",
+        "many",
+        "clothes",
+        "busy",
+        "people",
+        "water",
+        "again",
+        "half",
+        "money",
+        "Mr",
+        "Mrs",
+        "parents",
+        "Christmas"
+      ]
     },
     {
       "id": "y34-statutory",
@@ -437,7 +548,118 @@
         3,
         4
       ],
-      "wordCount": 109
+      "wordCount": 109,
+      "words": [
+        "accident",
+        "accidentally",
+        "actual",
+        "actually",
+        "address",
+        "answer",
+        "appear",
+        "arrive",
+        "believe",
+        "bicycle",
+        "breath",
+        "breathe",
+        "build",
+        "busy",
+        "business",
+        "calendar",
+        "caught",
+        "centre",
+        "century",
+        "certain",
+        "circle",
+        "complete",
+        "consider",
+        "continue",
+        "decide",
+        "describe",
+        "different",
+        "difficult",
+        "disappear",
+        "early",
+        "earth",
+        "eight",
+        "eighth",
+        "enough",
+        "exercise",
+        "experience",
+        "experiment",
+        "extreme",
+        "famous",
+        "favourite",
+        "February",
+        "forward",
+        "forwards",
+        "fruit",
+        "grammar",
+        "group",
+        "guard",
+        "guide",
+        "heard",
+        "heart",
+        "height",
+        "history",
+        "imagine",
+        "increase",
+        "important",
+        "interest",
+        "island",
+        "knowledge",
+        "learn",
+        "length",
+        "library",
+        "material",
+        "medicine",
+        "mention",
+        "minute",
+        "natural",
+        "naughty",
+        "notice",
+        "occasion",
+        "occasionally",
+        "often",
+        "opposite",
+        "ordinary",
+        "particular",
+        "peculiar",
+        "perhaps",
+        "popular",
+        "position",
+        "possess",
+        "possession",
+        "possible",
+        "potatoes",
+        "pressure",
+        "probably",
+        "promise",
+        "purpose",
+        "quarter",
+        "question",
+        "recent",
+        "regular",
+        "reign",
+        "remember",
+        "sentence",
+        "separate",
+        "special",
+        "straight",
+        "strange",
+        "strength",
+        "suppose",
+        "surprise",
+        "therefore",
+        "though",
+        "although",
+        "thought",
+        "through",
+        "various",
+        "weight",
+        "woman",
+        "women"
+      ]
     },
     {
       "id": "y56-statutory",
@@ -447,7 +669,112 @@
         5,
         6
       ],
-      "wordCount": 103
+      "wordCount": 103,
+      "words": [
+        "accommodate",
+        "accompany",
+        "according",
+        "achieve",
+        "aggressive",
+        "amateur",
+        "ancient",
+        "apparent",
+        "appreciate",
+        "attached",
+        "available",
+        "average",
+        "awkward",
+        "bargain",
+        "bruise",
+        "category",
+        "cemetery",
+        "committee",
+        "communicate",
+        "community",
+        "competition",
+        "conscience",
+        "conscious",
+        "controversy",
+        "convenience",
+        "correspond",
+        "criticise",
+        "curiosity",
+        "definite",
+        "desperate",
+        "determined",
+        "develop",
+        "dictionary",
+        "disastrous",
+        "embarrass",
+        "environment",
+        "equipment",
+        "equipped",
+        "especially",
+        "exaggerate",
+        "excellent",
+        "existence",
+        "explanation",
+        "familiar",
+        "foreign",
+        "forty",
+        "frequently",
+        "government",
+        "guarantee",
+        "harass",
+        "hindrance",
+        "identity",
+        "immediate",
+        "immediately",
+        "individual",
+        "interfere",
+        "interrupt",
+        "language",
+        "leisure",
+        "lightning",
+        "marvellous",
+        "mischievous",
+        "muscle",
+        "necessary",
+        "neighbour",
+        "nuisance",
+        "occupy",
+        "occur",
+        "opportunity",
+        "parliament",
+        "persuade",
+        "physical",
+        "prejudice",
+        "privilege",
+        "profession",
+        "programme",
+        "pronunciation",
+        "queue",
+        "recognise",
+        "recommend",
+        "relevant",
+        "restaurant",
+        "rhyme",
+        "rhythm",
+        "sacrifice",
+        "secretary",
+        "shoulder",
+        "signature",
+        "sincere",
+        "sincerely",
+        "soldier",
+        "stomach",
+        "sufficient",
+        "suggest",
+        "symbol",
+        "system",
+        "temperature",
+        "thorough",
+        "twelfth",
+        "variety",
+        "vegetable",
+        "vehicle",
+        "yacht"
+      ]
     }
   ],
   "avatars": [
@@ -610,6 +937,644 @@
       "key": "squirrel",
       "emoji": "🐿️",
       "name": "Squirrel"
+    }
+  ],
+  "questions": [
+    {
+      "id": "y4-fa-01",
+      "objectiveCode": "Y4-G-fronted-adverbials",
+      "type": "multipleChoice",
+      "prompt": "Which sentence starts with a fronted adverbial?",
+      "choices": [
+        "Before breakfast, Sam fed the cat.",
+        "Sam fed the cat before breakfast.",
+        "The cat was fed by Sam.",
+        "Sam and the cat had breakfast."
+      ],
+      "answers": [
+        "Before breakfast, Sam fed the cat."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fa-02",
+      "objectiveCode": "Y4-G-fronted-adverbials",
+      "type": "multipleChoice",
+      "prompt": "Under the old bridge, a troll was sleeping. What does the fronted adverbial tell us?",
+      "choices": [
+        "when",
+        "where",
+        "how"
+      ],
+      "answers": [
+        "where"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fa-03",
+      "objectiveCode": "Y4-G-fronted-adverbials",
+      "type": "multipleChoice",
+      "prompt": "As quickly as she could, Mia ran home. What does the fronted adverbial tell us?",
+      "choices": [
+        "when",
+        "where",
+        "how"
+      ],
+      "answers": [
+        "how"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fa-04",
+      "objectiveCode": "Y4-G-fronted-adverbials",
+      "type": "multiSelect",
+      "prompt": "Tick the two sentences that begin with a fronted adverbial.",
+      "choices": [
+        "Later that day, it snowed.",
+        "It snowed later that day.",
+        "Without a sound, the fox crept away.",
+        "The fox crept away without a sound."
+      ],
+      "answers": [
+        "Later that day, it snowed.",
+        "Without a sound, the fox crept away."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fa-05",
+      "objectiveCode": "Y4-G-fronted-adverbials",
+      "type": "multipleChoice",
+      "prompt": "Choose the best fronted adverbial: ______, the children went out to play.",
+      "choices": [
+        "When the bell rang",
+        "The bell",
+        "Rang loudly",
+        "Because"
+      ],
+      "answers": [
+        "When the bell rang"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fac-01",
+      "objectiveCode": "Y4-P-comma-after-fronted-adverbial",
+      "type": "tapGap",
+      "prompt": "Tap where the comma should go.",
+      "choices": [],
+      "answers": [
+        "1"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fac-02",
+      "objectiveCode": "Y4-P-comma-after-fronted-adverbial",
+      "type": "tapGap",
+      "prompt": "Tap where the comma should go.",
+      "choices": [],
+      "answers": [
+        "5"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fac-03",
+      "objectiveCode": "Y4-P-comma-after-fronted-adverbial",
+      "type": "tapGap",
+      "prompt": "Tap where the comma should go.",
+      "choices": [],
+      "answers": [
+        "2"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fac-04",
+      "objectiveCode": "Y4-P-comma-after-fronted-adverbial",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is punctuated correctly?",
+      "choices": [
+        "Last summer, we went to Wales.",
+        "Last, summer we went to Wales.",
+        "Last summer we, went to Wales.",
+        "Last summer we went, to Wales."
+      ],
+      "answers": [
+        "Last summer, we went to Wales."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-fac-05",
+      "objectiveCode": "Y4-P-comma-after-fronted-adverbial",
+      "type": "rewrite",
+      "prompt": "Write the sentence again with the missing comma: Every morning Gran walks her dog.",
+      "choices": [],
+      "answers": [
+        "Every morning, Gran walks her dog."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-ds-01",
+      "objectiveCode": "Y4-P-direct-speech",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is punctuated correctly?",
+      "choices": [
+        "\"Can we go to the park?\" asked Tom.",
+        "\"Can we go to the park\"? asked Tom.",
+        "\"Can we go to the park? asked Tom.\"",
+        "Can we go to the park? \"asked Tom.\""
+      ],
+      "answers": [
+        "\"Can we go to the park?\" asked Tom."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-ds-02",
+      "objectiveCode": "Y4-P-direct-speech",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is punctuated correctly?",
+      "choices": [
+        "Mum said, \"Put your shoes on.\"",
+        "Mum said \"Put your shoes on\".",
+        "Mum said, \"put your shoes on.\"",
+        "\"Mum said, Put your shoes on.\""
+      ],
+      "answers": [
+        "Mum said, \"Put your shoes on.\""
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-ds-03",
+      "objectiveCode": "Y4-P-direct-speech",
+      "type": "multipleChoice",
+      "prompt": "I love dragons, said Leila. Which words should go inside the inverted commas?",
+      "choices": [
+        "I love dragons,",
+        "said Leila.",
+        "I love dragons, said Leila.",
+        "Leila"
+      ],
+      "answers": [
+        "I love dragons,"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-ds-04",
+      "objectiveCode": "Y4-P-direct-speech",
+      "type": "multiSelect",
+      "prompt": "Tick the two sentences that are punctuated correctly.",
+      "choices": [
+        "\"It's raining,\" said Dad.",
+        "\"It's raining\" said Dad.",
+        "Dad said, \"It's raining.\"",
+        "Dad said, \"It's raining\"."
+      ],
+      "answers": [
+        "\"It's raining,\" said Dad.",
+        "Dad said, \"It's raining.\""
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-ds-05",
+      "objectiveCode": "Y4-P-direct-speech",
+      "type": "rewrite",
+      "prompt": "Write the sentence again with inverted commas: Where is my hat? asked Grandad.",
+      "choices": [],
+      "answers": [
+        "\"Where is my hat?\" asked Grandad."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-pp-01",
+      "objectiveCode": "Y4-P-apostrophes-plural-possession",
+      "type": "multipleChoice",
+      "prompt": "The ______ coats were on the pegs. (The coats belong to lots of girls.)",
+      "choices": [
+        "girls'",
+        "girl's",
+        "girls",
+        "girls's"
+      ],
+      "answers": [
+        "girls'"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-pp-02",
+      "objectiveCode": "Y4-P-apostrophes-plural-possession",
+      "type": "multipleChoice",
+      "prompt": "The ______ toys were all over the floor. (The toys belong to lots of children.)",
+      "choices": [
+        "children's",
+        "childrens'",
+        "childrens",
+        "children"
+      ],
+      "answers": [
+        "children's"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-pp-03",
+      "objectiveCode": "Y4-P-apostrophes-plural-possession",
+      "type": "multipleChoice",
+      "prompt": "There is only one dog. Which sentence is correct?",
+      "choices": [
+        "The dog's bowl was empty.",
+        "The dogs' bowl was empty.",
+        "The dogs bowl was empty.",
+        "The dogs's bowl was empty."
+      ],
+      "answers": [
+        "The dog's bowl was empty."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-pp-04",
+      "objectiveCode": "Y4-P-apostrophes-plural-possession",
+      "type": "multiSelect",
+      "prompt": "Tick the two phrases where something belongs to more than one person.",
+      "choices": [
+        "the teachers' room",
+        "the teacher's desk",
+        "the men's shoes",
+        "the man's hat"
+      ],
+      "answers": [
+        "the teachers' room",
+        "the men's shoes"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-se-01",
+      "objectiveCode": "Y4-G-standard-english",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is written in Standard English?",
+      "choices": [
+        "We were late for school.",
+        "We was late for school.",
+        "We is late for school.",
+        "We be late for school."
+      ],
+      "answers": [
+        "We were late for school."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-se-02",
+      "objectiveCode": "Y4-G-standard-english",
+      "type": "multipleChoice",
+      "prompt": "Choose the Standard English word: I ______ my homework last night.",
+      "choices": [
+        "did",
+        "done",
+        "doed",
+        "have did"
+      ],
+      "answers": [
+        "did"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-se-03",
+      "objectiveCode": "Y4-G-standard-english",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is written in Standard English?",
+      "choices": [
+        "Those books are mine.",
+        "Them books are mine.",
+        "Them books is mine.",
+        "Those books is mine."
+      ],
+      "answers": [
+        "Those books are mine."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-se-04",
+      "objectiveCode": "Y4-G-standard-english",
+      "type": "rewrite",
+      "prompt": "Write the sentence again in Standard English: They was playing football.",
+      "choices": [],
+      "answers": [
+        "They were playing football."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-np-01",
+      "objectiveCode": "Y4-G-noun-phrases",
+      "type": "multipleChoice",
+      "prompt": "Which of these is an expanded noun phrase?",
+      "choices": [
+        "the tall tree with golden leaves",
+        "the tree grew",
+        "under the tree",
+        "slowly"
+      ],
+      "answers": [
+        "the tall tree with golden leaves"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-np-02",
+      "objectiveCode": "Y4-G-noun-phrases",
+      "type": "multipleChoice",
+      "prompt": "Which prepositional phrase best expands this noun phrase? the girl ______",
+      "choices": [
+        "with a red umbrella",
+        "quickly",
+        "and ran",
+        "was happy"
+      ],
+      "answers": [
+        "with a red umbrella"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-np-03",
+      "objectiveCode": "Y4-G-noun-phrases",
+      "type": "multipleChoice",
+      "prompt": "Which word is the noun in this noun phrase? a scruffy old dog",
+      "choices": [
+        "a",
+        "scruffy",
+        "old",
+        "dog"
+      ],
+      "answers": [
+        "dog"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-pr-01",
+      "objectiveCode": "Y4-G-pronouns",
+      "type": "multipleChoice",
+      "prompt": "Choose the best pronoun: Priya found a puppy. ______ took it home.",
+      "choices": [
+        "She",
+        "Her",
+        "It",
+        "They"
+      ],
+      "answers": [
+        "She"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-pr-02",
+      "objectiveCode": "Y4-G-pronouns",
+      "type": "multipleChoice",
+      "prompt": "Jack and I went swimming. Which pronoun could replace the underlined words?",
+      "choices": [
+        "We",
+        "Us",
+        "They",
+        "Them"
+      ],
+      "answers": [
+        "We"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-pr-03",
+      "objectiveCode": "Y4-G-pronouns",
+      "type": "multipleChoice",
+      "prompt": "Which sentence makes it clearest who loves reading?",
+      "choices": [
+        "Tom gave Sam a book because Sam loves reading.",
+        "He gave him a book because he loves reading.",
+        "Tom gave him a book because he loves reading."
+      ],
+      "answers": [
+        "Tom gave Sam a book because Sam loves reading."
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-det-01",
+      "objectiveCode": "Y4-G-determiners",
+      "type": "multipleChoice",
+      "prompt": "Those apples are ripe. What word class is the underlined word?",
+      "choices": [
+        "determiner",
+        "noun",
+        "adjective",
+        "verb"
+      ],
+      "answers": [
+        "determiner"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-det-02",
+      "objectiveCode": "Y4-G-determiners",
+      "type": "multiSelect",
+      "prompt": "The cat chased some mice under my bed. Tick all the determiners.",
+      "choices": [
+        "The",
+        "cat",
+        "some",
+        "under",
+        "my"
+      ],
+      "answers": [
+        "The",
+        "some",
+        "my"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-det-03",
+      "objectiveCode": "Y4-G-determiners",
+      "type": "multipleChoice",
+      "prompt": "Choose the correct determiner: Please may I have ______ sweets?",
+      "choices": [
+        "some",
+        "a",
+        "an",
+        "much"
+      ],
+      "answers": [
+        "some"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-hom-01",
+      "objectiveCode": "Y4-S-homophones",
+      "type": "multipleChoice",
+      "prompt": "I don't know ______ it will rain tomorrow.",
+      "choices": [
+        "whether",
+        "weather"
+      ],
+      "answers": [
+        "whether"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-hom-02",
+      "objectiveCode": "Y4-S-homophones",
+      "type": "multipleChoice",
+      "prompt": "Can I have a ______ of cake, please?",
+      "choices": [
+        "piece",
+        "peace"
+      ],
+      "answers": [
+        "piece"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-hom-03",
+      "objectiveCode": "Y4-S-homophones",
+      "type": "multipleChoice",
+      "prompt": "We ______ the bus by one minute.",
+      "choices": [
+        "missed",
+        "mist"
+      ],
+      "answers": [
+        "missed"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-hom-04",
+      "objectiveCode": "Y4-S-homophones",
+      "type": "multipleChoice",
+      "prompt": "______ coat is this?",
+      "choices": [
+        "Whose",
+        "Who's"
+      ],
+      "answers": [
+        "Whose"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-hom-05",
+      "objectiveCode": "Y4-S-homophones",
+      "type": "multipleChoice",
+      "prompt": "The queen's ______ lasted seventy years.",
+      "choices": [
+        "reign",
+        "rain",
+        "rein"
+      ],
+      "answers": [
+        "reign"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-suf-01",
+      "objectiveCode": "Y4-S-suffixes",
+      "type": "multipleChoice",
+      "prompt": "Someone who plays music is a ______.",
+      "choices": [
+        "musician",
+        "musition",
+        "musicsion",
+        "musishun"
+      ],
+      "answers": [
+        "musician"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-suf-02",
+      "objectiveCode": "Y4-S-suffixes",
+      "type": "multipleChoice",
+      "prompt": "Add -ous to fame. Which spelling is correct?",
+      "choices": [
+        "famous",
+        "fameous",
+        "famus",
+        "famose"
+      ],
+      "answers": [
+        "famous"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-suf-03",
+      "objectiveCode": "Y4-S-suffixes",
+      "type": "multipleChoice",
+      "prompt": "Which word is spelled correctly?",
+      "choices": [
+        "explosion",
+        "exploshun",
+        "explotion",
+        "explossion"
+      ],
+      "answers": [
+        "explosion"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-suf-04",
+      "objectiveCode": "Y4-S-suffixes",
+      "type": "multipleChoice",
+      "prompt": "Add -ation to inform. Which spelling is correct?",
+      "choices": [
+        "information",
+        "informtion",
+        "informashun",
+        "informasion"
+      ],
+      "answers": [
+        "information"
+      ],
+      "satsStyle": false
+    },
+    {
+      "id": "y4-suf-05",
+      "objectiveCode": "Y4-S-suffixes",
+      "type": "multipleChoice",
+      "prompt": "Add -ly to happy. Which spelling is correct?",
+      "choices": [
+        "happily",
+        "happyly",
+        "happly",
+        "happilly"
+      ],
+      "answers": [
+        "happily"
+      ],
+      "satsStyle": false
     }
   ]
 }
