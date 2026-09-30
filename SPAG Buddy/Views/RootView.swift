@@ -33,5 +33,6 @@ struct RootView: View {
                 app.activePupilID = pupils[0].id
             }
         }
+        .task { await app.start() }
     }
 }

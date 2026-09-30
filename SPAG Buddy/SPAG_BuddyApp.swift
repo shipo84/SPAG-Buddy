@@ -11,8 +11,10 @@ import SwiftUI
 
 @main
 struct SPAG_BuddyApp: App {
-    private let modelContainer = Self.makeModelContainer()
-    @State private var appModel = AppModel(content: Self.loadContent())
+    static let schema = Schema([PupilProfile.self, Attempt.self, Assignment.self, BadgeProgress.self])
+    private static let modelContainer = makeModelContainer()
+
+    @State private var appModel = AppModel(content: Self.loadContent(), container: Self.modelContainer)
 
     var body: some Scene {
         WindowGroup {
@@ -20,10 +22,8 @@ struct SPAG_BuddyApp: App {
                 .environment(appModel)
                 .onOpenURL { appModel.handle(url: $0) }
         }
-        .modelContainer(modelContainer)
+        .modelContainer(Self.modelContainer)
     }
-
-    static let schema = Schema([PupilProfile.self, Attempt.self, Assignment.self, BadgeProgress.self])
 
     /// Pupil data stays on this device (and our server when in a class). It is never synced to iCloud.
     private static func makeModelContainer() -> ModelContainer {
@@ -48,14 +48,14 @@ struct SPAG_BuddyApp: App {
         }
     }
 
+    /// Uses downloaded content when it is newer than the content shipped in the app.
     private static func loadContent() -> ContentLibrary {
-        if let updated = ContentUpdater.loadDownloadedContent() {
-            return updated
-        }
+        let bundled: ContentLibrary
         do {
-            return try ContentLibrary.loadBundled()
+            bundled = try ContentLibrary.loadBundled()
         } catch {
             fatalError("Bundled content is invalid. Run the unit tests to find the problem: \(error)")
         }
+        return ContentUpdater.loadDownloadedContent(newerThan: bundled.manifest.contentVersion) ?? bundled
     }
 }

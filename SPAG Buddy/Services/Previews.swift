@@ -2,18 +2,8 @@
 import Foundation
 import SwiftData
 
-extension AppModel {
-    static var preview: AppModel {
-        do {
-            return AppModel(content: try ContentLibrary.loadBundled())
-        } catch {
-            fatalError("Preview content failed to load: \(error)")
-        }
-    }
-}
-
 extension ModelContainer {
-    static var preview: ModelContainer {
+    static let preview: ModelContainer = {
         do {
             let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
             let container = try ModelContainer(for: SPAG_BuddyApp.schema, configurations: configuration)
@@ -25,6 +15,16 @@ extension ModelContainer {
             return container
         } catch {
             fatalError("Preview container failed: \(error)")
+        }
+    }()
+}
+
+extension AppModel {
+    static var preview: AppModel {
+        do {
+            return AppModel(content: try ContentLibrary.loadBundled(), container: .preview, api: nil)
+        } catch {
+            fatalError("Preview content failed to load: \(error)")
         }
     }
 }
