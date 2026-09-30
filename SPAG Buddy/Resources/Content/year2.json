@@ -1,0 +1,275 @@
+{
+  "yearGroup": 2,
+  "questions": [
+    {
+      "id": "y2-sfx-01",
+      "objectiveCode": "Y2-V-suffixes-ness-ful-less-ly",
+      "type": "multipleChoice",
+      "prompt": "Full of hope is ___.",
+      "choices": ["hopeful", "hopeless", "hopeness"],
+      "answers": ["hopeful"],
+      "explanation": "The suffix -ful means full of: hopeful.",
+      "audioText": "Full of hope is blank."
+    },
+    {
+      "id": "y2-sfx-02",
+      "objectiveCode": "Y2-V-suffixes-ness-ful-less-ly",
+      "type": "multipleChoice",
+      "prompt": "Without any care is ___.",
+      "choices": ["careless", "careful", "carely"],
+      "answers": ["careless"],
+      "explanation": "The suffix -less means without: careless.",
+      "audioText": "Without any care is blank."
+    },
+    {
+      "id": "y2-sfx-03",
+      "objectiveCode": "Y2-V-suffixes-ness-ful-less-ly",
+      "type": "multipleChoice",
+      "prompt": "The tortoise walked ___ across the grass.",
+      "choices": ["slowly", "slowness", "slowful"],
+      "answers": ["slowly"],
+      "explanation": "Adding -ly turns slow into an adverb that tells us how it walked: slowly.",
+      "audioText": "The tortoise walked blank across the grass."
+    },
+    {
+      "id": "y2-sfx-04",
+      "objectiveCode": "Y2-V-suffixes-ness-ful-less-ly",
+      "type": "multipleChoice",
+      "prompt": "Which word is a noun made from kind?",
+      "choices": ["kindness", "kindly", "kinder"],
+      "answers": ["kindness"],
+      "explanation": "Adding -ness makes a noun: kindness is a thing you can show."
+    },
+    {
+      "id": "y2-con-01",
+      "objectiveCode": "Y2-G-conjunctions",
+      "type": "multipleChoice",
+      "prompt": "I wore my coat ___ it was cold.",
+      "choices": ["because", "or", "but"],
+      "answers": ["because"],
+      "explanation": "Because tells us why I wore my coat.",
+      "audioText": "I wore my coat blank it was cold."
+    },
+    {
+      "id": "y2-con-02",
+      "objectiveCode": "Y2-G-conjunctions",
+      "type": "multipleChoice",
+      "prompt": "Would you like juice ___ milk?",
+      "choices": ["or", "because", "when"],
+      "answers": ["or"],
+      "explanation": "Or gives a choice between two things.",
+      "audioText": "Would you like juice blank milk?"
+    },
+    {
+      "id": "y2-con-03",
+      "objectiveCode": "Y2-G-conjunctions",
+      "type": "multipleChoice",
+      "prompt": "I wanted to play outside ___ it was raining.",
+      "choices": ["but", "and", "if"],
+      "answers": ["but"],
+      "explanation": "But joins two ideas that go against each other.",
+      "audioText": "I wanted to play outside blank it was raining."
+    },
+    {
+      "id": "y2-con-04",
+      "objectiveCode": "Y2-G-conjunctions",
+      "type": "multiSelect",
+      "prompt": "Tick the two conjunctions in this sentence: We can go to the park if it is sunny and we finish lunch.",
+      "choices": ["if", "park", "and", "sunny"],
+      "answers": ["if", "and"],
+      "explanation": "If and and are both conjunctions. They join the ideas together."
+    },
+    {
+      "id": "y2-st-01",
+      "objectiveCode": "Y2-G-sentence-types",
+      "type": "multipleChoice",
+      "prompt": "What type of sentence is this? Put your coat on.",
+      "choices": ["command", "question", "statement", "exclamation"],
+      "answers": ["command"],
+      "explanation": "It tells someone to do something, so it is a command."
+    },
+    {
+      "id": "y2-st-02",
+      "objectiveCode": "Y2-G-sentence-types",
+      "type": "multipleChoice",
+      "prompt": "What type of sentence is this? What a huge cake that is!",
+      "choices": ["exclamation", "command", "statement", "question"],
+      "answers": ["exclamation"],
+      "explanation": "It starts with what, has a verb, and ends with an exclamation mark, so it is an exclamation."
+    },
+    {
+      "id": "y2-st-03",
+      "objectiveCode": "Y2-G-sentence-types",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is a statement?",
+      "choices": ["The bus is late.", "Is the bus late?", "Run for the bus!", "How late the bus is!"],
+      "answers": ["The bus is late."],
+      "explanation": "A statement tells us something. The bus is late tells us a fact."
+    },
+    {
+      "id": "y2-st-04",
+      "objectiveCode": "Y2-G-sentence-types",
+      "type": "multiSelect",
+      "prompt": "Tick the two commands.",
+      "choices": ["Stir the mixture.", "The mixture is sticky.", "Wash your hands.", "Is it ready?"],
+      "answers": ["Stir the mixture.", "Wash your hands."],
+      "explanation": "Commands tell someone what to do. They often start with a bossy verb like stir or wash."
+    },
+    {
+      "id": "y2-tense-01",
+      "objectiveCode": "Y2-G-past-present-tense",
+      "type": "multipleChoice",
+      "prompt": "Yesterday we ___ a castle.",
+      "choices": ["visited", "visit", "are visiting"],
+      "answers": ["visited"],
+      "explanation": "Yesterday is in the past, so we use the past tense: visited.",
+      "audioText": "Yesterday we blank a castle."
+    },
+    {
+      "id": "y2-tense-02",
+      "objectiveCode": "Y2-G-past-present-tense",
+      "type": "multipleChoice",
+      "prompt": "Shh! The baby ___ sleeping.",
+      "choices": ["is", "was", "were"],
+      "answers": ["is"],
+      "explanation": "The baby is asleep right now, so we use is sleeping.",
+      "audioText": "Shh! The baby blank sleeping."
+    },
+    {
+      "id": "y2-tense-03",
+      "objectiveCode": "Y2-G-past-present-tense",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is in the past tense?",
+      "choices": ["Ali ran to school.", "Ali runs to school.", "Ali is running to school."],
+      "answers": ["Ali ran to school."],
+      "explanation": "Ran is the past tense of run."
+    },
+    {
+      "id": "y2-tense-04",
+      "objectiveCode": "Y2-G-past-present-tense",
+      "type": "rewrite",
+      "prompt": "Change it to the past tense: I jump in the pool.",
+      "answers": ["I jumped in the pool."],
+      "explanation": "Add -ed to jump to put it in the past: I jumped in the pool."
+    },
+    {
+      "id": "y2-enp-01",
+      "objectiveCode": "Y2-G-expanded-noun-phrases",
+      "type": "multipleChoice",
+      "prompt": "Which is an expanded noun phrase?",
+      "choices": ["the tiny, spotty ladybird", "the ladybird", "ladybird flew"],
+      "answers": ["the tiny, spotty ladybird"],
+      "explanation": "Tiny and spotty are adjectives that tell us more about the ladybird."
+    },
+    {
+      "id": "y2-enp-02",
+      "objectiveCode": "Y2-G-expanded-noun-phrases",
+      "type": "multiSelect",
+      "prompt": "Tick the two adjectives in: the fluffy, grey kitten",
+      "choices": ["fluffy", "grey", "kitten", "the"],
+      "answers": ["fluffy", "grey"],
+      "explanation": "Fluffy and grey describe the kitten, so they are adjectives."
+    },
+    {
+      "id": "y2-enp-03",
+      "objectiveCode": "Y2-G-expanded-noun-phrases",
+      "type": "multipleChoice",
+      "prompt": "Pick the best adjective: The ___ lion roared.",
+      "choices": ["fierce", "quickly", "roared"],
+      "answers": ["fierce"],
+      "explanation": "Fierce is an adjective that describes the lion.",
+      "audioText": "The blank lion roared. Pick the best adjective."
+    },
+    {
+      "id": "y2-cl-01",
+      "objectiveCode": "Y2-P-commas-in-lists",
+      "type": "tapGap",
+      "prompt": "Tap where the two commas should go.",
+      "tokens": ["I", "packed", "a", "hat", "a", "coat", "a", "scarf", "and", "gloves."],
+      "mark": ",",
+      "answers": ["3", "5"],
+      "explanation": "Commas go between the items in the list, but not before and: a hat, a coat, a scarf and gloves.",
+      "audioText": "I packed a hat a coat a scarf and gloves. Tap where the two commas should go."
+    },
+    {
+      "id": "y2-cl-02",
+      "objectiveCode": "Y2-P-commas-in-lists",
+      "type": "multipleChoice",
+      "prompt": "Which list is punctuated correctly?",
+      "choices": ["red, blue, green and yellow", "red blue green and yellow", "red, blue, green, and, yellow", "red, blue green, and yellow"],
+      "answers": ["red, blue, green and yellow"],
+      "explanation": "Put a comma between each item, and use and before the last one."
+    },
+    {
+      "id": "y2-cl-03",
+      "objectiveCode": "Y2-P-commas-in-lists",
+      "type": "rewrite",
+      "prompt": "Add the missing comma: We saw ducks swans and geese.",
+      "answers": ["We saw ducks, swans and geese."],
+      "explanation": "The comma goes between ducks and swans. And takes the place of a comma before geese."
+    },
+    {
+      "id": "y2-apc-01",
+      "objectiveCode": "Y2-P-apostrophes-contraction",
+      "type": "multipleChoice",
+      "prompt": "What is the short form of do not?",
+      "choices": ["don't", "do'nt", "dont", "don't'"],
+      "answers": ["don't"],
+      "explanation": "The apostrophe goes where the letter o has been left out: don't."
+    },
+    {
+      "id": "y2-apc-02",
+      "objectiveCode": "Y2-P-apostrophes-contraction",
+      "type": "multipleChoice",
+      "prompt": "What is the short form of I am?",
+      "choices": ["I'm", "Im", "I'am", "Im'"],
+      "answers": ["I'm"],
+      "explanation": "The apostrophe goes where the letter a has been left out: I'm."
+    },
+    {
+      "id": "y2-apc-03",
+      "objectiveCode": "Y2-P-apostrophes-contraction",
+      "type": "multipleChoice",
+      "prompt": "What does can't mean?",
+      "choices": ["cannot", "can it", "could not"],
+      "answers": ["cannot"],
+      "explanation": "Can't is short for cannot."
+    },
+    {
+      "id": "y2-apc-04",
+      "objectiveCode": "Y2-P-apostrophes-contraction",
+      "type": "spelling",
+      "prompt": "Write the short form of it is.",
+      "answers": ["it's"],
+      "explanation": "The apostrophe takes the place of the letter i: it's.",
+      "audioText": "Write the short form of it is. The answer is it's, with an apostrophe."
+    },
+    {
+      "id": "y2-apo-01",
+      "objectiveCode": "Y2-P-apostrophes-singular-possession",
+      "type": "multipleChoice",
+      "prompt": "The bone belongs to the dog. It is the ___ bone.",
+      "choices": ["dog's", "dogs", "dogs'"],
+      "answers": ["dog's"],
+      "explanation": "Add 's to show the bone belongs to one dog: the dog's bone.",
+      "audioText": "The bone belongs to the dog. It is the blank bone."
+    },
+    {
+      "id": "y2-apo-02",
+      "objectiveCode": "Y2-P-apostrophes-singular-possession",
+      "type": "multipleChoice",
+      "prompt": "Which is correct?",
+      "choices": ["Zara's bike", "Zaras bike", "Zaras' bike"],
+      "answers": ["Zara's bike"],
+      "explanation": "The bike belongs to Zara, so we add 's: Zara's bike."
+    },
+    {
+      "id": "y2-apo-03",
+      "objectiveCode": "Y2-P-apostrophes-singular-possession",
+      "type": "rewrite",
+      "prompt": "Add the missing apostrophe: My mums car is red.",
+      "answers": ["My mum's car is red."],
+      "explanation": "The car belongs to Mum, so it is mum's car."
+    }
+  ]
+}

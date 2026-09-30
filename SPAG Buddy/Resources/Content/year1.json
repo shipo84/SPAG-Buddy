@@ -1,0 +1,219 @@
+{
+  "yearGroup": 1,
+  "questions": [
+    {
+      "id": "y1-pl-01",
+      "objectiveCode": "Y1-V-plurals-s-es",
+      "type": "multipleChoice",
+      "prompt": "One dog, two ___",
+      "choices": ["dogs", "doges", "dog"],
+      "answers": ["dogs"],
+      "explanation": "Most words just add -s to make more than one: dog, dogs.",
+      "audioText": "One dog, two blank. Which word fits?"
+    },
+    {
+      "id": "y1-pl-02",
+      "objectiveCode": "Y1-V-plurals-s-es",
+      "type": "multipleChoice",
+      "prompt": "One box, two ___",
+      "choices": ["boxs", "boxes", "box"],
+      "answers": ["boxes"],
+      "explanation": "Box ends in x, so we add -es: boxes.",
+      "audioText": "One box, two blank. Which word fits?"
+    },
+    {
+      "id": "y1-pl-03",
+      "objectiveCode": "Y1-V-plurals-s-es",
+      "type": "multipleChoice",
+      "prompt": "One brush, two ___",
+      "choices": ["brushs", "brushes", "brushies"],
+      "answers": ["brushes"],
+      "explanation": "Brush ends in sh, so we add -es: brushes.",
+      "audioText": "One brush, two blank. Which word fits?"
+    },
+    {
+      "id": "y1-pl-04",
+      "objectiveCode": "Y1-V-plurals-s-es",
+      "type": "multiSelect",
+      "prompt": "Tick the two words that add -es to make more than one.",
+      "choices": ["fox", "cat", "bus", "hat"],
+      "answers": ["fox", "bus"],
+      "explanation": "Fox ends in x and bus ends in s, so they become foxes and buses. Cat and hat just add -s."
+    },
+    {
+      "id": "y1-un-01",
+      "objectiveCode": "Y1-V-prefix-un",
+      "type": "multipleChoice",
+      "prompt": "Which word means not happy?",
+      "choices": ["unhappy", "happyun", "rehappy"],
+      "answers": ["unhappy"],
+      "explanation": "Un- goes at the start and means not: unhappy."
+    },
+    {
+      "id": "y1-un-02",
+      "objectiveCode": "Y1-V-prefix-un",
+      "type": "multipleChoice",
+      "prompt": "Sam had to ___ his coat to take it off.",
+      "choices": ["unzip", "zipun", "zip"],
+      "answers": ["unzip"],
+      "explanation": "Unzip means the opposite of zip.",
+      "audioText": "Sam had to blank his coat to take it off. Which word fits?"
+    },
+    {
+      "id": "y1-un-03",
+      "objectiveCode": "Y1-V-prefix-un",
+      "type": "multipleChoice",
+      "prompt": "The door was not locked. It was ___.",
+      "choices": ["unlocked", "locked", "relocked"],
+      "answers": ["unlocked"],
+      "explanation": "Not locked is unlocked.",
+      "audioText": "The door was not locked. It was blank."
+    },
+    {
+      "id": "y1-sfx-01",
+      "objectiveCode": "Y1-V-suffixes-ing-ed-er",
+      "type": "multipleChoice",
+      "prompt": "Yesterday I ___ over the puddle.",
+      "choices": ["jump", "jumped", "jumping"],
+      "answers": ["jumped"],
+      "explanation": "Yesterday is in the past, so we add -ed: jumped.",
+      "audioText": "Yesterday I blank over the puddle."
+    },
+    {
+      "id": "y1-sfx-02",
+      "objectiveCode": "Y1-V-suffixes-ing-ed-er",
+      "type": "multipleChoice",
+      "prompt": "Look! The bird is ___.",
+      "choices": ["singing", "singed", "singer"],
+      "answers": ["singing"],
+      "explanation": "Is goes with -ing to show it is happening now: is singing.",
+      "audioText": "Look! The bird is blank."
+    },
+    {
+      "id": "y1-sfx-03",
+      "objectiveCode": "Y1-V-suffixes-ing-ed-er",
+      "type": "multipleChoice",
+      "prompt": "A person who helps is a ___.",
+      "choices": ["helper", "helped", "helping"],
+      "answers": ["helper"],
+      "explanation": "Adding -er can mean a person who does something: help, helper."
+    },
+    {
+      "id": "y1-sfx-04",
+      "objectiveCode": "Y1-V-suffixes-ing-ed-er",
+      "type": "spelling",
+      "prompt": "Add -ing to the word play.",
+      "answers": ["playing"],
+      "explanation": "Play plus -ing is playing. Nothing else changes.",
+      "audioText": "Add i n g to play. Spell playing."
+    },
+    {
+      "id": "y1-and-01",
+      "objectiveCode": "Y1-G-joining-with-and",
+      "type": "multipleChoice",
+      "prompt": "I like apples ___ I like pears.",
+      "choices": ["and", "the", "is"],
+      "answers": ["and"],
+      "explanation": "And joins two ideas together.",
+      "audioText": "I like apples blank I like pears."
+    },
+    {
+      "id": "y1-and-02",
+      "objectiveCode": "Y1-G-joining-with-and",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses and to join two ideas?",
+      "choices": ["I ran and I jumped.", "I ran. I jumped.", "I ran to the park."],
+      "answers": ["I ran and I jumped."],
+      "explanation": "And joins I ran with I jumped to make one sentence."
+    },
+    {
+      "id": "y1-and-03",
+      "objectiveCode": "Y1-G-joining-with-and",
+      "type": "rewrite",
+      "prompt": "Join these with and: I have a cat. I have a dog.",
+      "answers": ["I have a cat and I have a dog.", "I have a cat and a dog."],
+      "explanation": "Take away the first full stop and join the two ideas with and: I have a cat and I have a dog."
+    },
+    {
+      "id": "y1-cfs-01",
+      "objectiveCode": "Y1-P-capitals-full-stops",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is written correctly?",
+      "choices": ["The sun is hot.", "the sun is hot.", "The sun is hot", "the sun is hot"],
+      "answers": ["The sun is hot."],
+      "explanation": "A sentence starts with a capital letter and ends with a full stop."
+    },
+    {
+      "id": "y1-cfs-02",
+      "objectiveCode": "Y1-P-capitals-full-stops",
+      "type": "rewrite",
+      "prompt": "Write it again with a capital letter and a full stop: we went to the park",
+      "answers": ["We went to the park."],
+      "explanation": "Start with a capital W and finish with a full stop: We went to the park."
+    },
+    {
+      "id": "y1-cfs-03",
+      "objectiveCode": "Y1-P-capitals-full-stops",
+      "type": "tapGap",
+      "prompt": "Tap where the full stop should go.",
+      "tokens": ["The", "cat", "sat", "down", "It", "went", "to", "sleep."],
+      "mark": ".",
+      "answers": ["3"],
+      "explanation": "The first sentence ends after down: The cat sat down. It went to sleep.",
+      "audioText": "The cat sat down it went to sleep. Tap where the full stop should go."
+    },
+    {
+      "id": "y1-qe-01",
+      "objectiveCode": "Y1-P-question-exclamation-marks",
+      "type": "multipleChoice",
+      "prompt": "Which mark goes at the end? Where is my hat",
+      "choices": ["?", "!", "."],
+      "answers": ["?"],
+      "explanation": "Where is my hat is asking something, so it needs a question mark."
+    },
+    {
+      "id": "y1-qe-02",
+      "objectiveCode": "Y1-P-question-exclamation-marks",
+      "type": "multipleChoice",
+      "prompt": "Which mark goes at the end? Ouch, that hurt",
+      "choices": ["!", "?", ","],
+      "answers": ["!"],
+      "explanation": "Ouch shows a strong feeling, so it needs an exclamation mark."
+    },
+    {
+      "id": "y1-qe-03",
+      "objectiveCode": "Y1-P-question-exclamation-marks",
+      "type": "multiSelect",
+      "prompt": "Tick the two questions.",
+      "choices": ["Can I play?", "I can play.", "Do you like cake?", "I like cake!"],
+      "answers": ["Can I play?", "Do you like cake?"],
+      "explanation": "Questions ask something and end with a question mark."
+    },
+    {
+      "id": "y1-cap-01",
+      "objectiveCode": "Y1-P-capitals-names-and-i",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is written correctly?",
+      "choices": ["Mia and I went to London.", "mia and i went to london.", "Mia and i went to London.", "mia and I went to london."],
+      "answers": ["Mia and I went to London."],
+      "explanation": "Names of people and places start with a capital letter, and I is always a capital."
+    },
+    {
+      "id": "y1-cap-02",
+      "objectiveCode": "Y1-P-capitals-names-and-i",
+      "type": "multiSelect",
+      "prompt": "Tick the two words that always need a capital letter.",
+      "choices": ["Monday", "dog", "Leeds", "tree"],
+      "answers": ["Monday", "Leeds"],
+      "explanation": "Days of the week and names of places always start with a capital letter."
+    },
+    {
+      "id": "y1-cap-03",
+      "objectiveCode": "Y1-P-capitals-names-and-i",
+      "type": "rewrite",
+      "prompt": "Write it again with the right capital letters: on friday i saw ben.",
+      "answers": ["On Friday I saw Ben."],
+      "explanation": "On starts the sentence, Friday is a day, I is always a capital and Ben is a name."
+    }
+  ]
+}

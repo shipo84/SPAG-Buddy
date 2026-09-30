@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "seed": "node scripts/generate-seed.mjs",
-    "check": "deno check supabase/functions/api/index.ts",
-    "test": "deno test --allow-read supabase/functions/tests",
+    "check": "cd supabase/functions && deno check api/index.ts tests/api.test.ts",
+    "test": "cd supabase/functions && deno test --allow-read --allow-env tests/api.test.ts",
     "test:db": "bash scripts/test-db.sh",
     "upload-content": "bash scripts/upload-content.sh"
   }

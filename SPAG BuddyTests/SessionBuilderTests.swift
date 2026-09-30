@@ -74,8 +74,19 @@ struct SessionBuilderTests {
     @Test func satsPracticeOnlyUsesSatsStyleQuestionsAndHidesFeedback() {
         var rng = SeededGenerator(seed: 8)
         let questions = builder.build(mode: .satsPractice, yearGroup: 6, stats: [:], using: &rng)
+        #expect(questions.count == SessionMode.satsPractice.defaultLength)
         #expect(questions.allSatisfy { $0.satsStyle })
+        #expect(Set(questions.map(\.strand)).count >= 2, "A SATs paper should mix grammar, punctuation and vocabulary")
         #expect(!SessionMode.satsPractice.givesInstantFeedback)
+    }
+
+    @Test func dailyPracticeForYoungerPupilsNeverUsesSatsQuestions() {
+        var rng = SeededGenerator(seed: 10)
+        for year in 1...4 {
+            let questions = builder.build(mode: .daily, yearGroup: year, stats: [:], using: &rng)
+            #expect(!questions.isEmpty, "Year \(year) has no daily practice")
+            #expect(questions.allSatisfy { !$0.satsStyle && $0.yearGroup <= year }, "Year \(year) got SATs or older questions")
+        }
     }
 
     @Test func emptyPoolGivesEmptySession() {

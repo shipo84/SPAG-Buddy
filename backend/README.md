@@ -36,7 +36,7 @@ In the Supabase dashboard: enable the `pg_cron` extension so `purge_expired_data
 ```bash
 npm test          # Deno unit tests (validation, analytics, CSV, router, HTTP handler)
 npm run check     # Type-check the Edge Function
-npm run test:db   # Needs a local Postgres superuser (PGHOST/PGUSER); checks pupil_join, RLS and deletion
+npm run test:db   # Needs a local Postgres superuser, e.g. `sudo -u postgres npm run test:db`; checks pupil_join, RLS and deletion
 ```
 
 ## API

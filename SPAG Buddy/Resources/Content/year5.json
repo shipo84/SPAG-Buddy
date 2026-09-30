@@ -1,0 +1,240 @@
+{
+  "yearGroup": 5,
+  "questions": [
+    {
+      "id": "y5-rc-01",
+      "objectiveCode": "Y5-G-relative-clauses",
+      "type": "multipleChoice",
+      "prompt": "The girl ___ lives next door has a puppy.",
+      "choices": ["who", "which", "where"],
+      "answers": ["who"],
+      "explanation": "We use who for people. Who lives next door tells us more about the girl.",
+      "audioText": "The girl blank lives next door has a puppy."
+    },
+    {
+      "id": "y5-rc-02",
+      "objectiveCode": "Y5-G-relative-clauses",
+      "type": "multipleChoice",
+      "prompt": "This is the park ___ we play football.",
+      "choices": ["where", "who", "whose"],
+      "answers": ["where"],
+      "explanation": "Where is used for places.",
+      "audioText": "This is the park blank we play football."
+    },
+    {
+      "id": "y5-rc-03",
+      "objectiveCode": "Y5-G-relative-clauses",
+      "type": "multipleChoice",
+      "prompt": "Which part is the relative clause? My bike, which is blue, has a flat tyre.",
+      "highlight": "which is blue",
+      "choices": ["which is blue", "My bike", "has a flat tyre"],
+      "answers": ["which is blue"],
+      "explanation": "Which is blue starts with the relative pronoun which and tells us more about the bike."
+    },
+    {
+      "id": "y5-rc-04",
+      "objectiveCode": "Y5-G-relative-clauses",
+      "type": "multipleChoice",
+      "prompt": "The boy ___ bag was lost went to the office.",
+      "choices": ["whose", "who's", "which"],
+      "answers": ["whose"],
+      "explanation": "Whose shows the bag belongs to the boy. Who's means who is.",
+      "audioText": "The boy blank bag was lost went to the office."
+    },
+    {
+      "id": "y5-mod-01",
+      "objectiveCode": "Y5-G-modal-verbs",
+      "type": "multipleChoice",
+      "prompt": "Which modal verb shows it is certain? It ___ get dark tonight.",
+      "choices": ["will", "might", "could"],
+      "answers": ["will"],
+      "explanation": "Will shows something is certain. Might and could show it is only possible.",
+      "audioText": "Which modal verb shows it is certain? It blank get dark tonight."
+    },
+    {
+      "id": "y5-mod-02",
+      "objectiveCode": "Y5-G-modal-verbs",
+      "type": "multiSelect",
+      "prompt": "Tick the two modal verbs: You should wear a helmet and you must hold on tight.",
+      "choices": ["should", "wear", "must", "hold"],
+      "answers": ["should", "must"],
+      "explanation": "Should and must are modal verbs. They show how necessary something is."
+    },
+    {
+      "id": "y5-mod-03",
+      "objectiveCode": "Y5-G-modal-verbs",
+      "type": "multipleChoice",
+      "prompt": "Which sentence shows it is least likely to rain?",
+      "choices": ["It might rain later.", "It will rain later.", "It must be raining later."],
+      "answers": ["It might rain later."],
+      "explanation": "Might shows a small possibility. Will and must sound certain."
+    },
+    {
+      "id": "y5-adv-01",
+      "objectiveCode": "Y5-G-adverbs-of-possibility",
+      "type": "multipleChoice",
+      "prompt": "Which adverb shows the speaker is sure? ___ we will win.",
+      "choices": ["Definitely", "Perhaps", "Maybe"],
+      "answers": ["Definitely"],
+      "explanation": "Definitely shows certainty. Perhaps and maybe show doubt.",
+      "audioText": "Which adverb shows the speaker is sure? Blank we will win."
+    },
+    {
+      "id": "y5-adv-02",
+      "objectiveCode": "Y5-G-adverbs-of-possibility",
+      "type": "multipleChoice",
+      "prompt": "Find the adverb of possibility: Perhaps the parcel will come tomorrow.",
+      "choices": ["Perhaps", "parcel", "tomorrow", "come"],
+      "answers": ["Perhaps"],
+      "explanation": "Perhaps tells us how sure we are that the parcel will come."
+    },
+    {
+      "id": "y5-adv-03",
+      "objectiveCode": "Y5-G-adverbs-of-possibility",
+      "type": "multiSelect",
+      "prompt": "Tick the two adverbs that show something is not certain.",
+      "choices": ["possibly", "certainly", "perhaps", "clearly"],
+      "answers": ["possibly", "perhaps"],
+      "explanation": "Possibly and perhaps show doubt. Certainly and clearly show we are sure."
+    },
+    {
+      "id": "y5-par-01",
+      "objectiveCode": "Y5-P-parenthesis",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses brackets correctly?",
+      "choices": [
+        "Mr Jones (our teacher) loves maths.",
+        "Mr Jones (our teacher loves maths).",
+        "(Mr Jones) our teacher loves maths.",
+        "Mr Jones our (teacher) loves maths."
+      ],
+      "answers": ["Mr Jones (our teacher) loves maths."],
+      "explanation": "The brackets go around the extra information: our teacher. The sentence still makes sense without it."
+    },
+    {
+      "id": "y5-par-02",
+      "objectiveCode": "Y5-P-parenthesis",
+      "type": "tapGap",
+      "prompt": "Tap where the two dashes should go.",
+      "tokens": ["The", "lion", "the", "biggest", "cat", "at", "the", "zoo", "was", "asleep."],
+      "mark": "–",
+      "answers": ["1", "7"],
+      "explanation": "The biggest cat at the zoo is extra information, so the dashes go around it: The lion – the biggest cat at the zoo – was asleep.",
+      "audioText": "The lion the biggest cat at the zoo was asleep. Tap where the two dashes should go."
+    },
+    {
+      "id": "y5-par-03",
+      "objectiveCode": "Y5-P-parenthesis",
+      "type": "tapGap",
+      "prompt": "Tap where the two commas for parenthesis should go.",
+      "tokens": ["My", "gran", "who", "is", "eighty", "still", "runs", "every", "day."],
+      "mark": ",",
+      "answers": ["1", "4"],
+      "explanation": "Who is eighty is extra information, so it goes between a pair of commas: My gran, who is eighty, still runs every day.",
+      "audioText": "My gran who is eighty still runs every day. Tap where the two commas should go."
+    },
+    {
+      "id": "y5-cc-01",
+      "objectiveCode": "Y5-P-commas-for-clarity",
+      "type": "multipleChoice",
+      "prompt": "Which sentence means you are talking to Grandma?",
+      "choices": ["Let's eat, Grandma!", "Let's eat Grandma!"],
+      "answers": ["Let's eat, Grandma!"],
+      "explanation": "The comma shows you are speaking to Grandma, not planning to eat her!"
+    },
+    {
+      "id": "y5-cc-02",
+      "objectiveCode": "Y5-P-commas-for-clarity",
+      "type": "tapGap",
+      "prompt": "Tap where a comma makes the meaning clear.",
+      "tokens": ["After", "we", "had", "eaten", "the", "dog", "went", "for", "a", "walk."],
+      "mark": ",",
+      "answers": ["3"],
+      "explanation": "Without a comma it sounds like we ate the dog. After we had eaten, the dog went for a walk.",
+      "audioText": "After we had eaten the dog went for a walk. Tap where a comma makes the meaning clear."
+    },
+    {
+      "id": "y5-cc-03",
+      "objectiveCode": "Y5-P-commas-for-clarity",
+      "type": "multipleChoice",
+      "prompt": "Which sentence shows Sam is being asked a question?",
+      "choices": ["Are you ready, Sam?", "Are you ready Sam?", "Are, you ready Sam?"],
+      "answers": ["Are you ready, Sam?"],
+      "explanation": "Put a comma before the name of the person you are speaking to."
+    },
+    {
+      "id": "y5-vs-01",
+      "objectiveCode": "Y5-V-verb-suffixes",
+      "type": "multipleChoice",
+      "prompt": "Turn the adjective wide into a verb: We need to ___ the path.",
+      "choices": ["widen", "widify", "widate"],
+      "answers": ["widen"],
+      "explanation": "Adding -en turns wide into the verb widen.",
+      "audioText": "We need to blank the path."
+    },
+    {
+      "id": "y5-vs-02",
+      "objectiveCode": "Y5-V-verb-suffixes",
+      "type": "multipleChoice",
+      "prompt": "Which verb is made from the noun apology?",
+      "choices": ["apologise", "apologate", "apologen"],
+      "answers": ["apologise"],
+      "explanation": "Apology becomes apologise with the suffix -ise."
+    },
+    {
+      "id": "y5-vs-03",
+      "objectiveCode": "Y5-V-verb-suffixes",
+      "type": "multipleChoice",
+      "prompt": "Which verb means to make something solid?",
+      "choices": ["solidify", "solidise", "soliden"],
+      "answers": ["solidify"],
+      "explanation": "Solid becomes solidify with the suffix -ify."
+    },
+    {
+      "id": "y5-vs-04",
+      "objectiveCode": "Y5-V-verb-suffixes",
+      "type": "spelling",
+      "prompt": "Add -ate to active to make a verb. Remember to drop the e.",
+      "answers": ["activate"],
+      "explanation": "Drop the e from active and add -ate: activate.",
+      "audioText": "Add a t e to active to make a verb. Spell activate."
+    },
+    {
+      "id": "y5-vp-01",
+      "objectiveCode": "Y5-V-verb-prefixes",
+      "type": "multipleChoice",
+      "prompt": "Which word means to heat too much?",
+      "choices": ["overheat", "misheat", "deheat", "disheat"],
+      "answers": ["overheat"],
+      "explanation": "Over- means too much, so overheat means heat too much."
+    },
+    {
+      "id": "y5-vp-02",
+      "objectiveCode": "Y5-V-verb-prefixes",
+      "type": "multipleChoice",
+      "prompt": "I ___understood the question, so I got it wrong.",
+      "choices": ["mis", "re", "over"],
+      "answers": ["mis"],
+      "explanation": "Mis- means wrongly, so misunderstood means understood wrongly.",
+      "audioText": "I blank understood the question, so I got it wrong. Which prefix fits?"
+    },
+    {
+      "id": "y5-vp-03",
+      "objectiveCode": "Y5-V-verb-prefixes",
+      "type": "multipleChoice",
+      "prompt": "What does defrost mean?",
+      "choices": ["to remove the frost from", "to frost again", "to frost too much"],
+      "answers": ["to remove the frost from"],
+      "explanation": "De- often means to remove or undo: defrost means remove the frost."
+    },
+    {
+      "id": "y5-vp-04",
+      "objectiveCode": "Y5-V-verb-prefixes",
+      "type": "multiSelect",
+      "prompt": "Tick the two words that mean to do something again.",
+      "choices": ["reread", "disappear", "rebuild", "overeat"],
+      "answers": ["reread", "rebuild"],
+      "explanation": "Re- means again: reread and rebuild."
+    }
+  ]
+}

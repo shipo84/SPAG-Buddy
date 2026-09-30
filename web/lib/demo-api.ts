@@ -204,9 +204,9 @@ export function buildDemoData(now = new Date(), seed = 20260930): DemoData {
             ? pool.filter((q) => q.satsStyle)
             : pool;
         const source = sessionPool.length ? sessionPool : pool;
-        const kind = onAssignment ? "assignment" : sats ? "satsPractice" : random() < 0.7 ? "daily" : "spellingList";
+        const kind = onAssignment ? "assignment" : sats ? "sats" : random() < 0.7 ? "daily" : "spelling-list";
         const sessionId = demoUuid(random);
-        const length = sats ? 20 : 10;
+        const length = sats ? 10 : 8;
 
         for (let i = 0; i < length; i++) {
           const question = source[Math.floor(random() * source.length)];

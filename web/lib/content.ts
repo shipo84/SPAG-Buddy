@@ -62,11 +62,12 @@ export function spellingListsForYear(yearGroup: number): SpellingListInfo[] {
   return SPELLING_LISTS.filter((l) => l.yearGroups.includes(yearGroup) || l.yearGroups.includes(yearGroup - 1));
 }
 
+/** Keys match SessionMode.kind in the iOS app. */
 export const SESSION_KINDS: Record<string, string> = {
   daily: "Daily practice",
   strand: "Topic practice",
   objective: "Skill practice",
-  spellingList: "Spelling list",
+  "spelling-list": "Spelling list",
   assignment: "Set work",
-  satsPractice: "SATs practice",
+  sats: "SATs practice",
 };

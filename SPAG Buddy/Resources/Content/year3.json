@@ -1,0 +1,216 @@
+{
+  "yearGroup": 3,
+  "questions": [
+    {
+      "id": "y3-pre-01",
+      "objectiveCode": "Y3-V-prefixes",
+      "type": "multipleChoice",
+      "prompt": "Which prefix means again? I need to ___write my story.",
+      "choices": ["re", "dis", "anti"],
+      "answers": ["re"],
+      "explanation": "Re- means again, so rewrite means write again.",
+      "audioText": "Which prefix means again? I need to blank write my story."
+    },
+    {
+      "id": "y3-pre-02",
+      "objectiveCode": "Y3-V-prefixes",
+      "type": "multipleChoice",
+      "prompt": "Which word means the opposite of agree?",
+      "choices": ["disagree", "misagree", "unagree", "reagree"],
+      "answers": ["disagree"],
+      "explanation": "Dis- gives agree the opposite meaning: disagree."
+    },
+    {
+      "id": "y3-pre-03",
+      "objectiveCode": "Y3-V-prefixes",
+      "type": "multipleChoice",
+      "prompt": "A submarine travels ___ the sea.",
+      "choices": ["under", "over", "across"],
+      "answers": ["under"],
+      "explanation": "Sub- means under, so a submarine goes under the sea.",
+      "audioText": "A submarine travels blank the sea."
+    },
+    {
+      "id": "y3-pre-04",
+      "objectiveCode": "Y3-V-prefixes",
+      "type": "multiSelect",
+      "prompt": "Tick the two words where mis- means wrongly.",
+      "choices": ["misspell", "mister", "misbehave", "mist"],
+      "answers": ["misspell", "misbehave"],
+      "explanation": "Misspell means spell wrongly and misbehave means behave wrongly. Mister and mist do not have a prefix."
+    },
+    {
+      "id": "y3-wf-01",
+      "objectiveCode": "Y3-V-word-families",
+      "type": "multipleChoice",
+      "prompt": "Which word is in the same family as help?",
+      "choices": ["helpful", "hello", "helmet"],
+      "answers": ["helpful"],
+      "explanation": "Helpful is built from the root word help. Hello and helmet just start with the same letters."
+    },
+    {
+      "id": "y3-wf-02",
+      "objectiveCode": "Y3-V-word-families",
+      "type": "multiSelect",
+      "prompt": "Tick the two words in the same family as sign.",
+      "choices": ["signal", "sing", "signature", "sight"],
+      "answers": ["signal", "signature"],
+      "explanation": "Signal and signature share the root sign and are linked in meaning."
+    },
+    {
+      "id": "y3-wf-03",
+      "objectiveCode": "Y3-V-word-families",
+      "type": "multipleChoice",
+      "prompt": "Which word does not belong in the family? teach, teacher, teaching, tea",
+      "choices": ["tea", "teacher", "teaching"],
+      "answers": ["tea"],
+      "explanation": "Tea is not about teaching. It just shares some letters."
+    },
+    {
+      "id": "y3-an-01",
+      "objectiveCode": "Y3-G-a-or-an",
+      "type": "multipleChoice",
+      "prompt": "I ate ___ orange.",
+      "choices": ["an", "a"],
+      "answers": ["an"],
+      "explanation": "Orange starts with a vowel sound, so we use an.",
+      "audioText": "I ate blank orange. A or an?"
+    },
+    {
+      "id": "y3-an-02",
+      "objectiveCode": "Y3-G-a-or-an",
+      "type": "multipleChoice",
+      "prompt": "We waited for ___ hour.",
+      "choices": ["an", "a"],
+      "answers": ["an"],
+      "explanation": "The h in hour is silent, so it starts with a vowel sound. We say an hour.",
+      "audioText": "We waited for blank hour. A or an?"
+    },
+    {
+      "id": "y3-an-03",
+      "objectiveCode": "Y3-G-a-or-an",
+      "type": "multipleChoice",
+      "prompt": "She wore ___ uniform.",
+      "choices": ["a", "an"],
+      "answers": ["a"],
+      "explanation": "Uniform starts with a you sound, which is a consonant sound, so we say a uniform.",
+      "audioText": "She wore blank uniform. A or an?"
+    },
+    {
+      "id": "y3-an-04",
+      "objectiveCode": "Y3-G-a-or-an",
+      "type": "multiSelect",
+      "prompt": "Tick the two that are correct.",
+      "choices": ["an elephant", "a egg", "a banana", "an dog"],
+      "answers": ["an elephant", "a banana"],
+      "explanation": "Use an before a vowel sound (an elephant) and a before a consonant sound (a banana)."
+    },
+    {
+      "id": "y3-cap-01",
+      "objectiveCode": "Y3-G-conjunctions-adverbs-prepositions",
+      "type": "multipleChoice",
+      "prompt": "The cat hid ___ the table.",
+      "choices": ["under", "because", "soon"],
+      "answers": ["under"],
+      "explanation": "Under is a preposition that tells us where the cat hid.",
+      "audioText": "The cat hid blank the table."
+    },
+    {
+      "id": "y3-cap-02",
+      "objectiveCode": "Y3-G-conjunctions-adverbs-prepositions",
+      "type": "multipleChoice",
+      "prompt": "Which word tells us when? We will have lunch soon.",
+      "choices": ["soon", "lunch", "we"],
+      "answers": ["soon"],
+      "explanation": "Soon is an adverb that tells us when."
+    },
+    {
+      "id": "y3-cap-03",
+      "objectiveCode": "Y3-G-conjunctions-adverbs-prepositions",
+      "type": "multipleChoice",
+      "prompt": "Pick the best word: I brushed my teeth ___ I went to bed.",
+      "choices": ["before", "under", "because"],
+      "answers": ["before"],
+      "explanation": "Before tells us the order things happened.",
+      "audioText": "I brushed my teeth blank I went to bed."
+    },
+    {
+      "id": "y3-cap-04",
+      "objectiveCode": "Y3-G-conjunctions-adverbs-prepositions",
+      "type": "multipleChoice",
+      "prompt": "Which word tells us why? We stayed in because it was snowing.",
+      "choices": ["because", "in", "stayed"],
+      "answers": ["because"],
+      "explanation": "Because is a conjunction that tells us why we stayed in."
+    },
+    {
+      "id": "y3-pp-01",
+      "objectiveCode": "Y3-G-present-perfect",
+      "type": "multipleChoice",
+      "prompt": "She ___ finished her book.",
+      "choices": ["has", "have", "is"],
+      "answers": ["has"],
+      "explanation": "The present perfect uses has with she: She has finished.",
+      "audioText": "She blank finished her book."
+    },
+    {
+      "id": "y3-pp-02",
+      "objectiveCode": "Y3-G-present-perfect",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses the present perfect?",
+      "choices": ["They have gone home.", "They went home.", "They go home.", "They are going home."],
+      "answers": ["They have gone home."],
+      "explanation": "Have gone is the present perfect: have plus a verb."
+    },
+    {
+      "id": "y3-pp-03",
+      "objectiveCode": "Y3-G-present-perfect",
+      "type": "multipleChoice",
+      "prompt": "I have ___ my homework.",
+      "choices": ["done", "did", "do"],
+      "answers": ["done"],
+      "explanation": "After have we use done, not did: I have done my homework.",
+      "audioText": "I have blank my homework."
+    },
+    {
+      "id": "y3-pp-04",
+      "objectiveCode": "Y3-G-present-perfect",
+      "type": "rewrite",
+      "prompt": "Change it to the present perfect: We visited the museum.",
+      "answers": ["We have visited the museum."],
+      "explanation": "Add have before the verb: We have visited the museum."
+    },
+    {
+      "id": "y3-ic-01",
+      "objectiveCode": "Y3-P-inverted-commas",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses inverted commas correctly?",
+      "choices": [
+        "\"Let's go to the beach,\" said Dad.",
+        "\"Let's go to the beach, said Dad.\"",
+        "Let's go to the beach, \"said Dad.\"",
+        "\"Let's go\" to the beach, said Dad."
+      ],
+      "answers": ["\"Let's go to the beach,\" said Dad."],
+      "explanation": "Inverted commas go around the exact words Dad says, and the comma goes inside them."
+    },
+    {
+      "id": "y3-ic-02",
+      "objectiveCode": "Y3-P-inverted-commas",
+      "type": "multipleChoice",
+      "prompt": "Which words does Amir actually say? \"I love football,\" said Amir.",
+      "choices": ["I love football", "said Amir", "I love football said Amir"],
+      "answers": ["I love football"],
+      "explanation": "The words inside the inverted commas are the words Amir says."
+    },
+    {
+      "id": "y3-ic-03",
+      "objectiveCode": "Y3-P-inverted-commas",
+      "type": "multipleChoice",
+      "prompt": "Where do the inverted commas go? Sit down, please, said the teacher.",
+      "choices": ["\"Sit down, please,\" said the teacher.", "Sit down, \"please,\" said the teacher.", "\"Sit down, please, said the teacher.\""],
+      "answers": ["\"Sit down, please,\" said the teacher."],
+      "explanation": "Only Sit down, please is spoken, so the inverted commas go around those words."
+    }
+  ]
+}

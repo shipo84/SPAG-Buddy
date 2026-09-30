@@ -1,0 +1,343 @@
+{
+  "yearGroup": 6,
+  "questions": [
+    {
+      "id": "y6-pas-01",
+      "objectiveCode": "Y6-G-passive-voice",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is written in the passive voice?",
+      "choices": ["The cake was eaten by the children.", "The children ate the cake.", "The children are eating the cake.", "The children will eat the cake."],
+      "answers": ["The cake was eaten by the children."],
+      "explanation": "In the passive, the thing the action happens to (the cake) comes first, followed by was eaten.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-pas-02",
+      "objectiveCode": "Y6-G-passive-voice",
+      "type": "rewrite",
+      "prompt": "Rewrite in the passive voice: The dog chased the cat.",
+      "answers": ["The cat was chased by the dog.", "The cat was chased."],
+      "explanation": "Move the cat to the front and use was chased: The cat was chased by the dog.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-pas-03",
+      "objectiveCode": "Y6-G-passive-voice",
+      "type": "multipleChoice",
+      "prompt": "Which verb form completes the passive sentence? The letters ___ this morning.",
+      "choices": ["were delivered", "delivered", "are delivering", "deliver"],
+      "answers": ["were delivered"],
+      "explanation": "The passive uses a form of be with the past participle: were delivered.",
+      "audioText": "Which verb form completes the passive sentence? The letters blank this morning.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-pas-04",
+      "objectiveCode": "Y6-G-passive-voice",
+      "type": "multipleChoice",
+      "prompt": "Is this sentence active or passive? The window was smashed during the storm.",
+      "choices": ["passive", "active"],
+      "answers": ["passive"],
+      "explanation": "The window had the action done to it, and we use was smashed, so it is passive.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sub-01",
+      "objectiveCode": "Y6-G-subjunctive",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses the subjunctive form?",
+      "choices": ["If I were taller, I could reach the shelf.", "If I was taller, I could reach the shelf.", "I am taller than the shelf.", "When I am taller, I will reach the shelf."],
+      "answers": ["If I were taller, I could reach the shelf."],
+      "explanation": "If I were is the subjunctive. It is used for things that are imagined or wished for.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sub-02",
+      "objectiveCode": "Y6-G-subjunctive",
+      "type": "multipleChoice",
+      "prompt": "The head teacher insists that every pupil ___ on time.",
+      "choices": ["be", "is", "are", "was"],
+      "answers": ["be"],
+      "explanation": "After insists that, formal writing uses the subjunctive be.",
+      "audioText": "The head teacher insists that every pupil blank on time.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sub-03",
+      "objectiveCode": "Y6-G-subjunctive",
+      "type": "multipleChoice",
+      "prompt": "Complete the sentence in the subjunctive: If he ___ here, he would help us.",
+      "choices": ["were", "was", "is", "be"],
+      "answers": ["were"],
+      "explanation": "If he were here is the subjunctive, because he is not really here.",
+      "audioText": "Complete the sentence in the subjunctive: If he blank here, he would help us.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-fi-01",
+      "objectiveCode": "Y6-G-formal-informal",
+      "type": "multipleChoice",
+      "prompt": "Which sentence is the most formal?",
+      "choices": ["Please request assistance if required.", "Just ask if you need help.", "Shout if you're stuck!", "Give us a shout if you need a hand."],
+      "answers": ["Please request assistance if required."],
+      "explanation": "Request, assistance and required are formal words, and there are no contractions or slang.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-fi-02",
+      "objectiveCode": "Y6-G-formal-informal",
+      "type": "multipleChoice",
+      "prompt": "Which is the formal way to write: The kids got loads of prizes.",
+      "choices": ["The children received many prizes.", "The kids got lots of prizes.", "The kids won loads of prizes.", "The children got loads of prizes."],
+      "answers": ["The children received many prizes."],
+      "explanation": "Children, received and many are more formal than kids, got and loads.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-fi-03",
+      "objectiveCode": "Y6-G-formal-informal",
+      "type": "multipleChoice",
+      "prompt": "Which word is the formal synonym for find out?",
+      "choices": ["discover", "suss", "spot", "get"],
+      "answers": ["discover"],
+      "explanation": "Discover is a formal verb that means find out.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sa-01",
+      "objectiveCode": "Y6-V-synonyms-antonyms",
+      "type": "multipleChoice",
+      "prompt": "Which word is a synonym of enormous?",
+      "choices": ["huge", "tiny", "narrow", "short"],
+      "answers": ["huge"],
+      "explanation": "Huge means nearly the same as enormous, so it is a synonym.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sa-02",
+      "objectiveCode": "Y6-V-synonyms-antonyms",
+      "type": "multipleChoice",
+      "prompt": "Which word is an antonym of generous?",
+      "choices": ["selfish", "kind", "giving", "helpful"],
+      "answers": ["selfish"],
+      "explanation": "Selfish means the opposite of generous, so it is an antonym.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sa-03",
+      "objectiveCode": "Y6-V-synonyms-antonyms",
+      "type": "multiSelect",
+      "prompt": "Tick the two words that are synonyms of brave.",
+      "choices": ["courageous", "timid", "fearless", "nervous"],
+      "answers": ["courageous", "fearless"],
+      "explanation": "Courageous and fearless mean nearly the same as brave. Timid and nervous are antonyms.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sa-04",
+      "objectiveCode": "Y6-V-synonyms-antonyms",
+      "type": "multipleChoice",
+      "prompt": "Which word is an antonym of ancient?",
+      "choices": ["modern", "old", "historic", "antique"],
+      "answers": ["modern"],
+      "explanation": "Modern is the opposite of ancient.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sc-01",
+      "objectiveCode": "Y6-P-semi-colons",
+      "type": "tapGap",
+      "prompt": "Tap where the semi-colon should go.",
+      "tokens": ["It", "was", "late", "the", "streets", "were", "empty."],
+      "mark": ";",
+      "answers": ["2"],
+      "explanation": "It was late and the streets were empty could each be a sentence, so a semi-colon joins them: It was late; the streets were empty.",
+      "audioText": "It was late the streets were empty. Tap where the semi-colon should go.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sc-02",
+      "objectiveCode": "Y6-P-semi-colons",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses a semi-colon correctly?",
+      "choices": ["I love reading; my brother prefers films.", "I love; reading my brother prefers films.", "I love reading my; brother prefers films.", "I; love reading my brother prefers films."],
+      "answers": ["I love reading; my brother prefers films."],
+      "explanation": "The semi-colon goes between two main clauses that are closely linked.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-sc-03",
+      "objectiveCode": "Y6-P-semi-colons",
+      "type": "tapGap",
+      "prompt": "Tap where the semi-colon should go.",
+      "tokens": ["The", "sun", "came", "out", "we", "went", "to", "the", "beach."],
+      "mark": ";",
+      "answers": ["3"],
+      "explanation": "The sun came out; we went to the beach. Both parts are main clauses.",
+      "audioText": "The sun came out we went to the beach. Tap where the semi-colon should go.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-col-01",
+      "objectiveCode": "Y6-P-colons",
+      "type": "tapGap",
+      "prompt": "Tap where the colon should go.",
+      "tokens": ["You", "will", "need", "three", "things", "a", "pencil,", "a", "ruler", "and", "a", "rubber."],
+      "mark": ":",
+      "answers": ["4"],
+      "explanation": "The colon introduces the list and comes after the full sentence You will need three things.",
+      "audioText": "You will need three things a pencil, a ruler and a rubber. Tap where the colon should go.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-col-02",
+      "objectiveCode": "Y6-P-colons",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses a colon correctly?",
+      "choices": [
+        "The match was cancelled: the pitch was flooded.",
+        "The match: was cancelled the pitch was flooded.",
+        "The: match was cancelled the pitch was flooded.",
+        "The match was: cancelled the pitch was flooded."
+      ],
+      "answers": ["The match was cancelled: the pitch was flooded."],
+      "explanation": "The colon comes after a main clause and introduces the explanation.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-col-03",
+      "objectiveCode": "Y6-P-colons",
+      "type": "multipleChoice",
+      "prompt": "Why is a colon used here? Mia was delighted: she had won first prize.",
+      "choices": ["to introduce an explanation", "to show possession", "to separate items in a list", "to show missing letters"],
+      "answers": ["to introduce an explanation"],
+      "explanation": "The second part explains why Mia was delighted.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-hy-01",
+      "objectiveCode": "Y6-P-hyphens",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses a hyphen to show the shark eats people?",
+      "choices": ["We saw a man-eating shark.", "We saw a man eating shark.", "We saw a man eating-shark.", "We saw-a man eating shark."],
+      "answers": ["We saw a man-eating shark."],
+      "explanation": "Man-eating is one describing word, so the hyphen shows the shark eats men. Without it, it sounds like a man is eating a shark.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-hy-02",
+      "objectiveCode": "Y6-P-hyphens",
+      "type": "multipleChoice",
+      "prompt": "Which word needs a hyphen to mean cover again?",
+      "choices": ["re-cover", "recover", "rec-over", "reco-ver"],
+      "answers": ["re-cover"],
+      "explanation": "Recover means get better. Re-cover means cover again, so the hyphen changes the meaning.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-hy-03",
+      "objectiveCode": "Y6-P-hyphens",
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses a hyphen correctly?",
+      "choices": ["My sister is a well-known author.", "My sister is a well known-author.", "My sister-is a well known author.", "My-sister is a well known author."],
+      "answers": ["My sister is a well-known author."],
+      "explanation": "Well-known is a compound adjective describing author, so it is joined with a hyphen.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-wc-01",
+      "objectiveCode": "Y6-G-word-classes",
+      "type": "multipleChoice",
+      "prompt": "What word class is the underlined word? We watched the match after school.",
+      "highlight": "after",
+      "choices": ["preposition", "conjunction", "adverb", "verb"],
+      "answers": ["preposition"],
+      "explanation": "After is followed by a noun (school), not a clause, so here it is a preposition.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-wc-02",
+      "objectiveCode": "Y6-G-word-classes",
+      "type": "multipleChoice",
+      "prompt": "What word class is the underlined word? The water was calm.",
+      "highlight": "calm",
+      "choices": ["adjective", "verb", "noun", "adverb"],
+      "answers": ["adjective"],
+      "explanation": "Calm describes the water, so here it is an adjective.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-wc-03",
+      "objectiveCode": "Y6-G-word-classes",
+      "type": "multipleChoice",
+      "prompt": "What word class is the underlined word? Please calm the puppy down.",
+      "highlight": "calm",
+      "choices": ["verb", "adjective", "noun", "adverb"],
+      "answers": ["verb"],
+      "explanation": "Here calm is something you do, so it is a verb. The same word can belong to different word classes.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-wc-04",
+      "objectiveCode": "Y6-G-word-classes",
+      "type": "multiSelect",
+      "prompt": "Tick the two determiners: Those children ate every biscuit.",
+      "choices": ["Those", "children", "every", "ate"],
+      "answers": ["Those", "every"],
+      "explanation": "Those and every come before nouns and tell us which or how many, so they are determiners.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-wc-05",
+      "objectiveCode": "Y6-G-word-classes",
+      "type": "multipleChoice",
+      "prompt": "What word class is the underlined word? She sang beautifully.",
+      "highlight": "beautifully",
+      "choices": ["adverb", "adjective", "verb", "noun"],
+      "answers": ["adverb"],
+      "explanation": "Beautifully tells us how she sang, so it is an adverb.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-cl-01",
+      "objectiveCode": "Y6-G-clauses",
+      "type": "multipleChoice",
+      "prompt": "Which part is the subordinate clause? Although it was raining, we played outside.",
+      "highlight": "Although it was raining",
+      "choices": ["Although it was raining", "we played outside", "it was raining, we played"],
+      "answers": ["Although it was raining"],
+      "explanation": "Although it was raining does not make sense on its own, so it is the subordinate clause.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-cl-02",
+      "objectiveCode": "Y6-G-clauses",
+      "type": "multipleChoice",
+      "prompt": "Which of these is a main clause?",
+      "choices": ["the bell rang", "when the bell rang", "because the bell rang", "until the bell rang"],
+      "answers": ["the bell rang"],
+      "explanation": "The bell rang makes sense on its own. The others start with a subordinating conjunction.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-cl-03",
+      "objectiveCode": "Y6-G-clauses",
+      "type": "multiSelect",
+      "prompt": "Tick the two subordinating conjunctions.",
+      "choices": ["because", "and", "unless", "but"],
+      "answers": ["because", "unless"],
+      "explanation": "Because and unless start subordinate clauses. And and but are coordinating conjunctions.",
+      "satsStyle": true
+    },
+    {
+      "id": "y6-cl-04",
+      "objectiveCode": "Y6-G-clauses",
+      "type": "multipleChoice",
+      "prompt": "Which sentence contains a subordinate clause?",
+      "choices": ["We left early so that we could get seats.", "We left early.", "We left early and got seats.", "We left early, but it was busy."],
+      "answers": ["We left early so that we could get seats."],
+      "explanation": "So that we could get seats is a subordinate clause. It does not make sense on its own.",
+      "satsStyle": true
+    }
+  ]
+}

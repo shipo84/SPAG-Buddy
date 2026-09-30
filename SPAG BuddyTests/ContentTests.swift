@@ -82,6 +82,15 @@ struct ContentTests {
         }
     }
 
+    @Test func everyYearHasWrittenQuestionsAndYear6IsSatsStyle() {
+        let written = library.questions.filter { $0.type != .spelling || !$0.id.hasPrefix("spell-") }
+        for year in 1...6 {
+            #expect(written.contains { $0.yearGroup == year }, "Year \(year) has no questions")
+        }
+        #expect(written.filter { $0.yearGroup == 6 }.allSatisfy { $0.satsStyle })
+        #expect(written.filter { $0.yearGroup < 6 }.allSatisfy { !$0.satsStyle })
+    }
+
     @Test func spellingListsCoverStatutoryWords() {
         // Statutory lists have 100 entries each; variants such as accident(ally) are listed as separate words.
         #expect(library.spellingList(id: "y34-statutory")?.words.count == 109)

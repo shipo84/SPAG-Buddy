@@ -1,8 +1,15 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026.09.1",
+  "contentVersion": "2026.09.2",
   "objectivesFile": "objectives.json",
   "spellingListsFile": "spelling-lists.json",
   "avatarsFile": "avatars.json",
-  "questionFiles": ["year4.json"]
+  "questionFiles": [
+    "year1.json",
+    "year2.json",
+    "year3.json",
+    "year4.json",
+    "year5.json",
+    "year6.json"
+  ]
 }
