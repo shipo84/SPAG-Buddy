@@ -150,7 +150,52 @@ do $$
 begin
   assert (select count(*) from public.attempts where pupil_id = 'd1111111-1111-4111-8111-111111111111') = 0, 'attempts should cascade';
   assert (select count(*) from public.devices where pupil_id = 'd1111111-1111-4111-8111-111111111111') = 0, 'devices should cascade';
+end;
+$$;
+
+-- Retention: see docs/privacy/retention-policy.md -----------------------------------------------
+insert into public.classes (id, name, year_group, class_code, archived_at) values
+  ('c3333333-3333-4333-8333-333333333333', 'Left 13 months ago', 6, 'LFT6AA', now() - interval '13 months'),
+  ('c4444444-4444-4444-8444-444444444444', 'Left 11 months ago', 6, 'LFT6BB', now() - interval '11 months');
+insert into public.pupils (id, class_id, display_name, avatar_key, pin_hash) values
+  ('d4444444-4444-4444-8444-444444444444', 'c3333333-3333-4333-8333-333333333333', 'Dev', 'fox', 'x'),
+  ('d5555555-5555-4555-8555-555555555555', 'c4444444-4444-4444-8444-444444444444', 'Eve', 'fox', 'x');
+insert into public.attempts (client_attempt_id, pupil_id, class_id, question_id, objective_code, strand, correct, session_id, session_kind, answered_at)
+values
+  ('e0000000-0000-4000-8000-000000000001', 'd4444444-4444-4444-8444-444444444444', 'c3333333-3333-4333-8333-333333333333',
+    'y4-fa-01', 'Y4-G-fronted-adverbials', 'grammar', true, gen_random_uuid(), 'daily', now() - interval '14 months'),
+  ('e0000000-0000-4000-8000-000000000002', 'd2222222-2222-4222-8222-222222222222', 'c1111111-1111-4111-8111-111111111111',
+    'y4-fa-01', 'Y4-G-fronted-adverbials', 'grammar', true, gen_random_uuid(), 'daily', now() - interval '25 months'),
+  ('e0000000-0000-4000-8000-000000000003', 'd2222222-2222-4222-8222-222222222222', 'c1111111-1111-4111-8111-111111111111',
+    'y4-fa-01', 'Y4-G-fronted-adverbials', 'grammar', true, gen_random_uuid(), 'daily', now() - interval '23 months');
+insert into public.devices (pupil_id, token_hash, created_at, last_seen_at, revoked_at) values
+  ('d2222222-2222-4222-8222-222222222222', 'revoked-long-ago', now() - interval '60 days', null, now() - interval '31 days'),
+  ('d2222222-2222-4222-8222-222222222222', 'revoked-recently', now() - interval '60 days', null, now() - interval '3 days'),
+  ('d2222222-2222-4222-8222-222222222222', 'unused-for-a-year', now() - interval '400 days', now() - interval '13 months', null),
+  ('d2222222-2222-4222-8222-222222222222', 'in-use', now() - interval '400 days', now() - interval '1 day', null);
+insert into public.audit_log (teacher_id, action, target_type, target_id, created_at) values
+  ('11111111-1111-4111-8111-111111111111', 'old', 'class', 'x', now() - interval '25 months'),
+  ('11111111-1111-4111-8111-111111111111', 'recent', 'class', 'x', now() - interval '1 month');
+
+do $$
+begin
   perform public.purge_expired_data();
+  assert not exists (select 1 from public.classes where id = 'c3333333-3333-4333-8333-333333333333'), 'class archived 13 months ago should be deleted';
+  assert not exists (select 1 from public.pupils where id = 'd4444444-4444-4444-8444-444444444444'), 'its pupils should be deleted';
+  assert not exists (select 1 from public.attempts where client_attempt_id = 'e0000000-0000-4000-8000-000000000001'), 'its answers should be deleted';
+  assert exists (select 1 from public.classes where id = 'c4444444-4444-4444-8444-444444444444'), 'class archived 11 months ago should be kept';
+  assert exists (select 1 from public.pupils where id = 'd5555555-5555-4555-8555-555555555555'), 'pupils in a recently archived class should be kept';
+
+  assert not exists (select 1 from public.attempts where client_attempt_id = 'e0000000-0000-4000-8000-000000000002'), 'answers older than 24 months should be deleted';
+  assert exists (select 1 from public.attempts where client_attempt_id = 'e0000000-0000-4000-8000-000000000003'), 'answers younger than 24 months should be kept';
+
+  assert not exists (select 1 from public.devices where token_hash = 'revoked-long-ago'), 'devices revoked over 30 days ago should be deleted';
+  assert exists (select 1 from public.devices where token_hash = 'revoked-recently'), 'recently revoked devices should be kept';
+  assert not exists (select 1 from public.devices where token_hash = 'unused-for-a-year'), 'devices unused for 12 months should be deleted';
+  assert exists (select 1 from public.devices where token_hash = 'in-use'), 'devices in use should be kept';
+
+  assert not exists (select 1 from public.audit_log where action = 'old'), 'audit entries older than 24 months should be deleted';
+  assert exists (select 1 from public.audit_log where action = 'recent'), 'recent audit entries should be kept';
   raise notice 'deletion and retention: ok';
 end;
 $$;

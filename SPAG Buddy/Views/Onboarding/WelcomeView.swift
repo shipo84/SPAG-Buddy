@@ -44,6 +44,13 @@ struct WelcomeView: View {
                         .pupilText(.footnote)
                         .foregroundStyle(theme.secondaryText)
                         .multilineTextAlignment(.center)
+
+                    NavigationLink {
+                        MyDataView(inClass: nil)
+                    } label: {
+                        Label("What happens to my answers?", systemImage: "lock.shield.fill")
+                            .pupilText(.callout, weight: .semibold)
+                    }
                 }
                 .padding(24)
                 .frame(maxWidth: .infinity)

@@ -31,6 +31,14 @@ struct PupilSettingsView: View {
                         app.speech.speak("The quick brown fox jumps over the lazy dog.")
                     }
                 }
+
+                Section {
+                    NavigationLink {
+                        MyDataView(inClass: pupil.isInClass)
+                    } label: {
+                        Label("What happens to my answers?", systemImage: "lock.shield.fill")
+                    }
+                }
             }
             .navigationTitle("My settings")
             .navigationBarTitleDisplayMode(.inline)

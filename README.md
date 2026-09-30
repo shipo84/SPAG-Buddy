@@ -64,7 +64,7 @@ cp .env.example .env.local   # add your Supabase URL, anon key and API URL
 npm run dev
 ```
 
-Set `NEXT_PUBLIC_DEMO_MODE=true` to explore the dashboard with made-up data and no backend.
+Run `npm run demo` to explore the dashboard with made-up pupils and no backend.
 
 ## Content
 
@@ -72,8 +72,9 @@ Question banks live in `SPAG Buddy/Resources/Content/year1.json` to `year6.json`
 
 1. Run the unit tests (they validate every question).
 2. Bump `contentVersion` in `manifest.json`.
-3. Run `npm run seed` in `backend/` so the server knows about new questions.
+3. Run `npm run seed` in `backend/` so the server and the website know about new questions.
+4. Run `npm run upload-content` in `backend/` so iPads that are already installed download the new questions.
 
 ## Privacy
 
-SPAG Buddy is designed for the UK GDPR and the ICO Age Appropriate Design Code (Children's Code). See [`docs/privacy/`](docs/privacy/). The school is the data controller. No pupil email addresses, photos, location, advertising or third-party analytics are used.
+SPAG Buddy is designed for the UK GDPR and the ICO Age Appropriate Design Code (Children's Code). See [`docs/privacy/`](docs/privacy/). The school is the data controller. No pupil email addresses, photos, location, advertising or third-party analytics are used. Pupils can read what happens to their answers in the app. Before a school pilot, work through [`docs/pilot-checklist.md`](docs/pilot-checklist.md).
