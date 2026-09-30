@@ -1,0 +1,615 @@
+{
+  "contentVersion": "2026.09.1",
+  "objectives": [
+    {
+      "code": "Y1-S-common-exception-words",
+      "yearGroup": 1,
+      "strand": "spelling",
+      "title": "Year 1 common exception words",
+      "childTitle": "Tricky words",
+      "rule": "Some words do not sound the way they are spelled. Learn them by heart."
+    },
+    {
+      "code": "Y1-V-plurals-s-es",
+      "yearGroup": 1,
+      "strand": "vocabulary",
+      "title": "Regular plural noun suffixes -s or -es",
+      "childTitle": "More than one",
+      "rule": "Add -s to make most words plural. Add -es to words ending in s, x, z, ch or sh."
+    },
+    {
+      "code": "Y1-V-prefix-un",
+      "yearGroup": 1,
+      "strand": "vocabulary",
+      "title": "Prefix un- changes the meaning of verbs and adjectives",
+      "childTitle": "The un- prefix",
+      "rule": "Adding un- to the start of a word gives it the opposite meaning: happy, unhappy."
+    },
+    {
+      "code": "Y1-V-suffixes-ing-ed-er",
+      "yearGroup": 1,
+      "strand": "vocabulary",
+      "title": "Suffixes -ing, -ed and -er where no change is needed to the root word",
+      "childTitle": "Adding -ing, -ed and -er",
+      "rule": "You can add -ing, -ed or -er to the end of many words: jump, jumping, jumped, jumper."
+    },
+    {
+      "code": "Y1-G-joining-with-and",
+      "yearGroup": 1,
+      "strand": "grammar",
+      "title": "Joining words and clauses using and",
+      "childTitle": "Joining with and",
+      "rule": "Use and to join two words or two ideas together."
+    },
+    {
+      "code": "Y1-P-capitals-full-stops",
+      "yearGroup": 1,
+      "strand": "punctuation",
+      "title": "Capital letters and full stops to demarcate sentences",
+      "childTitle": "Capital letters and full stops",
+      "rule": "A sentence starts with a capital letter and usually ends with a full stop."
+    },
+    {
+      "code": "Y1-P-question-exclamation-marks",
+      "yearGroup": 1,
+      "strand": "punctuation",
+      "title": "Question marks and exclamation marks",
+      "childTitle": "? and !",
+      "rule": "A question ends with a question mark. An exclamation mark shows strong feeling."
+    },
+    {
+      "code": "Y1-P-capitals-names-and-i",
+      "yearGroup": 1,
+      "strand": "punctuation",
+      "title": "Capital letters for names and the personal pronoun I",
+      "childTitle": "Capitals for names and I",
+      "rule": "Names of people, places and days start with a capital letter. The word I is always a capital."
+    },
+    {
+      "code": "Y2-S-common-exception-words",
+      "yearGroup": 2,
+      "strand": "spelling",
+      "title": "Year 2 common exception words",
+      "childTitle": "Tricky words",
+      "rule": "Some words do not follow the usual sound rules. Learn them by heart."
+    },
+    {
+      "code": "Y2-V-suffixes-ness-ful-less-ly",
+      "yearGroup": 2,
+      "strand": "vocabulary",
+      "title": "Forming nouns with -ness and -er, adjectives with -ful and -less, and adverbs with -ly",
+      "childTitle": "Adding -ness, -ful, -less and -ly",
+      "rule": "Suffixes change a word's job: kind (adjective) becomes kindness (noun) and kindly (adverb)."
+    },
+    {
+      "code": "Y2-G-conjunctions",
+      "yearGroup": 2,
+      "strand": "grammar",
+      "title": "Coordination (or, and, but) and subordination (when, if, that, because)",
+      "childTitle": "Joining words",
+      "rule": "Conjunctions join ideas. And, but and or join equal ideas. When, if, that and because add extra information."
+    },
+    {
+      "code": "Y2-G-sentence-types",
+      "yearGroup": 2,
+      "strand": "grammar",
+      "title": "Statements, questions, exclamations and commands",
+      "childTitle": "Types of sentence",
+      "rule": "A statement tells, a question asks, a command orders and an exclamation starts with what or how."
+    },
+    {
+      "code": "Y2-G-past-present-tense",
+      "yearGroup": 2,
+      "strand": "grammar",
+      "title": "Present and past tense, including the progressive form",
+      "childTitle": "Past and present",
+      "rule": "Verbs change to show when something happens: I play (present), I played (past), I am playing (progressive)."
+    },
+    {
+      "code": "Y2-G-expanded-noun-phrases",
+      "yearGroup": 2,
+      "strand": "grammar",
+      "title": "Expanded noun phrases for description and specification",
+      "childTitle": "Describing nouns",
+      "rule": "Add adjectives before a noun to describe it: the big, blue butterfly."
+    },
+    {
+      "code": "Y2-P-commas-in-lists",
+      "yearGroup": 2,
+      "strand": "punctuation",
+      "title": "Commas to separate items in a list",
+      "childTitle": "Commas in lists",
+      "rule": "Put commas between items in a list. Use and (not a comma) before the last item."
+    },
+    {
+      "code": "Y2-P-apostrophes-contraction",
+      "yearGroup": 2,
+      "strand": "punctuation",
+      "title": "Apostrophes to mark where letters are missing",
+      "childTitle": "Shortened words",
+      "rule": "An apostrophe shows where letters have been left out: do not becomes don't."
+    },
+    {
+      "code": "Y2-P-apostrophes-singular-possession",
+      "yearGroup": 2,
+      "strand": "punctuation",
+      "title": "Apostrophes for singular possession in nouns",
+      "childTitle": "Belonging to someone",
+      "rule": "Add 's to show something belongs to one person or thing: the girl's coat."
+    },
+    {
+      "code": "Y34-S-statutory-words",
+      "yearGroup": 3,
+      "strand": "spelling",
+      "title": "Year 3 and 4 statutory spelling list",
+      "childTitle": "Year 3 and 4 word list",
+      "rule": "These are words you need to know how to spell by the end of Year 4."
+    },
+    {
+      "code": "Y3-V-prefixes",
+      "yearGroup": 3,
+      "strand": "vocabulary",
+      "title": "Prefixes such as super-, anti-, auto-, dis-, mis-, re-, sub- and inter-",
+      "childTitle": "Prefixes",
+      "rule": "A prefix goes at the start of a word and changes its meaning: re- means again, dis- and mis- often mean not or wrongly."
+    },
+    {
+      "code": "Y3-V-word-families",
+      "yearGroup": 3,
+      "strand": "vocabulary",
+      "title": "Word families based on common words",
+      "childTitle": "Word families",
+      "rule": "Words in a family share a root word and are linked in meaning: solve, solution, solver."
+    },
+    {
+      "code": "Y3-G-a-or-an",
+      "yearGroup": 3,
+      "strand": "grammar",
+      "title": "Using a or an according to whether the next word begins with a consonant or a vowel",
+      "childTitle": "a or an",
+      "rule": "Use an before a vowel sound (an apple, an hour) and a before a consonant sound (a banana)."
+    },
+    {
+      "code": "Y3-G-conjunctions-adverbs-prepositions",
+      "yearGroup": 3,
+      "strand": "grammar",
+      "title": "Expressing time, place and cause using conjunctions, adverbs and prepositions",
+      "childTitle": "When, where and why words",
+      "rule": "Words like before, after, because, soon, under and during tell us when, where or why something happens."
+    },
+    {
+      "code": "Y3-G-present-perfect",
+      "yearGroup": 3,
+      "strand": "grammar",
+      "title": "The present perfect form of verbs",
+      "childTitle": "Has and have",
+      "rule": "The present perfect uses has or have with a verb: She has finished. They have gone."
+    },
+    {
+      "code": "Y3-P-inverted-commas",
+      "yearGroup": 3,
+      "strand": "punctuation",
+      "title": "Introduction to inverted commas to punctuate direct speech",
+      "childTitle": "Speech marks",
+      "rule": "Inverted commas go around the words someone actually says."
+    },
+    {
+      "code": "Y4-G-fronted-adverbials",
+      "yearGroup": 4,
+      "strand": "grammar",
+      "title": "Fronted adverbials",
+      "childTitle": "Fronted adverbials",
+      "rule": "A fronted adverbial is a word or phrase at the start of a sentence that tells you when, where or how something happened."
+    },
+    {
+      "code": "Y4-P-comma-after-fronted-adverbial",
+      "yearGroup": 4,
+      "strand": "punctuation",
+      "title": "Use of commas after fronted adverbials",
+      "childTitle": "Commas after fronted adverbials",
+      "rule": "Put a comma after a fronted adverbial: After lunch, we went outside."
+    },
+    {
+      "code": "Y4-P-direct-speech",
+      "yearGroup": 4,
+      "strand": "punctuation",
+      "title": "Use of inverted commas and other punctuation to indicate direct speech",
+      "childTitle": "Punctuating speech",
+      "rule": "Put inverted commas around spoken words. The punctuation that ends the speech goes inside the inverted commas."
+    },
+    {
+      "code": "Y4-P-apostrophes-plural-possession",
+      "yearGroup": 4,
+      "strand": "punctuation",
+      "title": "Apostrophes to mark plural possession",
+      "childTitle": "Belonging to more than one",
+      "rule": "If a plural ends in s, add just an apostrophe: the girls' coats. If it does not, add 's: the children's coats."
+    },
+    {
+      "code": "Y4-G-standard-english",
+      "yearGroup": 4,
+      "strand": "grammar",
+      "title": "Standard English forms for verb inflections",
+      "childTitle": "Standard English",
+      "rule": "In Standard English we say we were (not we was) and I did (not I done)."
+    },
+    {
+      "code": "Y4-G-noun-phrases",
+      "yearGroup": 4,
+      "strand": "grammar",
+      "title": "Noun phrases expanded by modifying adjectives, nouns and prepositional phrases",
+      "childTitle": "Bigger noun phrases",
+      "rule": "A noun phrase can grow with adjectives and a prepositional phrase: the old teacher with curly hair."
+    },
+    {
+      "code": "Y4-G-pronouns",
+      "yearGroup": 4,
+      "strand": "grammar",
+      "title": "Appropriate choice of pronoun or noun to aid cohesion and avoid repetition",
+      "childTitle": "Pronouns",
+      "rule": "A pronoun (he, she, it, they, them) can replace a noun so you do not repeat it, as long as it stays clear who you mean."
+    },
+    {
+      "code": "Y4-G-determiners",
+      "yearGroup": 4,
+      "strand": "grammar",
+      "title": "Determiners",
+      "childTitle": "Determiners",
+      "rule": "A determiner comes before a noun and tells you which one or how many: the, a, this, those, some, my, three."
+    },
+    {
+      "code": "Y4-S-homophones",
+      "yearGroup": 4,
+      "strand": "spelling",
+      "title": "Homophones and near-homophones",
+      "childTitle": "Sound-alike words",
+      "rule": "Homophones sound the same but are spelled differently and mean different things: whether and weather."
+    },
+    {
+      "code": "Y4-S-suffixes",
+      "yearGroup": 4,
+      "strand": "spelling",
+      "title": "Suffixes -ation, -ous, -ly, -tion, -sion, -ssion and -cian",
+      "childTitle": "Word endings",
+      "rule": "Many word endings sound alike. -cian is used for people's jobs (musician); -sion often follows d or s (explosion)."
+    },
+    {
+      "code": "Y56-S-statutory-words",
+      "yearGroup": 5,
+      "strand": "spelling",
+      "title": "Year 5 and 6 statutory spelling list",
+      "childTitle": "Year 5 and 6 word list",
+      "rule": "These are words you need to know how to spell by the end of Year 6."
+    },
+    {
+      "code": "Y5-G-relative-clauses",
+      "yearGroup": 5,
+      "strand": "grammar",
+      "title": "Relative clauses beginning with who, which, where, when, whose or that",
+      "childTitle": "Relative clauses",
+      "rule": "A relative clause adds information about a noun and starts with who, which, where, when, whose or that."
+    },
+    {
+      "code": "Y5-G-modal-verbs",
+      "yearGroup": 5,
+      "strand": "grammar",
+      "title": "Modal verbs to indicate degrees of possibility",
+      "childTitle": "Modal verbs",
+      "rule": "Modal verbs such as might, could, should, will and must show how likely or necessary something is."
+    },
+    {
+      "code": "Y5-G-adverbs-of-possibility",
+      "yearGroup": 5,
+      "strand": "grammar",
+      "title": "Adverbs to indicate degrees of possibility",
+      "childTitle": "How likely?",
+      "rule": "Adverbs such as perhaps, surely, definitely and possibly show how certain we are."
+    },
+    {
+      "code": "Y5-P-parenthesis",
+      "yearGroup": 5,
+      "strand": "punctuation",
+      "title": "Brackets, dashes or commas to indicate parenthesis",
+      "childTitle": "Extra information",
+      "rule": "Put extra information in a pair of brackets, dashes or commas. The sentence still makes sense without it."
+    },
+    {
+      "code": "Y5-P-commas-for-clarity",
+      "yearGroup": 5,
+      "strand": "punctuation",
+      "title": "Commas to clarify meaning or avoid ambiguity",
+      "childTitle": "Commas that change meaning",
+      "rule": "A comma can change what a sentence means: Let's eat, Grandma! is not the same as Let's eat Grandma!"
+    },
+    {
+      "code": "Y5-V-verb-suffixes",
+      "yearGroup": 5,
+      "strand": "vocabulary",
+      "title": "Converting nouns or adjectives into verbs using -ate, -ise, -ify and -en",
+      "childTitle": "Making verbs",
+      "rule": "Suffixes can turn a word into a verb: active becomes activate, apology becomes apologise, solid becomes solidify, wide becomes widen."
+    },
+    {
+      "code": "Y5-V-verb-prefixes",
+      "yearGroup": 5,
+      "strand": "vocabulary",
+      "title": "Verb prefixes dis-, de-, mis-, over- and re-",
+      "childTitle": "Verb prefixes",
+      "rule": "Prefixes change a verb's meaning: re- means again, mis- means wrongly, over- means too much."
+    },
+    {
+      "code": "Y6-G-passive-voice",
+      "yearGroup": 6,
+      "strand": "grammar",
+      "title": "Use of the passive to affect the presentation of information",
+      "childTitle": "Active and passive",
+      "rule": "In the passive, the thing the action happens to comes first: The window was broken (by the ball)."
+    },
+    {
+      "code": "Y6-G-subjunctive",
+      "yearGroup": 6,
+      "strand": "grammar",
+      "title": "The subjunctive form in formal writing",
+      "childTitle": "The subjunctive",
+      "rule": "The subjunctive is used in very formal writing: If I were you... I insist that he be on time."
+    },
+    {
+      "code": "Y6-G-formal-informal",
+      "yearGroup": 6,
+      "strand": "grammar",
+      "title": "Formal and informal vocabulary and structures",
+      "childTitle": "Formal or informal?",
+      "rule": "Formal writing avoids slang and contractions: request instead of ask for, do not instead of don't."
+    },
+    {
+      "code": "Y6-V-synonyms-antonyms",
+      "yearGroup": 6,
+      "strand": "vocabulary",
+      "title": "How words are related by meaning as synonyms and antonyms",
+      "childTitle": "Same and opposite",
+      "rule": "Synonyms have similar meanings (big, large). Antonyms have opposite meanings (big, small)."
+    },
+    {
+      "code": "Y6-P-semi-colons",
+      "yearGroup": 6,
+      "strand": "punctuation",
+      "title": "Semi-colons to mark the boundary between independent clauses",
+      "childTitle": "Semi-colons",
+      "rule": "A semi-colon joins two closely linked main clauses that could each be a sentence."
+    },
+    {
+      "code": "Y6-P-colons",
+      "yearGroup": 6,
+      "strand": "punctuation",
+      "title": "Colons to introduce a list or mark the boundary between independent clauses",
+      "childTitle": "Colons",
+      "rule": "A colon introduces a list or an explanation. What comes before it must be a full sentence."
+    },
+    {
+      "code": "Y6-P-hyphens",
+      "yearGroup": 6,
+      "strand": "punctuation",
+      "title": "Hyphens to avoid ambiguity",
+      "childTitle": "Hyphens",
+      "rule": "A hyphen joins words to make meaning clear: man-eating shark, re-cover the sofa."
+    },
+    {
+      "code": "Y6-G-word-classes",
+      "yearGroup": 6,
+      "strand": "grammar",
+      "title": "Word classes: nouns, verbs, adjectives, adverbs, pronouns, prepositions, conjunctions and determiners",
+      "childTitle": "Word classes",
+      "rule": "The same word can be a different word class depending on the job it does in the sentence."
+    },
+    {
+      "code": "Y6-G-clauses",
+      "yearGroup": 6,
+      "strand": "grammar",
+      "title": "Main clauses and subordinate clauses",
+      "childTitle": "Main and subordinate clauses",
+      "rule": "A main clause makes sense on its own. A subordinate clause adds information but does not make sense on its own."
+    }
+  ],
+  "spellingLists": [
+    {
+      "id": "y1-cew",
+      "title": "Year 1 tricky words",
+      "objectiveCode": "Y1-S-common-exception-words",
+      "yearGroups": [
+        1
+      ],
+      "wordCount": 43
+    },
+    {
+      "id": "y2-cew",
+      "title": "Year 2 tricky words",
+      "objectiveCode": "Y2-S-common-exception-words",
+      "yearGroups": [
+        2
+      ],
+      "wordCount": 64
+    },
+    {
+      "id": "y34-statutory",
+      "title": "Year 3 and 4 word list",
+      "objectiveCode": "Y34-S-statutory-words",
+      "yearGroups": [
+        3,
+        4
+      ],
+      "wordCount": 109
+    },
+    {
+      "id": "y56-statutory",
+      "title": "Year 5 and 6 word list",
+      "objectiveCode": "Y56-S-statutory-words",
+      "yearGroups": [
+        5,
+        6
+      ],
+      "wordCount": 103
+    }
+  ],
+  "avatars": [
+    {
+      "key": "fox",
+      "emoji": "🦊",
+      "name": "Fox"
+    },
+    {
+      "key": "cat",
+      "emoji": "🐱",
+      "name": "Cat"
+    },
+    {
+      "key": "dog",
+      "emoji": "🐶",
+      "name": "Dog"
+    },
+    {
+      "key": "owl",
+      "emoji": "🦉",
+      "name": "Owl"
+    },
+    {
+      "key": "frog",
+      "emoji": "🐸",
+      "name": "Frog"
+    },
+    {
+      "key": "panda",
+      "emoji": "🐼",
+      "name": "Panda"
+    },
+    {
+      "key": "lion",
+      "emoji": "🦁",
+      "name": "Lion"
+    },
+    {
+      "key": "tiger",
+      "emoji": "🐯",
+      "name": "Tiger"
+    },
+    {
+      "key": "koala",
+      "emoji": "🐨",
+      "name": "Koala"
+    },
+    {
+      "key": "rabbit",
+      "emoji": "🐰",
+      "name": "Rabbit"
+    },
+    {
+      "key": "bear",
+      "emoji": "🐻",
+      "name": "Bear"
+    },
+    {
+      "key": "penguin",
+      "emoji": "🐧",
+      "name": "Penguin"
+    },
+    {
+      "key": "unicorn",
+      "emoji": "🦄",
+      "name": "Unicorn"
+    },
+    {
+      "key": "monkey",
+      "emoji": "🐵",
+      "name": "Monkey"
+    },
+    {
+      "key": "pig",
+      "emoji": "🐷",
+      "name": "Pig"
+    },
+    {
+      "key": "cow",
+      "emoji": "🐮",
+      "name": "Cow"
+    },
+    {
+      "key": "octopus",
+      "emoji": "🐙",
+      "name": "Octopus"
+    },
+    {
+      "key": "turtle",
+      "emoji": "🐢",
+      "name": "Turtle"
+    },
+    {
+      "key": "whale",
+      "emoji": "🐳",
+      "name": "Whale"
+    },
+    {
+      "key": "bee",
+      "emoji": "🐝",
+      "name": "Bee"
+    },
+    {
+      "key": "butterfly",
+      "emoji": "🦋",
+      "name": "Butterfly"
+    },
+    {
+      "key": "hedgehog",
+      "emoji": "🦔",
+      "name": "Hedgehog"
+    },
+    {
+      "key": "chick",
+      "emoji": "🐥",
+      "name": "Chick"
+    },
+    {
+      "key": "elephant",
+      "emoji": "🐘",
+      "name": "Elephant"
+    },
+    {
+      "key": "giraffe",
+      "emoji": "🦒",
+      "name": "Giraffe"
+    },
+    {
+      "key": "zebra",
+      "emoji": "🦓",
+      "name": "Zebra"
+    },
+    {
+      "key": "dolphin",
+      "emoji": "🐬",
+      "name": "Dolphin"
+    },
+    {
+      "key": "crab",
+      "emoji": "🦀",
+      "name": "Crab"
+    },
+    {
+      "key": "snail",
+      "emoji": "🐌",
+      "name": "Snail"
+    },
+    {
+      "key": "dragon",
+      "emoji": "🐲",
+      "name": "Dragon"
+    },
+    {
+      "key": "badger",
+      "emoji": "🦡",
+      "name": "Badger"
+    },
+    {
+      "key": "squirrel",
+      "emoji": "🐿️",
+      "name": "Squirrel"
+    }
+  ]
+}

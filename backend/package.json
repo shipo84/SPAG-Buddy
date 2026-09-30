@@ -1,0 +1,12 @@
+{
+  "name": "spag-buddy-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node scripts/generate-seed.mjs",
+    "check": "deno check supabase/functions/api/index.ts",
+    "test": "deno test --allow-read supabase/functions/tests",
+    "test:db": "bash scripts/test-db.sh",
+    "upload-content": "bash scripts/upload-content.sh"
+  }
+}
