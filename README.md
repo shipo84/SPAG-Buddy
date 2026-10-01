@@ -8,9 +8,13 @@ Teachers use a companion website to set work and see how their class is doing.
 
 | Path | What it is |
 | --- | --- |
-| `SPAG Buddy/` | iOS and iPadOS app (SwiftUI + SwiftData, iOS 17+) |
-| `SPAG Buddy/Resources/Content/` | Curriculum objectives, question banks and statutory spelling lists (JSON). This is the single source of truth for content. |
-| `SPAG BuddyTests/` | Unit tests (Swift Testing) |
+| `SPAGCore/` | Shared iOS and iPadOS code (SwiftUI + SwiftData, iOS 17+) built into both apps |
+| `SPAGCore/Resources/Content/` | Curriculum objectives, question banks and statutory spelling lists (JSON). This is the single source of truth for content. |
+| `SPAG Buddy Home/` | SPAG Buddy Home app: strictly on-device, built from `SPAGCore` only |
+| `SPAGSchoolSync/` | Class joining, sync, token storage and content updates. Built into SPAG Buddy School only |
+| `SPAG Buddy/` | SPAG Buddy School app, built from `SPAGCore` and `SPAGSchoolSync` |
+| `SPAG BuddyTests/`, `SPAG Buddy HomeTests/` | Unit tests (Swift Testing) for School and Home |
+| `Scripts/check-home-on-device.sh` | Build phase that fails the Home build if networking code reaches it |
 | `backend/` | Supabase project: Postgres schema, Row Level Security and the `api` Edge Function |
 | `web/` | Teacher website (Next.js) |
 | `docs/` | Privacy notices, DPA and DPIA templates, retention policy and pilot checklist |
@@ -27,16 +31,21 @@ Pupils can also use the app without a class ("Practise at home"). Nothing leaves
 
 ## iOS app
 
-Open `SPAG Buddy.xcodeproj` in Xcode 26 or later and run the `SPAG Buddy` scheme.
+Open `SPAG Buddy.xcodeproj` in Xcode 26 or later. There are two apps, which share code but never data:
+
+- **SPAG Buddy Home** (`SPAG Buddy Home` scheme, bundle ID `Digital-Clubhouse.SPAG-Buddy-Home`) is for families. It is strictly on-device: no networking, no class features, no `spagbuddy://` links, content only from the app bundle, and no third-party SDKs. Its `PrivacyInfo.xcprivacy` declares no data collected and no tracking.
+- **SPAG Buddy School** (`SPAG Buddy` scheme, bundle ID `Digital-Clubhouse.SPAG-Buddy`) adds `SPAGSchoolSync`: joining a class with a login card, sending answers to the teacher dashboard and downloading new content.
+
+The Home target's first build phase runs `Scripts/check-home-on-device.sh`. It fails the build if `SPAGCore` or `SPAG Buddy Home` mention `URLSession`, `URLRequest`, `NWConnection`, `WKWebView`, `import Network`, any `http://` or `https://` address, school sync types, Keychain calls or a non-Apple import, or if the Home target gains `SPAGSchoolSync`, a Swift package, a URL type or tracking. The only web addresses allowed are the App Store review and privacy policy links in `SPAG Buddy Home/ExternalLinks.swift`, which open in Safari through SwiftUI `Link`. Run the script by hand with `Scripts/check-home-on-device.sh`. `HomeEditionTests` checks the same rules at run time.
 
 - Minimum iOS version is 17.0 so older school iPads are supported.
-- Set the API URL with the `SPAG_API_BASE_URL` build setting (for example `https://<project-ref>.supabase.co/functions/v1/api`). If it is empty the app runs in offline-only mode.
-- Pupil device tokens are stored in the Keychain. Practice data is stored locally with SwiftData and is not synced to iCloud.
+- School only: set the API URL with the `SPAG_API_BASE_URL` build setting (for example `https://<project-ref>.supabase.co/functions/v1/api`). If it is empty the School app runs in offline-only mode.
+- School only: pupil device tokens are stored in the Keychain. In both apps, practice data is stored locally with SwiftData and is not synced to iCloud.
 
-Source layout inside `SPAG Buddy/`:
+Source layout inside `SPAGCore/`:
 
 - `Models/` SwiftData models (`PupilProfile`, `Attempt`, `Assignment`, `BadgeProgress`) and content types (`Question`, `Objective`, `SpellingList`)
-- `Services/` content loading, answer marking, session building, badges, speech, API client and sync
+- `Services/` content loading, answer marking, session building, badges, speech, and the `ClassServices` protocol that only School implements
 - `Views/` onboarding, home, practice, progress and settings screens
 - `Theme/` colours, fonts and accessibility settings
 
@@ -70,7 +79,7 @@ To put the teacher site live, follow [`docs/deploy-teacher-website.md`](docs/dep
 
 ## Content
 
-Question banks live in `SPAG Buddy/Resources/Content/year1.json` to `year6.json`. Objectives are in `objectives.json` and spelling lists in `spelling-lists.json`. After changing content:
+Question banks live in `SPAGCore/Resources/Content/year1.json` to `year6.json`. Objectives are in `objectives.json` and spelling lists in `spelling-lists.json`. After changing content:
 
 1. Run the unit tests (they validate every question).
 2. Bump `contentVersion` in `manifest.json`.

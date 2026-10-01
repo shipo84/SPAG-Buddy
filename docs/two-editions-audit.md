@@ -2,6 +2,8 @@
 
 Status: audit only. No code has been changed. Branch `two-editions`, cut from `cursor/spag-buddy-uk-mvp-a6d4`.
 
+Update: the Home split is now in place (`SPAGCore/`, `SPAGSchoolSync/`, `SPAG Buddy Home/`, see the README). It follows section 3's `ClassServices` proposal and Option A (one shared schema) for the models. `TeacherGateView` was renamed `GrownUpGateView`.
+
 Goal: one codebase that builds two App Store apps.
 
 - **SPAG Buddy Home** (parents): strictly on-device, with no networking code compiled in.
