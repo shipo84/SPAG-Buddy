@@ -39,7 +39,7 @@ struct PupilPickerView: View {
                     } label: {
                         Label("Someone new", systemImage: "plus")
                     }
-                    .buttonStyle(.big(theme.secondaryText))
+                    .buttonStyle(.big(theme.neutralFill))
                     .frame(maxWidth: 320)
                 }
                 .padding(24)

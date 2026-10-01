@@ -25,7 +25,7 @@ public struct BuddyView: View {
     public var body: some View {
         ZStack {
             Circle()
-                .fill(theme.highContrast ? theme.primary : Color(red: 0.55, green: 0.5, blue: 0.98))
+                .fill(theme.buddy)
             Circle()
                 .fill(.white.opacity(0.18))
                 .frame(width: size * 0.45)

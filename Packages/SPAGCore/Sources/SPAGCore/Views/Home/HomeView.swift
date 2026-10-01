@@ -100,7 +100,7 @@ struct HomeView: View {
                 Image(systemName: "play.circle.fill").font(.system(size: 44)).foregroundStyle(theme.onPrimary)
             }
             .padding(22)
-            .background(theme.primary, in: RoundedRectangle(cornerRadius: 26, style: .continuous))
+            .background(theme.primaryFill, in: RoundedRectangle(cornerRadius: 26, style: .continuous))
         }
         .buttonStyle(.plain)
         .accessibilityHint("Starts \(SessionMode.daily.defaultLength) mixed questions")

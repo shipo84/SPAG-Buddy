@@ -42,7 +42,7 @@ struct CreateProfileView: View {
                                     .pupilText(.title3, weight: .bold)
                                     .foregroundStyle(yearGroup == year ? theme.onPrimary : theme.text)
                                     .frame(maxWidth: .infinity, minHeight: 56)
-                                    .background(yearGroup == year ? theme.primary : theme.card, in: RoundedRectangle(cornerRadius: 16))
+                                    .background(yearGroup == year ? theme.primaryFill : theme.card, in: RoundedRectangle(cornerRadius: 16))
                                     .overlay(RoundedRectangle(cornerRadius: 16).stroke(theme.cardBorder, lineWidth: theme.borderWidth))
                             }
                             .buttonStyle(.plain)

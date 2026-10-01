@@ -17,7 +17,7 @@ public struct AvatarView: View {
         Text(avatar?.emoji ?? "🙂")
             .font(.system(size: size * 0.6))
             .frame(width: size, height: size)
-            .background(Circle().fill(selected ? theme.primary.opacity(0.18) : Color.black.opacity(0.04)))
+            .background(Circle().fill(selected ? theme.primary.opacity(0.18) : theme.text.opacity(0.04)))
             .overlay(Circle().stroke(selected ? theme.primary : .clear, lineWidth: 3))
             .accessibilityLabel(avatar?.name ?? "Picture")
     }
@@ -66,7 +66,7 @@ public struct PinPad: View {
             HStack(spacing: 16) {
                 ForEach(0..<length, id: \.self) { index in
                     Circle()
-                        .fill(index < pin.count ? theme.primary : Color.black.opacity(0.1))
+                        .fill(index < pin.count ? theme.primary : theme.text.opacity(0.1))
                         .frame(width: 22, height: 22)
                 }
             }
@@ -99,7 +99,7 @@ public struct PinPad: View {
             Text(digit)
                 .font(.system(.title, design: .rounded).weight(.bold))
                 .frame(width: 84, height: 72)
-                .background(Color.black.opacity(0.05), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .background(theme.text.opacity(0.05), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .foregroundStyle(theme.text)
     }
@@ -200,7 +200,7 @@ struct ScreenBackground: ViewModifier {
         content
             .foregroundStyle(theme.text)
             .background(theme.background.ignoresSafeArea())
-            .tint(theme.primary)
+            .tint(theme.primaryText)
     }
 }
 

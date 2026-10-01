@@ -94,7 +94,7 @@ struct JoinClassView: View {
             AvatarGrid(avatars: app.content.avatars, selection: $avatarKey, size: 64)
             HStack(spacing: 12) {
                 Button("Back") { step = .classCode }
-                    .buttonStyle(.big(theme.secondaryText))
+                    .buttonStyle(.big(theme.neutralFill))
                 Button("Next") { step = .pin }
                     .buttonStyle(.big)
                     .disabled(avatarKey == nil)
@@ -114,7 +114,7 @@ struct JoinClassView: View {
                     pin = ""
                     step = .picture
                 }
-                .buttonStyle(.big(theme.secondaryText))
+                .buttonStyle(.big(theme.neutralFill))
                 Button {
                     Task { await join() }
                 } label: {
