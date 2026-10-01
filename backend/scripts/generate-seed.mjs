@@ -12,7 +12,7 @@ import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const repo = join(here, "..", "..");
-const contentDir = join(repo, "SPAG Buddy", "Resources", "Content");
+const contentDir = join(repo, "SPAGCore", "Resources", "Content");
 const read = (name) => JSON.parse(readFileSync(join(contentDir, name), "utf8"));
 
 /** Must match SpellingQuestionFactory.slug in the iOS app. */

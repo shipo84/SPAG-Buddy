@@ -42,7 +42,7 @@ struct HomeView: View {
             }
             .screenBackground()
             .toolbar { toolbar }
-            .refreshable { await app.sync.syncNow(pupil: pupil) }
+            .modifier(SendWorkOnRefresh(classServices: app.classServices, pupil: pupil))
         }
         .fullScreenCover(item: $launch) { launch in
             PracticeSessionView(pupil: pupil, mode: launch.mode, title: launch.title)
@@ -53,12 +53,12 @@ struct HomeView: View {
                 .environment(\.appTheme, theme)
         }
         .sheet(isPresented: $showingGrownUps) {
-            TeacherGateView {
+            GrownUpGateView {
                 GrownUpSettingsView(pupil: pupil)
             }
             .environment(\.appTheme, theme)
         }
-        .task { await app.sync.syncNow(pupil: pupil) }
+        .task { await app.classServices?.syncNow(pupil: pupil) }
     }
 
     private var greeting: String {
@@ -228,6 +228,21 @@ struct HomeView: View {
             } label: {
                 Label("Grown-ups", systemImage: "lock.fill")
             }
+        }
+    }
+}
+
+/// Pull to refresh sends work to the teacher. Without a class there is nothing to refresh, so it is left off.
+private struct SendWorkOnRefresh: ViewModifier {
+    var classServices: (any ClassServices)?
+    var pupil: PupilProfile
+
+    @ViewBuilder
+    func body(content: Content) -> some View {
+        if let classServices {
+            content.refreshable { await classServices.syncNow(pupil: pupil) }
+        } else {
+            content
         }
     }
 }

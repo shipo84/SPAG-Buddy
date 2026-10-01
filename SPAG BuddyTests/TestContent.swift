@@ -6,13 +6,13 @@ enum TestContent {
     static var directory: URL {
         var url = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
         while url.path != "/" {
-            let candidate = url.appendingPathComponent("SPAG Buddy/Resources/Content")
+            let candidate = url.appendingPathComponent("SPAGCore/Resources/Content")
             if FileManager.default.fileExists(atPath: candidate.appendingPathComponent("manifest.json").path) {
                 return candidate
             }
             url.deleteLastPathComponent()
         }
-        fatalError("Could not find SPAG Buddy/Resources/Content above \(#filePath)")
+        fatalError("Could not find SPAGCore/Resources/Content above \(#filePath)")
     }
 
     static let library: ContentLibrary = {

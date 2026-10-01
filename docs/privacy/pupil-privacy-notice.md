@@ -1,6 +1,6 @@
 # What happens to my answers?
 
-*For pupils. The same words are shown in the SPAG Buddy app, with a "Read this to me" button. The wording is in `SPAG Buddy/Services/PrivacyNotice.swift`, so change both together.*
+*For pupils. The same words are shown in the SPAG Buddy app, with a "Read this to me" button. The wording is in `SPAGCore/Services/PrivacyNotice.swift`, so change both together.*
 
 ## What SPAG Buddy knows about you
 

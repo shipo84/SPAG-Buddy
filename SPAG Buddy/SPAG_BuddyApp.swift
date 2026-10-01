@@ -9,53 +9,37 @@ import Foundation
 import SwiftData
 import SwiftUI
 
+/// SPAG Buddy School. Built from `SPAGCore` and `SPAGSchoolSync`.
 @main
 struct SPAG_BuddyApp: App {
-    static let schema = Schema([PupilProfile.self, Attempt.self, Assignment.self, BadgeProgress.self])
-    private static let modelContainer = makeModelContainer()
+    private static let modelContainer = PupilStore.makeContainer()
 
-    @State private var appModel = AppModel(content: Self.loadContent(), container: Self.modelContainer)
+    @State private var school: SchoolServices
+    @State private var appModel: AppModel
+
+    init() {
+        let school = SchoolServices(container: Self.modelContainer)
+        _school = State(initialValue: school)
+        _appModel = State(initialValue: AppModel(content: Self.loadContent(), classServices: school))
+    }
 
     var body: some Scene {
         WindowGroup {
             RootView()
+                .sheet(item: $school.pendingJoin) { details in
+                    NavigationStack {
+                        JoinClassView(prefilled: details)
+                    }
+                }
+                .onOpenURL { school.handle(url: $0) }
                 .environment(appModel)
-                .onOpenURL { appModel.handle(url: $0) }
         }
         .modelContainer(Self.modelContainer)
     }
 
-    /// Pupil data stays on this device (and our server when in a class). It is never synced to iCloud.
-    private static func makeModelContainer() -> ModelContainer {
-        let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false, cloudKitDatabase: .none)
-        do {
-            return try ModelContainer(for: schema, configurations: [configuration])
-        } catch {
-            // A store that cannot be opened (for example after an incompatible model change) is reset
-            // rather than crashing the app. Unsynced work on this device is lost in that case.
-            for suffix in ["", "-wal", "-shm"] {
-                try? FileManager.default.removeItem(at: URL(fileURLWithPath: configuration.url.path + suffix))
-            }
-            if let container = try? ModelContainer(for: schema, configurations: [configuration]) {
-                return container
-            }
-            let memory = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true, cloudKitDatabase: .none)
-            do {
-                return try ModelContainer(for: schema, configurations: [memory])
-            } catch {
-                fatalError("Could not create an in-memory ModelContainer: \(error)")
-            }
-        }
-    }
-
     /// Uses downloaded content when it is newer than the content shipped in the app.
     private static func loadContent() -> ContentLibrary {
-        let bundled: ContentLibrary
-        do {
-            bundled = try ContentLibrary.loadBundled()
-        } catch {
-            fatalError("Bundled content is invalid. Run the unit tests to find the problem: \(error)")
-        }
+        let bundled = ContentLibrary.bundledForLaunch()
         return ContentUpdater.loadDownloadedContent(newerThan: bundled.manifest.contentVersion) ?? bundled
     }
 }

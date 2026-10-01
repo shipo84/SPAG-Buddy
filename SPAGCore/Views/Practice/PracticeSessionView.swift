@@ -131,7 +131,9 @@ struct PracticeSessionView: View {
 
     private func close() {
         app.speech.stop()
-        Task { await app.sync.syncNow(pupil: pupil) }
+        if let classServices = app.classServices {
+            Task { await classServices.syncNow(pupil: pupil) }
+        }
         dismiss()
     }
 }

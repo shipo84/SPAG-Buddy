@@ -27,20 +27,20 @@ struct GrownUpSettingsView: View {
                     LabeledContent("Questions answered", value: "\(pupil.attempts.count)")
                 }
 
-                if pupil.isInClass {
+                if let classServices = app.classServices, pupil.isInClass {
                     Section {
                         LabeledContent("Class", value: pupil.className ?? pupil.classCode ?? "")
                         LabeledContent("Waiting to send", value: "\(unsyncedCount) answers")
                         if let last = pupil.lastSyncedAt {
                             LabeledContent("Last sent", value: last.formatted(date: .abbreviated, time: .shortened))
                         }
-                        if let error = app.sync.lastError {
+                        if let error = classServices.lastError {
                             Text(error).foregroundStyle(.orange)
                         }
                         Button {
                             Task {
                                 syncing = true
-                                await app.sync.syncNow(pupil: pupil)
+                                await classServices.syncNow(pupil: pupil)
                                 syncing = false
                             }
                         } label: {
@@ -66,6 +66,19 @@ struct GrownUpSettingsView: View {
                          ? "This removes the pupil's data from this iPad only. Answers already sent are managed by the school and can be deleted by the teacher."
                          : "This permanently deletes this pupil's progress.")
                 }
+
+                Section {
+                    Link(destination: ExternalLinks.privacyPolicy) {
+                        Label("Privacy policy", systemImage: "hand.raised.fill")
+                    }
+                    Link(destination: ExternalLinks.appStoreReview) {
+                        Label("Review SPAG Buddy on the App Store", systemImage: "star.bubble.fill")
+                    }
+                } header: {
+                    Text("About")
+                } footer: {
+                    Text("These open in Safari.")
+                }
             }
             .navigationTitle("Grown-ups")
             .navigationBarTitleDisplayMode(.inline)
@@ -85,7 +98,7 @@ struct GrownUpSettingsView: View {
     }
 
     private func remove() {
-        KeychainStore.deleteToken(for: pupil.id)
+        app.classServices?.forget(pupil: pupil)
         if app.activePupilID == pupil.id { app.activePupilID = nil }
         modelContext.delete(pupil)
         try? modelContext.save()

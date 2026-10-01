@@ -1,36 +1,44 @@
 import Foundation
 import Observation
 import SwiftData
+import SwiftUI
 
-/// App-wide state shared through the SwiftUI environment.
+/// SPAG Buddy School's class features: joining with a login card, sending answers and downloading new content.
 @Observable
-final class AppModel {
-    private static let activePupilKey = "activePupilID"
-
-    private(set) var content: ContentLibrary
-    let speech = SpeechService()
-    let sync: SyncService
-
-    var activePupilID: UUID? {
-        didSet { UserDefaults.standard.set(activePupilID?.uuidString, forKey: Self.activePupilKey) }
-    }
-
+final class SchoolServices: ClassServices {
     /// A class login that arrived from a scanned QR code and is waiting to be completed.
     var pendingJoin: JoinDetails?
 
-    init(content: ContentLibrary, container: ModelContainer, api: APIClient? = APIClient.live) {
-        self.content = content
+    @ObservationIgnored private let api: APIClient?
+    @ObservationIgnored private let sync: SyncService
+
+    init(api: APIClient? = APIClient.live, container: ModelContainer) {
+        self.api = api
         sync = SyncService(api: api, container: container)
-        activePupilID = UserDefaults.standard.string(forKey: Self.activePupilKey).flatMap(UUID.init(uuidString:))
     }
+
+    var lastError: String? { sync.lastError }
 
     func start() async {
         sync.start()
         await sync.syncAll()
-        if let api = APIClient.live,
-           let updated = await ContentUpdater.update(using: api, currentVersion: content.manifest.contentVersion) {
-            content = updated
-        }
+    }
+
+    func syncNow(pupil: PupilProfile) async {
+        await sync.syncNow(pupil: pupil)
+    }
+
+    func forget(pupil: PupilProfile) {
+        KeychainStore.deleteToken(for: pupil.id)
+    }
+
+    func updatedContent(current: ContentLibrary) async -> ContentLibrary? {
+        guard let api else { return nil }
+        return await ContentUpdater.update(using: api, currentVersion: current.manifest.contentVersion)
+    }
+
+    func joinClassView() -> AnyView {
+        AnyView(JoinClassView())
     }
 
     /// Handles `spagbuddy://join?class=ABC234&picture=fox&pin=4821` from a login card QR code.

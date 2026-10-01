@@ -1,8 +1,8 @@
 import Foundation
 import SwiftUI
 
-/// A simple adult check before settings that change or delete data.
-struct TeacherGateView<Content: View>: View {
+/// A simple adult check before settings that change or delete data, or that open a web page.
+struct GrownUpGateView<Content: View>: View {
     @ViewBuilder var content: () -> Content
 
     @Environment(\.dismiss) private var dismiss
