@@ -22,6 +22,10 @@ Demo mode (`NEXT_PUBLIC_DEMO_MODE=true`) swaps the API for an in-memory copy tha
 
 Teachers sign in with an emailed magic link. The first time, they enter their name and school.
 
+## Put it on the internet
+
+Full step-by-step (Supabase + Vercel/Node + Auth + smoke test), written so another AI assistant can follow it: [`docs/deploy-teacher-website.md`](../docs/deploy-teacher-website.md).
+
 ## Pages
 
 | Path | What it does |
