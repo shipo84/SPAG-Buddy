@@ -23,18 +23,24 @@ Teachers use a companion website to set work and see how their class is doing.
 4. Pupils practise offline. Each answer is saved on the device and uploaded in batches when there is a connection.
 5. The teacher sees a heat map of pupils against curriculum objectives, common wrong answers, pupil progress and Year 6 SATs readiness.
 
-Pupils can also use the app without a class ("Practise at home"). Nothing leaves the device in that mode.
+Families use the separate Home edition. Nothing leaves the device in Home, and Home and School never share data.
 
 ## iOS app
 
-Open `SPAG Buddy.xcodeproj` in Xcode 26 or later and run the `SPAG Buddy` scheme.
+Open `SPAG Buddy.xcodeproj` in Xcode 26 or later. There are two shared schemes:
+
+- **SPAG Buddy Home**: the family edition. Strictly on-device. No class, no sync, no teacher.
+- **SPAG Buddy School**: the class edition. Pupils join with a login card and answers sync to the teacher dashboard.
+
+Both schemes currently build the same target. The edition comes from the `SPAG_EDITION` build setting (`home` or `school`, read from `SPAGBuddyEdition` in Info.plist). In debug builds the launch argument `-SPAGEdition home|school` overrides it, which is how the two schemes differ today. Splitting into two targets with their own bundle IDs is the next step; see [`docs/two-editions-audit.md`](docs/two-editions-audit.md).
 
 - Minimum iOS version is 17.0 so older school iPads are supported.
-- Set the API URL with the `SPAG_API_BASE_URL` build setting (for example `https://<project-ref>.supabase.co/functions/v1/api`). If it is empty the app runs in offline-only mode.
-- Pupil device tokens are stored in the Keychain. Practice data is stored locally with SwiftData and is not synced to iCloud.
+- Set the API URL with the `SPAG_API_BASE_URL` build setting (for example `https://<project-ref>.supabase.co/functions/v1/api`). If it is empty the School edition runs in offline-only mode. Home never uses it.
+- Pupil device tokens are stored in the Keychain (School only). Practice data is stored locally with SwiftData and is not synced to iCloud.
 
 Source layout inside `SPAG Buddy/`:
 
+- `Edition/` the `Edition` enum (Home or School), per-edition wording and the edition badge
 - `Models/` SwiftData models (`PupilProfile`, `Attempt`, `Assignment`, `BadgeProgress`) and content types (`Question`, `Objective`, `SpellingList`)
 - `Services/` content loading, answer marking, session building, badges, speech, API client and sync
 - `Views/` onboarding, home, practice, progress and settings screens
