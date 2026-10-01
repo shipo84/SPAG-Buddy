@@ -10,7 +10,7 @@ struct GrownUpSettingsView: View {
     @State private var confirmingDelete = false
     @State private var syncing = false
 
-    private var unsyncedCount: Int { pupil.attempts.filter(\.needsSync).count }
+    private var unsyncedCount: Int { app.classServices?.unsentCount(for: pupil) ?? 0 }
 
     var body: some View {
         NavigationStack {

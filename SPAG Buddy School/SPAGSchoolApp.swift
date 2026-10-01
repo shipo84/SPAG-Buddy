@@ -22,7 +22,11 @@ struct SPAGSchoolApp: App {
     init() {
         let classServices = SchoolClassServices(container: Self.modelContainer)
         _classServices = State(initialValue: classServices)
-        _appModel = State(initialValue: AppModel(content: Self.loadContent(), classServices: classServices))
+        _appModel = State(initialValue: AppModel(
+            content: Self.loadContent(),
+            classServices: classServices,
+            activePupilStore: classServices.activePupilStore
+        ))
     }
 
     var body: some Scene {

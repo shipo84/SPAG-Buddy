@@ -22,11 +22,17 @@ Teachers use a companion website to set work and see how their class is doing.
 
 1. A teacher signs in to the website with their school email, creates a class and adds pupils (first name or nickname only).
 2. The website prints a login card for each pupil with the class code, a picture and a 4-digit PIN (plus a QR code).
-3. On the iPad, the pupil types the class code, taps their picture and enters their PIN. The device receives a token for that pupil.
+3. On the iPad, the pupil scans the QR code, or types the class code, taps their picture and enters their PIN. The device receives a token for that pupil.
 4. Pupils practise offline. Each answer is saved on the device and uploaded in batches when there is a connection.
 5. The teacher sees a heat map of pupils against curriculum objectives, common wrong answers, pupil progress and Year 6 SATs readiness.
 
-Pupils can also use the app without a class ("Practise at home"). Nothing leaves the device in that mode.
+In SPAG Buddy Home, pupils use the app without a class ("Practise at home"). Nothing leaves the device.
+
+SPAG Buddy School has no home profiles:
+
+- A new iPad shows the pupil privacy notice, then "Join your class". Whenever nobody is signed in, the app goes back to "Join your class".
+- "Switch pupil" signs the pupil out and deletes their token and any unsent answers from the iPad. If answers are still waiting to send, it warns first.
+- If the server rejects a pupil's token (HTTP 401 from `/attempts` or `/assignments`), the app signs the pupil out and shows "Ask your teacher for a new login card." Their unsent answers are kept and sent once they join again.
 
 ## iOS apps
 
@@ -42,7 +48,10 @@ One codebase builds two App Store apps. Open `SPAG Buddy.xcodeproj` in Xcode 26 
 - Class features reach the shared views through the `ClassServices` protocol in `SPAGCore`. The School app passes `SchoolClassServices`; the Home app passes nothing, so no networking code is linked into it.
 - Each edition has its own SwiftData store (`SPAGHome.store`, `SPAGSchool.store`), so the two apps never share data.
 - Set the School API URL with `SPAG_API_BASE_URL` in `Config/School.xcconfig` (for example `https:/$()/<project-ref>.supabase.co/functions/v1/api`). If it is empty the School app runs in offline-only mode.
-- Pupil device tokens are stored in the Keychain. Practice data is stored locally with SwiftData and is not synced to iCloud.
+- School stores pupil device tokens and the signed-in pupil in the Keychain (`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`), never in UserDefaults. A reinstall starts signed out.
+- School queues each answer as a file under `Application Support/AnswerQueue/<pupil>/` (`NSFileProtectionCompleteUntilFirstUserAuthentication`). Answers are sent in batches with their `clientAttemptId`, and each file is deleted once the server accepts or permanently rejects it.
+- Practice data is stored locally with SwiftData and is not synced to iCloud.
+- `SPAG Buddy School/PrivacyInfo.xcprivacy` declares User ID and Product Interaction, linked to the user, for App Functionality only, with no tracking. Neither app uses third-party SDKs.
 - Unit tests live in the packages (`SPAGCoreTests`, `SPAGSchoolSyncTests`) and run from each app's Test action on an iOS simulator.
 
 Source layout inside `Packages/SPAGCore/Sources/SPAGCore/`:
@@ -52,7 +61,7 @@ Source layout inside `Packages/SPAGCore/Sources/SPAGCore/`:
 - `Views/` onboarding, home, practice, progress and settings screens
 - `Theme/` colours, fonts and accessibility settings
 
-`Packages/SPAGSchoolSync/Sources/SPAGSchoolSync/` holds the API client, sync, Keychain, content updater and the join-a-class screen.
+`Packages/SPAGSchoolSync/Sources/SPAGSchoolSync/` holds the API client, sync, the answer queue, Keychain storage, sign-in and sign-out (`PupilSession`), the content updater, and the privacy notice, QR scanner and join screens.
 
 ## Backend
 

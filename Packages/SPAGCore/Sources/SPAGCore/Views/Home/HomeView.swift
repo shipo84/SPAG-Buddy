@@ -15,6 +15,8 @@ struct HomeView: View {
     @State private var launch: PracticeLaunch?
     @State private var showingSettings = false
     @State private var showingGrownUps = false
+    @State private var unsentWhenSwitching = 0
+    @State private var confirmingSwitch = false
 
     private var streak: Int { StreakCalculator.displayed(pupil.streak, now: .now) }
 
@@ -59,6 +61,33 @@ struct HomeView: View {
             .environment(\.appTheme, theme)
         }
         .task { await app.classServices?.syncNow(pupil: pupil) }
+        .confirmationDialog("Wait! Some answers haven't been sent yet", isPresented: $confirmingSwitch, titleVisibility: .visible) {
+            Button("Try sending them now") {
+                Task {
+                    await app.classServices?.syncNow(pupil: pupil)
+                    if app.activePupilID == pupil.id { switchPupil() }
+                }
+            }
+            Button("Delete them and switch", role: .destructive) {
+                app.classServices?.switchPupil(pupil)
+            }
+            Button("Keep practising", role: .cancel) {}
+        } message: {
+            Text("\(unsentWhenSwitching) \(unsentWhenSwitching == 1 ? "answer has" : "answers have") not reached your teacher. If you switch pupil now, \(unsentWhenSwitching == 1 ? "it" : "they") will be deleted from this iPad.")
+        }
+    }
+
+    private func switchPupil() {
+        guard let classServices = app.classServices else {
+            app.activePupilID = nil
+            return
+        }
+        unsentWhenSwitching = classServices.unsentCount(for: pupil)
+        if unsentWhenSwitching > 0 {
+            confirmingSwitch = true
+        } else {
+            classServices.switchPupil(pupil)
+        }
     }
 
     private var greeting: String {
@@ -206,9 +235,7 @@ struct HomeView: View {
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent {
         ToolbarItem(placement: .topBarLeading) {
-            Button {
-                app.activePupilID = nil
-            } label: {
+            Button(action: switchPupil) {
                 Label("Switch pupil", systemImage: "person.2.fill")
             }
         }

@@ -26,11 +26,7 @@ struct WelcomeView: View {
 
                     VStack(spacing: 16) {
                         NavigationLink {
-                            if let classServices = app.classServices {
-                                classServices.makeJoinClassView()
-                            } else {
-                                ClassJoinUnavailableView()
-                            }
+                            ClassJoinUnavailableView()
                         } label: {
                             Label("Join my class", systemImage: "person.3.fill")
                         }

@@ -5,11 +5,11 @@ import SPAGCore
 import SwiftData
 import UIKit
 
-/// Uploads answers and downloads assignments for pupils who are in a class.
+/// Uploads answers and downloads assignments for pupils who are signed in to a class.
 ///
-/// Answers are always saved locally first. Uploads run when the app opens, after each session,
-/// when the network comes back, and on pull-to-refresh. Each answer carries a client id so a
-/// retried upload is never counted twice.
+/// Every answer goes into the `AnswerQueue` as soon as it is marked. Uploads run when the app
+/// opens, after each session, when the network comes back, and on pull-to-refresh. Each answer
+/// carries a client id so a retried upload is never counted twice.
 @Observable
 final class SyncService {
     private(set) var isSyncing = false
@@ -17,14 +17,16 @@ final class SyncService {
 
     @ObservationIgnored private let api: APIClient?
     @ObservationIgnored private let container: ModelContainer
+    @ObservationIgnored private let session: PupilSession
     @ObservationIgnored private let monitor = NWPathMonitor()
     @ObservationIgnored private var consecutiveFailures = 0
     @ObservationIgnored private var nextAttemptAllowed = Date.distantPast
     @ObservationIgnored private var started = false
 
-    init(api: APIClient?, container: ModelContainer) {
+    init(api: APIClient?, container: ModelContainer, session: PupilSession) {
         self.api = api
         self.container = container
+        self.session = session
     }
 
     var isEnabled: Bool { api != nil }
@@ -45,7 +47,7 @@ final class SyncService {
     func syncAll() async {
         let descriptor = FetchDescriptor<PupilProfile>(predicate: #Predicate { $0.remotePupilId != nil })
         guard let pupils = try? container.mainContext.fetch(descriptor) else { return }
-        for pupil in pupils {
+        for pupil in pupils where session.credentials.hasToken(for: pupil.id) {
             await sync(pupil: pupil, force: false)
         }
     }
@@ -58,41 +60,59 @@ final class SyncService {
     private func sync(pupil: PupilProfile, force: Bool) async {
         guard let api, pupil.isInClass, !isSyncing else { return }
         guard force || Date.now >= nextAttemptAllowed else { return }
-        guard let token = KeychainStore.token(for: pupil.id) else {
-            lastError = "This iPad needs to join the class again. Ask your teacher for a login card."
+        guard let token = session.credentials.token(for: pupil.id) else {
+            session.signOut(pupil.id)
             return
         }
 
         isSyncing = true
         defer { isSyncing = false }
         let context = container.mainContext
+        queueMissingAnswers(of: pupil)
+
+        let report = await AnswerSender(api: api, queue: session.queue).send(for: pupil.id, token: token)
+        for attempt in pupil.attempts where report.sent.contains(attempt.id) {
+            attempt.needsSync = false
+        }
+        try? context.save()
+
+        switch report.outcome {
+        case .finished: break
+        case .cardRevoked: return cardRevoked(pupil)
+        case .failed: return backOff()
+        }
 
         do {
-            let pending = pupil.attempts.filter(\.needsSync)
-            let byId = Dictionary(uniqueKeysWithValues: pending.map { ($0.id, $0) })
-            for batch in SyncPlanner.batches(pending.map(\.upload)) {
-                let response = try await api.uploadAttempts(batch, token: token)
-                for id in response.settledIds {
-                    byId[id]?.needsSync = false
-                }
-                try? context.save()
-            }
-
             let remote = try await api.assignments(token: token)
             reconcile(assignments: remote, for: pupil, context: context)
-
             pupil.lastSyncedAt = .now
             try? context.save()
             consecutiveFailures = 0
             nextAttemptAllowed = .distantPast
             lastError = nil
         } catch APIError.unauthorised {
-            lastError = "This iPad is no longer linked to \(pupil.className ?? "the class"). Answers are kept here. Ask your teacher for help."
+            cardRevoked(pupil)
         } catch {
-            consecutiveFailures += 1
-            nextAttemptAllowed = .now.addingTimeInterval(SyncPlanner.retryDelay(afterFailures: consecutiveFailures))
-            lastError = "Couldn't send work just now. It will try again automatically."
+            backOff()
         }
+    }
+
+    /// Covers an answer whose queue file could not be written when it was marked.
+    private func queueMissingAnswers(of pupil: PupilProfile) {
+        for attempt in pupil.attempts where attempt.needsSync && !session.queue.contains(attempt.id, for: pupil.id) {
+            try? session.queue.add(attempt.upload, for: pupil.id)
+        }
+    }
+
+    private func cardRevoked(_ pupil: PupilProfile) {
+        session.cardRevoked(pupil.id)
+        lastError = "\(pupil.displayName)'s login card no longer works. \(PupilSession.Notice.cardRevoked.message)"
+    }
+
+    private func backOff() {
+        consecutiveFailures += 1
+        nextAttemptAllowed = .now.addingTimeInterval(SyncPlanner.retryDelay(afterFailures: consecutiveFailures))
+        lastError = "Couldn't send work just now. It will try again automatically."
     }
 
     private func reconcile(assignments remote: [AssignmentDTO], for pupil: PupilProfile, context: ModelContext) {
