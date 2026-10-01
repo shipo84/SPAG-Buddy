@@ -33,12 +33,19 @@ Open `SPAG Buddy.xcodeproj` in Xcode 26 or later and run the `SPAG Buddy` scheme
 - Set the API URL with the `SPAG_API_BASE_URL` build setting (for example `https://<project-ref>.supabase.co/functions/v1/api`). If it is empty the app runs in offline-only mode.
 - Pupil device tokens are stored in the Keychain. Practice data is stored locally with SwiftData and is not synced to iCloud.
 
+### SPAG Buddy Home
+
+SPAG Buddy Home is the parents' edition. It uses the same quiz, practice and progress screens, but a parent sets up to 4 children on the iPad (first name or nickname, picture and school year), and nothing leaves the device. Its code is in `SPAG Buddy/Home/` and must not use any school code (sync, API, keychain, classes or assignments).
+
+Until Home has its own target (see [`docs/two-editions-audit.md`](docs/two-editions-audit.md)), build it by adding `HOME_EDITION` to **Active Compilation Conditions** (`SWIFT_ACTIVE_COMPILATION_CONDITIONS`) for the `SPAG Buddy` target. With the flag set, the app starts at `HomeRootView`, never creates an API client, never syncs, and hides the class header and "From your teacher" section.
+
 Source layout inside `SPAG Buddy/`:
 
 - `Models/` SwiftData models (`PupilProfile`, `Attempt`, `Assignment`, `BadgeProgress`) and content types (`Question`, `Objective`, `SpellingList`)
 - `Services/` content loading, answer marking, session building, badges, speech, API client and sync
 - `Views/` onboarding, home, practice, progress and settings screens
 - `Theme/` colours, fonts and accessibility settings
+- `Home/` SPAG Buddy Home only: parent set-up, child picker, the gated grown-ups area, the per-child progress summary and deletion
 
 ## Backend
 
