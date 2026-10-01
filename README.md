@@ -8,9 +8,12 @@ Teachers use a companion website to set work and see how their class is doing.
 
 | Path | What it is |
 | --- | --- |
-| `SPAG Buddy/` | iOS and iPadOS app (SwiftUI + SwiftData, iOS 17+) |
-| `SPAG Buddy/Resources/Content/` | Curriculum objectives, question banks and statutory spelling lists (JSON). This is the single source of truth for content. |
-| `SPAG BuddyTests/` | Unit tests (Swift Testing) |
+| `SPAG Buddy Home/` | The SPAG Buddy Home app target (parents, on-device only) |
+| `SPAG Buddy School/` | The SPAG Buddy School app target (classes, syncs to the teacher website) |
+| `Packages/SPAGCore/` | Shared Swift package: content, models, quiz engine, progress, theme and shared views (SwiftUI + SwiftData, iOS 17+) |
+| `Packages/SPAGSchoolSync/` | School-only Swift package: class login, answer sync, assignments and content updates |
+| `Packages/SPAGCore/Sources/SPAGCore/Resources/Content/` | Curriculum objectives, question banks and statutory spelling lists (JSON). This is the single source of truth for content. |
+| `Config/` | One `.xcconfig` per app target (bundle ID, display name, app icon) |
 | `backend/` | Supabase project: Postgres schema, Row Level Security and the `api` Edge Function |
 | `web/` | Teacher website (Next.js) |
 | `docs/` | Privacy notices, DPA and DPIA templates, retention policy and pilot checklist |
@@ -25,20 +28,31 @@ Teachers use a companion website to set work and see how their class is doing.
 
 Pupils can also use the app without a class ("Practise at home"). Nothing leaves the device in that mode.
 
-## iOS app
+## iOS apps
 
-Open `SPAG Buddy.xcodeproj` in Xcode 26 or later and run the `SPAG Buddy` scheme.
+One codebase builds two App Store apps. Open `SPAG Buddy.xcodeproj` in Xcode 26 or later and run either scheme:
+
+| Scheme | Bundle ID | Home screen name | Links |
+| --- | --- | --- | --- |
+| `SPAG Buddy Home` | `Digital-Clubhouse.SPAG-Buddy` (the existing App Store listing) | SPAG Home | `SPAGCore` |
+| `SPAG Buddy School` | `Digital-Clubhouse.SPAG-Buddy-School` | SPAG School | `SPAGCore`, `SPAGSchoolSync` |
 
 - Minimum iOS version is 17.0 so older school iPads are supported.
-- Set the API URL with the `SPAG_API_BASE_URL` build setting (for example `https://<project-ref>.supabase.co/functions/v1/api`). If it is empty the app runs in offline-only mode.
+- Each app target injects its `Edition` (`.home` or `.school`) into the SwiftUI environment. Shared views read it with `@Environment(\.edition)` rather than using `#if`.
+- Class features reach the shared views through the `ClassServices` protocol in `SPAGCore`. The School app passes `SchoolClassServices`; the Home app passes nothing, so no networking code is linked into it.
+- Each edition has its own SwiftData store (`SPAGHome.store`, `SPAGSchool.store`), so the two apps never share data.
+- Set the School API URL with `SPAG_API_BASE_URL` in `Config/School.xcconfig` (for example `https:/$()/<project-ref>.supabase.co/functions/v1/api`). If it is empty the School app runs in offline-only mode.
 - Pupil device tokens are stored in the Keychain. Practice data is stored locally with SwiftData and is not synced to iCloud.
+- Unit tests live in the packages (`SPAGCoreTests`, `SPAGSchoolSyncTests`) and run from each app's Test action on an iOS simulator.
 
-Source layout inside `SPAG Buddy/`:
+Source layout inside `Packages/SPAGCore/Sources/SPAGCore/`:
 
 - `Models/` SwiftData models (`PupilProfile`, `Attempt`, `Assignment`, `BadgeProgress`) and content types (`Question`, `Objective`, `SpellingList`)
-- `Services/` content loading, answer marking, session building, badges, speech, API client and sync
+- `Services/` content loading, answer marking, session building, badges, speech, the `ClassServices` protocol and the SwiftData store
 - `Views/` onboarding, home, practice, progress and settings screens
 - `Theme/` colours, fonts and accessibility settings
+
+`Packages/SPAGSchoolSync/Sources/SPAGSchoolSync/` holds the API client, sync, Keychain, content updater and the join-a-class screen.
 
 ## Backend
 
@@ -70,7 +84,7 @@ To put the teacher site live, follow [`docs/deploy-teacher-website.md`](docs/dep
 
 ## Content
 
-Question banks live in `SPAG Buddy/Resources/Content/year1.json` to `year6.json`. Objectives are in `objectives.json` and spelling lists in `spelling-lists.json`. After changing content:
+Question banks live in `Packages/SPAGCore/Sources/SPAGCore/Resources/Content/year1.json` to `year6.json`. Objectives are in `objectives.json` and spelling lists in `spelling-lists.json`. After changing content:
 
 1. Run the unit tests (they validate every question).
 2. Bump `contentVersion` in `manifest.json`.

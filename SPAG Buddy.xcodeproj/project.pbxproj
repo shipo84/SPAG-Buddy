@@ -6,51 +6,70 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5DD2E00000000000000000F1 /* SPAGCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD2E00000000000000000E1 /* SPAGCore */; };
+		5DD2E00000000000000000F2 /* SPAGCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD2E00000000000000000E2 /* SPAGCore */; };
+		5DD2E00000000000000000F3 /* SPAGSchoolSync in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD2E00000000000000000E3 /* SPAGSchoolSync */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		D8B252D12F3D10810000D506 /* PBXContainerItemProxy */ = {
+		5DD2E00000000000000000B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8B252B72F3D10800000D506 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D8B252BE2F3D10800000D506;
-			remoteInfo = "SPAG Buddy";
+			remoteGlobalIDString = 5DD2E00000000000000000A1;
+			remoteInfo = "SPAG Buddy School";
 		};
 		D8B252DB2F3D10810000D506 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8B252B72F3D10800000D506 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D8B252BE2F3D10800000D506;
-			remoteInfo = "SPAG Buddy";
+			remoteInfo = "SPAG Buddy Home";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D8B252BF2F3D10800000D506 /* SPAG Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPAG Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8B252D02F3D10810000D506 /* SPAG BuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SPAG BuddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8B252DA2F3D10810000D506 /* SPAG BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SPAG BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD2E00000000000000000A8 /* SPAG Buddy School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPAG Buddy School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD2E00000000000000000B8 /* SPAG Buddy SchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SPAG Buddy SchoolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD2E00000000000000000C2 /* Home.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Home.xcconfig; sourceTree = "<group>"; };
+		5DD2E00000000000000000C3 /* School.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = School.xcconfig; sourceTree = "<group>"; };
+		D8B252BF2F3D10800000D506 /* SPAG Buddy Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPAG Buddy Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B252DA2F3D10810000D506 /* SPAG Buddy HomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SPAG Buddy HomeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D8B252E22F3D10810000D506 /* Exceptions for "SPAG Buddy" folder in "SPAG Buddy" target */ = {
+		5DD2E00000000000000000AA /* Exceptions for "SPAG Buddy School" folder in "SPAG Buddy School" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = D8B252BE2F3D10800000D506 /* SPAG Buddy */;
+			target = 5DD2E00000000000000000A1 /* SPAG Buddy School */;
+		};
+		D8B252E22F3D10810000D506 /* Exceptions for "SPAG Buddy Home" folder in "SPAG Buddy Home" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D8B252BE2F3D10800000D506 /* SPAG Buddy Home */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D8B252C12F3D10800000D506 /* SPAG Buddy */ = {
+		5DD2E00000000000000000A9 /* SPAG Buddy School */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D8B252E22F3D10810000D506 /* Exceptions for "SPAG Buddy" folder in "SPAG Buddy" target */,
+				5DD2E00000000000000000AA /* Exceptions for "SPAG Buddy School" folder in "SPAG Buddy School" target */,
 			);
-			path = "SPAG Buddy";
+			path = "SPAG Buddy School";
 			sourceTree = "<group>";
 		};
-		D8B252D32F3D10810000D506 /* SPAG BuddyTests */ = {
+		D8B252C12F3D10800000D506 /* SPAG Buddy Home */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SPAG BuddyTests";
+			exceptions = (
+				D8B252E22F3D10810000D506 /* Exceptions for "SPAG Buddy Home" folder in "SPAG Buddy Home" target */,
+			);
+			path = "SPAG Buddy Home";
 			sourceTree = "<group>";
 		};
 		D8B252DD2F3D10810000D506 /* SPAG BuddyUITests */ = {
@@ -61,17 +80,27 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D8B252BC2F3D10800000D506 /* Frameworks */ = {
+		5DD2E00000000000000000A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD2E00000000000000000F2 /* SPAGCore in Frameworks */,
+				5DD2E00000000000000000F3 /* SPAGSchoolSync in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD2E00000000000000000B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8B252CD2F3D10810000D506 /* Frameworks */ = {
+		D8B252BC2F3D10800000D506 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD2E00000000000000000F1 /* SPAGCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +114,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DD2E00000000000000000C1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5DD2E00000000000000000C2 /* Home.xcconfig */,
+				5DD2E00000000000000000C3 /* School.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		D8B252B62F3D10800000D506 = {
 			isa = PBXGroup;
 			children = (
-				D8B252C12F3D10800000D506 /* SPAG Buddy */,
-				D8B252D32F3D10810000D506 /* SPAG BuddyTests */,
+				D8B252C12F3D10800000D506 /* SPAG Buddy Home */,
+				5DD2E00000000000000000A9 /* SPAG Buddy School */,
 				D8B252DD2F3D10810000D506 /* SPAG BuddyUITests */,
+				5DD2E00000000000000000C1 /* Config */,
 				D8B252C02F3D10800000D506 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,9 +137,10 @@
 		D8B252C02F3D10800000D506 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8B252BF2F3D10800000D506 /* SPAG Buddy.app */,
-				D8B252D02F3D10810000D506 /* SPAG BuddyTests.xctest */,
-				D8B252DA2F3D10810000D506 /* SPAG BuddyUITests.xctest */,
+				D8B252BF2F3D10800000D506 /* SPAG Buddy Home.app */,
+				5DD2E00000000000000000A8 /* SPAG Buddy School.app */,
+				D8B252DA2F3D10810000D506 /* SPAG Buddy HomeUITests.xctest */,
+				5DD2E00000000000000000B8 /* SPAG Buddy SchoolUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,9 +148,56 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8B252BE2F3D10800000D506 /* SPAG Buddy */ = {
+		5DD2E00000000000000000A1 /* SPAG Buddy School */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8B252E32F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG Buddy" */;
+			buildConfigurationList = 5DD2E00000000000000000A2 /* Build configuration list for PBXNativeTarget "SPAG Buddy School" */;
+			buildPhases = (
+				5DD2E00000000000000000A5 /* Sources */,
+				5DD2E00000000000000000A6 /* Frameworks */,
+				5DD2E00000000000000000A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5DD2E00000000000000000A9 /* SPAG Buddy School */,
+			);
+			name = "SPAG Buddy School";
+			packageProductDependencies = (
+				5DD2E00000000000000000E2 /* SPAGCore */,
+				5DD2E00000000000000000E3 /* SPAGSchoolSync */,
+			);
+			productName = "SPAG Buddy School";
+			productReference = 5DD2E00000000000000000A8 /* SPAG Buddy School.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DD2E00000000000000000B1 /* SPAG Buddy SchoolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD2E00000000000000000B2 /* Build configuration list for PBXNativeTarget "SPAG Buddy SchoolUITests" */;
+			buildPhases = (
+				5DD2E00000000000000000B5 /* Sources */,
+				5DD2E00000000000000000B6 /* Frameworks */,
+				5DD2E00000000000000000B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DD2E00000000000000000BA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D8B252DD2F3D10810000D506 /* SPAG BuddyUITests */,
+			);
+			name = "SPAG Buddy SchoolUITests";
+			packageProductDependencies = (
+			);
+			productName = "SPAG Buddy SchoolUITests";
+			productReference = 5DD2E00000000000000000B8 /* SPAG Buddy SchoolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D8B252BE2F3D10800000D506 /* SPAG Buddy Home */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8B252E32F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG Buddy Home" */;
 			buildPhases = (
 				D8B252BB2F3D10800000D506 /* Sources */,
 				D8B252BC2F3D10800000D506 /* Frameworks */,
@@ -121,41 +208,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D8B252C12F3D10800000D506 /* SPAG Buddy */,
+				D8B252C12F3D10800000D506 /* SPAG Buddy Home */,
 			);
-			name = "SPAG Buddy";
+			name = "SPAG Buddy Home";
 			packageProductDependencies = (
+				5DD2E00000000000000000E1 /* SPAGCore */,
 			);
-			productName = "SPAG Buddy";
-			productReference = D8B252BF2F3D10800000D506 /* SPAG Buddy.app */;
+			productName = "SPAG Buddy Home";
+			productReference = D8B252BF2F3D10800000D506 /* SPAG Buddy Home.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8B252CF2F3D10810000D506 /* SPAG BuddyTests */ = {
+		D8B252D92F3D10810000D506 /* SPAG Buddy HomeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8B252E82F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG BuddyTests" */;
-			buildPhases = (
-				D8B252CC2F3D10810000D506 /* Sources */,
-				D8B252CD2F3D10810000D506 /* Frameworks */,
-				D8B252CE2F3D10810000D506 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8B252D22F3D10810000D506 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D8B252D32F3D10810000D506 /* SPAG BuddyTests */,
-			);
-			name = "SPAG BuddyTests";
-			packageProductDependencies = (
-			);
-			productName = "SPAG BuddyTests";
-			productReference = D8B252D02F3D10810000D506 /* SPAG BuddyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D8B252D92F3D10810000D506 /* SPAG BuddyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8B252EB2F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG BuddyUITests" */;
+			buildConfigurationList = D8B252EB2F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG Buddy HomeUITests" */;
 			buildPhases = (
 				D8B252D62F3D10810000D506 /* Sources */,
 				D8B252D72F3D10810000D506 /* Frameworks */,
@@ -169,11 +234,11 @@
 			fileSystemSynchronizedGroups = (
 				D8B252DD2F3D10810000D506 /* SPAG BuddyUITests */,
 			);
-			name = "SPAG BuddyUITests";
+			name = "SPAG Buddy HomeUITests";
 			packageProductDependencies = (
 			);
-			productName = "SPAG BuddyUITests";
-			productReference = D8B252DA2F3D10810000D506 /* SPAG BuddyUITests.xctest */;
+			productName = "SPAG Buddy HomeUITests";
+			productReference = D8B252DA2F3D10810000D506 /* SPAG Buddy HomeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,12 +251,15 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					D8B252BE2F3D10800000D506 = {
+					5DD2E00000000000000000A1 = {
 						CreatedOnToolsVersion = 26.2;
 					};
-					D8B252CF2F3D10810000D506 = {
+					5DD2E00000000000000000B1 = {
 						CreatedOnToolsVersion = 26.2;
-						TestTargetID = D8B252BE2F3D10800000D506;
+						TestTargetID = 5DD2E00000000000000000A1;
+					};
+					D8B252BE2F3D10800000D506 = {
+						CreatedOnToolsVersion = 26.2;
 					};
 					D8B252D92F3D10810000D506 = {
 						CreatedOnToolsVersion = 26.2;
@@ -208,27 +276,39 @@
 			);
 			mainGroup = D8B252B62F3D10800000D506;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5DD2E00000000000000000D1 /* XCLocalSwiftPackageReference "Packages/SPAGCore" */,
+				5DD2E00000000000000000D2 /* XCLocalSwiftPackageReference "Packages/SPAGSchoolSync" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D8B252C02F3D10800000D506 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8B252BE2F3D10800000D506 /* SPAG Buddy */,
-				D8B252CF2F3D10810000D506 /* SPAG BuddyTests */,
-				D8B252D92F3D10810000D506 /* SPAG BuddyUITests */,
+				D8B252BE2F3D10800000D506 /* SPAG Buddy Home */,
+				5DD2E00000000000000000A1 /* SPAG Buddy School */,
+				D8B252D92F3D10810000D506 /* SPAG Buddy HomeUITests */,
+				5DD2E00000000000000000B1 /* SPAG Buddy SchoolUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D8B252BD2F3D10800000D506 /* Resources */ = {
+		5DD2E00000000000000000A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8B252CE2F3D10810000D506 /* Resources */ = {
+		5DD2E00000000000000000B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B252BD2F3D10800000D506 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,14 +325,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D8B252BB2F3D10800000D506 /* Sources */ = {
+		5DD2E00000000000000000A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8B252CC2F3D10810000D506 /* Sources */ = {
+		5DD2E00000000000000000B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B252BB2F3D10800000D506 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,31 +356,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D8B252D22F3D10810000D506 /* PBXTargetDependency */ = {
+		5DD2E00000000000000000BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8B252BE2F3D10800000D506 /* SPAG Buddy */;
-			targetProxy = D8B252D12F3D10810000D506 /* PBXContainerItemProxy */;
+			target = 5DD2E00000000000000000A1 /* SPAG Buddy School */;
+			targetProxy = 5DD2E00000000000000000B9 /* PBXContainerItemProxy */;
 		};
 		D8B252DC2F3D10810000D506 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8B252BE2F3D10800000D506 /* SPAG Buddy */;
+			target = D8B252BE2F3D10800000D506 /* SPAG Buddy Home */;
 			targetProxy = D8B252DB2F3D10810000D506 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		D8B252E42F3D10810000D506 /* Debug */ = {
+		5DD2E00000000000000000A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD2E00000000000000000C3 /* School.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "SPAG Buddy/SPAG_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KP535DY4P7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SPAG Buddy/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,9 +388,104 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-Clubhouse.SPAG-Buddy";
-				SPAG_API_BASE_URL = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DD2E00000000000000000A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD2E00000000000000000C3 /* School.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KP535DY4P7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DD2E00000000000000000B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KP535DY4P7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-Clubhouse.SPAG-Buddy-SchoolUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SPAG Buddy School";
+			};
+			name = Debug;
+		};
+		5DD2E00000000000000000B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KP535DY4P7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-Clubhouse.SPAG-Buddy-SchoolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SPAG Buddy School";
+			};
+			name = Release;
+		};
+		D8B252E42F3D10810000D506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD2E00000000000000000C2 /* Home.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KP535DY4P7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -319,16 +498,13 @@
 		};
 		D8B252E52F3D10810000D506 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD2E00000000000000000C2 /* Home.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "SPAG Buddy/SPAG_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KP535DY4P7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SPAG Buddy/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,9 +515,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-Clubhouse.SPAG-Buddy";
-				SPAG_API_BASE_URL = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -473,50 +646,6 @@
 			};
 			name = Release;
 		};
-		D8B252E92F3D10810000D506 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KP535DY4P7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-Clubhouse.SPAG-BuddyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPAG Buddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SPAG Buddy";
-			};
-			name = Debug;
-		};
-		D8B252EA2F3D10810000D506 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KP535DY4P7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-Clubhouse.SPAG-BuddyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPAG Buddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SPAG Buddy";
-			};
-			name = Release;
-		};
 		D8B252EC2F3D10810000D506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,7 +662,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SPAG Buddy";
+				TEST_TARGET_NAME = "SPAG Buddy Home";
 			};
 			name = Debug;
 		};
@@ -553,13 +682,31 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SPAG Buddy";
+				TEST_TARGET_NAME = "SPAG Buddy Home";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5DD2E00000000000000000A2 /* Build configuration list for PBXNativeTarget "SPAG Buddy School" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD2E00000000000000000A3 /* Debug */,
+				5DD2E00000000000000000A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD2E00000000000000000B2 /* Build configuration list for PBXNativeTarget "SPAG Buddy SchoolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD2E00000000000000000B3 /* Debug */,
+				5DD2E00000000000000000B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D8B252BA2F3D10800000D506 /* Build configuration list for PBXProject "SPAG Buddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -569,7 +716,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8B252E32F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG Buddy" */ = {
+		D8B252E32F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG Buddy Home" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8B252E42F3D10810000D506 /* Debug */,
@@ -578,16 +725,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8B252E82F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG BuddyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8B252E92F3D10810000D506 /* Debug */,
-				D8B252EA2F3D10810000D506 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8B252EB2F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG BuddyUITests" */ = {
+		D8B252EB2F3D10810000D506 /* Build configuration list for PBXNativeTarget "SPAG Buddy HomeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8B252EC2F3D10810000D506 /* Debug */,
@@ -597,6 +735,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5DD2E00000000000000000D1 /* XCLocalSwiftPackageReference "Packages/SPAGCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SPAGCore;
+		};
+		5DD2E00000000000000000D2 /* XCLocalSwiftPackageReference "Packages/SPAGSchoolSync" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SPAGSchoolSync;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DD2E00000000000000000E1 /* SPAGCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DD2E00000000000000000D1 /* XCLocalSwiftPackageReference "Packages/SPAGCore" */;
+			productName = SPAGCore;
+		};
+		5DD2E00000000000000000E2 /* SPAGCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DD2E00000000000000000D1 /* XCLocalSwiftPackageReference "Packages/SPAGCore" */;
+			productName = SPAGCore;
+		};
+		5DD2E00000000000000000E3 /* SPAGSchoolSync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DD2E00000000000000000D2 /* XCLocalSwiftPackageReference "Packages/SPAGSchoolSync" */;
+			productName = SPAGSchoolSync;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8B252B72F3D10800000D506 /* Project object */;
 }
