@@ -7,12 +7,60 @@ Goal: one codebase that builds two App Store apps.
 - **SPAG Buddy Home** (parents): strictly on-device, with no networking code compiled in.
 - **SPAG Buddy School** (classes): pupils join with a login card (QR code, or class code plus picture plus PIN) and answers sync to the teacher dashboard API.
 
+The two editions share **source code and bundled content only**. They are two completely separate apps, and no pupil data, settings, tokens or links ever pass between them. Section 0 sets out what that means in practice.
+
+## 0. The two apps are completely separate
+
+Home and School are built from the same code, but on a device they are unrelated apps. Nothing one app stores can be read by the other, and neither app can open, detect or hand data to the other. This is a hard requirement for every later step.
+
+### What is shared, and what is never shared
+
+| Shared (at build time only) | Never shared (at run time) |
+| --- | --- |
+| Swift source for quizzes, marking, progress and UI | Pupil profiles, answers, stars, streaks and stickers |
+| Bundled question banks, spelling lists and avatars (`Resources/Content`) | Class membership, assignments and device tokens |
+| Theme and components, with per-edition branding | Settings, including `UserDefaults` such as `activePupilID` |
+| Unit tests for the shared logic | Keychain items, files in Application Support, the SwiftData store |
+
+Sharing a Swift type such as `PupilProfile` is a code decision. It does not connect the two apps' data: each app has its own copy of the code and its own store in its own sandbox.
+
+### How the separation is guaranteed
+
+iOS already keeps each app's data in its own sandbox. The apps stay separate as long as **none** of the following is ever added to either edition:
+
+1. **The same bundle ID.** Each edition gets its own bundle ID and its own App Store Connect record (for example `Digital-Clubhouse.SPAG-Buddy-Home` and `Digital-Clubhouse.SPAG-Buddy-School`). Both apps can be on the same device at once and do not know about each other.
+2. **App Groups.** No `com.apple.security.application-groups` entitlement and no `UserDefaults(suiteName:)` or `containerURL(forSecurityApplicationGroupIdentifier:)`. This is the only normal way for two apps from one developer team to share files or settings. Both apps will be signed by the same team (`KP535DY4P7`), which on its own shares nothing.
+3. **Shared keychain access groups.** No `keychain-access-groups` entitlement. Home has no keychain code at all. School keeps its tokens in its own default access group.
+4. **iCloud.** No CloudKit, no iCloud Documents and no `NSUbiquitousKeyValueStore` in either app. SwiftData is already set to `cloudKitDatabase: .none`, and that must stay.
+5. **A shared or overlapping URL scheme.** Only School registers `spagbuddy://`. Home registers **no** URL scheme. If both apps claimed `spagbuddy`, iOS would pick one unpredictably, and a pupil scanning a class login card could end up in the Home app. Neither app opens the other with `openURL` or `canOpenURL`.
+6. **Universal links or associated domains** pointing at either app.
+7. **Any hand-over between the apps.** No import or export of progress, no shared files (`UIFileSharingEnabled`, document types), no pasteboard tricks, no share extensions that pass pupil data, and no "move this child to School" or "take my class work home" feature.
+8. **A shared server identity.** Home never talks to the backend, so it has no pupil ID, device token or class link. A child's School account and any Home profile on the same iPad are unrelated records.
+
+### What this means for families and schools
+
+- A child who uses both apps has two independent profiles. Home progress does not appear in School or on the teacher dashboard, and School work and assignments do not appear in Home.
+- Moving from one app to the other means starting again. There is no migration path, by design.
+- Each app has its own App Store privacy label and privacy policy. Home can declare "Data Not Collected". School keeps the school documents in `docs/privacy/`.
+- Deleting one app deletes only that app's data.
+
+### Where today's single app crosses this line
+
+Today there is one app that does both jobs, so it mixes home and class pupils in **one** store, on one picker screen, under one bundle ID. Specifically:
+
+- `WelcomeView` offers "Join my class" and "Practise at home" side by side, and `PupilPickerView` lists both kinds of pupil together.
+- `PupilProfile.isInClass` decides at run time whether a pupil's answers are uploaded. In the two-app design, that decision is made by which app is installed, not by a field.
+- `PrivacyNotice.sections(inClass: nil)` explains both options in one notice.
+- The existing bundle ID `Digital-Clubhouse.SPAG-Buddy`, which carries the `spagbuddy` scheme, has to go to one edition only (or be retired). It must not be shared.
+
+These are the places the split has to cut. Section 5 lists them line by line.
+
 ## Summary
 
 - The app has a single target, `SPAG Buddy`, with 47 Swift files in total: 38 in the app, 7 in the unit tests and 2 in the UI tests. It uses Xcode 16 file-system synchronised folders, so every file in `SPAG Buddy/` is compiled into the app automatically. The only membership exception is `Info.plist`.
 - The networking code is already fairly contained. Only `APIClient.swift` touches `URLSession`/`URLRequest`, and only `SyncService.swift` imports `Network`. The rest of the network code (`ContentUpdater`, `KeychainStore`, `JoinClassView` and the parts of `APIModels.swift` the school edition needs) only runs when `APIClient.live` is not `nil`.
 - The work is in the **seams**, not in moving files. `AppModel` owns a non-optional `SyncService` and calls `ContentUpdater` and `APIClient` directly. Seven shared views and files call `app.sync`, `JoinClassView`, `KeychainStore` or `ContentUpdater`. All of them have to be cut before the shared core can compile without the school files (see section 5).
-- The pupil data schema (`PupilProfile`, `Attempt`, `Assignment`) holds class fields such as `remotePupilId`, `needsSync` and the whole `Assignment` model. These are plain local SwiftData types with no network dependency. I recommend keeping them in the shared core so both editions use one schema (details in section 5).
+- The pupil data schema (`PupilProfile`, `Attempt`, `Assignment`) holds class fields such as `remotePupilId`, `needsSync` and the whole `Assignment` model. Because Home must not hold class data in any form, I now recommend that Home's models leave these fields out, rather than one shared schema (details and the trade-off in section 5). Either way, each app keeps its own separate store.
 - `TeacherGateView` is **not** school-only. Despite the name, it is the generic "Grown-ups only" multiplication puzzle that `HomeView` uses in front of `GrownUpSettingsView`. The Home edition needs it too.
 - The real deployment target is **iOS 17.0** (`IPHONEOS_DEPLOYMENT_TARGET`, set at project level), not iOS 26.2. The SwiftUI and SwiftData APIs in use are fine on 17. Raise the target on purpose if 26.2 is what you want.
 
@@ -38,7 +86,7 @@ These have no school or network dependency and can go into both editions unchang
 | `SPAG Buddy/Theme/Theme.swift` (112) | `AppTheme`, colours, easy-read and high-contrast settings |
 | `SPAG Buddy/Views/Components/BuddyView.swift` (112) | Mascot |
 | `SPAG Buddy/Views/Components/Components.swift` (192) | Buttons, cards, `PinPad`, `AvatarGrid`, `BuddySays` and similar |
-| `SPAG Buddy/Views/Onboarding/CreateProfileView.swift` (86) | Local profile creation ("Practise at home") |
+| `SPAG Buddy/Views/Onboarding/CreateProfileView.swift` (86) | Local profile creation ("Practise at home"). No school code, but it is Home's onboarding only. School pupils only come from the join flow (see section 5) |
 | `SPAG Buddy/Views/Onboarding/PupilPickerView.swift` (54) | "Who is practising?" |
 | `SPAG Buddy/Views/Practice/AnswerInputView.swift` (234) | Answer input UI |
 | `SPAG Buddy/Views/Practice/FeedbackPanel.swift` (75) | Feedback UI |
@@ -228,12 +276,12 @@ The file is an empty `<dict/>`. There are no app groups, keychain access groups,
 ### Other things to know for two App Store apps
 
 - **No shared schemes are committed.** There is no `xcshareddata/xcschemes`, so CI and other machines rely on Xcode generating schemes automatically. Two editions will need two committed schemes.
-- **Strings tied to the bundle ID** need an edition-specific value or a deliberate decision to share:
+- **Strings tied to the bundle ID** are all school-only. They go into the School app with the School bundle ID, and none of them appear in Home:
   - `KeychainStore` service `Digital-Clubhouse.SPAG-Buddy.device-token`
   - URL type name `Digital-Clubhouse.SPAG-Buddy.join`
   - `SyncService`'s dispatch queue label `spag-buddy.network`
-- **Settings keys:** `UserDefaults` key `activePupilID`. This is fine because each app has its own sandbox.
-- **Possible conflict with the current app:** if the existing bundle ID has already been used on App Store Connect, decide which edition keeps it.
+- **Settings keys:** `UserDefaults` key `activePupilID`. Each app has its own sandbox, so the two copies of this key never meet. This is fine as long as neither app uses an App Group suite (see section 0).
+- **The existing bundle ID:** `Digital-Clubhouse.SPAG-Buddy` goes to **one** edition, or is retired. It must not be used by both. If it has already been used on App Store Connect, the edition that keeps it inherits that record, and any test installs keep their old data. The other edition must start with a new bundle ID and an empty store.
 
 ---
 
@@ -265,14 +313,19 @@ This assumes the school files are excluded: `APIClient.swift`, `SyncService.swif
 
 These are not compile blockers, but they need a decision.
 
-- **The schema and models.** `Assignment` is in `SPAG_BuddyApp.schema`, `PupilProfile` has class fields and the `assignments` relationship, and `Attempt` has `needsSync` and `assignmentId`. I recommend **keeping them in the shared core, unchanged**. They are local SwiftData types with no networking. Keeping them gives both apps one schema, and avoids a SwiftData migration or a second model set. In Home they are always `nil`, `false` or empty: `needsSync` is `false` because `isInClass` is `false`, and no `Assignment` is ever created. The other option is to split the schema per edition, which costs two sets of models and two test paths.
-- **`SessionMode.assignment`** (`SessionBuilder.swift`) and the code in `PracticeSession.swift:90-93` that completes an assignment are local logic. They are harmless in Home.
-- **UI that is unreachable in Home**:
-  - the "From your teacher" section in `HomeView`, which is hidden when there are no assignments;
-  - `pupil.className ?? "Year …"` in the `HomeView` header;
-  - the `isInClass` branches in `GrownUpSettingsView`.
+- **The schema and models.** `Assignment` is in `SPAG_BuddyApp.schema`, `PupilProfile` has class fields (`remotePupilId`, `classCode`, `className`, `lastSyncedAt`) and the `assignments` relationship, and `Attempt` has `needsSync` and `assignmentId`. These compile in Home, but they mean the Home app could represent class data. Two options:
+  - **Option A: one shared schema.** Keep the models unchanged in both apps. This is the least work, and the data is still separate, because each app has its own store. But Home would carry empty class fields and an unused `Assignment` table.
+  - **Option B: no class data in Home (recommended).** Home's models have no class fields and no `Assignment` model. The class fields and `Assignment` live only in School. This matches the requirement that Home cannot hold or receive school data in any form, and makes it checkable: if Home code mentions a class field, it does not compile. The cost is that the shared views must stop reading those fields directly, and get "is this a class pupil / what assignments are there" from the edition, so Home answers "no" and "none". It also means two schemas and separate tests for each.
 
-  These can stay, gated on `isInClass`. Or, for a cleaner Home binary, the class section of `GrownUpSettingsView` could move to a School-only view that the School app injects.
+  Neither option involves migrating data between the apps. Each app starts with its own empty store.
+- **`SessionMode.assignment`** (`SessionBuilder.swift`) and the code in `PracticeSession.swift:90-93` that completes an assignment. With Option B, these move to School, because Home has no assignments.
+- **Class UI that Home must not include**:
+  - the "From your teacher" section in `HomeView`;
+  - `pupil.className ?? "Year …"` in the `HomeView` header;
+  - the class section and class wording in `GrownUpSettingsView`.
+
+  These should be removed from Home, not just hidden behind `isInClass`. The class section of `GrownUpSettingsView` and the assignments section of `HomeView` can become School-only views that the School app injects.
+- **Home pupils in School.** School should not offer "Practise at home" profiles either. Every School pupil is a class pupil who joined with a login card, so `CreateProfileView` is Home-only in practice, and School's onboarding is only the join flow.
 - **Wording**:
   - `WelcomeView` has the "Join my class" button and "Your teacher will give you a card with your class code and PIN."
   - `PrivacyNotice.sections(inClass: nil)` says answers are sent to school if you join a class.
