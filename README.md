@@ -66,6 +66,8 @@ npm run dev
 
 Run `npm run demo` to explore the dashboard with made-up pupils and no backend.
 
+To put the teacher site live, follow [`docs/deploy-teacher-website.md`](docs/deploy-teacher-website.md). If your public site is WordPress or you will not use Supabase, start with [`docs/wordpress-without-supabase.md`](docs/wordpress-without-supabase.md) instead.
+
 ## Content
 
 Question banks live in `SPAG Buddy/Resources/Content/year1.json` to `year6.json`. Objectives are in `objectives.json` and spelling lists in `spelling-lists.json`. After changing content:

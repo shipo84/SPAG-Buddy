@@ -4,6 +4,8 @@ Step-by-step instructions for putting the SPAG Buddy teacher dashboard live. Wri
 
 The website lives in `web/`. It is a Next.js 16 app. It talks only to the Supabase Edge Function in `backend/` — it never connects to Postgres itself.
 
+**Using WordPress, or not using Supabase?** Stop here and read [`docs/wordpress-without-supabase.md`](wordpress-without-supabase.md) first. WordPress cannot host this Next.js app as a theme or plugin, and the current backend assumes Supabase.
+
 ## What you need
 
 1. A **Supabase** project in the **London (`eu-west-2`)** region (pupil data should stay in the UK).

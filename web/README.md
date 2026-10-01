@@ -26,6 +26,8 @@ Teachers sign in with an emailed magic link. The first time, they enter their na
 
 Full step-by-step (Supabase + Vercel/Node + Auth + smoke test), written so another AI assistant can follow it: [`docs/deploy-teacher-website.md`](../docs/deploy-teacher-website.md).
 
+If the public site is WordPress or you will not use Supabase: [`docs/wordpress-without-supabase.md`](../docs/wordpress-without-supabase.md).
+
 ## Pages
 
 | Path | What it does |
