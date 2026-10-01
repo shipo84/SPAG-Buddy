@@ -22,10 +22,12 @@ struct RootView: View {
                 PupilPickerView(pupils: pupils)
             }
         }
-        .environment(\.appTheme, AppTheme(pupil: activePupil))
+        .environment(\.appTheme, AppTheme(pupil: activePupil, edition: app.edition))
         .sheet(item: $app.pendingJoin) { details in
-            NavigationStack {
-                JoinClassView(prefilled: details)
+            if app.edition.isSchool {
+                NavigationStack {
+                    JoinClassView(prefilled: details)
+                }
             }
         }
         .onAppear {
@@ -36,3 +38,29 @@ struct RootView: View {
         .task { await app.start() }
     }
 }
+
+#if DEBUG
+#Preview("Home edition") {
+    RootView()
+        .environment(AppModel.preview(edition: .home))
+        .modelContainer(.preview)
+}
+
+#Preview("School edition") {
+    RootView()
+        .environment(AppModel.preview(edition: .school, container: .previewSchool))
+        .modelContainer(.previewSchool)
+}
+
+#Preview("Home edition, first launch") {
+    RootView()
+        .environment(AppModel.preview(edition: .home))
+        .modelContainer(.previewEmpty)
+}
+
+#Preview("School edition, first launch") {
+    RootView()
+        .environment(AppModel.preview(edition: .school, container: .previewEmpty))
+        .modelContainer(.previewEmpty)
+}
+#endif

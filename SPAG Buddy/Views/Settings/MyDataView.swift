@@ -3,7 +3,6 @@ import SwiftUI
 
 /// "What happens to my answers?" The pupil privacy notice, with a read-aloud button.
 struct MyDataView: View {
-    var inClass: Bool?
     @Environment(AppModel.self) private var app
     @Environment(\.appTheme) private var theme
 
@@ -17,14 +16,14 @@ struct MyDataView: View {
                 }
 
                 Button {
-                    app.speech.speak(PrivacyNotice.spokenText(inClass: inClass))
+                    app.speech.speak(PrivacyNotice.spokenText(for: app.edition))
                 } label: {
                     Label("Read this to me", systemImage: "speaker.wave.2.fill")
                 }
                 .buttonStyle(.big)
                 .frame(maxWidth: 360)
 
-                ForEach(PrivacyNotice.sections(inClass: inClass)) { section in
+                ForEach(PrivacyNotice.sections(for: app.edition)) { section in
                     HStack(alignment: .top, spacing: 16) {
                         Image(systemName: section.symbol)
                             .font(.title2)
@@ -54,9 +53,20 @@ struct MyDataView: View {
     }
 }
 
-#Preview {
+#if DEBUG
+#Preview("Home edition") {
     NavigationStack {
-        MyDataView(inClass: true)
+        MyDataView()
     }
-    .environment(AppModel.preview)
+    .environment(AppModel.preview(edition: .home))
+    .environment(\.appTheme, AppTheme(edition: .home))
 }
+
+#Preview("School edition") {
+    NavigationStack {
+        MyDataView()
+    }
+    .environment(AppModel.preview(edition: .school))
+    .environment(\.appTheme, AppTheme(edition: .school))
+}
+#endif

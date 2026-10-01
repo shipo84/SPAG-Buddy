@@ -48,7 +48,8 @@ struct SPAG_BuddyApp: App {
         }
     }
 
-    /// Uses downloaded content when it is newer than the content shipped in the app.
+    /// School uses downloaded content when it is newer than the content shipped in the app.
+    /// Home only ever uses the bundled content, because it never downloads anything.
     private static func loadContent() -> ContentLibrary {
         let bundled: ContentLibrary
         do {
@@ -56,6 +57,7 @@ struct SPAG_BuddyApp: App {
         } catch {
             fatalError("Bundled content is invalid. Run the unit tests to find the problem: \(error)")
         }
+        guard Edition.current.isSchool else { return bundled }
         return ContentUpdater.loadDownloadedContent(newerThan: bundled.manifest.contentVersion) ?? bundled
     }
 }

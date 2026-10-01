@@ -18,10 +18,17 @@ struct HomeView: View {
 
     private var streak: Int { StreakCalculator.displayed(pupil.streak, now: .now) }
 
+    /// Teacher-set work. Only School has a teacher, so Home never shows this section.
     private var openAssignments: [Assignment] {
-        pupil.assignments
+        guard app.edition.isSchool else { return [] }
+        return pupil.assignments
             .filter { $0.completedAt == nil }
             .sorted { ($0.dueDate ?? .distantFuture) < ($1.dueDate ?? .distantFuture) }
+    }
+
+    private var subtitle: String {
+        if app.edition.isSchool, let className = pupil.className { return className }
+        return "Year \(pupil.yearGroup)"
     }
 
     var body: some View {
@@ -41,8 +48,10 @@ struct HomeView: View {
                 .frame(maxWidth: .infinity)
             }
             .screenBackground()
+            .navigationTitle(app.edition.displayName)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar { toolbar }
-            .refreshable { await app.sync.syncNow(pupil: pupil) }
+            .refreshable { await app.sync?.syncNow(pupil: pupil) }
         }
         .fullScreenCover(item: $launch) { launch in
             PracticeSessionView(pupil: pupil, mode: launch.mode, title: launch.title)
@@ -58,7 +67,7 @@ struct HomeView: View {
             }
             .environment(\.appTheme, theme)
         }
-        .task { await app.sync.syncNow(pupil: pupil) }
+        .task { await app.sync?.syncNow(pupil: pupil) }
     }
 
     private var greeting: String {
@@ -72,7 +81,7 @@ struct HomeView: View {
             AvatarView(avatar: app.content.avatar(key: pupil.avatarKey), size: 56)
             VStack(alignment: .leading, spacing: 2) {
                 Text(pupil.displayName).pupilText(.title2, weight: .heavy)
-                Text(pupil.className ?? "Year \(pupil.yearGroup)")
+                Text(subtitle)
                     .pupilText(.subheadline)
                     .foregroundStyle(theme.secondaryText)
             }
@@ -231,3 +240,30 @@ struct HomeView: View {
         }
     }
 }
+
+#if DEBUG
+/// Fetches the preview pupil from the container so `HomeView` can be previewed with a real `PupilProfile`.
+private struct HomePreview: View {
+    @Environment(AppModel.self) private var app
+    @Query private var pupils: [PupilProfile]
+
+    var body: some View {
+        if let pupil = pupils.first {
+            HomeView(pupil: pupil)
+                .environment(\.appTheme, AppTheme(pupil: pupil, edition: app.edition))
+        }
+    }
+}
+
+#Preview("Home edition") {
+    HomePreview()
+        .environment(AppModel.preview(edition: .home))
+        .modelContainer(.preview)
+}
+
+#Preview("School edition") {
+    HomePreview()
+        .environment(AppModel.preview(edition: .school, container: .previewSchool))
+        .modelContainer(.previewSchool)
+}
+#endif

@@ -20,7 +20,7 @@ struct BuddyView: View {
     var body: some View {
         ZStack {
             Circle()
-                .fill(theme.highContrast ? theme.primary : Color(red: 0.55, green: 0.5, blue: 0.98))
+                .fill(theme.buddy)
             Circle()
                 .fill(.white.opacity(0.18))
                 .frame(width: size * 0.45)
@@ -99,7 +99,7 @@ struct BuddySays: View {
     }
 }
 
-#Preview {
+#Preview("Home edition") {
     VStack(spacing: 24) {
         HStack {
             BuddyView(mood: .happy)
@@ -107,6 +107,22 @@ struct BuddySays: View {
             BuddyView(mood: .cheering)
         }
         BuddySays(text: "Ready for some practice?")
+        EditionBadge(edition: .home)
     }
     .padding()
+    .environment(\.appTheme, AppTheme(edition: .home))
+}
+
+#Preview("School edition") {
+    VStack(spacing: 24) {
+        HStack {
+            BuddyView(mood: .happy)
+            BuddyView(mood: .thinking)
+            BuddyView(mood: .cheering)
+        }
+        BuddySays(text: "Ready for some practice?")
+        EditionBadge(edition: .school)
+    }
+    .padding()
+    .environment(\.appTheme, AppTheme(edition: .school))
 }

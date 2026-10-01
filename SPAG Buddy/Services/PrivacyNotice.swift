@@ -9,8 +9,9 @@ enum PrivacyNotice {
         var id: String { title }
     }
 
-    /// `inClass` is nil before the child has chosen between joining a class and practising at home.
-    static func sections(inClass: Bool?) -> [Section] {
+    /// Each edition has its own wording. Home never mentions a school or a teacher seeing answers,
+    /// because in Home nothing ever leaves the iPad.
+    static func sections(for edition: Edition) -> [Section] {
         var sections = [
             Section(
                 symbol: "person.fill",
@@ -23,19 +24,8 @@ enum PrivacyNotice {
                 body: "The questions you answer, what you typed or tapped, and whether it was right. This helps Buddy choose the best questions for you."
             ),
         ]
-        switch inClass {
-        case nil:
-            sections.append(Section(
-                symbol: "icloud.and.arrow.up",
-                title: "Where it goes",
-                body: "If you practise at home, your answers stay on this iPad. If you join a class, they are sent safely to your school so your teacher can help you. Other children cannot see them."
-            ))
-            sections.append(Section(
-                symbol: "trash.fill",
-                title: "Deleting it",
-                body: "A grown-up can delete your profile from this iPad at any time. Your school deletes class answers after you leave, and always after two years."
-            ))
-        case true?:
+        switch edition {
+        case .school:
             sections.append(Section(
                 symbol: "person.2.fill",
                 title: "Who can see it",
@@ -51,7 +41,7 @@ enum PrivacyNotice {
                 title: "Deleting it",
                 body: "Your school deletes your answers after you leave the class, and always after two years. You or a grown-up at home can ask your teacher to delete them sooner."
             ))
-        case false?:
+        case .home:
             sections.append(Section(
                 symbol: "ipad",
                 title: "Where it goes",
@@ -66,13 +56,15 @@ enum PrivacyNotice {
         sections.append(Section(
             symbol: "questionmark.bubble.fill",
             title: "Worried about something?",
-            body: "Talk to your teacher or a grown-up you trust. You can always ask what SPAG Buddy knows about you."
+            body: edition.isSchool
+                ? "Talk to your teacher or a grown-up you trust. You can always ask what SPAG Buddy knows about you."
+                : "Talk to a grown-up you trust. You can always ask what SPAG Buddy knows about you."
         ))
         return sections
     }
 
     /// The whole notice as one piece of text for the read-aloud button.
-    static func spokenText(inClass: Bool?) -> String {
-        sections(inClass: inClass).map { "\($0.title). \($0.body)" }.joined(separator: " ")
+    static func spokenText(for edition: Edition) -> String {
+        sections(for: edition).map { "\($0.title). \($0.body)" }.joined(separator: " ")
     }
 }

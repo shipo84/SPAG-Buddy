@@ -45,7 +45,7 @@ struct PupilPickerView: View {
                 .padding(24)
             }
             .screenBackground()
-            .navigationTitle("SPAG Buddy")
+            .navigationTitle(app.edition.displayName)
         }
         .sheet(isPresented: $addingPupil) {
             WelcomeView(showsCancel: true)

@@ -34,7 +34,7 @@ struct PupilSettingsView: View {
 
                 Section {
                     NavigationLink {
-                        MyDataView(inClass: pupil.isInClass)
+                        MyDataView()
                     } label: {
                         Label("What happens to my answers?", systemImage: "lock.shield.fill")
                     }
@@ -48,6 +48,6 @@ struct PupilSettingsView: View {
                 }
             }
         }
-        .environment(\.appTheme, AppTheme(pupil: pupil))
+        .environment(\.appTheme, AppTheme(pupil: pupil, edition: app.edition))
     }
 }

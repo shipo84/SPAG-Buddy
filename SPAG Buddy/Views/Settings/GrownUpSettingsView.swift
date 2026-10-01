@@ -10,14 +10,16 @@ struct GrownUpSettingsView: View {
     @State private var confirmingDelete = false
     @State private var syncing = false
 
-    private var unsyncedCount: Int { pupil.attempts.filter(\.needsSync).count }
+    /// Class pupil in the School edition. Home has no classes, so this is always false there.
+    private var inClass: Bool { app.edition.isSchool && pupil.isInClass }
+    private var unsyncedCount: Int { inClass ? pupil.attempts.filter(\.needsSync).count : 0 }
 
     var body: some View {
         NavigationStack {
             Form {
                 Section("Pupil") {
                     LabeledContent("Name", value: pupil.displayName)
-                    if pupil.isInClass {
+                    if inClass {
                         LabeledContent("Year group", value: "Year \(pupil.yearGroup)")
                     } else {
                         Picker("Year group", selection: $pupil.yearGroup) {
@@ -27,20 +29,20 @@ struct GrownUpSettingsView: View {
                     LabeledContent("Questions answered", value: "\(pupil.attempts.count)")
                 }
 
-                if pupil.isInClass {
+                if inClass, let sync = app.sync {
                     Section {
                         LabeledContent("Class", value: pupil.className ?? pupil.classCode ?? "")
                         LabeledContent("Waiting to send", value: "\(unsyncedCount) answers")
                         if let last = pupil.lastSyncedAt {
                             LabeledContent("Last sent", value: last.formatted(date: .abbreviated, time: .shortened))
                         }
-                        if let error = app.sync.lastError {
+                        if let error = sync.lastError {
                             Text(error).foregroundStyle(.orange)
                         }
                         Button {
                             Task {
                                 syncing = true
-                                await app.sync.syncNow(pupil: pupil)
+                                await sync.syncNow(pupil: pupil)
                                 syncing = false
                             }
                         } label: {
@@ -53,7 +55,10 @@ struct GrownUpSettingsView: View {
                     }
                 } else {
                     Section {
-                        Text("This pupil is practising at home. Nothing is sent anywhere; all answers stay on this device.")
+                        Label(app.edition.displayName, systemImage: app.edition.symbolName)
+                        Text("Nothing is sent anywhere. All answers stay on this iPad.")
+                    } header: {
+                        Text("Privacy")
                     }
                 }
 
@@ -62,7 +67,7 @@ struct GrownUpSettingsView: View {
                         confirmingDelete = true
                     }
                 } footer: {
-                    Text(pupil.isInClass
+                    Text(inClass
                          ? "This removes the pupil's data from this iPad only. Answers already sent are managed by the school and can be deleted by the teacher."
                          : "This permanently deletes this pupil's progress.")
                 }
@@ -85,7 +90,7 @@ struct GrownUpSettingsView: View {
     }
 
     private func remove() {
-        KeychainStore.deleteToken(for: pupil.id)
+        if app.edition.isSchool { KeychainStore.deleteToken(for: pupil.id) }
         if app.activePupilID == pupil.id { app.activePupilID = nil }
         modelContext.delete(pupil)
         try? modelContext.save()

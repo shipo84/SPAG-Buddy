@@ -6,6 +6,8 @@
 	<string>en-GB</string>
 	<key>SPAGBuddyAPIBaseURL</key>
 	<string>$(SPAG_API_BASE_URL)</string>
+	<key>SPAGBuddyEdition</key>
+	<string>$(SPAG_EDITION)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
