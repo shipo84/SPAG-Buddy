@@ -98,7 +98,9 @@ struct PracticeSessionView: View {
                 } else {
                     Button(mode.givesInstantFeedback ? "Check" : "Next") {
                         guard let answer else { return }
-                        session.submit(answer, pupil: pupil, context: modelContext)
+                        if let attempt = session.submit(answer, pupil: pupil, context: modelContext) {
+                            app.classServices?.record(attempt, for: pupil)
+                        }
                         if !mode.givesInstantFeedback { self.answer = nil }
                     }
                     .buttonStyle(.big(theme.correct))

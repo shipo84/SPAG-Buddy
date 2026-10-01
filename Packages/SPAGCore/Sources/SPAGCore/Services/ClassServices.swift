@@ -14,12 +14,22 @@ public protocol ClassServices: AnyObject {
     /// Syncs straight away, ignoring any retry wait.
     func syncNow(pupil: PupilProfile) async
 
+    /// Queues a new answer to be sent to the teacher.
+    func record(_ attempt: Attempt, for pupil: PupilProfile)
+
+    /// Answers on this iPad that the server has not confirmed yet.
+    func unsentCount(for pupil: PupilProfile) -> Int
+
+    /// Signs the pupil out and deletes their login and unsent answers from this iPad.
+    func switchPupil(_ pupil: PupilProfile)
+
     /// Removes anything kept for the pupil outside SwiftData before the profile is deleted.
     func forget(pupil: PupilProfile)
 
     /// Newer content than `current`, when an update was installed.
     func updatedContent(current: ContentLibrary) async -> ContentLibrary?
 
-    /// The class code, picture and PIN login screen.
-    func makeJoinClassView() -> AnyView
+    /// The whole screen shown when nobody is signed in. It replaces the Home app's welcome
+    /// screen and pupil picker.
+    func makeSignedOutView() -> AnyView
 }

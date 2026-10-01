@@ -17,6 +17,8 @@ public struct RootView: View {
             if let pupil = activePupil {
                 HomeView(pupil: pupil)
                     .id(pupil.id)
+            } else if let classServices = app.classServices {
+                classServices.makeSignedOutView()
             } else if pupils.isEmpty {
                 WelcomeView()
             } else {
@@ -25,7 +27,8 @@ public struct RootView: View {
         }
         .environment(\.appTheme, AppTheme(pupil: activePupil))
         .onAppear {
-            if activePupil == nil, pupils.count == 1 {
+            // Class pupils always sign in with their card, so only Home profiles are picked automatically.
+            if app.classServices == nil, activePupil == nil, pupils.count == 1 {
                 app.activePupilID = pupils[0].id
             }
         }

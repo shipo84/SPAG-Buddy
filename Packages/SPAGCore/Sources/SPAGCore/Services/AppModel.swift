@@ -5,21 +5,25 @@ import SwiftData
 /// App-wide state shared through the SwiftUI environment.
 @Observable
 public final class AppModel {
-    private static let activePupilKey = "activePupilID"
-
     public private(set) var content: ContentLibrary
-    let speech = SpeechService()
+    public let speech = SpeechService()
     /// `nil` in the Home app, which has no class features.
     public let classServices: (any ClassServices)?
+    @ObservationIgnored private let activePupilStore: any ActivePupilStore
 
     public var activePupilID: UUID? {
-        didSet { UserDefaults.standard.set(activePupilID?.uuidString, forKey: Self.activePupilKey) }
+        get { activePupilStore.activePupilID }
+        set { activePupilStore.activePupilID = newValue }
     }
 
-    public init(content: ContentLibrary, classServices: (any ClassServices)? = nil) {
+    public init(
+        content: ContentLibrary,
+        classServices: (any ClassServices)? = nil,
+        activePupilStore: any ActivePupilStore = UserDefaultsActivePupilStore()
+    ) {
         self.content = content
         self.classServices = classServices
-        activePupilID = UserDefaults.standard.string(forKey: Self.activePupilKey).flatMap(UUID.init(uuidString:))
+        self.activePupilStore = activePupilStore
     }
 
     func start() async {

@@ -2,11 +2,11 @@ import AVFoundation
 import Foundation
 
 /// Reads questions and spelling words aloud in a British English voice.
-final class SpeechService {
+public final class SpeechService {
     private let synthesizer = AVSpeechSynthesizer()
     private let voice = AVSpeechSynthesisVoice(language: "en-GB")
 
-    func speak(_ text: String, slowly: Bool = false) {
+    public func speak(_ text: String, slowly: Bool = false) {
         try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio, options: [.duckOthers])
         synthesizer.stopSpeaking(at: .immediate)
         let utterance = AVSpeechUtterance(string: Self.speakable(text))
@@ -16,7 +16,7 @@ final class SpeechService {
         synthesizer.speak(utterance)
     }
 
-    func stop() {
+    public func stop() {
         synthesizer.stopSpeaking(at: .immediate)
     }
 

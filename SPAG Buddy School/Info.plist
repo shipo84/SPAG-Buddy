@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en-GB</string>
+	<key>NSCameraUsageDescription</key>
+	<string>SPAG School uses the camera to read the QR code on your login card. It does not take or keep any pictures.</string>
 	<key>SPAGBuddyAPIBaseURL</key>
 	<string>$(SPAG_API_BASE_URL)</string>
 	<key>CFBundleURLTypes</key>

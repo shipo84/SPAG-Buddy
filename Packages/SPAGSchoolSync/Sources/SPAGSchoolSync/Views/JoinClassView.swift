@@ -3,13 +3,14 @@ import SPAGCore
 import SwiftData
 import SwiftUI
 
-/// Joining a class with the details on the pupil's login card: class code, picture and 4-digit PIN.
+/// Joining a class with the pupil's login card: scan its QR code, or type the class code, tap the picture and enter the 4-digit PIN.
 struct JoinClassView: View {
     var prefilled: JoinDetails?
 
     private enum Step { case classCode, picture, pin }
 
     @Environment(AppModel.self) private var app
+    @Environment(SchoolClassServices.self) private var classServices
     @Environment(\.modelContext) private var modelContext
     @Environment(\.appTheme) private var theme
     @Environment(\.dismiss) private var dismiss
@@ -21,11 +22,16 @@ struct JoinClassView: View {
     @State private var pin = ""
     @State private var isJoining = false
     @State private var message: String?
+    @State private var scanning = false
 
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
-                if APIClient.live == nil {
+                if let notice = classServices.session.notice, prefilled == nil {
+                    BuddySays(text: notice.message, mood: .thinking)
+                }
+
+                if classServices.api == nil {
                     BuddySays(text: "Joining a class is not set up on this iPad yet. Ask your teacher.", mood: .thinking)
                 } else {
                     switch step {
@@ -41,13 +47,22 @@ struct JoinClassView: View {
                         .foregroundStyle(theme.tryAgain)
                         .multilineTextAlignment(.center)
                 }
+
+                if prefilled == nil {
+                    NavigationLink {
+                        SchoolPrivacyNoticeView()
+                    } label: {
+                        Label("What happens to my answers?", systemImage: "lock.shield.fill")
+                            .pupilText(.callout, weight: .semibold)
+                    }
+                }
             }
             .padding(24)
             .frame(maxWidth: 560)
             .frame(maxWidth: .infinity)
         }
         .screenBackground()
-        .navigationTitle("Join my class")
+        .navigationTitle("Join your class")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             if prefilled != nil {
@@ -56,18 +71,29 @@ struct JoinClassView: View {
                 }
             }
         }
+        .sheet(isPresented: $scanning) {
+            LoginCardScannerSheet { details in
+                scanning = false
+                Task { await join(with: details) }
+            }
+        }
         .task {
             guard let prefilled else { return }
-            classCode = prefilled.classCode
-            avatarKey = prefilled.avatarKey
-            pin = prefilled.pin
-            await join()
+            await join(with: prefilled)
         }
     }
 
     private var classCodeStep: some View {
         VStack(spacing: 20) {
-            BuddySays(text: "Type the class code from your card.")
+            BuddySays(text: "Scan the code on your login card, or type your class code.")
+            Button {
+                message = nil
+                scanning = true
+            } label: {
+                Label("Scan my login card", systemImage: "qrcode.viewfinder")
+            }
+            .buttonStyle(.big)
+
             TextField("Class code", text: $classCode)
                 .textInputAutocapitalization(.characters)
                 .autocorrectionDisabled()
@@ -83,7 +109,7 @@ struct JoinClassView: View {
                 message = nil
                 step = .picture
             }
-            .buttonStyle(.big)
+            .buttonStyle(.big(theme.correct))
             .disabled(classCode.count != 6)
         }
     }
@@ -126,43 +152,36 @@ struct JoinClassView: View {
         }
     }
 
-    private func join() async {
-        guard let api = APIClient.live, let avatarKey else { return }
+    private func join(with details: JoinDetails) async {
+        classCode = details.classCode
+        avatarKey = details.avatarKey
+        pin = details.pin
+        await join(fromCard: true)
+    }
+
+    private func join(fromCard: Bool = false) async {
+        guard let api = classServices.api, let avatarKey, !isJoining else { return }
         isJoining = true
         message = nil
         defer { isJoining = false }
 
         do {
             let response = try await api.join(classCode: classCode, avatarKey: avatarKey, pin: pin)
-            let pupil: PupilProfile
-            if let existing = pupils.first(where: { $0.remotePupilId == response.pupilId }) {
-                pupil = existing
-            } else {
-                pupil = PupilProfile(
-                    displayName: response.displayName,
-                    avatarKey: response.avatarKey,
-                    yearGroup: response.yearGroup,
-                    remotePupilId: response.pupilId,
-                    classCode: response.classCode,
-                    className: response.className
-                )
-                modelContext.insert(pupil)
-            }
-            pupil.yearGroup = response.yearGroup
-            pupil.className = response.className
-            try KeychainStore.saveToken(response.deviceToken, for: pupil.id)
-            try? modelContext.save()
-            app.activePupilID = pupil.id
+            try classServices.completeJoin(response, existing: pupils, context: modelContext)
             dismiss()
         } catch APIError.tooManyAttempts {
             message = "Too many tries. Ask your teacher for help."
             pin = ""
         } catch APIError.notFound, APIError.unauthorised {
-            message = "That didn't work. Check your class code, picture and number, then try again."
+            message = fromCard
+                ? "That card didn't work. Ask your teacher for a new login card."
+                : "That didn't work. Check your class code, picture and number, then try again."
             pin = ""
-            step = prefilled == nil ? .pin : .classCode
-        } catch {
+            step = fromCard ? .classCode : .pin
+        } catch is APIError {
             message = "I couldn't reach the internet. Try again in a moment."
+        } catch {
+            message = "Something went wrong on this iPad. Try again, or ask your teacher."
         }
     }
 }

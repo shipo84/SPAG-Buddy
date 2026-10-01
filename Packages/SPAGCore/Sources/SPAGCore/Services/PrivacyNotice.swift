@@ -1,16 +1,16 @@
 import Foundation
 
 /// The privacy notice for pupils, written for children aged 5 to 11. Keep it in step with docs/privacy/pupil-privacy-notice.md.
-enum PrivacyNotice {
-    struct Section: Hashable, Identifiable, Sendable {
-        var symbol: String
-        var title: String
-        var body: String
-        var id: String { title }
+public enum PrivacyNotice {
+    public struct Section: Hashable, Identifiable, Sendable {
+        public var symbol: String
+        public var title: String
+        public var body: String
+        public var id: String { title }
     }
 
     /// `inClass` is nil before the child has chosen between joining a class and practising at home.
-    static func sections(inClass: Bool?) -> [Section] {
+    public static func sections(inClass: Bool?) -> [Section] {
         var sections = [
             Section(
                 symbol: "person.fill",
@@ -72,7 +72,7 @@ enum PrivacyNotice {
     }
 
     /// The whole notice as one piece of text for the read-aloud button.
-    static func spokenText(inClass: Bool?) -> String {
+    public static func spokenText(inClass: Bool?) -> String {
         sections(inClass: inClass).map { "\($0.title). \($0.body)" }.joined(separator: " ")
     }
 }

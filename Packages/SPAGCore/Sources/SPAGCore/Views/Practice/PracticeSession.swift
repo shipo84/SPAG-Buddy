@@ -45,11 +45,12 @@ final class PracticeSession {
     var progress: Double { questions.isEmpty ? 1 : Double(index) / Double(questions.count) }
     var correctCount: Int { results.filter(\.result.correct).count }
 
-    func submit(_ answer: PupilAnswer, pupil: PupilProfile, context: ModelContext, now: Date = .now) {
-        guard let question = current, phase == .answering else { return }
+    @discardableResult
+    func submit(_ answer: PupilAnswer, pupil: PupilProfile, context: ModelContext, now: Date = .now) -> Attempt? {
+        guard let question = current, phase == .answering else { return nil }
         let result = AnswerMarker.mark(answer, for: question)
         let elapsed = Int(now.timeIntervalSince(questionStartedAt) * 1000)
-        context.insert(Attempt(
+        let attempt = Attempt(
             pupil: pupil,
             question: question,
             result: result,
@@ -58,7 +59,8 @@ final class PracticeSession {
             sessionId: id,
             mode: mode,
             answeredAt: now
-        ))
+        )
+        context.insert(attempt)
         results.append(SessionResult(question: question, result: result))
 
         if mode.givesInstantFeedback {
@@ -66,6 +68,7 @@ final class PracticeSession {
         } else {
             advance(pupil: pupil, context: context)
         }
+        return attempt
     }
 
     func advance(pupil: PupilProfile, context: ModelContext) {

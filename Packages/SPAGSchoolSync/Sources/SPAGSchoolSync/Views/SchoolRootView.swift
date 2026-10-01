@@ -18,5 +18,6 @@ public struct SchoolRootView: View {
                 }
             }
             .onOpenURL { classServices.handle(url: $0) }
+            .environment(classServices)
     }
 }
