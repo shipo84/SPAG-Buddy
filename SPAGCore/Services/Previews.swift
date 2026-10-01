@@ -6,7 +6,7 @@ extension ModelContainer {
     static let preview: ModelContainer = {
         do {
             let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
-            let container = try ModelContainer(for: SPAG_BuddyApp.schema, configurations: configuration)
+            let container = try ModelContainer(for: PupilStore.schema, configurations: configuration)
             let pupil = PupilProfile(displayName: "Mia", avatarKey: "fox", yearGroup: 4)
             pupil.stars = 42
             pupil.currentStreak = 3
@@ -22,7 +22,7 @@ extension ModelContainer {
 extension AppModel {
     static var preview: AppModel {
         do {
-            return AppModel(content: try ContentLibrary.loadBundled(), container: .preview, api: nil)
+            return AppModel(content: try ContentLibrary.loadBundled(), classServices: nil)
         } catch {
             fatalError("Preview content failed to load: \(error)")
         }

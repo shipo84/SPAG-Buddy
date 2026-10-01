@@ -3,6 +3,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     var showsCancel = false
+    @Environment(AppModel.self) private var app
     @Environment(\.dismiss) private var dismiss
     @Environment(\.appTheme) private var theme
 
@@ -24,29 +25,40 @@ struct WelcomeView: View {
                     }
 
                     VStack(spacing: 16) {
-                        NavigationLink {
-                            JoinClassView()
-                        } label: {
-                            Label("Join my class", systemImage: "person.3.fill")
-                        }
-                        .buttonStyle(.big)
+                        if let classServices = app.classServices {
+                            NavigationLink {
+                                classServices.joinClassView()
+                            } label: {
+                                Label("Join my class", systemImage: "person.3.fill")
+                            }
+                            .buttonStyle(.big)
 
-                        NavigationLink {
-                            CreateProfileView()
-                        } label: {
-                            Label("Practise at home", systemImage: "house.fill")
+                            NavigationLink {
+                                CreateProfileView()
+                            } label: {
+                                Label("Practise at home", systemImage: "house.fill")
+                            }
+                            .buttonStyle(.big(theme.correct))
+                        } else {
+                            NavigationLink {
+                                CreateProfileView()
+                            } label: {
+                                Label("Let's get started", systemImage: "star.fill")
+                            }
+                            .buttonStyle(.big)
                         }
-                        .buttonStyle(.big(theme.correct))
                     }
                     .frame(maxWidth: 480)
 
-                    Text("Your teacher will give you a card with your class code and PIN.")
-                        .pupilText(.footnote)
-                        .foregroundStyle(theme.secondaryText)
-                        .multilineTextAlignment(.center)
+                    if app.classServices != nil {
+                        Text("Your teacher will give you a card with your class code and PIN.")
+                            .pupilText(.footnote)
+                            .foregroundStyle(theme.secondaryText)
+                            .multilineTextAlignment(.center)
+                    }
 
                     NavigationLink {
-                        MyDataView(inClass: nil)
+                        MyDataView(inClass: app.classServices == nil ? false : nil)
                     } label: {
                         Label("What happens to my answers?", systemImage: "lock.shield.fill")
                             .pupilText(.callout, weight: .semibold)

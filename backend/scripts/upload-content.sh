@@ -4,7 +4,7 @@
 set -euo pipefail
 
 here="$(cd "$(dirname "$0")" && pwd)"
-content="$here/../../SPAG Buddy/Resources/Content"
+content="$here/../../SPAGCore/Resources/Content"
 version="$(node -e "console.log(require(process.argv[1]).contentVersion)" "$content/manifest.json")"
 
 for file in "$content"/*.json; do

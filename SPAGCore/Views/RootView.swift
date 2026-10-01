@@ -11,7 +11,6 @@ struct RootView: View {
     }
 
     var body: some View {
-        @Bindable var app = app
         Group {
             if let pupil = activePupil {
                 HomeView(pupil: pupil)
@@ -23,11 +22,6 @@ struct RootView: View {
             }
         }
         .environment(\.appTheme, AppTheme(pupil: activePupil))
-        .sheet(item: $app.pendingJoin) { details in
-            NavigationStack {
-                JoinClassView(prefilled: details)
-            }
-        }
         .onAppear {
             if activePupil == nil, pupils.count == 1 {
                 app.activePupilID = pupils[0].id
