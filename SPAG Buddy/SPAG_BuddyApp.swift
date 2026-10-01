@@ -14,13 +14,22 @@ struct SPAG_BuddyApp: App {
     static let schema = Schema([PupilProfile.self, Attempt.self, Assignment.self, BadgeProgress.self])
     private static let modelContainer = makeModelContainer()
 
+    #if HOME_EDITION
+    @State private var appModel = AppModel(content: Self.loadContent(), container: Self.modelContainer, api: nil)
+    #else
     @State private var appModel = AppModel(content: Self.loadContent(), container: Self.modelContainer)
+    #endif
 
     var body: some Scene {
         WindowGroup {
+            #if HOME_EDITION
+            HomeRootView()
+                .environment(appModel)
+            #else
             RootView()
                 .environment(appModel)
                 .onOpenURL { appModel.handle(url: $0) }
+            #endif
         }
         .modelContainer(Self.modelContainer)
     }
@@ -56,6 +65,10 @@ struct SPAG_BuddyApp: App {
         } catch {
             fatalError("Bundled content is invalid. Run the unit tests to find the problem: \(error)")
         }
+        #if HOME_EDITION
+        return bundled
+        #else
         return ContentUpdater.loadDownloadedContent(newerThan: bundled.manifest.contentVersion) ?? bundled
+        #endif
     }
 }
