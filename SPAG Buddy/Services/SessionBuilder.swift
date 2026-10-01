@@ -6,34 +6,27 @@ enum SessionMode: Hashable, Sendable {
     case strand(Strand)
     case objective(String)
     case spellingList(String)
-    case assignment(id: String, objectiveCodes: [String], spellingListId: String?)
     /// Year 6 GPS-style mini paper. Answers are only revealed at the end.
     case satsPractice
 
-    /// Sent to the server with each attempt.
+    /// Stored with each attempt so progress can be broken down by session type.
     var kind: String {
         switch self {
         case .daily: "daily"
         case .strand: "strand"
         case .objective: "objective"
         case .spellingList: "spelling-list"
-        case .assignment: "assignment"
         case .satsPractice: "sats"
         }
     }
 
     var givesInstantFeedback: Bool { self != .satsPractice }
 
-    var assignmentId: String? {
-        if case .assignment(let id, _, _) = self { return id }
-        return nil
-    }
-
     var defaultLength: Int {
         switch self {
         case .daily, .strand: 8
         case .objective: 6
-        case .spellingList, .assignment, .satsPractice: 10
+        case .spellingList, .satsPractice: 10
         }
     }
 }
@@ -64,11 +57,6 @@ struct SessionBuilder: Sendable {
             weighted = false
         case .spellingList(let listId):
             pool = spellingQuestions(listId: listId)
-            weighted = false
-        case .assignment(_, let codes, let listId):
-            let codeSet = Set(codes)
-            pool = library.questions.filter { codeSet.contains($0.objectiveCode) && $0.type != .spelling }
-                + (listId.map(spellingQuestions(listId:)) ?? [])
             weighted = false
         case .satsPractice:
             pool = library.questions.filter { $0.satsStyle && $0.yearGroup <= max(yearGroup, 6) }

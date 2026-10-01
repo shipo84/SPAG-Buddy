@@ -99,7 +99,7 @@ struct BuddySays: View {
     }
 }
 
-#Preview("Home edition") {
+#Preview {
     VStack(spacing: 24) {
         HStack {
             BuddyView(mood: .happy)
@@ -107,22 +107,6 @@ struct BuddySays: View {
             BuddyView(mood: .cheering)
         }
         BuddySays(text: "Ready for some practice?")
-        EditionBadge(edition: .home)
     }
     .padding()
-    .environment(\.appTheme, AppTheme(edition: .home))
-}
-
-#Preview("School edition") {
-    VStack(spacing: 24) {
-        HStack {
-            BuddyView(mood: .happy)
-            BuddyView(mood: .thinking)
-            BuddyView(mood: .cheering)
-        }
-        BuddySays(text: "Ready for some practice?")
-        EditionBadge(edition: .school)
-    }
-    .padding()
-    .environment(\.appTheme, AppTheme(edition: .school))
 }

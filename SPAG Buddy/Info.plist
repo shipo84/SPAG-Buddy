@@ -4,20 +4,5 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en-GB</string>
-	<key>SPAGBuddyAPIBaseURL</key>
-	<string>$(SPAG_API_BASE_URL)</string>
-	<key>SPAGBuddyEdition</key>
-	<string>$(SPAG_EDITION)</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string>Digital-Clubhouse.SPAG-Buddy.join</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>spagbuddy</string>
-			</array>
-		</dict>
-	</array>
 </dict>
 </plist>

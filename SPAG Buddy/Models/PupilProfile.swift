@@ -10,12 +10,6 @@ final class PupilProfile {
     var yearGroup: Int
     var createdAt: Date
 
-    /// Set when the pupil has joined a class. `nil` means home practice only, and nothing is uploaded.
-    var remotePupilId: String?
-    var classCode: String?
-    var className: String?
-    var lastSyncedAt: Date?
-
     var easyReadText: Bool
     var highContrast: Bool
     var autoReadAloud: Bool
@@ -33,26 +27,17 @@ final class PupilProfile {
     @Relationship(deleteRule: .cascade, inverse: \BadgeProgress.pupil)
     var badges: [BadgeProgress] = []
 
-    @Relationship(deleteRule: .cascade, inverse: \Assignment.pupil)
-    var assignments: [Assignment] = []
-
     init(
         id: UUID = UUID(),
         displayName: String,
         avatarKey: String,
-        yearGroup: Int,
-        remotePupilId: String? = nil,
-        classCode: String? = nil,
-        className: String? = nil
+        yearGroup: Int
     ) {
         self.id = id
         self.displayName = displayName
         self.avatarKey = avatarKey
         self.yearGroup = yearGroup
         self.createdAt = .now
-        self.remotePupilId = remotePupilId
-        self.classCode = classCode
-        self.className = className
         self.easyReadText = false
         self.highContrast = false
         self.autoReadAloud = yearGroup <= 2
@@ -62,8 +47,6 @@ final class PupilProfile {
         self.sessionsCompleted = 0
         self.satsSessionsCompleted = 0
     }
-
-    var isInClass: Bool { remotePupilId != nil }
 
     var streak: StreakCalculator.Streak {
         get { .init(current: currentStreak, longest: longestStreak, lastPracticeDay: lastPracticeDay) }

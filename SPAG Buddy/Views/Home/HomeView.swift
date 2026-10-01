@@ -18,19 +18,6 @@ struct HomeView: View {
 
     private var streak: Int { StreakCalculator.displayed(pupil.streak, now: .now) }
 
-    /// Teacher-set work. Only School has a teacher, so Home never shows this section.
-    private var openAssignments: [Assignment] {
-        guard app.edition.isSchool else { return [] }
-        return pupil.assignments
-            .filter { $0.completedAt == nil }
-            .sorted { ($0.dueDate ?? .distantFuture) < ($1.dueDate ?? .distantFuture) }
-    }
-
-    private var subtitle: String {
-        if app.edition.isSchool, let className = pupil.className { return className }
-        return "Year \(pupil.yearGroup)"
-    }
-
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -38,7 +25,6 @@ struct HomeView: View {
                     header
                     BuddySays(text: greeting, mood: .happy)
                     dailyCard
-                    if !openAssignments.isEmpty { assignmentsSection }
                     strandsSection
                     spellingListsSection
                     if pupil.yearGroup >= 6 { satsCard }
@@ -48,10 +34,9 @@ struct HomeView: View {
                 .frame(maxWidth: .infinity)
             }
             .screenBackground()
-            .navigationTitle(app.edition.displayName)
+            .navigationTitle(AppInfo.name)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { toolbar }
-            .refreshable { await app.sync?.syncNow(pupil: pupil) }
         }
         .fullScreenCover(item: $launch) { launch in
             PracticeSessionView(pupil: pupil, mode: launch.mode, title: launch.title)
@@ -67,7 +52,6 @@ struct HomeView: View {
             }
             .environment(\.appTheme, theme)
         }
-        .task { await app.sync?.syncNow(pupil: pupil) }
     }
 
     private var greeting: String {
@@ -81,7 +65,7 @@ struct HomeView: View {
             AvatarView(avatar: app.content.avatar(key: pupil.avatarKey), size: 56)
             VStack(alignment: .leading, spacing: 2) {
                 Text(pupil.displayName).pupilText(.title2, weight: .heavy)
-                Text(subtitle)
+                Text("Year \(pupil.yearGroup)")
                     .pupilText(.subheadline)
                     .foregroundStyle(theme.secondaryText)
             }
@@ -113,32 +97,6 @@ struct HomeView: View {
         }
         .buttonStyle(.plain)
         .accessibilityHint("Starts \(SessionMode.daily.defaultLength) mixed questions")
-    }
-
-    private var assignmentsSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            sectionTitle("From your teacher", systemImage: "envelope.open.fill")
-            ForEach(openAssignments) { assignment in
-                Button {
-                    launch = PracticeLaunch(mode: assignment.mode, title: assignment.title)
-                } label: {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(assignment.title).pupilText(.headline, weight: .bold)
-                            if let due = assignment.dueDate {
-                                Text("Due \(due.formatted(.dateTime.weekday(.wide).day().month(.wide)))")
-                                    .pupilText(.subheadline)
-                                    .foregroundStyle(theme.secondaryText)
-                            }
-                        }
-                        Spacer()
-                        Image(systemName: "chevron.right").foregroundStyle(theme.secondaryText)
-                    }
-                    .card(padding: 16)
-                }
-                .buttonStyle(.plain)
-            }
-        }
     }
 
     private var strandsSection: some View {
@@ -244,26 +202,19 @@ struct HomeView: View {
 #if DEBUG
 /// Fetches the preview pupil from the container so `HomeView` can be previewed with a real `PupilProfile`.
 private struct HomePreview: View {
-    @Environment(AppModel.self) private var app
     @Query private var pupils: [PupilProfile]
 
     var body: some View {
         if let pupil = pupils.first {
             HomeView(pupil: pupil)
-                .environment(\.appTheme, AppTheme(pupil: pupil, edition: app.edition))
+                .environment(\.appTheme, AppTheme(pupil: pupil))
         }
     }
 }
 
-#Preview("Home edition") {
+#Preview {
     HomePreview()
-        .environment(AppModel.preview(edition: .home))
+        .environment(AppModel.preview)
         .modelContainer(.preview)
-}
-
-#Preview("School edition") {
-    HomePreview()
-        .environment(AppModel.preview(edition: .school, container: .previewSchool))
-        .modelContainer(.previewSchool)
 }
 #endif

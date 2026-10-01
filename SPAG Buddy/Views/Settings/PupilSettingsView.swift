@@ -48,6 +48,6 @@ struct PupilSettingsView: View {
                 }
             }
         }
-        .environment(\.appTheme, AppTheme(pupil: pupil, edition: app.edition))
+        .environment(\.appTheme, AppTheme(pupil: pupil))
     }
 }

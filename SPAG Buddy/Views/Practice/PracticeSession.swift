@@ -87,11 +87,6 @@ final class PracticeSession {
         if mode == .satsPractice { pupil.satsSessionsCompleted += 1 }
         pupil.streak = StreakCalculator.afterPractice(pupil.streak, now: .now)
 
-        if let assignmentId = mode.assignmentId,
-           let assignment = pupil.assignments.first(where: { $0.remoteId == assignmentId }) {
-            assignment.completedAt = .now
-        }
-
         let newBadges = Self.awardBadges(to: pupil, context: context)
         try? context.save()
         outcome = SessionOutcome(correct: correct, total: results.count, starsEarned: stars, newBadges: newBadges)

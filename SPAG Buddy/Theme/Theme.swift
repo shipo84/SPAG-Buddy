@@ -1,41 +1,21 @@
 import Foundation
 import SwiftUI
 
-/// Look and feel. The edition sets the brand colours; the pupil's accessibility settings adjust them.
+/// Look and feel, adjusted by the pupil's accessibility settings.
+/// SPAG Buddy Home is teal; SPAG Buddy School (a separate app) is indigo, so the two are easy to tell apart.
 struct AppTheme {
-    var edition: Edition = .home
     var easyRead = false
     var highContrast = false
 
-    var background: Color {
-        if highContrast { return .white }
-        switch edition {
-        case .home: return Color(red: 0.95, green: 0.98, blue: 0.98)
-        case .school: return Color(red: 0.96, green: 0.96, blue: 1.0)
-        }
-    }
+    var background: Color { highContrast ? .white : Color(red: 0.95, green: 0.98, blue: 0.98) }
     var card: Color { highContrast ? .white : .white }
     var cardBorder: Color { highContrast ? .black : Color.black.opacity(0.06) }
     var text: Color { highContrast ? .black : Color(red: 0.12, green: 0.12, blue: 0.22) }
     var secondaryText: Color { highContrast ? .black : Color(red: 0.35, green: 0.36, blue: 0.48) }
-    /// Home is teal, School is indigo, so the two apps are easy to tell apart at a glance.
-    var primary: Color {
-        switch (edition, highContrast) {
-        case (.home, true): Color(red: 0.0, green: 0.3, blue: 0.33)
-        case (.home, false): Color(red: 0.05, green: 0.55, blue: 0.6)
-        case (.school, true): Color(red: 0.0, green: 0.15, blue: 0.55)
-        case (.school, false): Color(red: 0.33, green: 0.30, blue: 0.85)
-        }
-    }
+    var primary: Color { highContrast ? Color(red: 0.0, green: 0.3, blue: 0.33) : Color(red: 0.05, green: 0.55, blue: 0.6) }
     var onPrimary: Color { .white }
     /// The Buddy character's body colour.
-    var buddy: Color {
-        if highContrast { return primary }
-        switch edition {
-        case .home: return Color(red: 0.2, green: 0.7, blue: 0.72)
-        case .school: return Color(red: 0.55, green: 0.5, blue: 0.98)
-        }
-    }
+    var buddy: Color { highContrast ? primary : Color(red: 0.2, green: 0.7, blue: 0.72) }
     var correct: Color { highContrast ? Color(red: 0.0, green: 0.4, blue: 0.1) : Color(red: 0.13, green: 0.62, blue: 0.36) }
     /// Used for wrong answers. Orange rather than red keeps feedback gentle.
     var tryAgain: Color { highContrast ? Color(red: 0.6, green: 0.25, blue: 0.0) : Color(red: 0.93, green: 0.52, blue: 0.13) }
@@ -52,14 +32,12 @@ struct AppTheme {
         }
     }
 
-    init(edition: Edition = .home, easyRead: Bool = false, highContrast: Bool = false) {
-        self.edition = edition
+    init(easyRead: Bool = false, highContrast: Bool = false) {
         self.easyRead = easyRead
         self.highContrast = highContrast
     }
 
-    init(pupil: PupilProfile?, edition: Edition) {
-        self.edition = edition
+    init(pupil: PupilProfile?) {
         easyRead = pupil?.easyReadText ?? false
         highContrast = pupil?.highContrast ?? false
     }

@@ -3,7 +3,6 @@ import SwiftData
 
 @Model
 final class Attempt {
-    /// Also used as `clientAttemptId` so retried uploads are not counted twice.
     @Attribute(.unique) var id: UUID
     var pupil: PupilProfile?
     var questionId: String
@@ -16,10 +15,7 @@ final class Attempt {
     var hintUsed: Bool
     var sessionId: UUID
     var sessionKind: String
-    var assignmentId: String?
     var answeredAt: Date
-    /// `true` until the server has accepted (or permanently rejected) the attempt.
-    var needsSync: Bool
 
     init(
         pupil: PupilProfile,
@@ -43,9 +39,7 @@ final class Attempt {
         self.hintUsed = hintUsed
         self.sessionId = sessionId
         self.sessionKind = mode.kind
-        self.assignmentId = mode.assignmentId
         self.answeredAt = answeredAt
-        self.needsSync = pupil.isInClass
     }
 
     var strand: Strand { Strand(rawValue: strandRaw) ?? .grammar }

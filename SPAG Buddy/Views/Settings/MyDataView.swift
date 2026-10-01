@@ -16,14 +16,14 @@ struct MyDataView: View {
                 }
 
                 Button {
-                    app.speech.speak(PrivacyNotice.spokenText(for: app.edition))
+                    app.speech.speak(PrivacyNotice.spokenText)
                 } label: {
                     Label("Read this to me", systemImage: "speaker.wave.2.fill")
                 }
                 .buttonStyle(.big)
                 .frame(maxWidth: 360)
 
-                ForEach(PrivacyNotice.sections(for: app.edition)) { section in
+                ForEach(PrivacyNotice.sections) { section in
                     HStack(alignment: .top, spacing: 16) {
                         Image(systemName: section.symbol)
                             .font(.title2)
@@ -54,19 +54,10 @@ struct MyDataView: View {
 }
 
 #if DEBUG
-#Preview("Home edition") {
+#Preview {
     NavigationStack {
         MyDataView()
     }
-    .environment(AppModel.preview(edition: .home))
-    .environment(\.appTheme, AppTheme(edition: .home))
-}
-
-#Preview("School edition") {
-    NavigationStack {
-        MyDataView()
-    }
-    .environment(AppModel.preview(edition: .school))
-    .environment(\.appTheme, AppTheme(edition: .school))
+    .environment(AppModel.preview)
 }
 #endif

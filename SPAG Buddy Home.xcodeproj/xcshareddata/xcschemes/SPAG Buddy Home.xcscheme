@@ -18,7 +18,7 @@
                BlueprintIdentifier = "D8B252BE2F3D10800000D506"
                BuildableName = "SPAG Buddy.app"
                BlueprintName = "SPAG Buddy"
-               ReferencedContainer = "container:SPAG Buddy.xcodeproj">
+               ReferencedContainer = "container:SPAG Buddy Home.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -38,7 +38,7 @@
                BlueprintIdentifier = "D8B252CF2F3D10810000D506"
                BuildableName = "SPAG BuddyTests.xctest"
                BlueprintName = "SPAG BuddyTests"
-               ReferencedContainer = "container:SPAG Buddy.xcodeproj">
+               ReferencedContainer = "container:SPAG Buddy Home.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "D8B252D92F3D10810000D506"
                BuildableName = "SPAG BuddyUITests.xctest"
                BlueprintName = "SPAG BuddyUITests"
-               ReferencedContainer = "container:SPAG Buddy.xcodeproj">
+               ReferencedContainer = "container:SPAG Buddy Home.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,15 +71,9 @@
             BlueprintIdentifier = "D8B252BE2F3D10800000D506"
             BuildableName = "SPAG Buddy.app"
             BlueprintName = "SPAG Buddy"
-            ReferencedContainer = "container:SPAG Buddy.xcodeproj">
+            ReferencedContainer = "container:SPAG Buddy Home.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "-SPAGEdition home"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -94,7 +88,7 @@
             BlueprintIdentifier = "D8B252BE2F3D10800000D506"
             BuildableName = "SPAG Buddy.app"
             BlueprintName = "SPAG Buddy"
-            ReferencedContainer = "container:SPAG Buddy.xcodeproj">
+            ReferencedContainer = "container:SPAG Buddy Home.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

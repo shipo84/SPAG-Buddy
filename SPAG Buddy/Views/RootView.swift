@@ -11,7 +11,6 @@ struct RootView: View {
     }
 
     var body: some View {
-        @Bindable var app = app
         Group {
             if let pupil = activePupil {
                 HomeView(pupil: pupil)
@@ -22,45 +21,31 @@ struct RootView: View {
                 PupilPickerView(pupils: pupils)
             }
         }
-        .environment(\.appTheme, AppTheme(pupil: activePupil, edition: app.edition))
-        .sheet(item: $app.pendingJoin) { details in
-            if app.edition.isSchool {
-                NavigationStack {
-                    JoinClassView(prefilled: details)
-                }
-            }
-        }
+        .environment(\.appTheme, AppTheme(pupil: activePupil))
         .onAppear {
             if activePupil == nil, pupils.count == 1 {
                 app.activePupilID = pupils[0].id
             }
         }
-        .task { await app.start() }
     }
 }
 
 #if DEBUG
-#Preview("Home edition") {
+#Preview("Home screen") {
     RootView()
-        .environment(AppModel.preview(edition: .home))
+        .environment(AppModel.preview)
         .modelContainer(.preview)
 }
 
-#Preview("School edition") {
+#Preview("First launch") {
     RootView()
-        .environment(AppModel.preview(edition: .school, container: .previewSchool))
-        .modelContainer(.previewSchool)
-}
-
-#Preview("Home edition, first launch") {
-    RootView()
-        .environment(AppModel.preview(edition: .home))
+        .environment(AppModel.preview)
         .modelContainer(.previewEmpty)
 }
 
-#Preview("School edition, first launch") {
+#Preview("Two children") {
     RootView()
-        .environment(AppModel.preview(edition: .school, container: .previewEmpty))
-        .modelContainer(.previewEmpty)
+        .environment(AppModel.preview)
+        .modelContainer(.previewFamily)
 }
 #endif

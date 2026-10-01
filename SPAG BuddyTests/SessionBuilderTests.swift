@@ -62,15 +62,6 @@ struct SessionBuilderTests {
         #expect(questions.allSatisfy { $0.id.hasPrefix("spell-y34-statutory-") })
     }
 
-    @Test func assignmentCombinesObjectivesAndSpellingList() {
-        var rng = SeededGenerator(seed: 6)
-        let mode = SessionMode.assignment(id: "a1", objectiveCodes: ["Y4-G-fronted-adverbials"], spellingListId: "y34-statutory")
-        let questions = builder.build(mode: mode, yearGroup: 4, stats: [:], using: &rng)
-        #expect(questions.contains { $0.objectiveCode == "Y4-G-fronted-adverbials" })
-        #expect(questions.contains { $0.type == .spelling })
-        #expect(mode.assignmentId == "a1")
-    }
-
     @Test func satsPracticeOnlyUsesSatsStyleQuestionsAndHidesFeedback() {
         var rng = SeededGenerator(seed: 8)
         let questions = builder.build(mode: .satsPractice, yearGroup: 6, stats: [:], using: &rng)

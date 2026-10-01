@@ -1,10 +1,9 @@
 import Foundation
 import SwiftUI
 
-/// First screen when there are no pupils yet. Home creates a profile on the iPad; School joins a class with a login card.
+/// First screen when there are no pupils yet. Creates a profile that lives only on this iPad.
 struct WelcomeView: View {
     var showsCancel = false
-    @Environment(AppModel.self) private var app
     @Environment(\.dismiss) private var dismiss
     @Environment(\.appTheme) private var theme
 
@@ -16,39 +15,30 @@ struct WelcomeView: View {
                         .padding(.top, 32)
 
                     VStack(spacing: 12) {
-                        EditionBadge(edition: app.edition)
+                        Label(AppInfo.name, systemImage: "house.fill")
+                            .pupilText(.caption, weight: .bold)
+                            .foregroundStyle(theme.onPrimary)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 5)
+                            .background(theme.primary, in: Capsule())
                         Text("Hello! I'm SPAG Buddy.")
                             .pupilText(.largeTitle, weight: .heavy)
                             .multilineTextAlignment(.center)
-                        Text(app.edition.tagline)
+                        Text(AppInfo.tagline)
                             .pupilText(.title3)
                             .multilineTextAlignment(.center)
                             .foregroundStyle(theme.secondaryText)
                     }
 
-                    Group {
-                        switch app.edition {
-                        case .home:
-                            NavigationLink {
-                                CreateProfileView()
-                            } label: {
-                                Label("Let's get started", systemImage: "sparkles")
-                            }
-                            .buttonStyle(.big)
-                        case .school:
-                            NavigationLink {
-                                JoinClassView()
-                            } label: {
-                                Label("Join my class", systemImage: "person.3.fill")
-                            }
-                            .buttonStyle(.big)
-                        }
+                    NavigationLink {
+                        CreateProfileView()
+                    } label: {
+                        Label("Let's get started", systemImage: "sparkles")
                     }
+                    .buttonStyle(.big)
                     .frame(maxWidth: 480)
 
-                    Text(app.edition.isSchool
-                         ? "Your teacher will give you a card with your class code and PIN."
-                         : "A grown-up can add more than one child. Each child gets their own stars and stickers.")
+                    Text("A grown-up can add more than one child. Each child gets their own stars and stickers.")
                         .pupilText(.footnote)
                         .foregroundStyle(theme.secondaryText)
                         .multilineTextAlignment(.center)
@@ -76,17 +66,9 @@ struct WelcomeView: View {
 }
 
 #if DEBUG
-#Preview("Home edition") {
+#Preview {
     WelcomeView()
-        .environment(AppModel.preview(edition: .home))
-        .environment(\.appTheme, AppTheme(edition: .home))
-        .modelContainer(.previewEmpty)
-}
-
-#Preview("School edition") {
-    WelcomeView()
-        .environment(AppModel.preview(edition: .school))
-        .environment(\.appTheme, AppTheme(edition: .school))
+        .environment(AppModel.preview)
         .modelContainer(.previewEmpty)
 }
 #endif
