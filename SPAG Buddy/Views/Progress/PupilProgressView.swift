@@ -97,7 +97,7 @@ struct PupilProgressView: View {
     }
 }
 
-private struct MasteryDots: View {
+struct MasteryDots: View {
     var level: MasteryLevel
     var color: Color
 

@@ -14,15 +14,21 @@ struct HomeView: View {
     @Environment(\.appTheme) private var theme
     @State private var launch: PracticeLaunch?
     @State private var showingSettings = false
+    #if HOME_EDITION
+    @Environment(\.openGrownUps) private var openGrownUps
+    #else
     @State private var showingGrownUps = false
+    #endif
 
     private var streak: Int { StreakCalculator.displayed(pupil.streak, now: .now) }
 
+    #if !HOME_EDITION
     private var openAssignments: [Assignment] {
         pupil.assignments
             .filter { $0.completedAt == nil }
             .sorted { ($0.dueDate ?? .distantFuture) < ($1.dueDate ?? .distantFuture) }
     }
+    #endif
 
     var body: some View {
         NavigationStack {
@@ -31,7 +37,9 @@ struct HomeView: View {
                     header
                     BuddySays(text: greeting, mood: .happy)
                     dailyCard
+                    #if !HOME_EDITION
                     if !openAssignments.isEmpty { assignmentsSection }
+                    #endif
                     strandsSection
                     spellingListsSection
                     if pupil.yearGroup >= 6 { satsCard }
@@ -42,7 +50,9 @@ struct HomeView: View {
             }
             .screenBackground()
             .toolbar { toolbar }
+            #if !HOME_EDITION
             .refreshable { await app.sync.syncNow(pupil: pupil) }
+            #endif
         }
         .fullScreenCover(item: $launch) { launch in
             PracticeSessionView(pupil: pupil, mode: launch.mode, title: launch.title)
@@ -52,13 +62,15 @@ struct HomeView: View {
             PupilSettingsView(pupil: pupil)
                 .environment(\.appTheme, theme)
         }
+        #if !HOME_EDITION
         .sheet(isPresented: $showingGrownUps) {
-            TeacherGateView {
+            GrownUpGateView {
                 GrownUpSettingsView(pupil: pupil)
             }
             .environment(\.appTheme, theme)
         }
         .task { await app.sync.syncNow(pupil: pupil) }
+        #endif
     }
 
     private var greeting: String {
@@ -67,12 +79,20 @@ struct HomeView: View {
         return "Welcome back, \(pupil.displayName)! Ready to practise?"
     }
 
+    private var yearOrClass: String {
+        #if HOME_EDITION
+        return "Year \(pupil.yearGroup)"
+        #else
+        return pupil.className ?? "Year \(pupil.yearGroup)"
+        #endif
+    }
+
     private var header: some View {
         HStack(spacing: 12) {
             AvatarView(avatar: app.content.avatar(key: pupil.avatarKey), size: 56)
             VStack(alignment: .leading, spacing: 2) {
                 Text(pupil.displayName).pupilText(.title2, weight: .heavy)
-                Text(pupil.className ?? "Year \(pupil.yearGroup)")
+                Text(yearOrClass)
                     .pupilText(.subheadline)
                     .foregroundStyle(theme.secondaryText)
             }
@@ -106,6 +126,7 @@ struct HomeView: View {
         .accessibilityHint("Starts \(SessionMode.daily.defaultLength) mixed questions")
     }
 
+    #if !HOME_EDITION
     private var assignmentsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
             sectionTitle("From your teacher", systemImage: "envelope.open.fill")
@@ -131,6 +152,7 @@ struct HomeView: View {
             }
         }
     }
+    #endif
 
     private var strandsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -224,7 +246,11 @@ struct HomeView: View {
                 Label("My settings", systemImage: "textformat.size")
             }
             Button {
+                #if HOME_EDITION
+                openGrownUps?()
+                #else
                 showingGrownUps = true
+                #endif
             } label: {
                 Label("Grown-ups", systemImage: "lock.fill")
             }
