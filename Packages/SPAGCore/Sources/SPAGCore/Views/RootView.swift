@@ -4,6 +4,8 @@ import SwiftUI
 
 public struct RootView: View {
     @Environment(AppModel.self) private var app
+    @Environment(\.edition) private var edition
+    @Environment(\.colorScheme) private var colorScheme
     @Query(sort: \PupilProfile.createdAt) private var pupils: [PupilProfile]
 
     private var activePupil: PupilProfile? {
@@ -23,7 +25,8 @@ public struct RootView: View {
                 PupilPickerView(pupils: pupils)
             }
         }
-        .environment(\.appTheme, AppTheme(pupil: activePupil))
+        .environment(\.appTheme, AppTheme(pupil: activePupil, edition: edition, colorScheme: colorScheme))
+        .preferredColorScheme(activePupil?.highContrast == true ? .light : nil)
         .onAppear {
             if activePupil == nil, pupils.count == 1 {
                 app.activePupilID = pupils[0].id

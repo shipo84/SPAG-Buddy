@@ -12,6 +12,7 @@ struct HomeView: View {
     @Bindable var pupil: PupilProfile
     @Environment(AppModel.self) private var app
     @Environment(\.appTheme) private var theme
+    @Environment(\.edition) private var edition
     @State private var launch: PracticeLaunch?
     @State private var showingSettings = false
     @State private var showingGrownUps = false
@@ -41,6 +42,8 @@ struct HomeView: View {
                 .frame(maxWidth: .infinity)
             }
             .screenBackground()
+            .navigationTitle(edition.displayName)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar { toolbar }
             .refreshable { await app.classServices?.syncNow(pupil: pupil) }
         }
@@ -100,7 +103,7 @@ struct HomeView: View {
                 Image(systemName: "play.circle.fill").font(.system(size: 44)).foregroundStyle(theme.onPrimary)
             }
             .padding(22)
-            .background(theme.primary, in: RoundedRectangle(cornerRadius: 26, style: .continuous))
+            .background(theme.primaryFill, in: RoundedRectangle(cornerRadius: 26, style: .continuous))
         }
         .buttonStyle(.plain)
         .accessibilityHint("Starts \(SessionMode.daily.defaultLength) mixed questions")
@@ -231,3 +234,23 @@ struct HomeView: View {
         }
     }
 }
+
+#if DEBUG
+#Preview("Home, light") {
+    RootView().environment(AppModel.preview).environment(\.edition, .home).modelContainer(.preview)
+}
+
+#Preview("Home, dark") {
+    RootView().environment(AppModel.preview).environment(\.edition, .home).modelContainer(.preview)
+        .preferredColorScheme(.dark)
+}
+
+#Preview("School, light") {
+    RootView().environment(AppModel.preview).environment(\.edition, .school).modelContainer(.preview)
+}
+
+#Preview("School, dark") {
+    RootView().environment(AppModel.preview).environment(\.edition, .school).modelContainer(.preview)
+        .preferredColorScheme(.dark)
+}
+#endif

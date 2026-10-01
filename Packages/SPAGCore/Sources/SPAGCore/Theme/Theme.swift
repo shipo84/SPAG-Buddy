@@ -1,18 +1,52 @@
 import Foundation
 import SwiftUI
 
-/// Per-pupil look and feel, driven by the pupil's accessibility settings.
+/// Per-pupil look and feel, driven by the edition, light or dark mode and the pupil's accessibility settings.
+/// High contrast is always black on white, so it ignores dark mode.
 public struct AppTheme {
     public var easyRead = false
     public var highContrast = false
+    public var edition = Edition.home
+    public var colorScheme = ColorScheme.light
 
-    public var background: Color { highContrast ? .white : Color(red: 0.96, green: 0.96, blue: 1.0) }
-    public var card: Color { highContrast ? .white : .white }
-    public var cardBorder: Color { highContrast ? .black : Color.black.opacity(0.06) }
-    public var text: Color { highContrast ? .black : Color(red: 0.12, green: 0.12, blue: 0.22) }
-    public var secondaryText: Color { highContrast ? .black : Color(red: 0.35, green: 0.36, blue: 0.48) }
-    public var primary: Color { highContrast ? Color(red: 0.0, green: 0.15, blue: 0.55) : Color(red: 0.33, green: 0.30, blue: 0.85) }
+    private var palette: EditionPalette { edition.palette }
+    private var isDark: Bool { colorScheme == .dark && !highContrast }
+
+    public var background: Color {
+        if highContrast { return .white }
+        return (isDark ? EditionPalette.darkBackground : palette.tintBackground).color
+    }
+    public var card: Color { isDark ? EditionPalette.darkCard.color : .white }
+    public var cardBorder: Color {
+        if highContrast { return .black }
+        return isDark ? Color.white.opacity(0.08) : Color.black.opacity(0.06)
+    }
+    public var text: Color {
+        if highContrast { return .black }
+        return (isDark ? palette.tintBackground : EditionPalette.ink).color
+    }
+    public var secondaryText: Color {
+        if highContrast { return .black }
+        return (isDark ? EditionPalette.darkSecondaryText : EditionPalette.slate).color
+    }
+    /// Brand colour for icons, rings, dots and progress bars. Not for text: see `primaryText`.
+    public var primary: Color {
+        if highContrast { return palette.primaryHighContrast.color }
+        return (isDark ? palette.primaryLight : palette.primary).color
+    }
+    /// Brand colour for text, links and toolbar buttons. Meets 4.5:1 on `background` and `card`.
+    public var primaryText: Color {
+        if highContrast { return palette.primaryHighContrast.color }
+        return (isDark ? palette.primaryLight : palette.primaryStrong).color
+    }
+    /// Fill behind `onPrimary` text. Meets 4.5:1 with white in both modes.
+    public var primaryFill: Color {
+        (highContrast ? palette.primaryHighContrast : palette.primaryStrong).color
+    }
     public var onPrimary: Color { .white }
+    /// Fill for secondary big buttons, such as "Someone new". Meets 4.5:1 with white in both modes.
+    public var neutralFill: Color { highContrast ? .black : EditionPalette.slate.color }
+    public var buddy: Color { highContrast ? primaryFill : EditionPalette.owlOrange.color }
     public var correct: Color { highContrast ? Color(red: 0.0, green: 0.4, blue: 0.1) : Color(red: 0.13, green: 0.62, blue: 0.36) }
     /// Used for wrong answers. Orange rather than red keeps feedback gentle.
     public var tryAgain: Color { highContrast ? Color(red: 0.6, green: 0.25, blue: 0.0) : Color(red: 0.93, green: 0.52, blue: 0.13) }
@@ -29,14 +63,18 @@ public struct AppTheme {
         }
     }
 
-    public init(easyRead: Bool = false, highContrast: Bool = false) {
+    public init(easyRead: Bool = false, highContrast: Bool = false, edition: Edition = .home, colorScheme: ColorScheme = .light) {
         self.easyRead = easyRead
         self.highContrast = highContrast
+        self.edition = edition
+        self.colorScheme = colorScheme
     }
 
-    init(pupil: PupilProfile?) {
+    init(pupil: PupilProfile?, edition: Edition, colorScheme: ColorScheme) {
         easyRead = pupil?.easyReadText ?? false
         highContrast = pupil?.highContrast ?? false
+        self.edition = edition
+        self.colorScheme = colorScheme
     }
 }
 
@@ -104,7 +142,7 @@ public struct BigButtonStyle: ButtonStyle {
             .foregroundStyle(theme.onPrimary)
             .frame(maxWidth: .infinity, minHeight: 60)
             .padding(.horizontal, 20)
-            .background((color ?? theme.primary).opacity(isEnabled ? 1 : 0.4), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+            .background((color ?? theme.primaryFill).opacity(isEnabled ? 1 : 0.4), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
             .scaleEffect(configuration.isPressed ? 0.97 : 1)
             .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
     }

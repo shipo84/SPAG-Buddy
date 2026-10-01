@@ -91,7 +91,7 @@ struct PupilProgressView: View {
         switch level {
         case .notStarted: theme.secondaryText
         case .needsSupport: theme.tryAgain
-        case .developing: theme.primary
+        case .developing: theme.primaryText
         case .secure: theme.correct
         }
     }
@@ -100,6 +100,7 @@ struct PupilProgressView: View {
 private struct MasteryDots: View {
     var level: MasteryLevel
     var color: Color
+    @Environment(\.appTheme) private var theme
 
     private var filled: Int {
         switch level {
@@ -113,7 +114,7 @@ private struct MasteryDots: View {
     var body: some View {
         HStack(spacing: 4) {
             ForEach(0..<3, id: \.self) { index in
-                Circle().fill(index < filled ? color : Color.black.opacity(0.1)).frame(width: 12, height: 12)
+                Circle().fill(index < filled ? color : theme.text.opacity(0.1)).frame(width: 12, height: 12)
             }
         }
         .accessibilityHidden(true)

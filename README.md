@@ -41,6 +41,7 @@ One codebase builds two App Store apps. Open `SPAG Buddy.xcodeproj` in Xcode 26 
 - Each app target injects its `Edition` (`.home` or `.school`) into the SwiftUI environment. Shared views read it with `@Environment(\.edition)` rather than using `#if`.
 - Class features reach the shared views through the `ClassServices` protocol in `SPAGCore`. The School app passes `SchoolClassServices`; the Home app passes nothing, so no networking code is linked into it.
 - Each edition has its own SwiftData store (`SPAGHome.store`, `SPAGSchool.store`), so the two apps never share data.
+- Branding comes from `EditionPalette` in `SPAGCore/Theme/Palette.swift` (Home is pink, School is blue). Views read colours through `AppTheme`: `primary` for icons and progress, `primaryText` for text and links, `primaryFill` behind white text. `ThemeTests` checks the WCAG AA contrast of each pairing. Each target has its own icon set (`AppIcon-Home`, `AppIcon-School`) and `AccentColor`.
 - Set the School API URL with `SPAG_API_BASE_URL` in `Config/School.xcconfig` (for example `https:/$()/<project-ref>.supabase.co/functions/v1/api`). If it is empty the School app runs in offline-only mode.
 - Pupil device tokens are stored in the Keychain. Practice data is stored locally with SwiftData and is not synced to iCloud.
 - Unit tests live in the packages (`SPAGCoreTests`, `SPAGSchoolSyncTests`) and run from each app's Test action on an iOS simulator.

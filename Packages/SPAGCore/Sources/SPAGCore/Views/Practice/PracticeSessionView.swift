@@ -181,7 +181,7 @@ struct QuestionCard: View {
                         Label("I need a hint", systemImage: "lightbulb")
                     }
                     .pupilText(.callout, weight: .semibold)
-                    .foregroundStyle(theme.primary)
+                    .foregroundStyle(theme.primaryText)
                 }
             }
         }

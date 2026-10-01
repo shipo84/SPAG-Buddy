@@ -6,6 +6,7 @@ struct PupilPickerView: View {
     var pupils: [PupilProfile]
     @Environment(AppModel.self) private var app
     @Environment(\.appTheme) private var theme
+    @Environment(\.edition) private var edition
     @State private var addingPupil = false
 
     var body: some View {
@@ -39,13 +40,13 @@ struct PupilPickerView: View {
                     } label: {
                         Label("Someone new", systemImage: "plus")
                     }
-                    .buttonStyle(.big(theme.secondaryText))
+                    .buttonStyle(.big(theme.neutralFill))
                     .frame(maxWidth: 320)
                 }
                 .padding(24)
             }
             .screenBackground()
-            .navigationTitle("SPAG Buddy")
+            .navigationTitle(edition.displayName)
         }
         .sheet(isPresented: $addingPupil) {
             WelcomeView(showsCancel: true)
