@@ -1,6 +1,6 @@
 # Two editions audit: SPAG Buddy Home and SPAG Buddy School
 
-Status: audit written on branch `two-editions`, cut from `cursor/spag-buddy-uk-mvp-a6d4`. The first code step has since been made (see "Progress" at the end). The findings below describe the code as it was before that step.
+Status: audit written on branch `two-editions`, cut from `cursor/spag-buddy-uk-mvp-a6d4`. The split has since been done as **two separate Xcode projects** rather than two targets in one project (see "Progress" at the end). The findings below describe the code as it was before the split.
 
 Goal: one codebase that builds two App Store apps.
 
@@ -347,22 +347,29 @@ These are not Swift errors, but they stop a clean split.
 
 ## Progress
 
-### Step 1: make the app edition-aware (done)
+### Decision: two separate Xcode projects
 
-Still one target, but the code now knows which edition it is, and the two editions look and behave differently.
+Rather than two targets in one project (the preferred option in section 3), the editions are two separate Xcode projects:
 
-- `Edition/Edition.swift`: the `Edition` enum (`home`, `school`), `Edition.current`, per-edition names and wording, and the `EditionBadge` view. `Edition.current` reads `SPAGBuddyEdition` from Info.plist (from the `SPAG_EDITION` build setting, currently `school`). Anything unrecognised is Home, because Home is the edition that can never send data. In debug builds the launch argument `-SPAGEdition home|school` overrides it.
-- Two shared schemes, `SPAG Buddy Home` and `SPAG Buddy School`, build the same target and differ only in that launch argument.
-- `AppModel` has `let edition` and its `sync` is now optional: `nil` in Home, so Home never creates `SyncService`. `start()` and `handle(url:)` do nothing in Home. The app only loads downloaded content in School.
-- `AppTheme` carries the edition. Home is teal, School is indigo, and the Buddy character follows.
-- `WelcomeView` shows one button per edition (Home: create a profile; School: join a class), the edition badge and edition-specific wording. The Home wording never mentions a teacher or class.
-- `HomeView` shows the edition name in the navigation bar, only shows "From your teacher" and the class name in School, and syncs through `app.sync?`. `PupilPickerView`, `PracticeSessionView` and `GrownUpSettingsView` are the same.
-- `PrivacyNotice.sections(for:)` takes an `Edition` instead of `inClass: Bool?`. The "not chosen yet" wording is gone. Tests check that Home never says "teacher", "school" or "class".
-- Previews: `RootView`, `WelcomeView`, `HomeView`, `MyDataView` and `BuddyView` each have a Home and a School preview. `ModelContainer.preview` (Mia, home), `.previewSchool` (Sam in Year 5 Owls with an assignment) and `.previewEmpty` back them.
+- **This repository is SPAG Buddy Home.** `SPAG Buddy Home.xcodeproj`, bundle ID `Digital-Clubhouse.SPAG-Buddy-Home`, display name "SPAG Buddy Home", one scheme `SPAG Buddy Home`.
+- **SPAG Buddy School** is a separate project, to be created from the last commit that still contained the school code (commit `e5021b2`, "Document the two editions"), with its own bundle ID.
 
-### Next steps (not done)
+The separation rules in section 0 are met automatically: different bundle IDs, no App Groups, no shared keychain group, no iCloud, and only School registers `spagbuddy://`.
 
-1. Two app targets with their own bundle IDs, display names, icons, Info.plists and schemes (section 3, option "separate folders and targets").
-2. Move the school-only files (section 1b) into a folder that only the School target compiles, and put the remaining `app.sync?` call sites behind a `ClassServices` protocol so Home does not compile them at all.
-3. Decide on Option A or B for the data schema (section 5) and remove the class fields from Home if B.
-4. Move `SyncTests` to a School-hosted test target.
+The cost is duplication. The question banks and the shared Swift code exist in both projects and must be kept in step by hand. If that becomes a burden, the shared code can be moved into a Swift package that both projects depend on.
+
+### What was done to make this project Home
+
+- Removed the school-only files: `APIClient`, `SyncService`, `ContentUpdater`, `KeychainStore`, `APIModels`, `JoinClassView`, the `Assignment` model and `SyncTests`. There is no `URLSession`, `URLRequest` or `import Network` left anywhere in the app.
+- Removed the class hooks from the shared files: `AppModel` is now just content, speech and the active pupil; `SPAG_BuddyApp` has no `.onOpenURL` and loads bundled content only; `RootView` has no join sheet and no `start()`; `HomeView` has no "From your teacher" section and no sync; `GrownUpSettingsView` has no class section; `PracticeSessionView` does not sync on close.
+- Option B for the data (section 5): `PupilProfile` has no `remotePupilId`, `classCode`, `className`, `lastSyncedAt`, `assignments` or `isInClass`; `Attempt` has no `needsSync` or `assignmentId`; `SessionMode` has no `.assignment` case. The schema is `PupilProfile`, `Attempt`, `BadgeProgress`.
+- `PrivacyNotice` has one wording. Tests assert it never says "teacher", "school" or "class".
+- `Info.plist` has no `CFBundleURLTypes` and no API URL. The `SPAG_API_BASE_URL` build setting is gone.
+- Branding: `AppInfo.name` is "SPAG Buddy Home"; the theme is teal; the welcome screen shows a "SPAG Buddy Home" badge and a single "Let's get started" button.
+- The target is still called `SPAG Buddy` inside the project (so the test module stays `SPAG_Buddy` and the folder paths are unchanged). Only the project file, scheme, display name and bundle ID say Home.
+
+### Still to do
+
+- Create the School project from commit `e5021b2` and give it bundle ID `Digital-Clubhouse.SPAG-Buddy-School` (or keep `Digital-Clubhouse.SPAG-Buddy` if that record already exists on App Store Connect), display name "SPAG Buddy School", and `SPAG_EDITION = school`. In that project the Home code paths can then be removed in the same way as the School paths were removed here.
+- Decide whether `backend/` and `web/` stay in this repository or move to the School one. Home does not use them.
+- Separate app icons for the two apps.

@@ -1,78 +1,49 @@
-# SPAG Buddy
+# SPAG Buddy Home
 
 SPAG Buddy is a spelling, punctuation and grammar (SPAG) practice app for UK primary pupils in Year 1 to Year 6. It follows the National Curriculum for English (Appendix 1: Spelling, Appendix 2: Vocabulary, Grammar and Punctuation) and includes KS2 SATs GPS-style practice for Year 6.
 
-Teachers use a companion website to set work and see how their class is doing.
+There are two SPAG Buddy apps, built as two separate Xcode projects:
+
+- **SPAG Buddy Home** (this project): for families. Strictly on-device. No account, no class, no sync, no server. Nothing a child does ever leaves the iPad.
+- **SPAG Buddy School** (a separate project): for classes. Pupils join with a login card and answers sync to a teacher dashboard.
+
+The two apps have different bundle IDs and share no data. A child who uses both has two unrelated profiles. See [`docs/two-editions-audit.md`](docs/two-editions-audit.md) for the reasoning and the rules that keep them separate.
 
 ## Repository layout
 
 | Path | What it is |
 | --- | --- |
+| `SPAG Buddy Home.xcodeproj` | The Xcode project |
 | `SPAG Buddy/` | iOS and iPadOS app (SwiftUI + SwiftData, iOS 17+) |
 | `SPAG Buddy/Resources/Content/` | Curriculum objectives, question banks and statutory spelling lists (JSON). This is the single source of truth for content. |
 | `SPAG BuddyTests/` | Unit tests (Swift Testing) |
-| `backend/` | Supabase project: Postgres schema, Row Level Security and the `api` Edge Function |
-| `web/` | Teacher website (Next.js) |
-| `docs/` | Privacy notices, DPA and DPIA templates, retention policy and pilot checklist |
-
-## How it fits together
-
-1. A teacher signs in to the website with their school email, creates a class and adds pupils (first name or nickname only).
-2. The website prints a login card for each pupil with the class code, a picture and a 4-digit PIN (plus a QR code).
-3. On the iPad, the pupil types the class code, taps their picture and enters their PIN. The device receives a token for that pupil.
-4. Pupils practise offline. Each answer is saved on the device and uploaded in batches when there is a connection.
-5. The teacher sees a heat map of pupils against curriculum objectives, common wrong answers, pupil progress and Year 6 SATs readiness.
-
-Families use the separate Home edition. Nothing leaves the device in Home, and Home and School never share data.
+| `backend/`, `web/` | The School edition's Supabase backend and teacher website. Not used by Home; they are here from before the two projects were split and belong with the School project. |
+| `docs/` | Two-editions audit, privacy notices, DPA and DPIA templates, retention policy and pilot checklist |
 
 ## iOS app
 
-Open `SPAG Buddy.xcodeproj` in Xcode 26 or later. There are two shared schemes:
+Open `SPAG Buddy Home.xcodeproj` in Xcode 26 or later and run the **SPAG Buddy Home** scheme.
 
-- **SPAG Buddy Home**: the family edition. Strictly on-device. No class, no sync, no teacher.
-- **SPAG Buddy School**: the class edition. Pupils join with a login card and answers sync to the teacher dashboard.
-
-Both schemes currently build the same target. The edition comes from the `SPAG_EDITION` build setting (`home` or `school`, read from `SPAGBuddyEdition` in Info.plist). In debug builds the launch argument `-SPAGEdition home|school` overrides it, which is how the two schemes differ today. Splitting into two targets with their own bundle IDs is the next step; see [`docs/two-editions-audit.md`](docs/two-editions-audit.md).
-
-- Minimum iOS version is 17.0 so older school iPads are supported.
-- Set the API URL with the `SPAG_API_BASE_URL` build setting (for example `https://<project-ref>.supabase.co/functions/v1/api`). If it is empty the School edition runs in offline-only mode. Home never uses it.
-- Pupil device tokens are stored in the Keychain (School only). Practice data is stored locally with SwiftData and is not synced to iCloud.
+- Bundle ID `Digital-Clubhouse.SPAG-Buddy-Home`, display name "SPAG Buddy Home".
+- Minimum iOS version is 17.0.
+- There is no networking code in the app at all: no `URLSession`, no API client, no Keychain, no URL scheme. Content is loaded from the bundle only.
+- Practice data is stored locally with SwiftData and is not synced to iCloud. The SwiftData schema is `PupilProfile`, `Attempt` and `BadgeProgress`; there are no class or assignment fields.
 
 Source layout inside `SPAG Buddy/`:
 
-- `Edition/` the `Edition` enum (Home or School), per-edition wording and the edition badge
-- `Models/` SwiftData models (`PupilProfile`, `Attempt`, `Assignment`, `BadgeProgress`) and content types (`Question`, `Objective`, `SpellingList`)
-- `Services/` content loading, answer marking, session building, badges, speech, API client and sync
+- `AppInfo.swift` the app name and tagline
+- `Models/` SwiftData models (`PupilProfile`, `Attempt`, `BadgeProgress`) and content types (`Question`, `Objective`, `SpellingList`)
+- `Services/` content loading, answer marking, session building, badges, speech and the pupil privacy notice
 - `Views/` onboarding, home, practice, progress and settings screens
-- `Theme/` colours, fonts and accessibility settings
+- `Theme/` colours (Home is teal), fonts and accessibility settings
 
-## Backend
+### Keeping Home and School in step
 
-See [`backend/README.md`](backend/README.md). In short:
+The question banks in `SPAG Buddy/Resources/Content/` and the shared Swift code (models, `Services/`, `Views/`, `Theme/`) are the same in both projects. When you fix a question or improve a screen in one project, copy the change to the other. The School project additionally has `APIClient`, `SyncService`, `ContentUpdater`, `KeychainStore`, `JoinClassView`, the `Assignment` model and the class fields on `PupilProfile` and `Attempt`.
 
-```bash
-cd backend
-npm run seed          # regenerate supabase/seed.sql from the app's content JSON
-supabase db push      # apply migrations
-supabase functions deploy api --no-verify-jwt
-```
+## Backend and teacher website (School edition only)
 
-Host the Supabase project in the London (`eu-west-2`) region.
-
-## Teacher website
-
-See [`web/README.md`](web/README.md). In short:
-
-```bash
-cd web
-npm install
-cp .env.example .env.local   # add your Supabase URL, anon key and API URL
-npm run dev
-```
-
-Run `npm run demo` to explore the dashboard with made-up pupils and no backend.
-
-To put the teacher site live, follow [`docs/deploy-teacher-website.md`](docs/deploy-teacher-website.md). If your public site is WordPress or you will not use Supabase, start with [`docs/wordpress-without-supabase.md`](docs/wordpress-without-supabase.md) instead.
+`backend/` and `web/` belong to the School edition. Home never talks to them. See [`backend/README.md`](backend/README.md) and [`web/README.md`](web/README.md), plus [`docs/deploy-teacher-website.md`](docs/deploy-teacher-website.md) and [`docs/wordpress-without-supabase.md`](docs/wordpress-without-supabase.md).
 
 ## Content
 
@@ -80,9 +51,8 @@ Question banks live in `SPAG Buddy/Resources/Content/year1.json` to `year6.json`
 
 1. Run the unit tests (they validate every question).
 2. Bump `contentVersion` in `manifest.json`.
-3. Run `npm run seed` in `backend/` so the server and the website know about new questions.
-4. Run `npm run upload-content` in `backend/` so iPads that are already installed download the new questions.
+3. Copy the same change into the School project, and there run `npm run seed` and `npm run upload-content` in `backend/` so the server and already-installed School iPads get the new questions.
 
 ## Privacy
 
-SPAG Buddy is designed for the UK GDPR and the ICO Age Appropriate Design Code (Children's Code). See [`docs/privacy/`](docs/privacy/). The school is the data controller. No pupil email addresses, photos, location, advertising or third-party analytics are used. Pupils can read what happens to their answers in the app. Before a school pilot, work through [`docs/pilot-checklist.md`](docs/pilot-checklist.md).
+SPAG Buddy Home is designed for the UK GDPR and the ICO Age Appropriate Design Code (Children's Code). It collects nothing: no account, no email address, no photos, no location, no advertising, no analytics, and no data leaves the device. Its App Store privacy label can be "Data Not Collected". Pupils can read what happens to their answers in the app. The school-facing documents in [`docs/privacy/`](docs/privacy/) and [`docs/pilot-checklist.md`](docs/pilot-checklist.md) apply to the School edition.
